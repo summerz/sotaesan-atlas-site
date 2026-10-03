@@ -1,0 +1,188 @@
+{
+  "capturedAt": "2026-10-03T06:18:22.318Z",
+  "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallYaw=90&wallPitch=-20",
+  "scope": "Fixed camera visual probe; temporary world response spawn and benchmarkRoute override; no performance conclusion",
+  "inspection": {
+    "track": "three",
+    "worldId": "sunnyvale-wall-comparison",
+    "layer": "current",
+    "release": "local-4d5905679d2e-8887379fa947",
+    "engine": "Three.js r186",
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "dpr": 1
+    },
+    "feet": [
+      -14.240409736530744,
+      0.5503562425019835,
+      -11.09
+    ],
+    "eye": [
+      -14.24,
+      2.15,
+      -11.09
+    ],
+    "rotation": [
+      -20,
+      90,
+      0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "recoveries": 0,
+    "player": {
+      "capsuleRadius": 0.25,
+      "capsuleHeight": 1.7,
+      "walkSpeed": 2,
+      "maxSlopeDeg": 35
+    },
+    "controller": "custom-bvh-capsule",
+    "controllerBuildMs": 100.39999997615814,
+    "walkingTimings": {
+      "scope": "walking-step-only",
+      "calls": 4,
+      "totalMs": 0.9999998807907104,
+      "meanMs": 0.2499999701976776,
+      "maxMs": 0.6999999284744263,
+      "recentCapacity": 600,
+      "recent": {
+        "calls": 4,
+        "totalMs": 0.9999998807907104,
+        "meanMs": 0.2499999701976776,
+        "p95Ms": 0.6999999284744263,
+        "maxMs": 0.6999999284744263,
+        "simulatedSeconds": 0.1,
+        "cpuMsPerSimulatedSecond": 9.999998807907104
+      },
+      "recentIdle": {
+        "calls": 4,
+        "totalMs": 0.9999998807907104,
+        "meanMs": 0.2499999701976776,
+        "p95Ms": 0.6999999284744263,
+        "maxMs": 0.6999999284744263,
+        "simulatedSeconds": 0.1,
+        "cpuMsPerSimulatedSecond": 9.999998807907104
+      },
+      "recentMoving": {
+        "calls": 0,
+        "totalMs": 0,
+        "meanMs": null,
+        "p95Ms": null,
+        "maxMs": null,
+        "simulatedSeconds": 0,
+        "cpuMsPerSimulatedSecond": null
+      }
+    },
+    "controllerSettings": {
+      "type": "custom-bvh-capsule"
+    },
+    "appliedMaxSlopeDeg": 35,
+    "stepClimbing": true,
+    "appliedStepHeight": 0.2,
+    "stepsClimbed": 0,
+    "collisionUpdates": [],
+    "collisionStats": {
+      "built": 2,
+      "removed": 0,
+      "retained": 0,
+      "resident": 2
+    },
+    "retiredStreams": [],
+    "renderMemory": {
+      "geometries": 2,
+      "textures": 12
+    },
+    "content": {
+      "panelOpen": false,
+      "hotspots": []
+    },
+    "transition": {
+      "switching": false,
+      "phase": "idle",
+      "count": 0,
+      "relocated": false
+    },
+    "colliders": [
+      {
+        "id": "sunnyvale-surface",
+        "assetId": "sunnyvale-collision",
+        "layer": "both",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+      },
+      {
+        "id": "sunny-walk-porch-floor",
+        "assetId": "reference-cube",
+        "layer": "both",
+        "position": [
+          -13.35,
+          0.32,
+          -22.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1.4,
+          0.2,
+          2.7
+        ],
+        "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+      }
+    ],
+    "objects": [
+      {
+        "id": "sunnyvale-museum",
+        "type": "splat",
+        "assetId": "sunnyvale",
+        "layer": "current",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+      }
+    ]
+  },
+  "environment": {
+    "viewport": [
+      1280,
+      800
+    ],
+    "dpr": 1,
+    "visibility": "visible",
+    "focus": true
+  }
+}

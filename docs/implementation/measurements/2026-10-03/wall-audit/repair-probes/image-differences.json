@@ -1,0 +1,181 @@
+{
+  "scope": "Screenshot effect of inserting the same marker, within its projected bounding rectangle. RGB8 differences are not material opacity or quality scores. Prescribed camera views, not walking.",
+  "results": [
+    {
+      "engine": "three",
+      "view": "center",
+      "markerRoi": [
+        344,
+        489,
+        557,
+        643
+      ],
+      "original": {
+        "maeRgb8": 33.58785033432921,
+        "maxChannelDifference": 112.0,
+        "pixelsChangedAbove3": 28048,
+        "roiPixels": 32802
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 32802
+      }
+    },
+    {
+      "engine": "three",
+      "view": "left",
+      "markerRoi": [
+        468,
+        489,
+        670,
+        643
+      ],
+      "original": {
+        "maeRgb8": 31.19012258368694,
+        "maxChannelDifference": 105.0,
+        "pixelsChangedAbove3": 27923,
+        "roiPixels": 31108
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 31108
+      }
+    },
+    {
+      "engine": "three",
+      "view": "right",
+      "markerRoi": [
+        221,
+        489,
+        447,
+        643
+      ],
+      "original": {
+        "maeRgb8": 31.853445964065433,
+        "maxChannelDifference": 120.0,
+        "pixelsChangedAbove3": 28216,
+        "roiPixels": 34804
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 34804
+      }
+    },
+    {
+      "engine": "three",
+      "view": "near",
+      "markerRoi": [
+        288,
+        546,
+        542,
+        720
+      ],
+      "original": {
+        "maeRgb8": 34.69863034362084,
+        "maxChannelDifference": 122.0,
+        "pixelsChangedAbove3": 37678,
+        "roiPixels": 44196
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 44196
+      }
+    },
+    {
+      "engine": "playcanvas",
+      "view": "center",
+      "markerRoi": [
+        344,
+        489,
+        557,
+        643
+      ],
+      "original": {
+        "maeRgb8": 38.43400808893767,
+        "maxChannelDifference": 127.0,
+        "pixelsChangedAbove3": 28048,
+        "roiPixels": 32802
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 32802
+      }
+    },
+    {
+      "engine": "playcanvas",
+      "view": "left",
+      "markerRoi": [
+        468,
+        489,
+        670,
+        643
+      ],
+      "original": {
+        "maeRgb8": 35.79246496078179,
+        "maxChannelDifference": 118.0,
+        "pixelsChangedAbove3": 27923,
+        "roiPixels": 31108
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 31108
+      }
+    },
+    {
+      "engine": "playcanvas",
+      "view": "right",
+      "markerRoi": [
+        221,
+        489,
+        447,
+        643
+      ],
+      "original": {
+        "maeRgb8": 36.51588897827836,
+        "maxChannelDifference": 127.0,
+        "pixelsChangedAbove3": 28216,
+        "roiPixels": 34804
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 34804
+      }
+    },
+    {
+      "engine": "playcanvas",
+      "view": "near",
+      "markerRoi": [
+        288,
+        546,
+        542,
+        720
+      ],
+      "original": {
+        "maeRgb8": 38.91604820949105,
+        "maxChannelDifference": 134.0,
+        "pixelsChangedAbove3": 37678,
+        "roiPixels": 44196
+      },
+      "patch": {
+        "maeRgb8": 0.0,
+        "maxChannelDifference": 0.0,
+        "pixelsChangedAbove3": 0,
+        "roiPixels": 44196
+      }
+    }
+  ]
+}

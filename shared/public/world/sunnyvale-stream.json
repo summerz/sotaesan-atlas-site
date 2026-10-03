@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "id": "sunnyvale-paired-streaming",
+  "coordinates": {
+    "unit": "meter",
+    "up": "Y",
+    "forward": "-Z",
+    "rotationUnit": "degree",
+    "rotationOrder": "XYZ"
+  },
+  "spawn": {
+    "position": [
+      0,
+      0.17,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "eyeHeight": 1.6
+  },
+  "player": {
+    "capsuleRadius": 0.25,
+    "capsuleHeight": 1.7,
+    "walkSpeed": 2,
+    "maxSlopeDeg": 35
+  },
+  "initialLayer": "current",
+  "objects": [
+    {
+      "id": "sunny-strip-0-detail",
+      "assetId": "sunny-strip-0-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-0-far",
+      "assetId": "sunny-strip-0-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-1-detail",
+      "assetId": "sunny-strip-1-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-1-far",
+      "assetId": "sunny-strip-1-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-2-detail",
+      "assetId": "sunny-strip-2-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-2-far",
+      "assetId": "sunny-strip-2-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-3-detail",
+      "assetId": "sunny-strip-3-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-3-far",
+      "assetId": "sunny-strip-3-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-4-detail",
+      "assetId": "sunny-strip-4-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-4-far",
+      "assetId": "sunny-strip-4-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-5-detail",
+      "assetId": "sunny-strip-5-detail",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-5-far",
+      "assetId": "sunny-strip-5-far",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "colliders": [
+    {
+      "id": "sunny-strip-0-collision",
+      "assetId": "sunny-strip-0-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-1-collision",
+      "assetId": "sunny-strip-1-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-2-collision",
+      "assetId": "sunny-strip-2-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-3-collision",
+      "assetId": "sunny-strip-3-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-4-collision",
+      "assetId": "sunny-strip-4-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-strip-5-collision",
+      "assetId": "sunny-strip-5-collision",
+      "layer": "both",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-walk-porch-floor",
+      "assetId": "reference-cube",
+      "layer": "both",
+      "position": [
+        -13.35,
+        0.32,
+        -22.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.4,
+        0.2,
+        2.7
+      ]
+    }
+  ],
+  "hotspots": [],
+  "benchmarkRoute": [],
+  "streaming": {
+    "loadDistance": 2,
+    "unloadDistance": 3,
+    "maxResidentChunks": 2,
+    "maxResidentGaussians": 429868,
+    "maxResidentTotalGaussians": 459871,
+    "chunks": [
+      {
+        "id": "sunny-strip-0",
+        "objectId": "sunny-strip-0-detail",
+        "fallbackObjectId": "sunny-strip-0-far",
+        "colliderId": "sunny-strip-0-collision",
+        "bounds": {
+          "min": [
+            -547,
+            -117,
+            -351
+          ],
+          "max": [
+            -24,
+            543,
+            653
+          ]
+        }
+      },
+      {
+        "id": "sunny-strip-1",
+        "objectId": "sunny-strip-1-detail",
+        "fallbackObjectId": "sunny-strip-1-far",
+        "colliderId": "sunny-strip-1-collision",
+        "bounds": {
+          "min": [
+            -24,
+            -117,
+            -351
+          ],
+          "max": [
+            -12,
+            543,
+            653
+          ]
+        }
+      },
+      {
+        "id": "sunny-strip-2",
+        "objectId": "sunny-strip-2-detail",
+        "fallbackObjectId": "sunny-strip-2-far",
+        "colliderId": "sunny-strip-2-collision",
+        "bounds": {
+          "min": [
+            -12,
+            -117,
+            -351
+          ],
+          "max": [
+            0,
+            543,
+            653
+          ]
+        }
+      },
+      {
+        "id": "sunny-strip-3",
+        "objectId": "sunny-strip-3-detail",
+        "fallbackObjectId": "sunny-strip-3-far",
+        "colliderId": "sunny-strip-3-collision",
+        "bounds": {
+          "min": [
+            0,
+            -117,
+            -351
+          ],
+          "max": [
+            12,
+            543,
+            653
+          ]
+        }
+      },
+      {
+        "id": "sunny-strip-4",
+        "objectId": "sunny-strip-4-detail",
+        "fallbackObjectId": "sunny-strip-4-far",
+        "colliderId": "sunny-strip-4-collision",
+        "bounds": {
+          "min": [
+            12,
+            -117,
+            -351
+          ],
+          "max": [
+            24,
+            543,
+            653
+          ]
+        }
+      },
+      {
+        "id": "sunny-strip-5",
+        "objectId": "sunny-strip-5-detail",
+        "fallbackObjectId": "sunny-strip-5-far",
+        "colliderId": "sunny-strip-5-collision",
+        "bounds": {
+          "min": [
+            24,
+            -117,
+            -351
+          ],
+          "max": [
+            400,
+            543,
+            653
+          ]
+        }
+      }
+    ]
+  }
+}

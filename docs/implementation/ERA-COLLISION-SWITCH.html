@@ -1,0 +1,88 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>시대별 충돌 교체 검증 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="ERA-COLLISION-SWITCH.md" download>Markdown 원본 다운로드</a></p><h1 id="_1">시대별 충돌 교체 검증</h1>
+<p>2026-10-02. 릴리스 <code>local-4d5905679d2e-de5de5063e49</code>의 로컬 프로덕션 빌드에서 Playwright MCP의 별도 브라우저로 확인했다. 일반 성능 순위를 매기는 시험은 아니다.</p>
+<h2 id="_2">시험 장면</h2>
+<p>장면 선택에서 <strong>시대별 벽 · 전환 시험</strong>을 선택한다.</p>
+<ul>
+<li>Three.js BVH: <code>http://127.0.0.1:5173/?scene=era&amp;controller=bvh</code></li>
+<li>Three.js Rapier: <code>http://127.0.0.1:5173/?scene=era&amp;controller=rapier</code></li>
+<li>PlayCanvas Ammo: <code>http://127.0.0.1:5174/?scene=era</code></li>
+</ul>
+<p>같은 바닥 위에서 현재의 황색 벽은 z=-7 m, 과거의 벽은 z=-10 m에 놓인다. W로 현재 벽까지 이동하고 과거로 바꾸면 앞의 벽이 사라져 더 이동할 수 있다. 과거 상태에서 현재 벽이 생길 자리에 서서 현재로 바꾸면 시작점으로 안전 이동한다. 이 장면은 충돌 교체를 확인하는 합성 시험이며 역사적 복원이 아니다.</p>
+<h2 id="_3">결과</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>확인 항목</th>
+<th>BVH</th>
+<th>Rapier</th>
+<th>Ammo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 벽에서 정지</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>과거 전환 후 사라진 벽 통과, 새 벽에서 정지</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>겹침 없는 전환의 위치·시선 유지</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>새 벽과 겹치면 시작점 이동·안내</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>대상 요청을 1.8초 지연해도 전환 중 W 이동 차단</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>패널 닫기, 중복 전환 차단, 시대별 핫스팟 교체</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>대상 요청 실패 시 이전 화면·충돌 복구, 입력 복구·재시도</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>전환 후 충돌 면 표시와 촬영 화면 복귀</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+</tbody>
+</table></div>
+<p>현재/과거 벽 앞의 발 z 좌표는 BVH -6.600/-9.600 m, Rapier -6.590/-9.590 m, Ammo -6.600/-9.600 m였다. 캡슐 반경과 컨트롤러 여유 거리 때문에 벽 중심까지 이동하지 않는 것이 정상이다.</p>
+<p><a href="measurements/2026-10-02/era-collision-switch.json">측정 JSON</a>, <span class="local-file" title="원본 개발 저장소의 파일">이동 재현 스크립트 (원본 저장소 파일)</span>, <span class="local-file" title="원본 개발 저장소의 파일">지연·실패 재현 스크립트 (원본 저장소 파일)</span>, <a href="measurements/2026-10-02/era-playcanvas-historical.png">PlayCanvas 과거 화면</a>.</p>
+<p><code>pnpm check</code>의 자산 검증, 단위 테스트, 타입 검사, 두 앱의 빌드·릴리스 산출물 검사를 통과했다.</p>
+<h2 id="_4">구현 중 발견한 문제</h2>
+<p>PlayCanvas에서 화면용 GLB와 충돌용 GLB에 별도 Asset을 만들었지만 URL이 같으면 내부 ContainerResource가 공유됐다. 화면 교체 때 Asset을 해제하자 충돌에 사용하는 render 자산까지 파괴되어 Ammo가 오류를 냈다. 종류·URL별로 소유자를 하나로 합치고 충돌·공통 화면 자산을 고정 보유하도록 수정한 뒤 위 시험을 다시 통과했다. 공간 분할에서도 공유 자산의 수명을 명시적으로 관리해야 한다.</p>
+<h2 id="_5">검증 범위와 남은 제한</h2>
+<ul>
+<li>시대별 충돌 GLB는 시작 시 모두 읽는다. 공간별 다운로드·해제는 다음 시험에서 확인한다.</li>
+<li>겹침 판단은 작성자가 지정한 세계 좌표 <code>transitionBounds</code>와 캡슐의 외접 상자를 사용한다. 보수적인 안전 정책이며 실제 메시의 정밀 겹침 판정은 아니다.</li>
+<li>공통 바닥을 유지했다. 시대에 따라 바닥이 사라지는 경우와 안전 위치까지의 경로 탐색은 확인하지 않았다.</li>
+<li>자동 시험의 시선은 초기 각도였다. 비영점 시선·모바일에서의 전환은 추가 확인이 필요하다.</li>
+<li>전환 요청 실패를 의도적으로 발생시킨 오류 로그는 정상적인 실패 시험의 근거다.</li>
+</ul></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

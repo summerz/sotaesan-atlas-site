@@ -1,0 +1,279 @@
+{
+  "scope": "Local opaque patch visual probe; pose changes are prescribed viewpoints, not walking/performance measurements",
+  "release": "local-4d5905679d2e-8887379fa947",
+  "sourceAssets": {
+    "sog": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+    "colliders": [
+      {
+        "id": "sunnyvale-surface",
+        "assetId": "sunnyvale-collision",
+        "layer": "both",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+      },
+      {
+        "id": "sunny-walk-porch-floor",
+        "assetId": "reference-cube",
+        "layer": "both",
+        "position": [
+          -13.35,
+          0.32,
+          -22.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1.4,
+          0.2,
+          2.7
+        ],
+        "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+      }
+    ]
+  },
+  "captures": 32,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4617,
+      "sha256": "a7aef94f1bab441be87ea97ca3de35dae95f0ca30f55e35d2281445904050100"
+    },
+    {
+      "file": "capture-wall-repair-probes.playwright.js",
+      "bytes": 5960,
+      "sha256": "dae4c5414a2d013e919be7cf72bf97fb9a0537581eb34197f01d684d801c8b38"
+    },
+    {
+      "file": "captures.json",
+      "bytes": 186530,
+      "sha256": "9d191f2a734d781eea6bd70bd901b7d0ec369771100c3eefaef9d14c458da63b"
+    },
+    {
+      "file": "comparison-gallery.png",
+      "bytes": 255613,
+      "sha256": "bf28be7823e80185fa6bef21c4f9f19d4cfafca0307b88e029192a202198e269"
+    },
+    {
+      "file": "image-differences.json",
+      "bytes": 3923,
+      "sha256": "34531e716ae395fa7a0b8f420cec80192fa6a9f7ae49f7f77e6ba81c184dfa7e"
+    },
+    {
+      "file": "index.html",
+      "bytes": 4173,
+      "sha256": "252a7762947fbeb7de99fb64e0abbd02dd2da5c5785dcf40a3cbcda477031a3d"
+    },
+    {
+      "file": "make-calibrated-wall-probe.py",
+      "bytes": 3643,
+      "sha256": "d43741650cb8b47fcc332d5034d83e1177e5d5ec20eac859289be1c9018c539f"
+    },
+    {
+      "file": "verify-image-differences.py",
+      "bytes": 1295,
+      "sha256": "c8e8c4415ff441560da10cd5929a54ab4a80d4768a6f656be91c27c7bfab2975"
+    },
+    {
+      "file": "wall-cal-black.png",
+      "bytes": 479428,
+      "sha256": "4504d25883dd1aa180220f5092be725e843fc59b389d3fe9130fd944bb990552"
+    },
+    {
+      "file": "wall-cal-mid.png",
+      "bytes": 510852,
+      "sha256": "bfbe4e88f44b37a98b5131ee40d48174059c273b5f76550e08bec8b467a3986c"
+    },
+    {
+      "file": "wall-calibrated-probe.glb",
+      "bytes": 51944,
+      "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+    },
+    {
+      "file": "wall-calibrated-texture.png",
+      "bytes": 50763,
+      "sha256": "777ad8fa9859be379477990ad91ea09be14bf5537923f68fec860813bb29c5f3"
+    },
+    {
+      "file": "wall-repair-playcanvas-center-original-marker.png",
+      "bytes": 582296,
+      "sha256": "48dccddee13d4a1e8ba858159e829224c17fb91476d0c2234df8fac6427d5af9"
+    },
+    {
+      "file": "wall-repair-playcanvas-center-original.png",
+      "bytes": 565877,
+      "sha256": "03da12ae5d08834aee9ebeb92c8634f3e189758ce5bec4b0f63f62042f591484"
+    },
+    {
+      "file": "wall-repair-playcanvas-center-patch-marker.png",
+      "bytes": 535231,
+      "sha256": "5f758844dcb69af509ef192a0f1cb21b6add553091b104a87160a65403762ecf"
+    },
+    {
+      "file": "wall-repair-playcanvas-center-patch.png",
+      "bytes": 535231,
+      "sha256": "5f758844dcb69af509ef192a0f1cb21b6add553091b104a87160a65403762ecf"
+    },
+    {
+      "file": "wall-repair-playcanvas-left-original-marker.png",
+      "bytes": 584152,
+      "sha256": "7a72a8c19317f63ddbae1e2eed2ef2e10533f9762ca709a8bfab8458ce4d3e45"
+    },
+    {
+      "file": "wall-repair-playcanvas-left-original.png",
+      "bytes": 569852,
+      "sha256": "e3f472f34b63fd09b366c703db614d7a345d6559a8c43d3433a7d9ee4cf56999"
+    },
+    {
+      "file": "wall-repair-playcanvas-left-patch-marker.png",
+      "bytes": 542760,
+      "sha256": "148e68ede7708065e7ff3b7903d57717aaea17b32350132e62e0998456d05ee0"
+    },
+    {
+      "file": "wall-repair-playcanvas-left-patch.png",
+      "bytes": 542760,
+      "sha256": "148e68ede7708065e7ff3b7903d57717aaea17b32350132e62e0998456d05ee0"
+    },
+    {
+      "file": "wall-repair-playcanvas-near-original-marker.png",
+      "bytes": 561357,
+      "sha256": "2fd5caf0ee79d1fbb4a1430f189cd610014939037c361bb2abd4ec2e7d572046"
+    },
+    {
+      "file": "wall-repair-playcanvas-near-original.png",
+      "bytes": 540269,
+      "sha256": "df2e3c378c6bad317ce07e7231fc58c787e8468a9fdc46661c2610aa303e8e52"
+    },
+    {
+      "file": "wall-repair-playcanvas-near-patch-marker.png",
+      "bytes": 489282,
+      "sha256": "caa005936358d7df6deb15e8d3114e618433565c3853a228f19309382f5e4c30"
+    },
+    {
+      "file": "wall-repair-playcanvas-near-patch.png",
+      "bytes": 489282,
+      "sha256": "caa005936358d7df6deb15e8d3114e618433565c3853a228f19309382f5e4c30"
+    },
+    {
+      "file": "wall-repair-playcanvas-right-original-marker.png",
+      "bytes": 567070,
+      "sha256": "c39abb3d49166cc8cc7d660a1128927338f56f578976106175b0baf7c02df4d0"
+    },
+    {
+      "file": "wall-repair-playcanvas-right-original.png",
+      "bytes": 549658,
+      "sha256": "b597d929cd67dcb200b63a6c5d4decfde155d37f770be99db3aa9c0570429376"
+    },
+    {
+      "file": "wall-repair-playcanvas-right-patch-marker.png",
+      "bytes": 517775,
+      "sha256": "1d9677b87239354e9789a2ae5c37745848bf980b6601d9549e9da48b29742f4d"
+    },
+    {
+      "file": "wall-repair-playcanvas-right-patch.png",
+      "bytes": 517775,
+      "sha256": "1d9677b87239354e9789a2ae5c37745848bf980b6601d9549e9da48b29742f4d"
+    },
+    {
+      "file": "wall-repair-three-center-original-marker.png",
+      "bytes": 565473,
+      "sha256": "7879a6a22cbb88e7da691d6b1831e9edd31d0c8a60ca63453258ad17ff6e78a3"
+    },
+    {
+      "file": "wall-repair-three-center-original.png",
+      "bytes": 549952,
+      "sha256": "eb23bdc6a69453018176031437bcd3e25c1a557d9651f4e832c3d415d4630188"
+    },
+    {
+      "file": "wall-repair-three-center-patch-marker.png",
+      "bytes": 522766,
+      "sha256": "1cbdeea20b432f6227d85e3a26b71357190defe849eeedc34ebd1d1a59683c24"
+    },
+    {
+      "file": "wall-repair-three-center-patch.png",
+      "bytes": 522766,
+      "sha256": "1cbdeea20b432f6227d85e3a26b71357190defe849eeedc34ebd1d1a59683c24"
+    },
+    {
+      "file": "wall-repair-three-left-original-marker.png",
+      "bytes": 567445,
+      "sha256": "39412a39d068f8bfcd3baeb0cfcea2a68e39021f385960cffe88e458e05eda92"
+    },
+    {
+      "file": "wall-repair-three-left-original.png",
+      "bytes": 554063,
+      "sha256": "e41d018cd6a09e242771d1cee2f3932f95bb6d0a1d0af4a28a4705b78154ba49"
+    },
+    {
+      "file": "wall-repair-three-left-patch-marker.png",
+      "bytes": 531183,
+      "sha256": "4880e0e3f42c0d19e743953877f4d7ec61945e0b79382438c5c141bf48ac5a28"
+    },
+    {
+      "file": "wall-repair-three-left-patch.png",
+      "bytes": 531183,
+      "sha256": "4880e0e3f42c0d19e743953877f4d7ec61945e0b79382438c5c141bf48ac5a28"
+    },
+    {
+      "file": "wall-repair-three-near-original-marker.png",
+      "bytes": 549580,
+      "sha256": "981e9f0bf4289ba87700cb784d82cc518226da40f0ca87fe783fa85526be44e0"
+    },
+    {
+      "file": "wall-repair-three-near-original.png",
+      "bytes": 530273,
+      "sha256": "0ee44ad71a0baa1d1b1268af786d442df7024f3d1e3ec859d3c641cfe07f271a"
+    },
+    {
+      "file": "wall-repair-three-near-patch-marker.png",
+      "bytes": 484512,
+      "sha256": "0b9a8b85fd61aea7ea9bfcfa42746f5e11564cff3b55e685517534ee5b1b9e81"
+    },
+    {
+      "file": "wall-repair-three-near-patch.png",
+      "bytes": 484512,
+      "sha256": "0b9a8b85fd61aea7ea9bfcfa42746f5e11564cff3b55e685517534ee5b1b9e81"
+    },
+    {
+      "file": "wall-repair-three-right-original-marker.png",
+      "bytes": 551777,
+      "sha256": "eb68558f229728285993bb485ba3493afe1bfd1dc9eb3aa8ad70b7902c63ffb5"
+    },
+    {
+      "file": "wall-repair-three-right-original.png",
+      "bytes": 535485,
+      "sha256": "fbf75625577f47b1cf9001bbc70a56d331ba22874fce1d579a2291bb334d0cb0"
+    },
+    {
+      "file": "wall-repair-three-right-patch-marker.png",
+      "bytes": 508620,
+      "sha256": "ced619f4a5c5418acca0cd4ac94f822af666643eb52c451930b330d36dabb057"
+    },
+    {
+      "file": "wall-repair-three-right-patch.png",
+      "bytes": 508620,
+      "sha256": "ced619f4a5c5418acca0cd4ac94f822af666643eb52c451930b330d36dabb057"
+    },
+    {
+      "file": "wall-texture-reference.png",
+      "bytes": 549952,
+      "sha256": "eb23bdc6a69453018176031437bcd3e25c1a557d9651f4e832c3d415d4630188"
+    }
+  ]
+}

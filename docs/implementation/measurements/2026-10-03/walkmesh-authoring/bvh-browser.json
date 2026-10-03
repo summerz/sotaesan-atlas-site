@@ -1,0 +1,781 @@
+{
+  "config": "bvh",
+  "startedAt": "2026-10-03T04:48:46.232Z",
+  "scope": "headed actual app; intercepted spawn only, original collision/render assets",
+  "checks": [
+    {
+      "fixture": "stairs",
+      "start": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -10.212584673139302,
+          0.035843912871269035,
+          -14.298370899369495
+        ],
+        "eye": [
+          -10.212584673139302,
+          1.6358439128712692,
+          -14.298370899369495
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.80000007152557,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "turn": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -11.852848351027763,
+          0.571431940267831,
+          -14.230842294581384
+        ],
+        "eye": [
+          -11.852848351027763,
+          2.171431940267831,
+          -14.230842294581384
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.80000007152557,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 43,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returned": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.946187129369868,
+          -0.008567792356951666,
+          -14.225525515603843
+        ],
+        "eye": [
+          -9.946187129369868,
+          1.5914322076430485,
+          -14.225525515603843
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.80000007152557,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 43,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "idle": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.946187129369868,
+          -0.008567792356951666,
+          -14.225525515603843
+        ],
+        "eye": [
+          -9.946187129369868,
+          1.5914322076430485,
+          -14.225525515603843
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.80000007152557,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 43,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returnDistance": 0.27972576002869504,
+      "idleDrift": 0,
+      "returnedToLevel": true,
+      "climbedStairs": true
+    },
+    {
+      "fixture": "bench",
+      "start": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.66360110486338,
+          0.536519816105603,
+          -21.88436765132559
+        ],
+        "eye": [
+          -13.66360110486338,
+          2.136519816105603,
+          -21.88436765132559
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 93.60000002384186,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "turn": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.677527699885966,
+          -0.1942561128028102,
+          -23.802966459579434
+        ],
+        "eye": [
+          -13.677527699885966,
+          1.40574388719719,
+          -23.802966459579434
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 93.60000002384186,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returned": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.587690656694518,
+          -0.21642990776871038,
+          -22.25111700694536
+        ],
+        "eye": [
+          -13.587690656694518,
+          1.3835700922312897,
+          -22.25111700694536
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 93.60000002384186,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "idle": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.587690656694518,
+          -0.21642990776871038,
+          -22.25111700694536
+        ],
+        "eye": [
+          -13.587690656694518,
+          1.3835700922312897,
+          -22.25111700694536
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 93.60000002384186,
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 1,
+          "removed": 0,
+          "retained": 0,
+          "resident": 1
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returnDistance": 0.8409523010677354,
+      "idleDrift": 0,
+      "returnedToLevel": false,
+      "climbedStairs": null
+    }
+  ],
+  "errors": [],
+  "environment": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "visibility": "visible",
+    "focus": true,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "finishedAt": "2026-10-03T04:49:03.922Z"
+}

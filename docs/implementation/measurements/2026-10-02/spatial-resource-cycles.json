@@ -1,0 +1,695 @@
+{
+  "date": "2026-10-02",
+  "method": "Headed Chromium, Three.js BVH, three complete X-strip round trips, collision debug off",
+  "release": "local-4d5905679d2e-cbfaf693149e",
+  "limits": "Renderer resource counts only; not GPU bytes or total process memory.",
+  "cycles": [
+    {
+      "render": {
+        "geometries": 2,
+        "textures": 10
+      },
+      "stream": {
+        "loads": 8,
+        "unloads": 6,
+        "discarded": 0,
+        "failures": 0,
+        "requestedBytes": 19412992,
+        "peakReservedChunks": 2,
+        "peakReservedGaussians": 499714,
+        "blockedFrames": 0,
+        "blockedMs": 0,
+        "residentChunks": 2,
+        "residentGaussians": 301702,
+        "residentSourceBytes": 3991817,
+        "loading": [],
+        "failed": [],
+        "ready": [
+          "hall-chunk-0",
+          "hall-chunk-1"
+        ],
+        "closed": false,
+        "events": [
+          {
+            "t": 0.10000002384185791,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 48.299999952316284,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 48.39999997615814,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 103.10000002384186,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 14435,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 16421.5,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 18402.299999952316,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 22367.5,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 22367.700000047684,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 22428.899999976158,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 24421.200000047684,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 26390.299999952316,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          }
+        ]
+      }
+    },
+    {
+      "render": {
+        "geometries": 2,
+        "textures": 10
+      },
+      "stream": {
+        "loads": 14,
+        "unloads": 12,
+        "discarded": 0,
+        "failures": 0,
+        "requestedBytes": 34834167,
+        "peakReservedChunks": 2,
+        "peakReservedGaussians": 499714,
+        "blockedFrames": 0,
+        "blockedMs": 0,
+        "residentChunks": 2,
+        "residentGaussians": 301702,
+        "residentSourceBytes": 3991817,
+        "loading": [],
+        "failed": [],
+        "ready": [
+          "hall-chunk-0",
+          "hall-chunk-1"
+        ],
+        "closed": false,
+        "events": [
+          {
+            "t": 0.10000002384185791,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 48.299999952316284,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 48.39999997615814,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 103.10000002384186,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 14435,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 16421.5,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 18402.299999952316,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 22367.5,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 22367.700000047684,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 22428.899999976158,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 24421.200000047684,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 26390.299999952316,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 29384.899999976158,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 29384.899999976158,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 29441.899999976158,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 31384.200000047684,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 31384.200000047684,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 31433.600000023842,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 33385.200000047684,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 33385.200000047684,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 33412.39999997616,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 37402.10000002384,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 37402.10000002384,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 37462.60000002384,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 39402.299999952316,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 39402.299999952316,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 39455.39999997616,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 41402.299999952316,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 41402.299999952316,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 41421.5,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          }
+        ]
+      }
+    },
+    {
+      "render": {
+        "geometries": 2,
+        "textures": 10
+      },
+      "stream": {
+        "loads": 20,
+        "unloads": 18,
+        "discarded": 0,
+        "failures": 0,
+        "requestedBytes": 50255342,
+        "peakReservedChunks": 2,
+        "peakReservedGaussians": 499714,
+        "blockedFrames": 0,
+        "blockedMs": 0,
+        "residentChunks": 2,
+        "residentGaussians": 301702,
+        "residentSourceBytes": 3991817,
+        "loading": [],
+        "failed": [],
+        "ready": [
+          "hall-chunk-0",
+          "hall-chunk-1"
+        ],
+        "closed": false,
+        "events": [
+          {
+            "t": 0.10000002384185791,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 48.299999952316284,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 48.39999997615814,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 103.10000002384186,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 14367.5,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 14435,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 16367.299999952316,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 16421.5,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 18367.5,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 18402.299999952316,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 22367.5,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 22367.700000047684,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 22428.899999976158,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 24368,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 24421.200000047684,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 26368.100000023842,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 26390.299999952316,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 29384.899999976158,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 29384.899999976158,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 29441.899999976158,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 31384.200000047684,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 31384.200000047684,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 31433.600000023842,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 33385.200000047684,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 33385.200000047684,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 33412.39999997616,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 37402.10000002384,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 37402.10000002384,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 37462.60000002384,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 39402.299999952316,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 39402.299999952316,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 39455.39999997616,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 41402.299999952316,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 41402.299999952316,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 41421.5,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          },
+          {
+            "t": 44419.200000047684,
+            "id": "hall-chunk-0",
+            "action": "unloaded"
+          },
+          {
+            "t": 44419.200000047684,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 44483.799999952316,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 46419.200000047684,
+            "id": "hall-chunk-1",
+            "action": "unloaded"
+          },
+          {
+            "t": 46419.200000047684,
+            "id": "hall-chunk-3",
+            "action": "requested"
+          },
+          {
+            "t": 46472.5,
+            "id": "hall-chunk-3",
+            "action": "ready"
+          },
+          {
+            "t": 48419.39999997616,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 48419.39999997616,
+            "id": "hall-chunk-4",
+            "action": "requested"
+          },
+          {
+            "t": 48448.200000047684,
+            "id": "hall-chunk-4",
+            "action": "ready"
+          },
+          {
+            "t": 52436.299999952316,
+            "id": "hall-chunk-4",
+            "action": "unloaded"
+          },
+          {
+            "t": 52436.299999952316,
+            "id": "hall-chunk-2",
+            "action": "requested"
+          },
+          {
+            "t": 52495.200000047684,
+            "id": "hall-chunk-2",
+            "action": "ready"
+          },
+          {
+            "t": 54436.5,
+            "id": "hall-chunk-3",
+            "action": "unloaded"
+          },
+          {
+            "t": 54436.5,
+            "id": "hall-chunk-1",
+            "action": "requested"
+          },
+          {
+            "t": 54488.39999997616,
+            "id": "hall-chunk-1",
+            "action": "ready"
+          },
+          {
+            "t": 56436.60000002384,
+            "id": "hall-chunk-2",
+            "action": "unloaded"
+          },
+          {
+            "t": 56436.60000002384,
+            "id": "hall-chunk-0",
+            "action": "requested"
+          },
+          {
+            "t": 56456.200000047684,
+            "id": "hall-chunk-0",
+            "action": "ready"
+          }
+        ]
+      }
+    }
+  ]
+}

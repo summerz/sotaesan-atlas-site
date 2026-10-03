@@ -1,0 +1,163 @@
+{
+  "states": [
+    {
+      "layer": "current",
+      "transition": {
+        "switching": false,
+        "phase": "idle",
+        "count": 0,
+        "relocated": false
+      },
+      "content": {
+        "panelOpen": false,
+        "hotspots": [
+          {
+            "id": "current-entry",
+            "available": true
+          },
+          {
+            "id": "current-next",
+            "available": false
+          },
+          {
+            "id": "historical-entry",
+            "available": false
+          },
+          {
+            "id": "historical-next",
+            "available": false
+          }
+        ]
+      },
+      "release": "local-4d5905679d2e-ef10bbe455c0"
+    },
+    {
+      "layer": "current",
+      "transition": {
+        "switching": false,
+        "phase": "idle",
+        "count": 0,
+        "relocated": false
+      },
+      "content": {
+        "panelOpen": true,
+        "hotspotId": "current-entry",
+        "hotspots": [
+          {
+            "id": "current-entry",
+            "available": true
+          },
+          {
+            "id": "current-next",
+            "available": false
+          },
+          {
+            "id": "historical-entry",
+            "available": false
+          },
+          {
+            "id": "historical-next",
+            "available": false
+          }
+        ]
+      },
+      "release": "local-4d5905679d2e-ef10bbe455c0"
+    },
+    {
+      "layer": "historical",
+      "transition": {
+        "switching": false,
+        "phase": "idle",
+        "count": 1,
+        "relocated": false
+      },
+      "content": {
+        "panelOpen": false,
+        "hotspots": [
+          {
+            "id": "current-entry",
+            "available": false
+          },
+          {
+            "id": "current-next",
+            "available": false
+          },
+          {
+            "id": "historical-entry",
+            "available": true
+          },
+          {
+            "id": "historical-next",
+            "available": false
+          }
+        ]
+      },
+      "release": "local-4d5905679d2e-ef10bbe455c0"
+    },
+    {
+      "layer": "historical",
+      "transition": {
+        "switching": false,
+        "phase": "idle",
+        "count": 1,
+        "relocated": false
+      },
+      "content": {
+        "panelOpen": true,
+        "hotspotId": "historical-entry",
+        "hotspots": [
+          {
+            "id": "current-entry",
+            "available": false
+          },
+          {
+            "id": "current-next",
+            "available": false
+          },
+          {
+            "id": "historical-entry",
+            "available": true
+          },
+          {
+            "id": "historical-next",
+            "available": false
+          }
+        ]
+      },
+      "release": "local-4d5905679d2e-ef10bbe455c0"
+    },
+    {
+      "layer": "current",
+      "transition": {
+        "switching": false,
+        "phase": "idle",
+        "count": 2,
+        "relocated": false
+      },
+      "content": {
+        "panelOpen": false,
+        "hotspots": [
+          {
+            "id": "current-entry",
+            "available": true
+          },
+          {
+            "id": "current-next",
+            "available": false
+          },
+          {
+            "id": "historical-entry",
+            "available": false
+          },
+          {
+            "id": "historical-next",
+            "available": false
+          }
+        ]
+      },
+      "release": "local-4d5905679d2e-ef10bbe455c0"
+    }
+  ],
+  "passed": true,
+  "url": "http://127.0.0.1:5173/?scene=sunnyvale-era&controller=bvh"
+}

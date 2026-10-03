@@ -1,0 +1,4396 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-02T09:22:56.740Z",
+  "finishedAt": "2026-10-02T09:23:02.175Z",
+  "environment": {
+    "node": "v24.12.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "osRelease": "25.6.0",
+    "cpu": "Apple M4 Pro"
+  },
+  "sourceRevision": "4d5905679d2edf08ec693486a7784919a261653c",
+  "workingTree": "local-edits",
+  "implementationSha256": {
+    "../src/walker.ts": "48ab59f9b3cbe3927116bb1f097ddf8f3ff9b8073b1309e6db844f1022dc19f0",
+    "../src/rapier-walker.ts": "55a36af180cbaa9ee83e7b9480223c3d908462d8985f7920991efafc619ceda2",
+    "./benchmark-physics.ts": "4458d2ceef85ccb198e387af39a9f4f85e089301537369487840e84bbe31efb1",
+    "../../../shared/src/step-timings.ts": "a7779b4268d5528900386d0c01fd4a91bfa2ede0774da6d87e4ffdf6f7b8ba27",
+    "../package.json": "34dd41784a0033ea5c622e40398f6451c6cf9577a15986e2c991b467efe54551"
+  },
+  "worldId": "sunnyvale-wall-comparison",
+  "worldSha256": "9905210926006bed9cf30f8413e66f61278a6cb7e088c34055d17423160592f1",
+  "colliderSha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22",
+  "player": {
+    "capsuleRadius": 0.25,
+    "capsuleHeight": 1.7,
+    "walkSpeed": 2,
+    "maxSlopeDeg": 35
+  },
+  "methodology": {
+    "rendering": false,
+    "browser": false,
+    "simulatedSecondsPerRun": 4,
+    "settleSeconds": 2,
+    "repetitions": 5,
+    "fixedFps": [
+      60,
+      20
+    ],
+    "sameRequestedInput": true,
+    "sameResultingPath": false,
+    "moduleImport": "Rapier import timed separately; BVH imported before measurement",
+    "coldInitialization": "firstCreateMs includes first Rapier WASM initialization; warmBuildMs excludes it",
+    "runtimeScope": "real walker.step, including app policies and Rapier world.step; excludes setup, reset and settle",
+    "memoryBytes": null,
+    "ammo": "not measured here; use PlayCanvas browser walkingTimings",
+    "limits": "Node CPU microbenchmark; not browser FPS, GPU cost, mobile performance or total app memory"
+  },
+  "rapierModuleImportMs": 22.785666000000006,
+  "startup": [
+    {
+      "controller": "custom-bvh-capsule",
+      "firstCreateMs": 111.865583,
+      "warmBuildMs": [
+        105.78154099999998,
+        85.75225,
+        90.03254199999998,
+        88.72033400000004,
+        86.53937500000006
+      ]
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "firstCreateMs": 362.00800000000004,
+      "warmBuildMs": [
+        265.8539169999999,
+        252.9993750000001,
+        261.8024579999999,
+        401.13037499999973,
+        340.49245800000017
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "after": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.0808800000045267,
+        "meanMs": 0.008670333333352194,
+        "maxMs": 0.023959000000104425,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.0808800000045267,
+          "meanMs": 0.008670333333352194,
+          "p95Ms": 0.009042000000135886,
+          "maxMs": 0.023959000000104425,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.5202200000011329
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.0808800000045267,
+          "meanMs": 0.008670333333352194,
+          "p95Ms": 0.009042000000135886,
+          "maxMs": 0.023959000000104425,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.5202200000011329
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 10.506786999999349,
+        "meanMs": 0.04377827916666396,
+        "maxMs": 0.4952080000002752,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 10.506786999999349,
+          "meanMs": 0.04377827916666396,
+          "p95Ms": 0.0874589999998534,
+          "maxMs": 0.4952080000002752,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.6266967499998435
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 10.506786999999349,
+          "meanMs": 0.04377827916666396,
+          "p95Ms": 0.0874589999998534,
+          "maxMs": 0.4952080000002752,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.6266967499998435
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 8.896207999998751,
+        "meanMs": 0.03706753333332813,
+        "maxMs": 0.45541599999978644,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 8.896207999998751,
+          "meanMs": 0.03706753333332813,
+          "p95Ms": 0.039333000000169704,
+          "maxMs": 0.45541599999978644,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.224051999999693
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 8.896207999998751,
+          "meanMs": 0.03706753333332813,
+          "p95Ms": 0.039333000000169704,
+          "maxMs": 0.45541599999978644,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.224051999999693
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "after": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 1.6325099999971826,
+        "meanMs": 0.006802124999988261,
+        "maxMs": 0.020750000000134605,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 1.6325099999971826,
+          "meanMs": 0.006802124999988261,
+          "p95Ms": 0.0071250000000873115,
+          "maxMs": 0.020750000000134605,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.4081274999992966
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 1.6325099999971826,
+          "meanMs": 0.006802124999988261,
+          "p95Ms": 0.0071250000000873115,
+          "maxMs": 0.020750000000134605,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.4081274999992966
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "after": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 1.6402930000022025,
+        "meanMs": 0.006834554166675844,
+        "maxMs": 0.0365830000000642,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 1.6402930000022025,
+          "meanMs": 0.006834554166675844,
+          "p95Ms": 0.0071250000000873115,
+          "maxMs": 0.0365830000000642,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.41007325000055156
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 1.6402930000022025,
+          "meanMs": 0.006834554166675844,
+          "p95Ms": 0.0071250000000873115,
+          "maxMs": 0.0365830000000642,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.41007325000055156
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.648712000006526,
+        "meanMs": 0.03186963333336053,
+        "maxMs": 0.12545899999986432,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.648712000006526,
+          "meanMs": 0.03186963333336053,
+          "p95Ms": 0.03991700000005949,
+          "maxMs": 0.12545899999986432,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.912178000001636
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.648712000006526,
+          "meanMs": 0.03186963333336053,
+          "p95Ms": 0.03991700000005949,
+          "maxMs": 0.12545899999986432,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.912178000001636
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.698867000003247,
+        "meanMs": 0.03207861250001353,
+        "maxMs": 0.0644999999999527,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.698867000003247,
+          "meanMs": 0.03207861250001353,
+          "p95Ms": 0.03829200000018318,
+          "maxMs": 0.0644999999999527,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9247167500008162
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.698867000003247,
+          "meanMs": 0.03207861250001353,
+          "p95Ms": 0.03829200000018318,
+          "maxMs": 0.0644999999999527,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9247167500008162
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "after": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 1.6292090000019925,
+        "meanMs": 0.0067883708333416354,
+        "maxMs": 0.023166999999830296,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 1.6292090000019925,
+          "meanMs": 0.0067883708333416354,
+          "p95Ms": 0.009082999999918684,
+          "maxMs": 0.023166999999830296,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.4073022500004991
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 1.6292090000019925,
+          "meanMs": 0.0067883708333416354,
+          "p95Ms": 0.009082999999918684,
+          "maxMs": 0.023166999999830296,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.4073022500004991
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "after": [
+        -0.00016986170465214202,
+        0.109693625090318,
+        0.0002878214245645138
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 1.5967480000031173,
+        "meanMs": 0.006653116666679656,
+        "maxMs": 0.014708000000155153,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 1.5967480000031173,
+          "meanMs": 0.006653116666679656,
+          "p95Ms": 0.007166000000324857,
+          "maxMs": 0.014708000000155153,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.3991870000007803
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 1.5967480000031173,
+          "meanMs": 0.006653116666679656,
+          "p95Ms": 0.007166000000324857,
+          "maxMs": 0.014708000000155153,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.3991870000007803
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.879496000007748,
+        "meanMs": 0.032831233333365614,
+        "maxMs": 0.3742090000000644,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.879496000007748,
+          "meanMs": 0.032831233333365614,
+          "p95Ms": 0.03624999999965439,
+          "maxMs": 0.3742090000000644,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9698740000019417
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.879496000007748,
+          "meanMs": 0.032831233333365614,
+          "p95Ms": 0.03624999999965439,
+          "maxMs": 0.3742090000000644,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9698740000019417
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "after": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.5936230000024807,
+        "meanMs": 0.007420287500031009,
+        "maxMs": 0.023166000000401255,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.5936230000024807,
+          "meanMs": 0.007420287500031009,
+          "p95Ms": 0.008665999999720952,
+          "maxMs": 0.023166000000401255,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.1484057500006204
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.5936230000024807,
+          "meanMs": 0.007420287500031009,
+          "p95Ms": 0.008665999999720952,
+          "maxMs": 0.023166000000401255,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.1484057500006204
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.113333999999668,
+        "meanMs": 0.08891667499999585,
+        "maxMs": 0.13604199999963384,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.113333999999668,
+          "meanMs": 0.08891667499999585,
+          "p95Ms": 0.0929999999998472,
+          "maxMs": 0.13604199999963384,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.7783334999999196
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.113333999999668,
+          "meanMs": 0.08891667499999585,
+          "p95Ms": 0.0929999999998472,
+          "maxMs": 0.13604199999963384,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.7783334999999196
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.246165000001383,
+        "meanMs": 0.09057706250001729,
+        "maxMs": 0.1928330000000642,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.246165000001383,
+          "meanMs": 0.09057706250001729,
+          "p95Ms": 0.0967080000000351,
+          "maxMs": 0.1928330000000642,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8115412500003487
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.246165000001383,
+          "meanMs": 0.09057706250001729,
+          "p95Ms": 0.0967080000000351,
+          "maxMs": 0.1928330000000642,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8115412500003487
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "after": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.5740409999975782,
+        "meanMs": 0.007175512499969727,
+        "maxMs": 0.018334000000322703,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.5740409999975782,
+          "meanMs": 0.007175512499969727,
+          "p95Ms": 0.00829199999998309,
+          "maxMs": 0.018334000000322703,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.14351024999939477
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.5740409999975782,
+          "meanMs": 0.007175512499969727,
+          "p95Ms": 0.00829199999998309,
+          "maxMs": 0.018334000000322703,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.14351024999939477
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "after": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.4771240000013677,
+        "meanMs": 0.005964050000017096,
+        "maxMs": 0.008084000000053493,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.4771240000013677,
+          "meanMs": 0.005964050000017096,
+          "p95Ms": 0.006750000000010914,
+          "maxMs": 0.008084000000053493,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.1192810000003421
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.4771240000013677,
+          "meanMs": 0.005964050000017096,
+          "p95Ms": 0.006750000000010914,
+          "maxMs": 0.008084000000053493,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.1192810000003421
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.38966699999628,
+        "meanMs": 0.09237083749995349,
+        "maxMs": 0.16141700000025594,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.38966699999628,
+          "meanMs": 0.09237083749995349,
+          "p95Ms": 0.09958299999971132,
+          "maxMs": 0.16141700000025594,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8474167499990728
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.38966699999628,
+          "meanMs": 0.09237083749995349,
+          "p95Ms": 0.09958299999971132,
+          "maxMs": 0.16141700000025594,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8474167499990728
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.5502069999970445,
+        "meanMs": 0.09437758749996306,
+        "maxMs": 0.14379200000030323,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.5502069999970445,
+          "meanMs": 0.09437758749996306,
+          "p95Ms": 0.10350000000016735,
+          "maxMs": 0.14379200000030323,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.887551749999264
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.5502069999970445,
+          "meanMs": 0.09437758749996306,
+          "p95Ms": 0.10350000000016735,
+          "maxMs": 0.14379200000030323,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.887551749999264
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "after": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.5113360000004832,
+        "meanMs": 0.00639170000000604,
+        "maxMs": 0.013249999999970896,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.5113360000004832,
+          "meanMs": 0.00639170000000604,
+          "p95Ms": 0.010124999999788997,
+          "maxMs": 0.013249999999970896,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.127834000000121
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.5113360000004832,
+          "meanMs": 0.00639170000000604,
+          "p95Ms": 0.010124999999788997,
+          "maxMs": 0.013249999999970896,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.127834000000121
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "after": [
+        -0.0009362775107169461,
+        0.10948085863468285,
+        0.0015864713442864209
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.561001999999462,
+        "meanMs": 0.007012524999993275,
+        "maxMs": 0.02500000000009095,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.561001999999462,
+          "meanMs": 0.007012524999993275,
+          "p95Ms": 0.011542000000190455,
+          "maxMs": 0.02500000000009095,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.14025049999986572
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.561001999999462,
+          "meanMs": 0.007012524999993275,
+          "p95Ms": 0.011542000000190455,
+          "maxMs": 0.02500000000009095,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.14025049999986572
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "spawn-idle",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "after": [
+        0,
+        0.11982657909393313,
+        0
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.4815069999990556,
+        "meanMs": 0.0935188374999882,
+        "maxMs": 0.14770799999996598,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.4815069999990556,
+          "meanMs": 0.0935188374999882,
+          "p95Ms": 0.10766700000021956,
+          "maxMs": 0.14770799999996598,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8703767499997668
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.4815069999990556,
+          "meanMs": 0.0935188374999882,
+          "p95Ms": 0.10766700000021956,
+          "maxMs": 0.14770799999996598,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.8703767499997668
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -8.000169894941658,
+        -0.06037359751443686,
+        -11.999856761753353
+      ],
+      "after": [
+        -10.268501851507192,
+        -0.06591267490976643,
+        -12.160569240657727
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 50.127670000003036,
+        "meanMs": 0.2088652916666793,
+        "maxMs": 3.9342920000003687,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 50.127670000003036,
+          "meanMs": 0.2088652916666793,
+          "p95Ms": 0.4225419999997939,
+          "maxMs": 3.9342920000003687,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 12.531917500000787
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 50.127670000003036,
+          "meanMs": 0.2088652916666793,
+          "p95Ms": 0.4225419999997939,
+          "maxMs": 3.9342920000003687,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 12.531917500000787
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 27.216500999997606,
+        "meanMs": 0.11340208749999002,
+        "maxMs": 0.3253749999998945,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 27.216500999997606,
+          "meanMs": 0.11340208749999002,
+          "p95Ms": 0.18758399999978792,
+          "maxMs": 0.3253749999998945,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.804125249999418
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 27.216500999997606,
+          "meanMs": 0.11340208749999002,
+          "p95Ms": 0.18758399999978792,
+          "maxMs": 0.3253749999998945,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.804125249999418
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 28.37024899999915,
+        "meanMs": 0.11820937083332979,
+        "maxMs": 0.45716700000002675,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 28.37024899999915,
+          "meanMs": 0.11820937083332979,
+          "p95Ms": 0.20612500000015643,
+          "maxMs": 0.45716700000002675,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 7.092562249999804
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 28.37024899999915,
+          "meanMs": 0.11820937083332979,
+          "p95Ms": 0.20612500000015643,
+          "maxMs": 0.45716700000002675,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 7.092562249999804
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -8.000169894941658,
+        -0.06037359751443686,
+        -11.999856761753353
+      ],
+      "after": [
+        -10.268501851507192,
+        -0.06591267490976643,
+        -12.160569240657727
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 40.48734000000286,
+        "meanMs": 0.16869725000001193,
+        "maxMs": 0.6382500000004256,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 40.48734000000286,
+          "meanMs": 0.16869725000001193,
+          "p95Ms": 0.29624999999987267,
+          "maxMs": 0.6382500000004256,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 10.121835000000738
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 40.48734000000286,
+          "meanMs": 0.16869725000001193,
+          "p95Ms": 0.29624999999987267,
+          "maxMs": 0.6382500000004256,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 10.121835000000738
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -8.000169894941658,
+        -0.06037359751443686,
+        -11.999856761753353
+      ],
+      "after": [
+        -10.268501851507192,
+        -0.06591267490976643,
+        -12.160569240657727
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 37.51712000000043,
+        "meanMs": 0.15632133333333514,
+        "maxMs": 0.3981250000001637,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 37.51712000000043,
+          "meanMs": 0.15632133333333514,
+          "p95Ms": 0.22375000000010914,
+          "maxMs": 0.3981250000001637,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 9.37928000000013
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 37.51712000000043,
+          "meanMs": 0.15632133333333514,
+          "p95Ms": 0.22375000000010914,
+          "maxMs": 0.3981250000001637,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 9.37928000000013
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 26.693164999999226,
+        "meanMs": 0.1112215208333301,
+        "maxMs": 0.2803750000002765,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 26.693164999999226,
+          "meanMs": 0.1112215208333301,
+          "p95Ms": 0.18516700000009223,
+          "maxMs": 0.2803750000002765,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.6732912499998225
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 26.693164999999226,
+          "meanMs": 0.1112215208333301,
+          "p95Ms": 0.18516700000009223,
+          "maxMs": 0.2803750000002765,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.6732912499998225
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 27.0041230000038,
+        "meanMs": 0.11251717916668251,
+        "maxMs": 0.3057499999999891,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 27.0041230000038,
+          "meanMs": 0.11251717916668251,
+          "p95Ms": 0.1885829999996531,
+          "maxMs": 0.3057499999999891,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.751030750000966
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 27.0041230000038,
+          "meanMs": 0.11251717916668251,
+          "p95Ms": 0.1885829999996531,
+          "maxMs": 0.3057499999999891,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.751030750000966
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -8.000169894941658,
+        -0.06037359751443686,
+        -11.999856761753353
+      ],
+      "after": [
+        -10.268501851507192,
+        -0.06591267490976643,
+        -12.160569240657727
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 37.40941599999769,
+        "meanMs": 0.15587256666665705,
+        "maxMs": 0.32225000000016735,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 37.40941599999769,
+          "meanMs": 0.15587256666665705,
+          "p95Ms": 0.21370799999976953,
+          "maxMs": 0.32225000000016735,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 9.352353999999444
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 37.40941599999769,
+          "meanMs": 0.15587256666665705,
+          "p95Ms": 0.21370799999976953,
+          "maxMs": 0.32225000000016735,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 9.352353999999444
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -8.000169894941658,
+        -0.06037359751443686,
+        -11.999856761753353
+      ],
+      "after": [
+        -10.268501851507192,
+        -0.06591267490976643,
+        -12.160569240657727
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 42.71717300000137,
+        "meanMs": 0.17798822083333904,
+        "maxMs": 1.8947079999998095,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 42.71717300000137,
+          "meanMs": 0.17798822083333904,
+          "p95Ms": 0.3055840000001808,
+          "maxMs": 1.8947079999998095,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 10.679293250000367
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 42.71717300000137,
+          "meanMs": 0.17798822083333904,
+          "p95Ms": 0.3055840000001808,
+          "maxMs": 1.8947079999998095,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 10.679293250000367
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 26.174084000002495,
+        "meanMs": 0.10905868333334373,
+        "maxMs": 0.24370799999996962,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 26.174084000002495,
+          "meanMs": 0.10905868333334373,
+          "p95Ms": 0.17912500000011278,
+          "maxMs": 0.24370799999996962,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.543521000000639
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 26.174084000002495,
+          "meanMs": 0.10905868333334373,
+          "p95Ms": 0.17912500000011278,
+          "maxMs": 0.24370799999996962,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 6.543521000000639
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -8.000967125585161,
+        -0.06047428491205769,
+        -11.999184617436192
+      ],
+      "after": [
+        -10.265315761007265,
+        -0.06597310945674034,
+        -12.13553672876224
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 9.696043999997983,
+        "meanMs": 0.12120054999997479,
+        "maxMs": 0.20499999999992724,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 9.696043999997983,
+          "meanMs": 0.12120054999997479,
+          "p95Ms": 0.13729200000034325,
+          "maxMs": 0.20499999999992724,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.424010999999499
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 9.696043999997983,
+          "meanMs": 0.12120054999997479,
+          "p95Ms": 0.13729200000034325,
+          "maxMs": 0.20499999999992724,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.424010999999499
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 28.356831000000057,
+        "meanMs": 0.3544603875000007,
+        "maxMs": 0.904790999999932,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 28.356831000000057,
+          "meanMs": 0.3544603875000007,
+          "p95Ms": 0.5699589999999262,
+          "maxMs": 0.904790999999932,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 7.089207750000025
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 28.356831000000057,
+          "meanMs": 0.3544603875000007,
+          "p95Ms": 0.5699589999999262,
+          "maxMs": 0.904790999999932,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 7.089207750000025
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 26.46083500000259,
+        "meanMs": 0.33076043750003237,
+        "maxMs": 0.6156670000000304,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 26.46083500000259,
+          "meanMs": 0.33076043750003237,
+          "p95Ms": 0.5238749999998618,
+          "maxMs": 0.6156670000000304,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.615208750000658
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 26.46083500000259,
+          "meanMs": 0.33076043750003237,
+          "p95Ms": 0.5238749999998618,
+          "maxMs": 0.6156670000000304,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.615208750000658
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -8.000967125585161,
+        -0.06047428491205769,
+        -11.999184617436192
+      ],
+      "after": [
+        -10.265315761007265,
+        -0.06597310945674034,
+        -12.13553672876224
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 9.52441399999725,
+        "meanMs": 0.11905517499996562,
+        "maxMs": 0.1402499999999236,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 9.52441399999725,
+          "meanMs": 0.11905517499996562,
+          "p95Ms": 0.13374999999996362,
+          "maxMs": 0.1402499999999236,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.381103499999316
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 9.52441399999725,
+          "meanMs": 0.11905517499996562,
+          "p95Ms": 0.13374999999996362,
+          "maxMs": 0.1402499999999236,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.381103499999316
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -8.000967125585161,
+        -0.06047428491205769,
+        -11.999184617436192
+      ],
+      "after": [
+        -10.265315761007265,
+        -0.06597310945674034,
+        -12.13553672876224
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 9.65458499999977,
+        "meanMs": 0.12068231249999713,
+        "maxMs": 0.2015000000001237,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 9.65458499999977,
+          "meanMs": 0.12068231249999713,
+          "p95Ms": 0.14287500000000364,
+          "maxMs": 0.2015000000001237,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.413646249999946
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 9.65458499999977,
+          "meanMs": 0.12068231249999713,
+          "p95Ms": 0.14287500000000364,
+          "maxMs": 0.2015000000001237,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.413646249999946
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 26.814957999999933,
+        "meanMs": 0.33518697499999917,
+        "maxMs": 0.5931660000001102,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 26.814957999999933,
+          "meanMs": 0.33518697499999917,
+          "p95Ms": 0.4958329999999478,
+          "maxMs": 0.5931660000001102,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.703739499999994
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 26.814957999999933,
+          "meanMs": 0.33518697499999917,
+          "p95Ms": 0.4958329999999478,
+          "maxMs": 0.5931660000001102,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.703739499999994
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 27.788375000000997,
+        "meanMs": 0.34735468750001247,
+        "maxMs": 0.703708000000006,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 27.788375000000997,
+          "meanMs": 0.34735468750001247,
+          "p95Ms": 0.5742920000002414,
+          "maxMs": 0.703708000000006,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.94709375000026
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 27.788375000000997,
+          "meanMs": 0.34735468750001247,
+          "p95Ms": 0.5742920000002414,
+          "maxMs": 0.703708000000006,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 6.94709375000026
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -8.000967125585161,
+        -0.06047428491205769,
+        -11.999184617436192
+      ],
+      "after": [
+        -10.265315761007265,
+        -0.06597310945674034,
+        -12.13553672876224
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 10.052495999999337,
+        "meanMs": 0.12565619999999172,
+        "maxMs": 0.19700000000011642,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 10.052495999999337,
+          "meanMs": 0.12565619999999172,
+          "p95Ms": 0.1525419999998121,
+          "maxMs": 0.19700000000011642,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.5131239999998383
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 10.052495999999337,
+          "meanMs": 0.12565619999999172,
+          "p95Ms": 0.1525419999998121,
+          "maxMs": 0.19700000000011642,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.5131239999998383
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -8.000967125585161,
+        -0.06047428491205769,
+        -11.999184617436192
+      ],
+      "after": [
+        -10.265315761007265,
+        -0.06597310945674034,
+        -12.13553672876224
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 9.737126000009084,
+        "meanMs": 0.12171407500011355,
+        "maxMs": 0.18149999999968713,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 9.737126000009084,
+          "meanMs": 0.12171407500011355,
+          "p95Ms": 0.14295800000036252,
+          "maxMs": 0.18149999999968713,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.434281500002275
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 9.737126000009084,
+          "meanMs": 0.12171407500011355,
+          "p95Ms": 0.14295800000036252,
+          "maxMs": 0.18149999999968713,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 2.434281500002275
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "facade-push",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -8,
+        -0.05031505823135374,
+        -12
+      ],
+      "after": [
+        -10.317697525024414,
+        -0.05423316955566404,
+        -12.378385543823242
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 31.714248999996926,
+        "meanMs": 0.39642811249996157,
+        "maxMs": 0.7125830000004498,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 31.714248999996926,
+          "meanMs": 0.39642811249996157,
+          "p95Ms": 0.6031249999996362,
+          "maxMs": 0.7125830000004498,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 7.928562249999244
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 31.714248999996926,
+          "meanMs": 0.39642811249996157,
+          "p95Ms": 0.6031249999996362,
+          "maxMs": 0.7125830000004498,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 7.928562249999244
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -10.213180307553952,
+        0.0360000248957236,
+        -14.29897573520896
+      ],
+      "after": [
+        -9.489415552938501,
+        -0.027668132057189952,
+        -14.1501560444178
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 19.037795999998707,
+        "meanMs": 0.07932414999999461,
+        "maxMs": 0.37516599999980826,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 19.037795999998707,
+          "meanMs": 0.07932414999999461,
+          "p95Ms": 0.32133299999986775,
+          "maxMs": 0.37516599999980826,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.759448999999687
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 19.037795999998707,
+          "meanMs": 0.07932414999999461,
+          "p95Ms": 0.32133299999986775,
+          "maxMs": 0.37516599999980826,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.759448999999687
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 12.738956000001053,
+        "meanMs": 0.05307898333333772,
+        "maxMs": 0.328708000000006,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 12.738956000001053,
+          "meanMs": 0.05307898333333772,
+          "p95Ms": 0.11208299999998417,
+          "maxMs": 0.328708000000006,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.184739000000271
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 12.738956000001053,
+          "meanMs": 0.05307898333333772,
+          "p95Ms": 0.11208299999998417,
+          "maxMs": 0.328708000000006,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.184739000000271
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 12.632504999991397,
+        "meanMs": 0.052635437499964154,
+        "maxMs": 0.32074999999986176,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 12.632504999991397,
+          "meanMs": 0.052635437499964154,
+          "p95Ms": 0.11154199999964476,
+          "maxMs": 0.32074999999986176,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.158126249997857
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 12.632504999991397,
+          "meanMs": 0.052635437499964154,
+          "p95Ms": 0.11154199999964476,
+          "maxMs": 0.32074999999986176,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.158126249997857
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -10.213180307553952,
+        0.0360000248957236,
+        -14.29897573520896
+      ],
+      "after": [
+        -9.489415552938501,
+        -0.027668132057189952,
+        -14.1501560444178
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 18.645044000007147,
+        "meanMs": 0.07768768333336311,
+        "maxMs": 0.36825000000044383,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 18.645044000007147,
+          "meanMs": 0.07768768333336311,
+          "p95Ms": 0.31333400000039546,
+          "maxMs": 0.36825000000044383,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.661261000001797
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 18.645044000007147,
+          "meanMs": 0.07768768333336311,
+          "p95Ms": 0.31333400000039546,
+          "maxMs": 0.36825000000044383,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.661261000001797
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -10.213180307553952,
+        0.0360000248957236,
+        -14.29897573520896
+      ],
+      "after": [
+        -9.489415552938501,
+        -0.027668132057189952,
+        -14.1501560444178
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 23.404456000003847,
+        "meanMs": 0.0975185666666827,
+        "maxMs": 4.152875000000677,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 23.404456000003847,
+          "meanMs": 0.0975185666666827,
+          "p95Ms": 0.3140419999999722,
+          "maxMs": 4.152875000000677,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 5.851114000000975
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 23.404456000003847,
+          "meanMs": 0.0975185666666827,
+          "p95Ms": 0.3140419999999722,
+          "maxMs": 4.152875000000677,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 5.851114000000975
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 12.70012399999905,
+        "meanMs": 0.05291718333332938,
+        "maxMs": 0.3220000000001164,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 12.70012399999905,
+          "meanMs": 0.05291718333332938,
+          "p95Ms": 0.11695800000052259,
+          "maxMs": 0.3220000000001164,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.17503099999977
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 12.70012399999905,
+          "meanMs": 0.05291718333332938,
+          "p95Ms": 0.11695800000052259,
+          "maxMs": 0.3220000000001164,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.17503099999977
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 12.72570500000711,
+        "meanMs": 0.05302377083336296,
+        "maxMs": 0.3207910000000993,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 12.72570500000711,
+          "meanMs": 0.05302377083336296,
+          "p95Ms": 0.11316600000009203,
+          "maxMs": 0.3207910000000993,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.181426250001785
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 12.72570500000711,
+          "meanMs": 0.05302377083336296,
+          "p95Ms": 0.11316600000009203,
+          "maxMs": 0.3207910000000993,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.181426250001785
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -10.213180307553952,
+        0.0360000248957236,
+        -14.29897573520896
+      ],
+      "after": [
+        -9.489415552938501,
+        -0.027668132057189952,
+        -14.1501560444178
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 18.61908200000107,
+        "meanMs": 0.0775795083333378,
+        "maxMs": 0.3684590000002572,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 18.61908200000107,
+          "meanMs": 0.0775795083333378,
+          "p95Ms": 0.31066699999973935,
+          "maxMs": 0.3684590000002572,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.654770500000279
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 18.61908200000107,
+          "meanMs": 0.0775795083333378,
+          "p95Ms": 0.31066699999973935,
+          "maxMs": 0.3684590000002572,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.654770500000279
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -10.213180307553952,
+        0.0360000248957236,
+        -14.29897573520896
+      ],
+      "after": [
+        -9.489415552938501,
+        -0.027668132057189952,
+        -14.1501560444178
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 18.839703999999983,
+        "meanMs": 0.0784987666666666,
+        "maxMs": 0.3710000000000946,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 18.839703999999983,
+          "meanMs": 0.0784987666666666,
+          "p95Ms": 0.31629199999952107,
+          "maxMs": 0.3710000000000946,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.7099260000000065
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 18.839703999999983,
+          "meanMs": 0.0784987666666666,
+          "p95Ms": 0.31629199999952107,
+          "maxMs": 0.3710000000000946,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 4.7099260000000065
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 12.559671000003618,
+        "meanMs": 0.052331962500015074,
+        "maxMs": 0.3180419999998776,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 12.559671000003618,
+          "meanMs": 0.052331962500015074,
+          "p95Ms": 0.10962500000005093,
+          "maxMs": 0.3180419999998776,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.1399177500009117
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 240,
+          "totalMs": 12.559671000003618,
+          "meanMs": 0.052331962500015074,
+          "p95Ms": 0.10962500000005093,
+          "maxMs": 0.3180419999998776,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 3.1399177500009117
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -10.212584673139302,
+        0.035843912871269035,
+        -14.298370899369495
+      ],
+      "after": [
+        -9.509594251598507,
+        -0.027683534277311413,
+        -14.15227328584581
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 16.922921999998835,
+        "meanMs": 0.21153652499998543,
+        "maxMs": 4.450166999999965,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 16.922921999998835,
+          "meanMs": 0.21153652499998543,
+          "p95Ms": 0.6213749999997162,
+          "maxMs": 4.450166999999965,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 4.230730499999715
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 16.922921999998835,
+          "meanMs": 0.21153652499998543,
+          "p95Ms": 0.6213749999997162,
+          "maxMs": 4.450166999999965,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 4.230730499999715
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.720119999999042,
+        "meanMs": 0.15900149999998803,
+        "maxMs": 0.6120829999999842,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.720119999999042,
+          "meanMs": 0.15900149999998803,
+          "p95Ms": 0.3235420000000886,
+          "maxMs": 0.6120829999999842,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1800299999997654
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.720119999999042,
+          "meanMs": 0.15900149999998803,
+          "p95Ms": 0.3235420000000886,
+          "maxMs": 0.6120829999999842,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1800299999997654
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.3832910000001,
+        "meanMs": 0.15479113750000123,
+        "maxMs": 0.5842500000007931,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.3832910000001,
+          "meanMs": 0.15479113750000123,
+          "p95Ms": 0.31212499999946886,
+          "maxMs": 0.5842500000007931,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0958227500000297
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.3832910000001,
+          "meanMs": 0.15479113750000123,
+          "p95Ms": 0.31212499999946886,
+          "maxMs": 0.5842500000007931,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0958227500000297
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -10.212584673139302,
+        0.035843912871269035,
+        -14.298370899369495
+      ],
+      "after": [
+        -9.509594251598507,
+        -0.027683534277311413,
+        -14.15227328584581
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.932459999989987,
+        "meanMs": 0.16165574999987484,
+        "maxMs": 0.7023330000001806,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.932459999989987,
+          "meanMs": 0.16165574999987484,
+          "p95Ms": 0.6129160000000411,
+          "maxMs": 0.7023330000001806,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.2331149999975017
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.932459999989987,
+          "meanMs": 0.16165574999987484,
+          "p95Ms": 0.6129160000000411,
+          "maxMs": 0.7023330000001806,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.2331149999975017
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -10.212584673139302,
+        0.035843912871269035,
+        -14.298370899369495
+      ],
+      "after": [
+        -9.509594251598507,
+        -0.027683534277311413,
+        -14.15227328584581
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.93663000000106,
+        "meanMs": 0.16170787500001324,
+        "maxMs": 0.6971249999996871,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.93663000000106,
+          "meanMs": 0.16170787500001324,
+          "p95Ms": 0.614875000000211,
+          "maxMs": 0.6971249999996871,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.23415750000027
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.93663000000106,
+          "meanMs": 0.16170787500001324,
+          "p95Ms": 0.614875000000211,
+          "maxMs": 0.6971249999996871,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.23415750000027
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.288120000002891,
+        "meanMs": 0.15360150000003614,
+        "maxMs": 0.5829579999999623,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.288120000002891,
+          "meanMs": 0.15360150000003614,
+          "p95Ms": 0.31404100000054314,
+          "maxMs": 0.5829579999999623,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0720300000007277
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.288120000002891,
+          "meanMs": 0.15360150000003614,
+          "p95Ms": 0.31404100000054314,
+          "maxMs": 0.5829579999999623,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0720300000007277
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.244744999990871,
+        "meanMs": 0.15305931249988589,
+        "maxMs": 0.5843330000006972,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.244744999990871,
+          "meanMs": 0.15305931249988589,
+          "p95Ms": 0.31033300000035524,
+          "maxMs": 0.5843330000006972,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0611862499977227
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.244744999990871,
+          "meanMs": 0.15305931249988589,
+          "p95Ms": 0.31033300000035524,
+          "maxMs": 0.5843330000006972,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.0611862499977227
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -10.212584673139302,
+        0.035843912871269035,
+        -14.298370899369495
+      ],
+      "after": [
+        -9.509594251598507,
+        -0.027683534277311413,
+        -14.15227328584581
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.775873999997202,
+        "meanMs": 0.15969842499996503,
+        "maxMs": 0.6870829999998023,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.775873999997202,
+          "meanMs": 0.15969842499996503,
+          "p95Ms": 0.6111250000003565,
+          "maxMs": 0.6870829999998023,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1939684999993054
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.775873999997202,
+          "meanMs": 0.15969842499996503,
+          "p95Ms": 0.6111250000003565,
+          "maxMs": 0.6870829999998023,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1939684999993054
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -10.212584673139302,
+        0.035843912871269035,
+        -14.298370899369495
+      ],
+      "after": [
+        -9.509594251598507,
+        -0.027683534277311413,
+        -14.15227328584581
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.854624000001422,
+        "meanMs": 0.16068280000001778,
+        "maxMs": 0.6957919999995283,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.854624000001422,
+          "meanMs": 0.16068280000001778,
+          "p95Ms": 0.6065410000001066,
+          "maxMs": 0.6957919999995283,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.2136560000003604
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.854624000001422,
+          "meanMs": 0.16068280000001778,
+          "p95Ms": 0.6065410000001066,
+          "maxMs": 0.6957919999995283,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.2136560000003604
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "stairs-back-and-forth",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -10.213336944580078,
+        0.03614243268966677,
+        -14.299132347106934
+      ],
+      "after": [
+        -9.62415599822998,
+        -0.01767942905426023,
+        -14.170315742492676
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 12.522085000002335,
+        "meanMs": 0.15652606250002918,
+        "maxMs": 0.6108750000003056,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 12.522085000002335,
+          "meanMs": 0.15652606250002918,
+          "p95Ms": 0.326415999999881,
+          "maxMs": 0.6108750000003056,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1305212500005886
+        },
+        "recentIdle": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        },
+        "recentMoving": {
+          "calls": 80,
+          "totalMs": 12.522085000002335,
+          "meanMs": 0.15652606250002918,
+          "p95Ms": 0.326415999999881,
+          "maxMs": 0.6108750000003056,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 3.1305212500005886
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "after": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.927540999991834,
+        "meanMs": 0.012198087499965975,
+        "maxMs": 0.015000000000327418,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.927540999991834,
+          "meanMs": 0.012198087499965975,
+          "p95Ms": 0.012458999999580556,
+          "maxMs": 0.015000000000327418,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7318852499979601
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.927540999991834,
+          "meanMs": 0.012198087499965975,
+          "p95Ms": 0.012458999999580556,
+          "maxMs": 0.015000000000327418,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7318852499979601
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 1,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 8.049081000000115,
+        "meanMs": 0.03353783750000048,
+        "maxMs": 0.05008300000008603,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 8.049081000000115,
+          "meanMs": 0.03353783750000048,
+          "p95Ms": 0.03445800000008603,
+          "maxMs": 0.05008300000008603,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.0122702500000336
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 8.049081000000115,
+          "meanMs": 0.03353783750000048,
+          "p95Ms": 0.03445800000008603,
+          "maxMs": 0.05008300000008603,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.0122702500000336
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.959545999995498,
+        "meanMs": 0.033164774999981245,
+        "maxMs": 0.045750000000225555,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.959545999995498,
+          "meanMs": 0.033164774999981245,
+          "p95Ms": 0.03570899999976973,
+          "maxMs": 0.045750000000225555,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9898864999988792
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.959545999995498,
+          "meanMs": 0.033164774999981245,
+          "p95Ms": 0.03570899999976973,
+          "maxMs": 0.045750000000225555,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9898864999988792
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 2,
+      "before": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "after": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.942043000000922,
+        "meanMs": 0.012258512500003841,
+        "maxMs": 0.0187500000001819,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.942043000000922,
+          "meanMs": 0.012258512500003841,
+          "p95Ms": 0.012458000000151515,
+          "maxMs": 0.0187500000001819,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7355107500002321
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.942043000000922,
+          "meanMs": 0.012258512500003841,
+          "p95Ms": 0.012458000000151515,
+          "maxMs": 0.0187500000001819,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7355107500002321
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "after": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.9518819999993866,
+        "meanMs": 0.012299508333330777,
+        "maxMs": 0.026542000000517874,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.9518819999993866,
+          "meanMs": 0.012299508333330777,
+          "p95Ms": 0.012541999999484688,
+          "maxMs": 0.026542000000517874,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7379704999998483
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.9518819999993866,
+          "meanMs": 0.012299508333330777,
+          "p95Ms": 0.012541999999484688,
+          "maxMs": 0.026542000000517874,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7379704999998483
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 3,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 8.009903999997732,
+        "meanMs": 0.033374599999990553,
+        "maxMs": 0.061749999999847205,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 8.009903999997732,
+          "meanMs": 0.033374599999990553,
+          "p95Ms": 0.04066700000021228,
+          "maxMs": 0.061749999999847205,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.002475999999438
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 8.009903999997732,
+          "meanMs": 0.033374599999990553,
+          "p95Ms": 0.04066700000021228,
+          "maxMs": 0.061749999999847205,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 2.002475999999438
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.892826999989666,
+        "meanMs": 0.03288677916662361,
+        "maxMs": 0.06170800000018062,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.892826999989666,
+          "meanMs": 0.03288677916662361,
+          "p95Ms": 0.03949999999986176,
+          "maxMs": 0.06170800000018062,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.973206749997421
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.892826999989666,
+          "meanMs": 0.03288677916662361,
+          "p95Ms": 0.03949999999986176,
+          "maxMs": 0.06170800000018062,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.973206749997421
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 4,
+      "before": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "after": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.933210000004692,
+        "meanMs": 0.012221708333352883,
+        "maxMs": 0.015124999999898137,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.933210000004692,
+          "meanMs": 0.012221708333352883,
+          "p95Ms": 0.01245900000049005,
+          "maxMs": 0.015124999999898137,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7333025000011747
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.933210000004692,
+          "meanMs": 0.012221708333352883,
+          "p95Ms": 0.01245900000049005,
+          "maxMs": 0.015124999999898137,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7333025000011747
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "after": [
+        -13.663571932268061,
+        0.5371362836629704,
+        -21.88276799624571
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 2.929745000008552,
+        "meanMs": 0.012207270833368967,
+        "maxMs": 0.01787499999954889,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 2.929745000008552,
+          "meanMs": 0.012207270833368967,
+          "p95Ms": 0.012458000000151515,
+          "maxMs": 0.01787499999954889,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7324362500021396
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 2.929745000008552,
+          "meanMs": 0.012207270833368967,
+          "p95Ms": 0.012458000000151515,
+          "maxMs": 0.01787499999954889,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 0.7324362500021396
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 60,
+      "repeat": 5,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 240,
+        "totalMs": 7.851459000017712,
+        "meanMs": 0.0327144125000738,
+        "maxMs": 0.042916999999761174,
+        "recentCapacity": 240,
+        "recent": {
+          "calls": 240,
+          "totalMs": 7.851459000017712,
+          "meanMs": 0.0327144125000738,
+          "p95Ms": 0.03491699999995035,
+          "maxMs": 0.042916999999761174,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9628647500044327
+        },
+        "recentIdle": {
+          "calls": 240,
+          "totalMs": 7.851459000017712,
+          "meanMs": 0.0327144125000738,
+          "p95Ms": 0.03491699999995035,
+          "maxMs": 0.042916999999761174,
+          "simulatedSeconds": 3.9999999999999907,
+          "cpuMsPerSimulatedSecond": 1.9628647500044327
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "after": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.9914549999957671,
+        "meanMs": 0.012393187499947089,
+        "maxMs": 0.022208999999747903,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.9914549999957671,
+          "meanMs": 0.012393187499947089,
+          "p95Ms": 0.0126669999999649,
+          "maxMs": 0.022208999999747903,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.24786374999894217
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.9914549999957671,
+          "meanMs": 0.012393187499947089,
+          "p95Ms": 0.0126669999999649,
+          "maxMs": 0.022208999999747903,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.24786374999894217
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 1,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.787376000002041,
+        "meanMs": 0.09734220000002551,
+        "maxMs": 0.10462499999994179,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.787376000002041,
+          "meanMs": 0.09734220000002551,
+          "p95Ms": 0.1001670000005106,
+          "maxMs": 0.10462499999994179,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9468440000005134
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.787376000002041,
+          "meanMs": 0.09734220000002551,
+          "p95Ms": 0.1001670000005106,
+          "maxMs": 0.10462499999994179,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9468440000005134
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.6504980000036085,
+        "meanMs": 0.0956312250000451,
+        "maxMs": 0.23874999999952706,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.6504980000036085,
+          "meanMs": 0.0956312250000451,
+          "p95Ms": 0.10725000000002183,
+          "maxMs": 0.23874999999952706,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.912624500000905
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.6504980000036085,
+          "meanMs": 0.0956312250000451,
+          "p95Ms": 0.10725000000002183,
+          "maxMs": 0.23874999999952706,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.912624500000905
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 2,
+      "before": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "after": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.9512110000077882,
+        "meanMs": 0.011890137500097353,
+        "maxMs": 0.012915999999677297,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.9512110000077882,
+          "meanMs": 0.011890137500097353,
+          "p95Ms": 0.012416999999913969,
+          "maxMs": 0.012915999999677297,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.23780275000194742
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.9512110000077882,
+          "meanMs": 0.011890137500097353,
+          "p95Ms": 0.012416999999913969,
+          "maxMs": 0.012915999999677297,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.23780275000194742
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "after": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.9927069999994274,
+        "meanMs": 0.012408837499992841,
+        "maxMs": 0.02491699999973207,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.9927069999994274,
+          "meanMs": 0.012408837499992841,
+          "p95Ms": 0.012749999999869033,
+          "maxMs": 0.02491699999973207,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.24817674999985723
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.9927069999994274,
+          "meanMs": 0.012408837499992841,
+          "p95Ms": 0.012749999999869033,
+          "maxMs": 0.02491699999973207,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.24817674999985723
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 3,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.771835000000465,
+        "meanMs": 0.0971479375000058,
+        "maxMs": 0.1031250000005457,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.771835000000465,
+          "meanMs": 0.0971479375000058,
+          "p95Ms": 0.10062500000003638,
+          "maxMs": 0.1031250000005457,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9429587500001193
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.771835000000465,
+          "meanMs": 0.0971479375000058,
+          "p95Ms": 0.10062500000003638,
+          "maxMs": 0.1031250000005457,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9429587500001193
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.750455000002148,
+        "meanMs": 0.09688068750002685,
+        "maxMs": 0.13708299999962037,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.750455000002148,
+          "meanMs": 0.09688068750002685,
+          "p95Ms": 0.10008400000060647,
+          "maxMs": 0.13708299999962037,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9376137500005401
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.750455000002148,
+          "meanMs": 0.09688068750002685,
+          "p95Ms": 0.10008400000060647,
+          "maxMs": 0.13708299999962037,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9376137500005401
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 4,
+      "before": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "after": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.94933499999388,
+        "meanMs": 0.011866687499923501,
+        "maxMs": 0.01283300000068266,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.94933499999388,
+          "meanMs": 0.011866687499923501,
+          "p95Ms": 0.012334000000009837,
+          "maxMs": 0.01283300000068266,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.23733374999847037
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.94933499999388,
+          "meanMs": 0.011866687499923501,
+          "p95Ms": 0.012334000000009837,
+          "maxMs": 0.01283300000068266,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.23733374999847037
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "custom-bvh-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "after": [
+        -13.66360110486338,
+        0.536519816105603,
+        -21.88436765132559
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 0.9757030000000668,
+        "meanMs": 0.012196287500000836,
+        "maxMs": 0.014750000000276486,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 0.9757030000000668,
+          "meanMs": 0.012196287500000836,
+          "p95Ms": 0.01245900000049005,
+          "maxMs": 0.014750000000276486,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.2439257500000171
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 0.9757030000000668,
+          "meanMs": 0.012196287500000836,
+          "p95Ms": 0.01245900000049005,
+          "maxMs": 0.014750000000276486,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 0.2439257500000171
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    },
+    {
+      "controller": "rapier-kinematic-capsule",
+      "scenario": "bench-idle",
+      "fps": 20,
+      "repeat": 5,
+      "before": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "after": [
+        -13.663564682006836,
+        0.5374057531356812,
+        -21.882347106933594
+      ],
+      "grounded": true,
+      "recoveries": 0,
+      "triangles": 337680,
+      "timings": {
+        "scope": "node-walker-step-only",
+        "calls": 80,
+        "totalMs": 7.651502000002438,
+        "meanMs": 0.09564377500003048,
+        "maxMs": 0.11825000000044383,
+        "recentCapacity": 80,
+        "recent": {
+          "calls": 80,
+          "totalMs": 7.651502000002438,
+          "meanMs": 0.09564377500003048,
+          "p95Ms": 0.10354199999983393,
+          "maxMs": 0.11825000000044383,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9128755000006123
+        },
+        "recentIdle": {
+          "calls": 80,
+          "totalMs": 7.651502000002438,
+          "meanMs": 0.09564377500003048,
+          "p95Ms": 0.10354199999983393,
+          "maxMs": 0.11825000000044383,
+          "simulatedSeconds": 3.999999999999994,
+          "cpuMsPerSimulatedSecond": 1.9128755000006123
+        },
+        "recentMoving": {
+          "calls": 0,
+          "totalMs": 0,
+          "meanMs": null,
+          "p95Ms": null,
+          "maxMs": null,
+          "simulatedSeconds": 0,
+          "cpuMsPerSimulatedSecond": null
+        }
+      }
+    }
+  ]
+}

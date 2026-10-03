@@ -1,0 +1,1275 @@
+{
+  "recordedAt": "2026-10-02T17:14:44.086Z",
+  "url": "http://127.0.0.1:5173/?scene=sunnyvale-stream&controller=bvh",
+  "config": "bvh",
+  "checks": [
+    {
+      "label": "initial",
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-paired-streaming",
+        "layer": "current",
+        "release": "local-4d5905679d2e-ee9a19b94a78",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -0.0001758203959403552,
+          0.10969197088431709,
+          0.0002979181030278901
+        ],
+        "eye": [
+          -0.0001758203959403552,
+          1.7096919708843172,
+          0.0002979181030278901
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.09999990463257,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 2559,
+          "totalMs": 179.09999907016754,
+          "meanMs": 0.0699882763072167,
+          "maxMs": 2.200000047683716,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 38.00000071525574,
+            "meanMs": 0.06333333452542624,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.5,
+            "simulatedSeconds": 10.000600000000015,
+            "cpuMsPerSimulatedSecond": 3.799772085200456
+          },
+          "recentIdle": {
+            "calls": 600,
+            "totalMs": 38.00000071525574,
+            "meanMs": 0.06333333452542624,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.5,
+            "simulatedSeconds": 10.000600000000015,
+            "cpuMsPerSimulatedSecond": 3.799772085200456
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 8236117,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 418025,
+          "peakReservedTotalGaussians": 448028,
+          "fallbackRequestedBytes": 483836,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 418025,
+          "residentColliderIds": [
+            "sunny-strip-2-collision",
+            "sunny-strip-3-collision"
+          ],
+          "residentCollisionTriangles": 153795,
+          "residentCollisionSourceBytes": 2843664,
+          "fallbackReady": true,
+          "fallbackChunks": 6,
+          "fallbackGaussians": 30003,
+          "residentTotalGaussians": 448028,
+          "renderedGaussians": 434093,
+          "fallbackVisible": [
+            "sunny-strip-0",
+            "sunny-strip-1",
+            "sunny-strip-4",
+            "sunny-strip-5"
+          ],
+          "fallbackSourceBytes": 483836,
+          "residentSourceBytes": 5392453,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "sunny-strip-2",
+            "sunny-strip-3"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 22.90000009536743,
+              "id": "sunny-strip-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 30.40000009536743,
+              "id": "sunny-strip-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 40.90000009536743,
+              "id": "sunny-strip-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 48.60000002384186,
+              "id": "sunny-strip-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 53,
+              "id": "sunny-strip-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.700000047683716,
+              "id": "sunny-strip-5",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.800000071525574,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-3",
+              "action": "requested"
+            },
+            {
+              "t": 694.4000000953674,
+              "id": "sunny-strip-3",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 14
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "sunny-strip-2-collision",
+          "sunny-strip-3-collision"
+        ]
+      }
+    },
+    {
+      "label": "crossed",
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-paired-streaming",
+        "layer": "current",
+        "release": "local-4d5905679d2e-ee9a19b94a78",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          13.408211135372717,
+          0.31948720054988455,
+          -0.0029297447130620393
+        ],
+        "eye": [
+          13.408211135372717,
+          1.9194872005498846,
+          -0.0029297447130620393
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.09999990463257,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 2981,
+          "totalMs": 279.29999792575836,
+          "meanMs": 0.09369339078354859,
+          "maxMs": 50.89999997615814,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 111.19999885559082,
+            "meanMs": 0.1853333314259847,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 50.89999997615814,
+            "simulatedSeconds": 10.050300000000004,
+            "cpuMsPerSimulatedSecond": 11.064346224052096
+          },
+          "recentIdle": {
+            "calls": 199,
+            "totalMs": 12.50000011920929,
+            "meanMs": 0.06281407095080045,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.3999999761581421,
+            "simulatedSeconds": 3.3166999999999938,
+            "cpuMsPerSimulatedSecond": 3.768806379596983
+          },
+          "recentMoving": {
+            "calls": 401,
+            "totalMs": 98.69999873638153,
+            "meanMs": 0.24613466019047764,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 50.89999997615814,
+            "simulatedSeconds": 6.733600000000016,
+            "cpuMsPerSimulatedSecond": 14.657835145595417
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 50.199999928474426,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 47.699999928474426,
+            "triangles": 93488
+          }
+        ],
+        "streaming": {
+          "loads": 3,
+          "unloads": 1,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 9387939,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 418025,
+          "peakReservedTotalGaussians": 448028,
+          "fallbackRequestedBytes": 483836,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 185178,
+          "residentColliderIds": [
+            "sunny-strip-3-collision",
+            "sunny-strip-4-collision"
+          ],
+          "residentCollisionTriangles": 93488,
+          "residentCollisionSourceBytes": 1715468,
+          "fallbackReady": true,
+          "fallbackChunks": 6,
+          "fallbackGaussians": 30003,
+          "residentTotalGaussians": 215181,
+          "renderedGaussians": 209008,
+          "fallbackVisible": [
+            "sunny-strip-0",
+            "sunny-strip-1",
+            "sunny-strip-2",
+            "sunny-strip-5"
+          ],
+          "fallbackSourceBytes": 483836,
+          "residentSourceBytes": 2438931,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "sunny-strip-3",
+            "sunny-strip-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 22.90000009536743,
+              "id": "sunny-strip-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 30.40000009536743,
+              "id": "sunny-strip-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 40.90000009536743,
+              "id": "sunny-strip-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 48.60000002384186,
+              "id": "sunny-strip-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 53,
+              "id": "sunny-strip-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.700000047683716,
+              "id": "sunny-strip-5",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.800000071525574,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-3",
+              "action": "requested"
+            },
+            {
+              "t": 694.4000000953674,
+              "id": "sunny-strip-3",
+              "action": "ready"
+            },
+            {
+              "t": 45047.90000009537,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 48514.5,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 48615.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 15
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "sunny-strip-3-collision",
+          "sunny-strip-4-collision"
+        ]
+      }
+    },
+    {
+      "label": "returned-by-walking",
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-paired-streaming",
+        "layer": "current",
+        "release": "local-4d5905679d2e-ee9a19b94a78",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          0.6515920085850083,
+          0.09627240505862006,
+          -0.05556233993941894
+        ],
+        "eye": [
+          0.6515920085850083,
+          1.6962724050586202,
+          -0.05556233993941894
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.09999990463257,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 3384,
+          "totalMs": 346.5999983549118,
+          "meanMs": 0.10242316736256259,
+          "maxMs": 50.89999997615814,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 89.49999988079071,
+            "meanMs": 0.14916666646798452,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 24.59999990463257,
+            "simulatedSeconds": 10.051200000000017,
+            "cpuMsPerSimulatedSecond": 8.904409411890178
+          },
+          "recentIdle": {
+            "calls": 43,
+            "totalMs": 2.8000000715255737,
+            "meanMs": 0.06511628073315288,
+            "p95Ms": 0.10000002384185791,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.7165000000000074,
+            "cpuMsPerSimulatedSecond": 3.907885654606483
+          },
+          "recentMoving": {
+            "calls": 557,
+            "totalMs": 86.69999980926514,
+            "meanMs": 0.1556552958873701,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 24.59999990463257,
+            "simulatedSeconds": 9.33470000000002,
+            "cpuMsPerSimulatedSecond": 9.287925676161521
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 50.199999928474426,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 47.699999928474426,
+            "triangles": 93488
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-4-collision",
+            "ms": 24.299999952316284,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-2-collision",
+            "ms": 49.699999928474426,
+            "triangles": 153795
+          }
+        ],
+        "streaming": {
+          "loads": 4,
+          "unloads": 2,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 14621479,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 418025,
+          "peakReservedTotalGaussians": 448028,
+          "fallbackRequestedBytes": 483836,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 418025,
+          "residentColliderIds": [
+            "sunny-strip-2-collision",
+            "sunny-strip-3-collision"
+          ],
+          "residentCollisionTriangles": 153795,
+          "residentCollisionSourceBytes": 2843664,
+          "fallbackReady": true,
+          "fallbackChunks": 6,
+          "fallbackGaussians": 30003,
+          "residentTotalGaussians": 448028,
+          "renderedGaussians": 434093,
+          "fallbackVisible": [
+            "sunny-strip-0",
+            "sunny-strip-1",
+            "sunny-strip-4",
+            "sunny-strip-5"
+          ],
+          "fallbackSourceBytes": 483836,
+          "residentSourceBytes": 5392453,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "sunny-strip-2",
+            "sunny-strip-3"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 22.90000009536743,
+              "id": "sunny-strip-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 30.40000009536743,
+              "id": "sunny-strip-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 40.90000009536743,
+              "id": "sunny-strip-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 48.60000002384186,
+              "id": "sunny-strip-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 53,
+              "id": "sunny-strip-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.700000047683716,
+              "id": "sunny-strip-5",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.800000071525574,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-3",
+              "action": "requested"
+            },
+            {
+              "t": 694.4000000953674,
+              "id": "sunny-strip-3",
+              "action": "ready"
+            },
+            {
+              "t": 45047.90000009537,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 48514.5,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 48615.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            },
+            {
+              "t": 52806.40000009537,
+              "id": "sunny-strip-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 56282.200000047684,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 56413.60000002384,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 15
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "sunny-strip-2-collision",
+          "sunny-strip-3-collision"
+        ]
+      }
+    },
+    {
+      "label": "crossed-again",
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-paired-streaming",
+        "layer": "current",
+        "release": "local-4d5905679d2e-ee9a19b94a78",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          13.4870137257838,
+          0.33222270467323484,
+          -0.04498637894234083
+        ],
+        "eye": [
+          13.4870137257838,
+          1.932222704673235,
+          -0.04498637894234083
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.09999990463257,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 3791,
+          "totalMs": 414.09999883174896,
+          "meanMs": 0.10923239220040859,
+          "maxMs": 50.89999997615814,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 84.80000066757202,
+            "meanMs": 0.14133333444595336,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 20.90000009536743,
+            "simulatedSeconds": 10.051500000000008,
+            "cpuMsPerSimulatedSecond": 8.43655182485917
+          },
+          "recentIdle": {
+            "calls": 43,
+            "totalMs": 3.5,
+            "meanMs": 0.08139534883720931,
+            "p95Ms": 0.19999992847442627,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.7167000000000042,
+            "cpuMsPerSimulatedSecond": 4.883493790986437
+          },
+          "recentMoving": {
+            "calls": 557,
+            "totalMs": 81.30000066757202,
+            "meanMs": 0.14596050389151172,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 20.90000009536743,
+            "simulatedSeconds": 9.334800000000008,
+            "cpuMsPerSimulatedSecond": 8.709345745765518
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 1,
+        "collisionUpdates": [
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 50.199999928474426,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 47.699999928474426,
+            "triangles": 93488
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-4-collision",
+            "ms": 24.299999952316284,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-2-collision",
+            "ms": 49.699999928474426,
+            "triangles": 153795
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 20.700000047683716,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 40.5,
+            "triangles": 93488
+          }
+        ],
+        "streaming": {
+          "loads": 5,
+          "unloads": 3,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 15773301,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 418025,
+          "peakReservedTotalGaussians": 448028,
+          "fallbackRequestedBytes": 483836,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 185178,
+          "residentColliderIds": [
+            "sunny-strip-3-collision",
+            "sunny-strip-4-collision"
+          ],
+          "residentCollisionTriangles": 93488,
+          "residentCollisionSourceBytes": 1715468,
+          "fallbackReady": true,
+          "fallbackChunks": 6,
+          "fallbackGaussians": 30003,
+          "residentTotalGaussians": 215181,
+          "renderedGaussians": 209008,
+          "fallbackVisible": [
+            "sunny-strip-0",
+            "sunny-strip-1",
+            "sunny-strip-2",
+            "sunny-strip-5"
+          ],
+          "fallbackSourceBytes": 483836,
+          "residentSourceBytes": 2438931,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "sunny-strip-3",
+            "sunny-strip-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 22.90000009536743,
+              "id": "sunny-strip-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 30.40000009536743,
+              "id": "sunny-strip-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 40.90000009536743,
+              "id": "sunny-strip-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 48.60000002384186,
+              "id": "sunny-strip-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 53,
+              "id": "sunny-strip-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.700000047683716,
+              "id": "sunny-strip-5",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.800000071525574,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-3",
+              "action": "requested"
+            },
+            {
+              "t": 694.4000000953674,
+              "id": "sunny-strip-3",
+              "action": "ready"
+            },
+            {
+              "t": 45047.90000009537,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 48514.5,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 48615.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            },
+            {
+              "t": 52806.40000009537,
+              "id": "sunny-strip-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 56282.200000047684,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 56413.60000002384,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 58519.800000071526,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 62015.90000009537,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 62083.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 15
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "sunny-strip-3-collision",
+          "sunny-strip-4-collision"
+        ]
+      }
+    },
+    {
+      "label": "reset-after-spawn-unloaded",
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-paired-streaming",
+        "layer": "current",
+        "release": "local-4d5905679d2e-ee9a19b94a78",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -0.0003195952110598471,
+          0.10965205722703016,
+          0.0005415367114065999
+        ],
+        "eye": [
+          -0.0003195952110598471,
+          1.7096520572270302,
+          0.0005415367114065999
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.09999990463257,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 3818,
+          "totalMs": 416.09999895095825,
+          "meanMs": 0.10898376085672033,
+          "maxMs": 50.89999997615814,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 84.00000083446503,
+            "meanMs": 0.14000000139077504,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 20.90000009536743,
+            "simulatedSeconds": 10.085600000000014,
+            "cpuMsPerSimulatedSecond": 8.328706357030311
+          },
+          "recentIdle": {
+            "calls": 70,
+            "totalMs": 5.5000001192092896,
+            "meanMs": 0.07857143027441842,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 1.2009000000000083,
+            "cpuMsPerSimulatedSecond": 4.579898508792782
+          },
+          "recentMoving": {
+            "calls": 530,
+            "totalMs": 78.50000071525574,
+            "meanMs": 0.14811320889670893,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 20.90000009536743,
+            "simulatedSeconds": 8.884700000000016,
+            "cpuMsPerSimulatedSecond": 8.835413769204992
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 1,
+        "collisionUpdates": [
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 50.199999928474426,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 47.699999928474426,
+            "triangles": 93488
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-4-collision",
+            "ms": 24.299999952316284,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-2-collision",
+            "ms": 49.699999928474426,
+            "triangles": 153795
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-2-collision",
+            "ms": 20.700000047683716,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-4-collision",
+            "ms": 40.5,
+            "triangles": 93488
+          },
+          {
+            "action": "remove",
+            "id": "sunny-strip-4-collision",
+            "ms": 28.800000071525574,
+            "triangles": 64647
+          },
+          {
+            "action": "install",
+            "id": "sunny-strip-2-collision",
+            "ms": 65.89999997615814,
+            "triangles": 153795
+          }
+        ],
+        "streaming": {
+          "loads": 6,
+          "unloads": 4,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 21006841,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 418025,
+          "peakReservedTotalGaussians": 448028,
+          "fallbackRequestedBytes": 483836,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 418025,
+          "residentColliderIds": [
+            "sunny-strip-2-collision",
+            "sunny-strip-3-collision"
+          ],
+          "residentCollisionTriangles": 153795,
+          "residentCollisionSourceBytes": 2843664,
+          "fallbackReady": true,
+          "fallbackChunks": 6,
+          "fallbackGaussians": 30003,
+          "residentTotalGaussians": 448028,
+          "renderedGaussians": 434093,
+          "fallbackVisible": [
+            "sunny-strip-0",
+            "sunny-strip-1",
+            "sunny-strip-4",
+            "sunny-strip-5"
+          ],
+          "fallbackSourceBytes": 483836,
+          "residentSourceBytes": 5392453,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "sunny-strip-2",
+            "sunny-strip-3"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 22.90000009536743,
+              "id": "sunny-strip-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 30.40000009536743,
+              "id": "sunny-strip-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 40.90000009536743,
+              "id": "sunny-strip-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 48.60000002384186,
+              "id": "sunny-strip-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 53,
+              "id": "sunny-strip-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.700000047683716,
+              "id": "sunny-strip-5",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 61.800000071525574,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 496.7000000476837,
+              "id": "sunny-strip-3",
+              "action": "requested"
+            },
+            {
+              "t": 694.4000000953674,
+              "id": "sunny-strip-3",
+              "action": "ready"
+            },
+            {
+              "t": 45047.90000009537,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 48514.5,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 48615.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            },
+            {
+              "t": 52806.40000009537,
+              "id": "sunny-strip-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 56282.200000047684,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 56413.60000002384,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            },
+            {
+              "t": 58519.800000071526,
+              "id": "sunny-strip-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 62015.90000009537,
+              "id": "sunny-strip-4",
+              "action": "requested"
+            },
+            {
+              "t": 62083.10000002384,
+              "id": "sunny-strip-4",
+              "action": "ready"
+            },
+            {
+              "t": 64201,
+              "id": "sunny-strip-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 64201,
+              "id": "sunny-strip-2",
+              "action": "requested"
+            },
+            {
+              "t": 64365.5,
+              "id": "sunny-strip-2",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 15
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "sunny-strip-2-collision",
+          "sunny-strip-3-collision"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "environment": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "visibility": "visible",
+    "dpr": 2,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "finishedAt": "2026-10-02T17:15:05.353Z"
+}

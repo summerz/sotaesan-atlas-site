@@ -1,0 +1,1306 @@
+{
+  "purpose": "Headed Playwright functional checks; no performance ranking",
+  "release": "local-4d5905679d2e-de5de5063e49",
+  "bvhMovement": {
+    "measuredAt": "2026-10-02T13:48:23.033Z",
+    "samples": [
+      {
+        "label": "initial",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.35000999403953553,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · 기존 BVH · SOG 900,000개 · 충돌 메시 36삼각형",
+        "visibleHotspots": 1
+      },
+      {
+        "label": "current wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3.0818953045308377,
+          0.35000999403953564,
+          -6.599989904632569
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · 기존 BVH · SOG 900,000개 · 충돌 메시 36삼각형",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "historical switch preserves pose",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0818953045308377,
+          0.35000999403953553,
+          -6.599989904632569
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "old wall gone; historical wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0829823043051583,
+          0.35000999403953553,
+          -9.599990381469727
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "inside future current wall",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -7.000200000000035
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "overlap relocates to spawn",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "visibleHotspots": 1
+      }
+    ],
+    "assertions": "passed"
+  },
+  "bvhFailure": {
+    "measuredAt": "2026-10-02T13:48:27.638Z",
+    "requests": 1,
+    "failedRequests": 1,
+    "samples": [
+      {
+        "label": "current hotspot panel opened",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "panelOpen": true,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "loading begins; panel closes",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "input ignored during delayed load",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "delayed load completes",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.3500099940395356,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "before injected target failure",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395356,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "target failure restores current",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395356,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: historical-base: 로딩 실패 — Failed to fetch",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "input works after rollback",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4.499000000000004
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: historical-base: 로딩 실패 — Failed to fetch",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "retry succeeds",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4.499000000000004
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 5,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "collision debug reopened after switch",
+        "track": "three",
+        "controller": "custom-bvh-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4.499000000000004
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      }
+    ],
+    "assertions": "passed"
+  },
+  "rapierMovement": {
+    "measuredAt": "2026-10-02T13:48:56.013Z",
+    "samples": [
+      {
+        "label": "initial",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · Rapier · SOG 900,000개 · 충돌 메시 36삼각형",
+        "visibleHotspots": 1
+      },
+      {
+        "label": "current wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          2.999864101409912,
+          0.35972836017608645,
+          -6.5901923179626465
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · Rapier · SOG 900,000개 · 충돌 메시 36삼각형",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "historical switch preserves pose",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "historical",
+        "feet": [
+          2.999864101409912,
+          0.35982837677001955,
+          -6.5901923179626465
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "old wall gone; historical wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "historical",
+        "feet": [
+          3.000000238418579,
+          0.3594002962112427,
+          -9.589980125427246
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "inside future current wall",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "historical",
+        "feet": [
+          2.99997615814209,
+          0.3600157737731934,
+          -6.983733177185059
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "overlap relocates to spawn",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "visibleHotspots": 1
+      }
+    ],
+    "assertions": "passed"
+  },
+  "rapierFailure": {
+    "measuredAt": "2026-10-02T13:49:00.739Z",
+    "requests": 1,
+    "failedRequests": 1,
+    "samples": [
+      {
+        "label": "current hotspot panel opened",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "panelOpen": true,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "loading begins; panel closes",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "input ignored during delayed load",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "delayed load completes",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0000007152557373,
+          0.35020008087158205,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "before injected target failure",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000009536743164,
+          0.35030009746551516,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "target failure restores current",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000009536743164,
+          0.35030009746551516,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: historical-base: 로딩 실패 — Failed to fetch",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "input works after rollback",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000007152557373,
+          0.35271992683410647,
+          -4.501599311828613
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: historical-base: 로딩 실패 — Failed to fetch",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "retry succeeds",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0000007152557373,
+          0.3528199434280396,
+          -4.501599311828613
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 5,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "collision debug reopened after switch",
+        "track": "three",
+        "controller": "rapier-kinematic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000009536743164,
+          0.3529199600219727,
+          -4.501599311828613
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      }
+    ],
+    "assertions": "passed"
+  },
+  "ammoMovement": {
+    "measuredAt": "2026-10-02T13:47:28.404Z",
+    "samples": [
+      {
+        "label": "initial",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · SOG 900,000개 · 충돌 메시 48삼각형",
+        "visibleHotspots": 1
+      },
+      {
+        "label": "current wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3.0000290870666504,
+          0.34998741149902346,
+          -6.600109100341797
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "지상 보행 · SOG 900,000개 · 충돌 메시 48삼각형",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "historical switch preserves pose",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0000293254852295,
+          0.34998741149902346,
+          -6.600109100341797
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "old wall gone; historical wall blocks",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "historical",
+        "feet": [
+          3.0000531673431396,
+          0.3499901533126831,
+          -9.600238800048828
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "inside future current wall",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.34998717308044436,
+          -7.004289150238037
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "visibleHotspots": 0
+      },
+      {
+        "label": "overlap relocates to spawn",
+        "release": "local-4d5905679d2e-de5de5063e49",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "visibleHotspots": 1
+      }
+    ],
+    "assertions": "passed"
+  },
+  "ammoFailure": {
+    "measuredAt": "2026-10-02T13:47:39.034Z",
+    "requests": 1,
+    "failedRequests": 1,
+    "samples": [
+      {
+        "label": "current hotspot panel opened",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개 · 새 벽과 겹쳐 시작점으로 안전 이동했습니다.",
+        "panelOpen": true,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "loading begins; panel closes",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "input ignored during delayed load",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": true,
+          "count": 2,
+          "relocated": true
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "시대를 전환하는 중…",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "delayed load completes",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "before injected target failure",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "target failure restores current",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: Failed to load some assets",
+        "panelOpen": false,
+        "visibleHotspots": 1
+      },
+      {
+        "label": "input works after rollback",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.3499849081039429,
+          -4.415164947509766
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "전환 실패, 이전 장면 복구: Failed to load some assets",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "retry succeeds",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "historical",
+        "feet": [
+          3,
+          0.3499849081039429,
+          -4.473840236663818
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 5,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "status": "과거 레이어 시험 · 역사적 복원 아님 · SOG 701,370개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      },
+      {
+        "label": "collision debug reopened after switch",
+        "track": "playcanvas",
+        "controller": "ammo-dynamic-capsule",
+        "layer": "current",
+        "feet": [
+          3,
+          0.34998478889465334,
+          -4.473840236663818
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "transition": {
+          "switching": false,
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "status": "현재 촬영 장면 · SOG 900,000개",
+        "panelOpen": false,
+        "visibleHotspots": 0
+      }
+    ],
+    "assertions": "passed"
+  }
+}

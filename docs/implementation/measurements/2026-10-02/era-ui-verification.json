@@ -1,0 +1,33 @@
+{
+  "measuredAt": "2026-10-02",
+  "description": "Post-fix preview verification. Separate from original loading/memory comparison.",
+  "runs": [
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "controller": "custom-bvh-capsule",
+      "release": "local-4d5905679d2e-6df18be3ac38",
+      "exportAfterRoundTrip": true,
+      "collisionToggleAfterRoundTrip": true,
+      "errors": [],
+      "layer": "current"
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "controller": "rapier-kinematic-capsule",
+      "release": "local-4d5905679d2e-6df18be3ac38",
+      "exportAfterRoundTrip": true,
+      "collisionToggleAfterRoundTrip": true,
+      "errors": [],
+      "layer": "current"
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "controller": "ammo-dynamic-capsule",
+      "release": "local-4d5905679d2e-6df18be3ac38",
+      "exportAfterRoundTrip": true,
+      "collisionToggleAfterRoundTrip": true,
+      "errors": [],
+      "layer": "current"
+    }
+  ]
+}

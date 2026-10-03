@@ -1,0 +1,17 @@
+{
+  "scope": "Ammo stairs follow-up; two-second straight input; spawn-only interception",
+  "start": [
+    -10.213534355163574,
+    0.03482397794723513,
+    -14.29921817779541
+  ],
+  "end": {
+    "feet": [
+      -12.381972312927246,
+      0.6582594156265259,
+      -14.255550384521484
+    ],
+    "recoveries": 0
+  },
+  "reachedUpperSection": true
+}

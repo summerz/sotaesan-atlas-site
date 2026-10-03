@@ -1,0 +1,200 @@
+{
+  "source": "historical-base-master.ply",
+  "sourceSha256": "54a08e799de36d469b74cc07ab435893d75aa1a180e7f45b84d72ef58ac57271",
+  "sourceGaussians": 701370,
+  "representation": "illustrative",
+  "partition": "unique Gaussian centers, world X strips",
+  "shBands": 0,
+  "chunks": [
+    {
+      "id": "past-chunk-0",
+      "src": "assets/past-chunk-0.sog",
+      "gaussians": 69967,
+      "bytes": 931680,
+      "sha256": "21278a4e06c3baaaffd79e487b995539b04e6009890c1c62f14d0e5195f0e1bf",
+      "bounds": {
+        "min": [
+          0,
+          -6,
+          -17
+        ],
+        "max": [
+          4,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-far-0",
+      "src": "assets/past-far-0.sog",
+      "gaussians": 6997,
+      "bytes": 108184,
+      "sha256": "52984d254cd7c536e04b54623c5cdf57fe49c279517f0c4dd06f7b555d40c073",
+      "bounds": {
+        "min": [
+          0,
+          -6,
+          -17
+        ],
+        "max": [
+          4,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-chunk-1",
+      "src": "assets/past-chunk-1.sog",
+      "gaussians": 231735,
+      "bytes": 3060137,
+      "sha256": "283493291821f0f4b1bad02195fb71170eba140beea756a54861589e3468530b",
+      "bounds": {
+        "min": [
+          4,
+          -6,
+          -17
+        ],
+        "max": [
+          8,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-far-1",
+      "src": "assets/past-far-1.sog",
+      "gaussians": 23174,
+      "bytes": 332038,
+      "sha256": "de61119d93405779584df05fa51e39118111ed371b85d605f545c1646bdb7863",
+      "bounds": {
+        "min": [
+          4,
+          -6,
+          -17
+        ],
+        "max": [
+          8,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-chunk-2",
+      "src": "assets/past-chunk-2.sog",
+      "gaussians": 173369,
+      "bytes": 2291736,
+      "sha256": "7dbbd3a50b1b2cff37c73d2e1b7f6de68a9723bdb9b5ad111ea5025eace17c61",
+      "bounds": {
+        "min": [
+          8,
+          -6,
+          -17
+        ],
+        "max": [
+          12,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-far-2",
+      "src": "assets/past-far-2.sog",
+      "gaussians": 17337,
+      "bytes": 251713,
+      "sha256": "0c3cc3624184338ddbf663dc21deba60d9e7dce2e3afd152447fc81a9793d929",
+      "bounds": {
+        "min": [
+          8,
+          -6,
+          -17
+        ],
+        "max": [
+          12,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-chunk-3",
+      "src": "assets/past-chunk-3.sog",
+      "gaussians": 118371,
+      "bytes": 1567189,
+      "sha256": "a8d0658fa83776356aa03cdd38dd8a138059a8e40215a6a0ee2536e00708af1b",
+      "bounds": {
+        "min": [
+          12,
+          -6,
+          -17
+        ],
+        "max": [
+          16,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-far-3",
+      "src": "assets/past-far-3.sog",
+      "gaussians": 11837,
+      "bytes": 176663,
+      "sha256": "95e21f10f686e39e6226a491c8b60788cdd3434a7f17e5b8942fe1a7fd88a999",
+      "bounds": {
+        "min": [
+          12,
+          -6,
+          -17
+        ],
+        "max": [
+          16,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-chunk-4",
+      "src": "assets/past-chunk-4.sog",
+      "gaussians": 107928,
+      "bytes": 1413514,
+      "sha256": "6e138752bb5b6724ed4d05e2aa23f2bd272ad5d6f3f2733497f53dab39f796aa",
+      "bounds": {
+        "min": [
+          16,
+          -6,
+          -17
+        ],
+        "max": [
+          20,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "past-far-4",
+      "src": "assets/past-far-4.sog",
+      "gaussians": 10793,
+      "bytes": 158175,
+      "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527",
+      "bounds": {
+        "min": [
+          16,
+          -6,
+          -17
+        ],
+        "max": [
+          20,
+          6,
+          1
+        ]
+      }
+    }
+  ]
+}

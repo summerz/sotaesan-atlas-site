@@ -1,0 +1,1627 @@
+{
+  "scope": "Fixed-camera SOG isolation; route intercept invalidates loading performance comparisons; object hashes describe source assets, control hash is in manifest.json",
+  "setup": {
+    "eye": [
+      -14.24,
+      2.15,
+      -11.09
+    ],
+    "rotation": [
+      -20,
+      90,
+      0
+    ],
+    "viewport": [
+      1280,
+      800
+    ],
+    "fov": 70,
+    "near": 0.05,
+    "settlingSecondsAfterStart": 2,
+    "temporaryWorldFields": [
+      "spawn.position",
+      "spawn.rotation",
+      "benchmarkRoute",
+      "objects (opaque-marker only)"
+    ],
+    "marker": {
+      "assetId": "reference-cube",
+      "position": [
+        -16.3,
+        0.25,
+        -10.3
+      ],
+      "scale": [
+        0.02,
+        0.75,
+        0.8
+      ]
+    }
+  },
+  "results": [
+    {
+      "capturedAt": "2026-10-03T06:35:22.324Z",
+      "control": "original",
+      "screenshot": "output/playwright/wall-audit-playcanvas-original.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=original",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:25.689Z",
+      "control": "rgba-roundtrip",
+      "screenshot": "output/playwright/wall-audit-playcanvas-rgba-roundtrip.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=rgba-roundtrip",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:28.880Z",
+      "control": "no-sh",
+      "screenshot": "output/playwright/wall-audit-playcanvas-no-sh.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=no-sh",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503077745437622,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:32.200Z",
+      "control": "exterior-16_3",
+      "screenshot": "output/playwright/wall-audit-playcanvas-exterior-16_3.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=exterior-16_3",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:35.532Z",
+      "control": "exterior-16_5",
+      "screenshot": "output/playwright/wall-audit-playcanvas-exterior-16_5.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=exterior-16_5",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:38.894Z",
+      "control": "exterior-17_5",
+      "screenshot": "output/playwright/wall-audit-playcanvas-exterior-17_5.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=exterior-17_5",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:42.642Z",
+      "control": "opaque-marker",
+      "screenshot": "output/playwright/wall-audit-playcanvas-opaque-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallControl=opaque-marker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "engine": "PlayCanvas 2.22.6",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "feet": [
+          -14.240019798278809,
+          0.5503078937530518,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-local-opaque-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:47.921Z",
+      "control": "original",
+      "screenshot": "output/playwright/wall-audit-three-original.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=original",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:52.275Z",
+      "control": "rgba-roundtrip",
+      "screenshot": "output/playwright/wall-audit-three-rgba-roundtrip.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=rgba-roundtrip",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:35:55.844Z",
+      "control": "no-sh",
+      "screenshot": "output/playwright/wall-audit-three-no-sh.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=no-sh",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:36:00.386Z",
+      "control": "exterior-16_3",
+      "screenshot": "output/playwright/wall-audit-three-exterior-16_3.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=exterior-16_3",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:36:04.813Z",
+      "control": "exterior-16_5",
+      "screenshot": "output/playwright/wall-audit-three-exterior-16_5.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=exterior-16_5",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:36:09.199Z",
+      "control": "exterior-17_5",
+      "screenshot": "output/playwright/wall-audit-three-exterior-17_5.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=exterior-17_5",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    },
+    {
+      "capturedAt": "2026-10-03T06:36:13.923Z",
+      "control": "opaque-marker",
+      "screenshot": "output/playwright/wall-audit-three-opaque-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallControl=opaque-marker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "engine": "Three.js r186",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-local-opaque-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "active": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "dpr": 1,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": []
+    }
+  ]
+}

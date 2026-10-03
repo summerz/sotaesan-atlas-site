@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-02",
+  "release": "local-4d5905679d2e-882e63d01db8",
+  "kind": "desktop functional regression; not performance measurements",
+  "three": {
+    "missingSog404": {
+      "error": "current-hall: 로딩 실패 — Failed to fetch \"http://127.0.0.1:5173/assets/current.sog\": 404 Not Found",
+      "retryReady": true
+    },
+    "timeoutAndRetry": {
+      "case": "hung-worker-timeout-and-fresh-page-retry",
+      "injection": "Drop first loadPackedSplats; speed 90000ms deadline to 1000ms; sessionStorage flag allows next page to load.",
+      "failure": {
+        "text": "Atlas · Three.js\n장면 \nKnock Hall · 기존 시험\nSunnyvale Museum · 벽 비교\n 보행 \n기존 BVH\nRapier\ncurrent-hall: 90초 안에 로딩을 완료하지 못했습니다. 다시 시도하거나 작은 장면을 선택해 주세요.\n다시 시도과거 보기\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+        "timeOrigin": 1790945830846.6
+      },
+      "retry": {
+        "timeOrigin": 1790945832194.7,
+        "marks": {
+          "worldLoaded": 39.89990234375,
+          "assetsLoaded": 243.60009765625,
+          "firstSceneReady": 245.300048828125
+        },
+        "errors": [],
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+      }
+    }
+  },
+  "playcanvas": {
+    "injection": null,
+    "input": "Hold KeyS 16 seconds, release, wait 0.5 seconds. Then KeyW 1 second.",
+    "recovery": {
+      "before": "장소 정보 시험\nAtlas · PlayCanvas\n장면 \nKnock Hall · 기존 시험\nSunnyvale Museum · 벽 비교\n지상 보행 · SOG 900,000개 · 충돌 메시 24삼각형\n과거 보기시작점으로\n\nWASD 이동 · 화면 클릭 후 마우스로 둘러보기 · 장소 정보 선택 · R 또는 시작점으로 복귀 · Esc로 마우스 해제. 충돌 지형은 단순화된 시험용입니다.\n\n비교 경로 재생\n\n충돌 면 보기위치 JSON 저장\n\n발 위치 (m): 3.00, 0.35, -4.00 · 충돌 면 보기에서는 촬영 장면을 숨깁니다.",
+      "state": {
+        "recordedAt": "2026-10-02T12:56:33.508Z",
+        "collisionView": false,
+        "track": "playcanvas",
+        "worldId": "knock-hall-stage-0",
+        "layer": "current",
+        "release": "local-4d5905679d2e-882e63d01db8",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "eye": [
+          3,
+          1.949984073638916,
+          -4
+        ],
+        "rotation": [
+          0,
+          -52,
+          0
+        ],
+        "velocity": [
+          0,
+          3.5762786865234375e-7,
+          0
+        ],
+        "recoveries": 1,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 23.09999990463257,
+        "controllerBuildMs": 3.5,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 2401,
+          "totalMs": 279.20000326633453,
+          "meanMs": 0.11628488265986445,
+          "maxMs": 2.200000047683716,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 69.40000140666962,
+            "meanMs": 0.11566666901111602,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.8000000715255737,
+            "simulatedSeconds": 10.00070000000002,
+            "cpuMsPerSimulatedSecond": 6.939514374660722
+          },
+          "recentIdle": {
+            "calls": 600,
+            "totalMs": 69.40000140666962,
+            "meanMs": 0.11566666901111602,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.8000000715255737,
+            "simulatedSeconds": 10.00070000000002,
+            "cpuMsPerSimulatedSecond": 6.939514374660722
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          }
+        ],
+        "objects": [
+          {
+            "id": "current-hall",
+            "type": "splat",
+            "assetId": "current",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1"
+          },
+          {
+            "id": "historical-base",
+            "type": "splat",
+            "assetId": "historical-base",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5bac2cfb55d79790c045bb20d603626358ecd5cc2ade682dd5fee325ef65fe01"
+          },
+          {
+            "id": "illustrative-frame",
+            "type": "gltf",
+            "assetId": "historical-object",
+            "layer": "historical",
+            "position": [
+              11.2,
+              0.35,
+              -8.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
+          },
+          {
+            "id": "metre-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              5,
+              0,
+              -1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      }
+    },
+    "movementAfterRecovery": {
+      "feetFromUI": [
+        4.35,
+        0.35,
+        -5.05
+      ],
+      "errors": []
+    }
+  },
+  "consoleNotes": "PlayCanvas favicon.ico 404; no app exception observed."
+}

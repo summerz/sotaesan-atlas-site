@@ -1,0 +1,11 @@
+# Sotaesan Atlas 스파이크 결과
+
+공개 주소: https://summerz.github.io/sotaesan-atlas-site/
+
+보고서, 발표용 HTML/PDF, 측정 JSON과 화면 근거를 정적으로 배포합니다. 3D 앱은 포함하지 않습니다.
+
+원본 개발 저장소에서 `uv run --with markdown python scripts/build-report-site.py`로 생성합니다. 생성된 `output/report-site/`를 이 저장소의 루트에 반영하면 GitHub Pages가 배포합니다. GitHub Pages 설정은 `main` 브랜치의 `/ (root)`입니다. `.nojekyll` 파일을 유지합니다.
+
+사용자 지정 도메인은 DNS에 CNAME을 등록하고 GitHub Pages 설정에 도메인을 지정합니다. CNAME의 대상은 `summerz.github.io`이며 저장소 이름이나 https://는 붙이지 않습니다. 루트 도메인은 A/AAAA 또는 ALIAS/ANAME 설정을 사용합니다.
+
+측정 원본은 바꾸지 않았습니다. 문서의 Markdown 링크만 배포용 HTML로 연결했습니다. 원본 개발 저장소의 코드·작업 지침은 게시하지 않으며, 해당 참조는 일반 텍스트로 표시합니다.

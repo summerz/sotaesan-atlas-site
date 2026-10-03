@@ -1,0 +1,7 @@
+{
+  "config": "ammo",
+  "scope": "headed actual app; bench spawn intercepted only; stream and era repair retention, no loading-cost measurement",
+  "checks": [],
+  "failure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at evalmachine.<anonymous>:27:18\n    at async evalmachine.<anonymous>:3:20\n    at async /Users/summerz/.npm/_npx/9833c18b2d85bc59/node_modules/playwright-core/lib/coreBundle.js:69222:13\n    at async /Users/summerz/.npm/_npx/9833c18b2d85bc59/node_modules/playwright-core/lib/coreBundle.js:73913:26",
+  "passed": false
+}

@@ -1,0 +1,4191 @@
+{
+  "recordedAt": "2026-10-02T16:38:49.645Z",
+  "url": "http://192.168.1.246:6174/?scene=stream-era",
+  "input": "synthetic DOM TouchEvents and DOM button clicks",
+  "running": false,
+  "passed": true,
+  "checks": [
+    {
+      "label": "current-far-panel",
+      "state": {
+        "track": "playcanvas",
+        "worldId": "hall-streaming-era",
+        "layer": "current",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          18.18760871887207,
+          0.34998908042907717,
+          -3.9998698234558105
+        ],
+        "eye": [
+          18.18760871887207,
+          1.9499890804290771,
+          -3.9998698234558105
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 203,
+        "controllerBuildMs": 6,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 9800,
+          "totalMs": 2913,
+          "meanMs": 0.2972448979591837,
+          "maxMs": 2,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 191,
+            "meanMs": 0.31833333333333336,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 12.269000000000004,
+            "cpuMsPerSimulatedSecond": 15.567690928356015
+          },
+          "recentIdle": {
+            "calls": 247,
+            "totalMs": 59,
+            "meanMs": 0.2388663967611336,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 4.163999999999993,
+            "cpuMsPerSimulatedSecond": 14.169068203650362
+          },
+          "recentMoving": {
+            "calls": 353,
+            "totalMs": 132,
+            "meanMs": 0.37393767705382436,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 8.105000000000002,
+            "cpuMsPerSimulatedSecond": 16.286243059839602
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "streaming": {
+          "loads": 8,
+          "unloads": 6,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 19768189,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 499714,
+          "peakReservedTotalGaussians": 589715,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 330319,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 420320,
+          "renderedGaussians": 387288,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 4347014,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 57,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 127,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 175,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 221,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 265,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 265,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 330,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 330,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 410,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            },
+            {
+              "t": 2768,
+              "id": "hall-chunk-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 2768,
+              "id": "hall-chunk-2",
+              "action": "requested"
+            },
+            {
+              "t": 3056,
+              "id": "hall-chunk-2",
+              "action": "ready"
+            },
+            {
+              "t": 4912,
+              "id": "hall-chunk-3",
+              "action": "unloaded"
+            },
+            {
+              "t": 4912,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 5024,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            },
+            {
+              "t": 7063,
+              "id": "hall-chunk-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 7063,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 7141,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 133847,
+              "id": "hall-chunk-0",
+              "action": "unloaded"
+            },
+            {
+              "t": 133847,
+              "id": "hall-chunk-2",
+              "action": "requested"
+            },
+            {
+              "t": 133987,
+              "id": "hall-chunk-2",
+              "action": "ready"
+            },
+            {
+              "t": 136002,
+              "id": "hall-chunk-1",
+              "action": "unloaded"
+            },
+            {
+              "t": 136002,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 136139,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            },
+            {
+              "t": 138165,
+              "id": "hall-chunk-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 138165,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 138270,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1278,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1402,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1491,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1577,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1647,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1648,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 2015,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 74,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 249,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 334,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 778,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 60,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 126,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 220,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 411,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 61,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 217,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 398,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 7011,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 9095,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 11208,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 62,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 142,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 235,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 634,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 2980703,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 226299,
+            "peakReservedTotalGaussians": 296437,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 56,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 125,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 169,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 211,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 382,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "registeredAssetCount": 50,
+        "content": {
+          "panelOpen": true,
+          "hotspotId": "current-stream-far-info",
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          },
+          {
+            "id": "current-wall-collision",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "transitionBounds": {
+              "min": [
+                1,
+                0.35,
+                -7.15
+              ],
+              "max": [
+                5,
+                3.35,
+                -6.85
+              ]
+            },
+            "position": [
+              3,
+              0.35,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "hall-chunk-0",
+            "type": "splat",
+            "assetId": "hall-chunk-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "12936a6b5027c6c83375f575b121031fee4ffad44025bb2755bda46da26f852e"
+          },
+          {
+            "id": "hall-chunk-1",
+            "type": "splat",
+            "assetId": "hall-chunk-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "56633119fb0300b792133da26b627323135a92c506b758d9e198e24fa7291dc5"
+          },
+          {
+            "id": "hall-chunk-2",
+            "type": "splat",
+            "assetId": "hall-chunk-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "c6378b89e456650f746c9037c1787f334a6c678aa69a0c9f20d3297d290e679b"
+          },
+          {
+            "id": "hall-chunk-3",
+            "type": "splat",
+            "assetId": "hall-chunk-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "ed3315cbfb38dc0a35797061142c2cc07b029484dcc7d33c32b825326269c555"
+          },
+          {
+            "id": "hall-chunk-4",
+            "type": "splat",
+            "assetId": "hall-chunk-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e9a63121e2396876a7ab7549fde264f2c291f200cf5201aba609f46a3370b005"
+          },
+          {
+            "id": "hall-far-0",
+            "type": "splat",
+            "assetId": "hall-far-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "f614cb61163e655f2c33159f7061136dafa8d64b8ca7d95451efe660cf94ae4e"
+          },
+          {
+            "id": "hall-far-1",
+            "type": "splat",
+            "assetId": "hall-far-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "279dfcccc6e72242d487db25b8b524c0cc3f29d4345e9d211309c5a76a1ce95e"
+          },
+          {
+            "id": "hall-far-2",
+            "type": "splat",
+            "assetId": "hall-far-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5e84f872fa60ca85e3dd8037d8182f7b9ec1690d746a1fd36a8afd3a8aa6a8a1"
+          },
+          {
+            "id": "hall-far-3",
+            "type": "splat",
+            "assetId": "hall-far-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e0d73a6058104a5d41297daf6128f27aedd210ea6cdb28b4823eccae91e7d36c"
+          },
+          {
+            "id": "hall-far-4",
+            "type": "splat",
+            "assetId": "hall-far-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "d9227f7fd82e5bafa9408c96a43564ca49951c950fd5dc591ac7023b01864482"
+          },
+          {
+            "id": "past-chunk-0",
+            "type": "splat",
+            "assetId": "past-chunk-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "21278a4e06c3baaaffd79e487b995539b04e6009890c1c62f14d0e5195f0e1bf"
+          },
+          {
+            "id": "past-far-0",
+            "type": "splat",
+            "assetId": "past-far-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "52984d254cd7c536e04b54623c5cdf57fe49c279517f0c4dd06f7b555d40c073"
+          },
+          {
+            "id": "past-chunk-1",
+            "type": "splat",
+            "assetId": "past-chunk-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "283493291821f0f4b1bad02195fb71170eba140beea756a54861589e3468530b"
+          },
+          {
+            "id": "past-far-1",
+            "type": "splat",
+            "assetId": "past-far-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "de61119d93405779584df05fa51e39118111ed371b85d605f545c1646bdb7863"
+          },
+          {
+            "id": "past-chunk-2",
+            "type": "splat",
+            "assetId": "past-chunk-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "7dbbd3a50b1b2cff37c73d2e1b7f6de68a9723bdb9b5ad111ea5025eace17c61"
+          },
+          {
+            "id": "past-far-2",
+            "type": "splat",
+            "assetId": "past-far-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "0c3cc3624184338ddbf663dc21deba60d9e7dce2e3afd152447fc81a9793d929"
+          },
+          {
+            "id": "past-chunk-3",
+            "type": "splat",
+            "assetId": "past-chunk-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "a8d0658fa83776356aa03cdd38dd8a138059a8e40215a6a0ee2536e00708af1b"
+          },
+          {
+            "id": "past-far-3",
+            "type": "splat",
+            "assetId": "past-far-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "95e21f10f686e39e6226a491c8b60788cdd3434a7f17e5b8942fe1a7fd88a999"
+          },
+          {
+            "id": "past-chunk-4",
+            "type": "splat",
+            "assetId": "past-chunk-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6e138752bb5b6724ed4d05e2aa23f2bd272ad5d6f3f2733497f53dab39f796aa"
+          },
+          {
+            "id": "past-far-4",
+            "type": "splat",
+            "assetId": "past-far-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527"
+          },
+          {
+            "id": "current-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              3,
+              0.35,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          },
+          {
+            "id": "historical-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "historical",
+            "position": [
+              3,
+              0.35,
+              -10
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "text": "닫기\n현재 구역\n\n시험용 예시 · 확신도: 해당 없음\n\n구역 자산·충돌·설명의 동시 교체를 확인합니다. 과거 장면은 건물 일부를 제거한 설명용 시험 자산이며 역사적 복원 자료가 아닙니다.\n\n",
+      "images": [
+        {
+          "src": "http://192.168.1.246:6174/assets/current-diagram.svg",
+          "width": 640
+        }
+      ]
+    },
+    {
+      "label": "historical-far-panel",
+      "state": {
+        "track": "playcanvas",
+        "worldId": "hall-streaming-era",
+        "layer": "historical",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          18.18760871887207,
+          0.34998908042907717,
+          -3.9998698234558105
+        ],
+        "eye": [
+          18.18760871887207,
+          1.9499890804290771,
+          -3.9998698234558105
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 203,
+        "controllerBuildMs": 6,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 9803,
+          "totalMs": 2913,
+          "meanMs": 0.29715393246965216,
+          "maxMs": 2,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 190,
+            "meanMs": 0.31666666666666665,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 12.263000000000003,
+            "cpuMsPerSimulatedSecond": 15.49376172225393
+          },
+          "recentIdle": {
+            "calls": 247,
+            "totalMs": 58,
+            "meanMs": 0.23481781376518218,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 4.157999999999992,
+            "cpuMsPerSimulatedSecond": 13.949013949013974
+          },
+          "recentMoving": {
+            "calls": 353,
+            "totalMs": 132,
+            "meanMs": 0.37393767705382436,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 8.105000000000002,
+            "cpuMsPerSimulatedSecond": 16.286243059839602
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "streaming": {
+          "loads": 1,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 1413514,
+          "peakReservedChunks": 1,
+          "peakReservedGaussians": 107928,
+          "peakReservedTotalGaussians": 178066,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 1,
+          "residentGaussians": 107928,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 178066,
+          "renderedGaussians": 167273,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2",
+            "hall-chunk-3"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 1413514,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 63,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 116,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 161,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 205,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 252,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 252,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 322,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1278,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1402,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1491,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1577,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1647,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1648,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 2015,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 74,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 249,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 334,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 778,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 60,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 126,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 220,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 411,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 61,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 217,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 398,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 7011,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 9095,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 11208,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 62,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 142,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 235,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 634,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 2980703,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 226299,
+            "peakReservedTotalGaussians": 296437,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 56,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 125,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 169,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 211,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 382,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 8,
+            "unloads": 6,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 19768189,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 499714,
+            "peakReservedTotalGaussians": 589715,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 57,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 127,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 175,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 221,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 265,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 265,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 330,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 330,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 2768,
+                "id": "hall-chunk-4",
+                "action": "unloaded"
+              },
+              {
+                "t": 2768,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 3056,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 4912,
+                "id": "hall-chunk-3",
+                "action": "unloaded"
+              },
+              {
+                "t": 4912,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 5024,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 7063,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 7063,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 7141,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 133847,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 133847,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 133987,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 136002,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 136002,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 136139,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 138165,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 138165,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 138270,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "registeredAssetCount": 44,
+        "content": {
+          "panelOpen": true,
+          "hotspotId": "historical-stream-far-info",
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": true
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 7,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          },
+          {
+            "id": "historical-wall-collision",
+            "assetId": "reference-cube",
+            "layer": "historical",
+            "transitionBounds": {
+              "min": [
+                1,
+                0.35,
+                -10.15
+              ],
+              "max": [
+                5,
+                3.35,
+                -9.85
+              ]
+            },
+            "position": [
+              3,
+              0.35,
+              -10
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "hall-chunk-0",
+            "type": "splat",
+            "assetId": "hall-chunk-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "12936a6b5027c6c83375f575b121031fee4ffad44025bb2755bda46da26f852e"
+          },
+          {
+            "id": "hall-chunk-1",
+            "type": "splat",
+            "assetId": "hall-chunk-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "56633119fb0300b792133da26b627323135a92c506b758d9e198e24fa7291dc5"
+          },
+          {
+            "id": "hall-chunk-2",
+            "type": "splat",
+            "assetId": "hall-chunk-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "c6378b89e456650f746c9037c1787f334a6c678aa69a0c9f20d3297d290e679b"
+          },
+          {
+            "id": "hall-chunk-3",
+            "type": "splat",
+            "assetId": "hall-chunk-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "ed3315cbfb38dc0a35797061142c2cc07b029484dcc7d33c32b825326269c555"
+          },
+          {
+            "id": "hall-chunk-4",
+            "type": "splat",
+            "assetId": "hall-chunk-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e9a63121e2396876a7ab7549fde264f2c291f200cf5201aba609f46a3370b005"
+          },
+          {
+            "id": "hall-far-0",
+            "type": "splat",
+            "assetId": "hall-far-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "f614cb61163e655f2c33159f7061136dafa8d64b8ca7d95451efe660cf94ae4e"
+          },
+          {
+            "id": "hall-far-1",
+            "type": "splat",
+            "assetId": "hall-far-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "279dfcccc6e72242d487db25b8b524c0cc3f29d4345e9d211309c5a76a1ce95e"
+          },
+          {
+            "id": "hall-far-2",
+            "type": "splat",
+            "assetId": "hall-far-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5e84f872fa60ca85e3dd8037d8182f7b9ec1690d746a1fd36a8afd3a8aa6a8a1"
+          },
+          {
+            "id": "hall-far-3",
+            "type": "splat",
+            "assetId": "hall-far-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e0d73a6058104a5d41297daf6128f27aedd210ea6cdb28b4823eccae91e7d36c"
+          },
+          {
+            "id": "hall-far-4",
+            "type": "splat",
+            "assetId": "hall-far-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "d9227f7fd82e5bafa9408c96a43564ca49951c950fd5dc591ac7023b01864482"
+          },
+          {
+            "id": "past-chunk-0",
+            "type": "splat",
+            "assetId": "past-chunk-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "21278a4e06c3baaaffd79e487b995539b04e6009890c1c62f14d0e5195f0e1bf"
+          },
+          {
+            "id": "past-far-0",
+            "type": "splat",
+            "assetId": "past-far-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "52984d254cd7c536e04b54623c5cdf57fe49c279517f0c4dd06f7b555d40c073"
+          },
+          {
+            "id": "past-chunk-1",
+            "type": "splat",
+            "assetId": "past-chunk-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "283493291821f0f4b1bad02195fb71170eba140beea756a54861589e3468530b"
+          },
+          {
+            "id": "past-far-1",
+            "type": "splat",
+            "assetId": "past-far-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "de61119d93405779584df05fa51e39118111ed371b85d605f545c1646bdb7863"
+          },
+          {
+            "id": "past-chunk-2",
+            "type": "splat",
+            "assetId": "past-chunk-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "7dbbd3a50b1b2cff37c73d2e1b7f6de68a9723bdb9b5ad111ea5025eace17c61"
+          },
+          {
+            "id": "past-far-2",
+            "type": "splat",
+            "assetId": "past-far-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "0c3cc3624184338ddbf663dc21deba60d9e7dce2e3afd152447fc81a9793d929"
+          },
+          {
+            "id": "past-chunk-3",
+            "type": "splat",
+            "assetId": "past-chunk-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "a8d0658fa83776356aa03cdd38dd8a138059a8e40215a6a0ee2536e00708af1b"
+          },
+          {
+            "id": "past-far-3",
+            "type": "splat",
+            "assetId": "past-far-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "95e21f10f686e39e6226a491c8b60788cdd3434a7f17e5b8942fe1a7fd88a999"
+          },
+          {
+            "id": "past-chunk-4",
+            "type": "splat",
+            "assetId": "past-chunk-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6e138752bb5b6724ed4d05e2aa23f2bd272ad5d6f3f2733497f53dab39f796aa"
+          },
+          {
+            "id": "past-far-4",
+            "type": "splat",
+            "assetId": "past-far-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527"
+          },
+          {
+            "id": "current-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              3,
+              0.35,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          },
+          {
+            "id": "historical-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "historical",
+            "position": [
+              3,
+              0.35,
+              -10
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "text": "닫기\n과거 구역 · 설명용 시험\n\n시험용 예시 · 확신도: 해당 없음\n\n구역 자산·충돌·설명의 동시 교체를 확인합니다. 과거 장면은 건물 일부를 제거한 설명용 시험 자산이며 역사적 복원 자료가 아닙니다.\n\n",
+      "images": [
+        {
+          "src": "http://192.168.1.246:6174/assets/past-diagram.svg",
+          "width": 640
+        }
+      ]
+    },
+    {
+      "label": "synthetic-look",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        1.2,
+        -2.4,
+        0
+      ],
+      "state": {
+        "track": "playcanvas",
+        "worldId": "hall-streaming-era",
+        "layer": "historical",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "eye": [
+          3,
+          1.949984073638916,
+          -4
+        ],
+        "rotation": [
+          1.2,
+          -2.4,
+          0
+        ],
+        "velocity": [
+          0,
+          3.5762786865234375e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 203,
+        "controllerBuildMs": 6,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 9846,
+          "totalMs": 2917,
+          "meanMs": 0.29626244160065,
+          "maxMs": 2,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 600,
+            "totalMs": 184,
+            "meanMs": 0.30666666666666664,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 12.320999999999998,
+            "cpuMsPerSimulatedSecond": 14.933852771690612
+          },
+          "recentIdle": {
+            "calls": 247,
+            "totalMs": 52,
+            "meanMs": 0.21052631578947367,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 4.215999999999992,
+            "cpuMsPerSimulatedSecond": 12.3339658444023
+          },
+          "recentMoving": {
+            "calls": 353,
+            "totalMs": 132,
+            "meanMs": 0.37393767705382436,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 8.105000000000002,
+            "cpuMsPerSimulatedSecond": 16.286243059839602
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "streaming": {
+          "loads": 3,
+          "unloads": 1,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 5405331,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 371840,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 371840,
+          "renderedGaussians": 341669,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 63,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 116,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 161,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 205,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 252,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 252,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 322,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 375,
+              "id": "hall-chunk-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 375,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 434,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 434,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 526,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1278,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1402,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1491,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1577,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1647,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1648,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1781,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 2015,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 74,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 249,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 334,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 538,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 778,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 60,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 126,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 220,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 267,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 320,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 411,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 61,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 217,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 313,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 398,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6782,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 7011,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8902,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 9095,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 11028,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 11208,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 62,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 142,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 235,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 279,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 421,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 634,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 2980703,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 226299,
+            "peakReservedTotalGaussians": 296437,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 56,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 125,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 169,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 211,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 257,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 321,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 382,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 8,
+            "unloads": 6,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 19768189,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 499714,
+            "peakReservedTotalGaussians": 589715,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 57,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 127,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 175,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 221,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 265,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 265,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 330,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 330,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 410,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 2768,
+                "id": "hall-chunk-4",
+                "action": "unloaded"
+              },
+              {
+                "t": 2768,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 3056,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 4912,
+                "id": "hall-chunk-3",
+                "action": "unloaded"
+              },
+              {
+                "t": 4912,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 5024,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 7063,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 7063,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 7141,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 133847,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 133847,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 133987,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 136002,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 136002,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 136139,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 138165,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 138165,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 138270,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "registeredAssetCount": 50,
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 7,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          },
+          {
+            "id": "historical-wall-collision",
+            "assetId": "reference-cube",
+            "layer": "historical",
+            "transitionBounds": {
+              "min": [
+                1,
+                0.35,
+                -10.15
+              ],
+              "max": [
+                5,
+                3.35,
+                -9.85
+              ]
+            },
+            "position": [
+              3,
+              0.35,
+              -10
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "hall-chunk-0",
+            "type": "splat",
+            "assetId": "hall-chunk-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "12936a6b5027c6c83375f575b121031fee4ffad44025bb2755bda46da26f852e"
+          },
+          {
+            "id": "hall-chunk-1",
+            "type": "splat",
+            "assetId": "hall-chunk-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "56633119fb0300b792133da26b627323135a92c506b758d9e198e24fa7291dc5"
+          },
+          {
+            "id": "hall-chunk-2",
+            "type": "splat",
+            "assetId": "hall-chunk-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "c6378b89e456650f746c9037c1787f334a6c678aa69a0c9f20d3297d290e679b"
+          },
+          {
+            "id": "hall-chunk-3",
+            "type": "splat",
+            "assetId": "hall-chunk-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "ed3315cbfb38dc0a35797061142c2cc07b029484dcc7d33c32b825326269c555"
+          },
+          {
+            "id": "hall-chunk-4",
+            "type": "splat",
+            "assetId": "hall-chunk-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e9a63121e2396876a7ab7549fde264f2c291f200cf5201aba609f46a3370b005"
+          },
+          {
+            "id": "hall-far-0",
+            "type": "splat",
+            "assetId": "hall-far-0",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "f614cb61163e655f2c33159f7061136dafa8d64b8ca7d95451efe660cf94ae4e"
+          },
+          {
+            "id": "hall-far-1",
+            "type": "splat",
+            "assetId": "hall-far-1",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "279dfcccc6e72242d487db25b8b524c0cc3f29d4345e9d211309c5a76a1ce95e"
+          },
+          {
+            "id": "hall-far-2",
+            "type": "splat",
+            "assetId": "hall-far-2",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5e84f872fa60ca85e3dd8037d8182f7b9ec1690d746a1fd36a8afd3a8aa6a8a1"
+          },
+          {
+            "id": "hall-far-3",
+            "type": "splat",
+            "assetId": "hall-far-3",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "e0d73a6058104a5d41297daf6128f27aedd210ea6cdb28b4823eccae91e7d36c"
+          },
+          {
+            "id": "hall-far-4",
+            "type": "splat",
+            "assetId": "hall-far-4",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "d9227f7fd82e5bafa9408c96a43564ca49951c950fd5dc591ac7023b01864482"
+          },
+          {
+            "id": "past-chunk-0",
+            "type": "splat",
+            "assetId": "past-chunk-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "21278a4e06c3baaaffd79e487b995539b04e6009890c1c62f14d0e5195f0e1bf"
+          },
+          {
+            "id": "past-far-0",
+            "type": "splat",
+            "assetId": "past-far-0",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "52984d254cd7c536e04b54623c5cdf57fe49c279517f0c4dd06f7b555d40c073"
+          },
+          {
+            "id": "past-chunk-1",
+            "type": "splat",
+            "assetId": "past-chunk-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "283493291821f0f4b1bad02195fb71170eba140beea756a54861589e3468530b"
+          },
+          {
+            "id": "past-far-1",
+            "type": "splat",
+            "assetId": "past-far-1",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "de61119d93405779584df05fa51e39118111ed371b85d605f545c1646bdb7863"
+          },
+          {
+            "id": "past-chunk-2",
+            "type": "splat",
+            "assetId": "past-chunk-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "7dbbd3a50b1b2cff37c73d2e1b7f6de68a9723bdb9b5ad111ea5025eace17c61"
+          },
+          {
+            "id": "past-far-2",
+            "type": "splat",
+            "assetId": "past-far-2",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "0c3cc3624184338ddbf663dc21deba60d9e7dce2e3afd152447fc81a9793d929"
+          },
+          {
+            "id": "past-chunk-3",
+            "type": "splat",
+            "assetId": "past-chunk-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "a8d0658fa83776356aa03cdd38dd8a138059a8e40215a6a0ee2536e00708af1b"
+          },
+          {
+            "id": "past-far-3",
+            "type": "splat",
+            "assetId": "past-far-3",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "95e21f10f686e39e6226a491c8b60788cdd3434a7f17e5b8942fe1a7fd88a999"
+          },
+          {
+            "id": "past-chunk-4",
+            "type": "splat",
+            "assetId": "past-chunk-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6e138752bb5b6724ed4d05e2aa23f2bd272ad5d6f3f2733497f53dab39f796aa"
+          },
+          {
+            "id": "past-far-4",
+            "type": "splat",
+            "assetId": "past-far-4",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527"
+          },
+          {
+            "id": "current-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              3,
+              0.35,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          },
+          {
+            "id": "historical-test-wall",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "historical",
+            "position": [
+              3,
+              0.35,
+              -10
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              4,
+              3,
+              0.3
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-02T16:38:59.585Z"
+}

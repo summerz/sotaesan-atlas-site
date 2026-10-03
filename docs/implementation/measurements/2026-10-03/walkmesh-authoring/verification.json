@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-03",
+  "command": "pnpm check",
+  "passed": true,
+  "tests": {
+    "scripts": 17,
+    "shared": 31,
+    "three": 26,
+    "total": 74
+  },
+  "typechecks": [
+    "shared",
+    "spike-three",
+    "spike-playcanvas"
+  ],
+  "releaseId": "local-4d5905679d2e-ef10bbe455c0",
+  "browserSmokes": {
+    "bvh": true,
+    "ammo": true
+  },
+  "remainingConsoleIssues": [
+    "favicon.ico 404 in both apps",
+    "Ammo sortKey overflow: 3 warnings, 1 splat each"
+  ],
+  "deployed": false
+}

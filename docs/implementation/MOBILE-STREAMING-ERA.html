@@ -1,0 +1,170 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iPhone에서 공간 분할과 시대 전환 확인 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="MOBILE-STREAMING-ERA.md" download>Markdown 원본 다운로드</a></p><h1 id="iphone">iPhone에서 공간 분할과 시대 전환 확인</h1>
+<p>2026-10-03. <code>stream-era</code> 장면의 Three.js BVH·Three.js Rapier·PlayCanvas Ammo 구성을 iPhone 11 Safari에서 하나씩 실행했다. 세 구성 모두 기능 시험을 통과했다. 릴리스는 <code>local-4d5905679d2e-a07c1f72c5f1</code>이다.</p>
+<h2 id="_1">시험 조건과 방법</h2>
+<ul>
+<li>기기: iPhone 11, iOS 27.0.1 (24A446), Safari 27.0.1, Apple GPU. OS 정보는 <a href="measurements/2026-10-02/ios-browser.json">기기 기록</a>에 있다. UA의 <code>CPU iPhone OS 18_7</code>은 호환성 문자열이며 실제 OS 버전으로 사용하지 않았다.</li>
+<li>화면: 375 × 616 CSS px, 앱 렌더링 DPR 1.5. 로컬 프로덕션 빌드와 기존 Safari 캐시를 사용했다. 첫 다운로드 시간이나 FPS 순위를 비교하는 시험이 아니다.</li>
+<li>연결: USB Web Inspector → <code>pymobiledevice3</code> CDP 브리지 → Playwright MCP. iPhone IP만 허용하는 LAN 릴레이로 6173/6174를 앱의 5173/5174에 연결했다.</li>
+<li>사용자가 승인한 프로젝트 Safari 탭 하나만 조작했다. Playwright의 별도 Chromium은 CDP 접속용이며 실제 렌더링과 상태 읽기는 iPhone Safari에서 수행했다. Chrome 확장은 사용하지 않았다.</li>
+<li>입력: 캔버스에 합성 <code>TouchEvent</code>를 보내 이동·회전을 실행하고, 표시 가능한 버튼을 DOM <code>.click()</code>으로 열었다. 물리적 손가락 터치의 좌표 판정·스크롤·조작감 검증은 아니다.</li>
+<li>본 시험은 구성당 약 28초, 보완 시험은 약 8~10초다. 오류 계측은 페이지 로딩 후 시험 시작 시점부터다. 장시간 안정성은 확인하지 않았다.</li>
+</ul>
+<h2 id="_2">기능 결과</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>Three.js BVH</th>
+<th>Three.js Rapier</th>
+<th>PlayCanvas Ammo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>저해상도 준비, 정밀 구역 로딩</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>시작 구역 → 먼 구역 → 시작 구역 왕복</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>현재·과거 벽 교체, 이전 벽 충돌 제거</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>시대 전환 6회, 이전 스트리머 논리 상태 정리</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>시작점 시대별 설명, 과거 설명 이미지 로딩</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>먼 구역 현재·과거 설명과 이미지 로딩</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>합성 터치로 시선 회전</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+</tbody>
+</table></div>
+<p>본 시험은 구성마다 13개 상태를 기록했다. 정밀 구역은 <code>hall-chunk-0/1</code>에서 <code>hall-chunk-3/4</code>로 바뀌고, 돌아오면 다시 <code>hall-chunk-0/1</code>이 준비됐다. 매 상태에서 다섯 논리 구역이 정밀 또는 저해상도 표현으로 포함되고, 동일 구역의 두 표현이 동시에 표시되지 않는지 검사했다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>벽 앞 발 Z (m)</th>
+<th style="text-align: right;">BVH</th>
+<th style="text-align: right;">Rapier</th>
+<th style="text-align: right;">Ammo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재</td>
+<td style="text-align: right;">-6.600</td>
+<td style="text-align: right;">-6.590</td>
+<td style="text-align: right;">-6.600</td>
+</tr>
+<tr>
+<td>과거</td>
+<td style="text-align: right;">-9.600</td>
+<td style="text-align: right;">-9.590</td>
+<td style="text-align: right;">-9.600</td>
+</tr>
+</tbody>
+</table></div>
+<p>Rapier의 약 1 cm 차이는 접촉 여유를 포함한 결과다. 이 장면의 충돌은 공통 바닥과 시대별 시험 벽이다. 실제 건물의 계단·경사나 복잡한 구역별 충돌을 검증한 결과로 확대하지 않는다.</p>
+<h2 id="_3">선택 로딩과 자원 기록</h2>
+<p>아래 점 수는 세 구성에서 같았다. 상주 수에는 표시에서 숨긴 저해상도 표현도 포함한다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>위치·시대</th>
+<th style="text-align: right;">논리적 상주 점 수</th>
+<th style="text-align: right;">표시 점 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시작점, 현재</td>
+<td style="text-align: right;">391,703</td>
+<td style="text-align: right;">361,532</td>
+</tr>
+<tr>
+<td>시작점, 과거</td>
+<td style="text-align: right;">371,840</td>
+<td style="text-align: right;">341,669</td>
+</tr>
+<tr>
+<td>먼 구역, 현재</td>
+<td style="text-align: right;">420,320</td>
+<td style="text-align: right;">387,288</td>
+</tr>
+</tbody>
+</table></div>
+<p>관측된 스트리머의 최대 예약량은 정밀 499,714점, 저해상도 포함 589,715점, 정밀 구역 2개였다. 설정 한도인 정밀 750,000점·전체 850,000점·정밀 구역 3개 이내다. 마지막 현재 시대 스트리머는 왕복 중 <code>loads=5</code>, <code>unloads=3</code>을 기록했다.</p>
+<p>시대 전환으로 종료된 스트리머는 <code>closed=true</code>, 상주 구역·점 수·진행 요청 0이었다. PlayCanvas 등록 자산 수는 시작·먼 구역·복귀의 세 확인 시점에 모두 50이었다. 본 시험의 계측 구간에서 세 구성 모두 런타임 오류·WebGL 컨텍스트 이벤트·화면 숨김 이벤트·낙하 복구 0, <code>blockedMs=0</code>을 기록했다.</p>
+<p>이 값들은 앱의 논리 상태다. 실제 RAM·GPU 메모리 해제량, 순간 최대 메모리, 장시간 누수 없음의 증명이 아니다. <code>requestedBytes</code>도 자산 크기의 누적 카운터이며 캐시를 반영한 실제 네트워크 전송량이 아니다. 이번 모바일 시험에는 전체 SOG 요청 여부를 판단할 별도 네트워크 요청 로그를 수집하지 않았다.</p>
+<h2 id="_4">시험 코드에서 보완한 부분</h2>
+<p>첫 시도는 없는 버튼 이름 <code>먼 현재 구역</code>을 사용했다. 두 번째 시도에서는 X 약 17 m에서 콘텐츠 데이터의 표시 조건을 만족해도 버튼이 화면에 나타나지 않았다. 이 둘은 앱 장애로 분류하지 않았다. <a href="measurements/2026-10-03/ios-stream-era-bvh-harness-error.json">첫 이름 오류</a>와 <a href="measurements/2026-10-03/ios-stream-era-bvh-harness-visibility.json">표시 조건 오류</a>를 보존했다.</p>
+<p>본 시험에서는 먼 구역 콘텐츠의 소유권·시대 조건을 확인하고, 별도 보완 시험에서 X &gt; 18 m의 버튼 앞까지 이동했다. 세 구성 모두 보이는 현재·과거 버튼으로 패널을 열고 이미지의 <code>complete</code>와 <code>naturalWidth &gt; 0</code>을 확인했다. 이어 합성 오른쪽 터치로 회전값이 바뀌는지 검사하고 시작점으로 복귀했다.</p>
+<h2 id="_5">증거와 재실행</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구성</th>
+<th>본 시험 JSON</th>
+<th>보완 시험 JSON</th>
+<th>본 시험 종료 화면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td><a href="measurements/2026-10-03/ios-stream-era-three.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-interaction-three.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-three.png">화면</a></td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td><a href="measurements/2026-10-03/ios-stream-era-three-rapier.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-interaction-three-rapier.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-three-rapier.png">화면</a></td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td><a href="measurements/2026-10-03/ios-stream-era-playcanvas.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-interaction-playcanvas.json">기록</a></td>
+<td><a href="measurements/2026-10-03/ios-stream-era-playcanvas.png">화면</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="local-file" title="원본 개발 저장소의 파일">본 시험 함수 (원본 저장소 파일)</span>, <span class="local-file" title="원본 개발 저장소의 파일">보완 시험 함수 (원본 저장소 파일)</span>, <span class="local-file" title="원본 개발 저장소의 파일">CDP 상태 조회 콜백 (원본 저장소 파일)</span>을 보관한다. 브리지와 릴레이를 시작하고 승인한 Safari 탭에서 <code>scene=stream-era</code>를 연다. 해당 함수 소스를 <code>Runtime.evaluate</code>로 주입·호출한 뒤 <code>window.__atlasStreamEra</code> 또는 <code>window.__atlasStreamInteraction</code>을 읽는다. 보완 시험은 현재 시대에서 시작한다. 주소가 바뀌면 콜백의 허용 origin도 갱신해야 한다.</p>
+<h2 id="_6">제한과 다음 작업</h2>
+<ul>
+<li>세로 화면의 진단 패널이 장면 대부분을 가린다. 실제 손가락 사용성 확인 전에 패널 접기와 이동 영역 확보가 필요하다.</li>
+<li>작은 SH0 분할 시험의 성공은 400만 점 SH3 Sunnyvale 원본의 Three.js 해독 미완료 문제를 해결했다는 뜻이 아니다. <a href="MOBILE-DECODER-CONTROLS.html">해독 대조 시험</a>의 위험은 유지한다.</li>
+<li>지연 요청·HTTP 503·입력 차단·실패 복구는 <a href="STREAMING-ERA.html">데스크톱 결합 시험</a>에서 확인했다. 이번 iPhone에는 장애를 주입하지 않았다.</li>
+<li>물리적 손가락 조작, 장시간 유지, 실제 모바일 메모리, Android, 비공개 HTTPS 배포, 복잡한 충돌 메시의 구역별 로딩은 미검증이다.</li>
+</ul>
+<p>다음 핵심 작업은 실제 장소 자료 한 구역에 <strong>시각 자산과 충돌 메시의 분할·필요 로딩</strong>을 함께 적용하고, 경계 이동·시대 교체·제작 및 수정 작업량을 확인하는 것이다. 현재 결과로 엔진 선택이나 전체 프로젝트 비용을 확정하지 않는다.</p></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

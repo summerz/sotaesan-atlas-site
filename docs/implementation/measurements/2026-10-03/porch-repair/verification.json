@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-03",
+  "release": "local-4d5905679d2e-8887379fa947",
+  "deployed": false,
+  "scope": "Local authored porch floor repair; actual headed desktop apps; not a performance benchmark or full-world safety certification",
+  "automated": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "tests": {
+      "scripts": 19,
+      "shared": 31,
+      "three": 27,
+      "total": 77
+    },
+    "typecheck": true,
+    "assetHashes": true,
+    "bothBuildsAndReleaseInventory": true
+  },
+  "primary": {
+    "bvh": {
+      "source": "bvh.json",
+      "environment": {
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "visibility": "visible",
+        "focus": true,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+      },
+      "checks": [
+        {
+          "fixture": "stairs",
+          "crossedRepair": null,
+          "railingBlocked": null,
+          "returnDistance": 0.3439065377828621,
+          "idleDrift": 0,
+          "returnedToLevel": true,
+          "climbedStairs": true
+        },
+        {
+          "fixture": "bench",
+          "crossedRepair": true,
+          "railingBlocked": true,
+          "returnDistance": 0.00873669333816312,
+          "idleDrift": 0,
+          "returnedToLevel": true,
+          "climbedStairs": null
+        }
+      ],
+      "errors": []
+    },
+    "rapier": {
+      "source": "rapier.json",
+      "environment": {
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "visibility": "visible",
+        "focus": true,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+      },
+      "checks": [
+        {
+          "fixture": "stairs",
+          "crossedRepair": null,
+          "railingBlocked": null,
+          "returnDistance": 0.3925614719391984,
+          "idleDrift": 0,
+          "returnedToLevel": true,
+          "climbedStairs": false
+        },
+        {
+          "fixture": "bench",
+          "crossedRepair": true,
+          "railingBlocked": true,
+          "returnDistance": 0.0650899686247289,
+          "idleDrift": 0,
+          "returnedToLevel": true,
+          "climbedStairs": null
+        }
+      ],
+      "errors": []
+    },
+    "ammo": {
+      "source": "ammo.json",
+      "environment": {
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "visibility": "visible",
+        "focus": true,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+      },
+      "checks": [
+        {
+          "fixture": "stairs",
+          "crossedRepair": null,
+          "railingBlocked": null,
+          "returnDistance": 0.5997433870963842,
+          "idleDrift": 4.172325134277344e-06,
+          "returnedToLevel": true,
+          "climbedStairs": true
+        },
+        {
+          "fixture": "bench",
+          "crossedRepair": true,
+          "railingBlocked": true,
+          "returnDistance": 0.020940471610982517,
+          "idleDrift": 0,
+          "returnedToLevel": true,
+          "climbedStairs": null
+        }
+      ],
+      "errors": []
+    }
+  },
+  "retention": {
+    "bvh": {
+      "source": "bvh-retention.json",
+      "passed": true,
+      "checks": [
+        {
+          "scene": "sunnyvale-stream",
+          "layer": "current",
+          "returnDistance": 0.005039594634723434,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "current",
+          "returnDistance": 0.004675712541883227,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "historical",
+          "returnDistance": 0.004355664213326415,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "current",
+          "returnDistance": 0.006965259112441874,
+          "passed": true
+        }
+      ]
+    },
+    "ammo": {
+      "source": "ammo-retention.json",
+      "passed": true,
+      "checks": [
+        {
+          "scene": "sunnyvale-stream",
+          "layer": "current",
+          "returnDistance": 0.016964196608027778,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "current",
+          "returnDistance": 0.19808125740968852,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "historical",
+          "returnDistance": 0.09150948825590992,
+          "passed": true
+        },
+        {
+          "scene": "sunnyvale-era",
+          "layer": "current",
+          "returnDistance": 0.05241687842266404,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "notMeasured": [
+    "Rapier streamed/era browser retention this round",
+    "iPhone repair verification",
+    "GPU processing and memory increment",
+    "Human authoring costs"
+  ],
+  "remainingIssues": [
+    "Wall ghosting",
+    "Rapier shorter 1-second stair advance",
+    "Ammo era current return distance 0.1980813m near 0.2m test threshold",
+    "Whole-path geometry review"
+  ],
+  "excludedAttempt": {
+    "source": "ammo-retention-attempt1.json",
+    "reason": "Waited for grounded flag absent from Ammo inspection state; measurement predicate corrected in final retention run"
+  },
+  "browserClosed": true,
+  "previewServersKeptRunning": true
+}

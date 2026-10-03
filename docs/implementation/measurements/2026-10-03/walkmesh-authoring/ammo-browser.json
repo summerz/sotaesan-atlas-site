@@ -1,0 +1,765 @@
+{
+  "config": "ammo",
+  "startedAt": "2026-10-03T04:55:06.688Z",
+  "scope": "headed actual app; intercepted spawn only, original collision/render assets",
+  "checks": [
+    {
+      "fixture": "stairs",
+      "start": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -10.213534355163574,
+          0.03482397794723513,
+          -14.29921817779541
+        ],
+        "eye": [
+          -10.213534355163574,
+          1.6348240375518799,
+          -14.29921817779541
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0.000005245208740234375,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 47.09999990463257,
+        "controllerBuildMs": 346.90000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "turn": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -11.24549674987793,
+          0.5602650880813599,
+          -14.265498161315918
+        ],
+        "eye": [
+          -11.24549674987793,
+          2.1602649688720703,
+          -14.265498161315918
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0.000007972121238708496,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 47.09999990463257,
+        "controllerBuildMs": 346.90000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returned": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.326163291931152,
+          -0.027683830261230447,
+          -14.258711814880371
+        ],
+        "eye": [
+          -9.326163291931152,
+          1.5723161697387695,
+          -14.258711814880371
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 47.09999990463257,
+        "controllerBuildMs": 346.90000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "idle": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.326163291931152,
+          -0.027683830261230447,
+          -14.258711814880371
+        ],
+        "eye": [
+          -9.326163291931152,
+          1.5723161697387695,
+          -14.258711814880371
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 47.09999990463257,
+        "controllerBuildMs": 346.90000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returnDistance": 0.8904916593578348,
+      "idleDrift": 0,
+      "returnedToLevel": true,
+      "climbedStairs": false
+    },
+    {
+      "fixture": "bench",
+      "start": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.663618087768555,
+          0.5371898651123047,
+          -21.88226318359375
+        ],
+        "eye": [
+          -13.663618087768555,
+          2.1371898651123047,
+          -21.88226318359375
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          -0.00000311434268951416,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 23.799999952316284,
+        "controllerBuildMs": 323.40000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "turn": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.623177528381348,
+          -0.1977957248687744,
+          -23.680435180664062
+        ],
+        "eye": [
+          -13.623177528381348,
+          1.4022042751312256,
+          -23.680435180664062
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          -8.940696716308594e-8,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 23.799999952316284,
+        "controllerBuildMs": 323.40000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returned": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.617706298828125,
+          -0.2161539554595947,
+          -22.253618240356445
+        ],
+        "eye": [
+          -13.617706298828125,
+          1.3838460445404053,
+          -22.253618240356445
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          -0.00004519522190093994,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 23.799999952316284,
+        "controllerBuildMs": 323.40000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "idle": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-89a5df9eff9e",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.617566108703613,
+          -0.21615318059921262,
+          -22.253639221191406
+        ],
+        "eye": [
+          -13.617566108703613,
+          1.3838467597961426,
+          -22.253639221191406
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          3.5762786865234375e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 23.799999952316284,
+        "controllerBuildMs": 323.40000009536743,
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 11,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          }
+        ]
+      },
+      "returnDistance": 0.8411536022277984,
+      "idleDrift": 0.00014175354265372355,
+      "returnedToLevel": false,
+      "climbedStairs": null
+    }
+  ],
+  "errors": [],
+  "environment": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "visibility": "visible",
+    "focus": true,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "finishedAt": "2026-10-03T04:55:22.144Z"
+}

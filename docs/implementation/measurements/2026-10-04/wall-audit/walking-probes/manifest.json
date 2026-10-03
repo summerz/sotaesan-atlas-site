@@ -1,0 +1,444 @@
+{
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 7484,
+      "sha256": "caa0d69cea23fc4fb5a1395869a47594a68d70ec27c25936e7a8a7ace2637059"
+    },
+    {
+      "file": "capture-wall-coverage-probes.playwright.js",
+      "bytes": 5995,
+      "sha256": "dbddec618462849216b061dfa6bfde211c7868b833abfe28b74e7f600c9127ef"
+    },
+    {
+      "file": "capture-wall-era-probes.playwright.js",
+      "bytes": 6673,
+      "sha256": "aa23f77d194e550debc69138c96a23d974983edce5f72b44f37e6c5b6cd9a143"
+    },
+    {
+      "file": "capture-wall-walking-probes.playwright.js",
+      "bytes": 6866,
+      "sha256": "b40a5367d5ba3430fbd5741c7583ee171afeb99845366d9c2528bfc379570a8e"
+    },
+    {
+      "file": "captures.json",
+      "bytes": 340039,
+      "sha256": "182a57b7e38ef7b46dfa82e71d0a89651bf05756e13d31c5dbce227ac4287dfc"
+    },
+    {
+      "file": "coverage-captures.json",
+      "bytes": 47673,
+      "sha256": "f406cb1f58b343367497645d87dd5284cf854a0f4d1156d5f4e9cf9d93464a4b"
+    },
+    {
+      "file": "coverage-differences.json",
+      "bytes": 3584,
+      "sha256": "e8b79a91f58b9c06f3bcfdd5d431546f40d5235d896a6fb1ddaba5a2ee300fd5"
+    },
+    {
+      "file": "era-captures.json",
+      "bytes": 1753742,
+      "sha256": "43cd9df13cc5e970eb40c5d834a9424feb8fb6d19a57f7af53f1f2595a9d0956"
+    },
+    {
+      "file": "excluded-attempts.json",
+      "bytes": 1348,
+      "sha256": "d4225f45ef01a202aa49743dc43025b3169d6d76bcc2d5c650c7dbaaf6d49850"
+    },
+    {
+      "file": "index.html",
+      "bytes": 19653,
+      "sha256": "7c14c850810cc2836729aaa5a978adaa3c60797328b3ae7b36b017f6273eaa0b"
+    },
+    {
+      "file": "retain-wall-walking-evidence.py",
+      "bytes": 8601,
+      "sha256": "438a0e960cfa9ba0fcb3caa4c382475d0bd72ebc73a781420cdcb0e29847fee5"
+    },
+    {
+      "file": "wall-calibrated-probe.glb",
+      "bytes": 51944,
+      "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+    },
+    {
+      "file": "wall-coverage-playcanvas-contact-original-marker.png",
+      "bytes": 392305,
+      "sha256": "9ddb186d6a88776556fe657870d21fb49b86823d032753c9aa6e3928db3fa448"
+    },
+    {
+      "file": "wall-coverage-playcanvas-contact-original.png",
+      "bytes": 386525,
+      "sha256": "34896304f8408bb530afb0b6e78df38e30c50afb8feadf245923428e2b22b831"
+    },
+    {
+      "file": "wall-coverage-playcanvas-contact-patch-marker.png",
+      "bytes": 391907,
+      "sha256": "72718b9849a2467f8f78a585822c35b187b6467628bde892e2a2958b5dab8bfa"
+    },
+    {
+      "file": "wall-coverage-playcanvas-contact-patch.png",
+      "bytes": 386525,
+      "sha256": "34896304f8408bb530afb0b6e78df38e30c50afb8feadf245923428e2b22b831"
+    },
+    {
+      "file": "wall-coverage-three-contact-original-marker.png",
+      "bytes": 412185,
+      "sha256": "c61964dd77522acfc71d6c46d5a7647430e08fe9ebd62b56413d95e5bc3bdff0"
+    },
+    {
+      "file": "wall-coverage-three-contact-original.png",
+      "bytes": 407019,
+      "sha256": "9c7a960e30733b328d9779284cbc8192ed933eb3691edef2c5f3589c27adea34"
+    },
+    {
+      "file": "wall-coverage-three-contact-patch-marker.png",
+      "bytes": 412185,
+      "sha256": "c61964dd77522acfc71d6c46d5a7647430e08fe9ebd62b56413d95e5bc3bdff0"
+    },
+    {
+      "file": "wall-coverage-three-contact-patch.png",
+      "bytes": 407019,
+      "sha256": "9c7a960e30733b328d9779284cbc8192ed933eb3691edef2c5f3589c27adea34"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-away.png",
+      "bytes": 479342,
+      "sha256": "8668c2424107c1624a097a87416a057b69e6aad23c8cd0426351093ace0f3131"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-current.png",
+      "bytes": 445618,
+      "sha256": "2e7226ec60c1434fdc5fac3cca6364e20316d7f15770baf5f19df16c28d2ecb9"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-historical.png",
+      "bytes": 445618,
+      "sha256": "2e7226ec60c1434fdc5fac3cca6364e20316d7f15770baf5f19df16c28d2ecb9"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-look-down.png",
+      "bytes": 383654,
+      "sha256": "31ccc90af33c23a66399b05fa1805e7be1f7075b82487131210b50caeb645058"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-look-left.png",
+      "bytes": 475418,
+      "sha256": "37383c0c4d5178cd76e8bec0304138d3e507e8efe2c5f51e1addeec5f340a3b5"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-look-restored.png",
+      "bytes": 445618,
+      "sha256": "2e7226ec60c1434fdc5fac3cca6364e20316d7f15770baf5f19df16c28d2ecb9"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-look-right.png",
+      "bytes": 462595,
+      "sha256": "92b22c523e2f28b3e068432595238fdb444b0649d5f8a9d8b6b05976618491de"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-reset.png",
+      "bytes": 445466,
+      "sha256": "2ac92ae659237f8bac8306974e16465f011a59b365e33830d4eed61b2a0cba65"
+    },
+    {
+      "file": "wall-era-playcanvas-original-marker-returned.png",
+      "bytes": 445618,
+      "sha256": "2e7226ec60c1434fdc5fac3cca6364e20316d7f15770baf5f19df16c28d2ecb9"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-away.png",
+      "bytes": 468900,
+      "sha256": "2bf58403a81b70682c74293c475a848c506758e40ed2cc4d04219ded95dc9117"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-current.png",
+      "bytes": 422572,
+      "sha256": "09b09c722a0d8a5ace96c1b41ab844488f6e17543d63b8265b508fa607294b0a"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-historical.png",
+      "bytes": 422572,
+      "sha256": "09b09c722a0d8a5ace96c1b41ab844488f6e17543d63b8265b508fa607294b0a"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-look-down.png",
+      "bytes": 366716,
+      "sha256": "0e1e6a13635aea10264576dd582c583304712f7cd92091a60cf25a0fe6374bc5"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-look-left.png",
+      "bytes": 463958,
+      "sha256": "14ef7b54d2bc29bed95d7119fc4054239fc695459f3f7c5ac51dd88741f741f6"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-look-restored.png",
+      "bytes": 422572,
+      "sha256": "09b09c722a0d8a5ace96c1b41ab844488f6e17543d63b8265b508fa607294b0a"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-look-right.png",
+      "bytes": 436239,
+      "sha256": "e0f9ce9f02cd8fc24c1c057762c94c3bfe3f2a5f5345db95d86e21a4812d8948"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-reset.png",
+      "bytes": 422286,
+      "sha256": "6d30c9ed3b65302f7f6f90ddd8b3cd09b0db428ff8f4a97e3b6830b2a4d3e715"
+    },
+    {
+      "file": "wall-era-playcanvas-patch-marker-returned.png",
+      "bytes": 422572,
+      "sha256": "09b09c722a0d8a5ace96c1b41ab844488f6e17543d63b8265b508fa607294b0a"
+    },
+    {
+      "file": "wall-era-three-original-marker-away.png",
+      "bytes": 446244,
+      "sha256": "9693155214e1667023aff277dfa5c8cafd814358514e97ccf4c4455bf54ec96c"
+    },
+    {
+      "file": "wall-era-three-original-marker-current.png",
+      "bytes": 429872,
+      "sha256": "2bdcccab36baf1d26bd31480741a8034d0ca5b5cc52c09671f851934560d4c80"
+    },
+    {
+      "file": "wall-era-three-original-marker-historical.png",
+      "bytes": 429664,
+      "sha256": "d6ef5c2fc5e2a98010993366b5e5fdf2f78b683b390fec8568353ae4ae54e9c3"
+    },
+    {
+      "file": "wall-era-three-original-marker-look-down.png",
+      "bytes": 379733,
+      "sha256": "ca2536475fff0126871380c49014d89b70d29bbf9a5816cf380704ba0dd9a752"
+    },
+    {
+      "file": "wall-era-three-original-marker-look-left.png",
+      "bytes": 460844,
+      "sha256": "8286fcf7e2fb551fbf1c80ee6fe9ce4d6c38d16162999ed8fceef4beb0413180"
+    },
+    {
+      "file": "wall-era-three-original-marker-look-restored.png",
+      "bytes": 429625,
+      "sha256": "a1d53db84fa7a09d21f76809969139267bd06709e1c9f9c62591d6d1bc94fc43"
+    },
+    {
+      "file": "wall-era-three-original-marker-look-right.png",
+      "bytes": 446765,
+      "sha256": "c51ffa0f13ad6347dedf4c3ed14d41d8ad1342b2431e4b3f11c69fc65ceb3e26"
+    },
+    {
+      "file": "wall-era-three-original-marker-reset.png",
+      "bytes": 429486,
+      "sha256": "fb1ba106a8a761121dae2c369fc8514953adf70d84b3e81a634c41f80b319672"
+    },
+    {
+      "file": "wall-era-three-original-marker-returned.png",
+      "bytes": 429625,
+      "sha256": "a1d53db84fa7a09d21f76809969139267bd06709e1c9f9c62591d6d1bc94fc43"
+    },
+    {
+      "file": "wall-era-three-patch-marker-away.png",
+      "bytes": 439289,
+      "sha256": "04301386f563ad2802adb1bcfb2c1faf5a9024eaf362e3713b0ea2e89eb1e09b"
+    },
+    {
+      "file": "wall-era-three-patch-marker-current.png",
+      "bytes": 412989,
+      "sha256": "86128d766aa7f610a6781152b94b82458a5e363f577af72e12f6d48845bca6f1"
+    },
+    {
+      "file": "wall-era-three-patch-marker-historical.png",
+      "bytes": 412902,
+      "sha256": "4edec4d44c55864114b3da46b23e9a00d3c0c37a59ef92212c7a5ef980b61051"
+    },
+    {
+      "file": "wall-era-three-patch-marker-look-down.png",
+      "bytes": 369128,
+      "sha256": "904897931bdb3d3ed2c2f7b60348332c0dcfeac219e9380caa20e76561419d3a"
+    },
+    {
+      "file": "wall-era-three-patch-marker-look-left.png",
+      "bytes": 454562,
+      "sha256": "4cdd5295c4ea1232aa64c44139446a4b5e01704eec81aa43628b243b245cdee8"
+    },
+    {
+      "file": "wall-era-three-patch-marker-look-restored.png",
+      "bytes": 413131,
+      "sha256": "144734d3a6412761428c4af383d6f194f64f1c63fe8b6cd9eb4bb5c477cd243c"
+    },
+    {
+      "file": "wall-era-three-patch-marker-look-right.png",
+      "bytes": 426570,
+      "sha256": "b66ad3932aefa24a85b8688a9d624150052e8155d76e1240c0e42daf93297b84"
+    },
+    {
+      "file": "wall-era-three-patch-marker-reset.png",
+      "bytes": 412520,
+      "sha256": "330796f20c399320e6a0e4e338d9866e6d475492bc09f067ebafe5b32233e63b"
+    },
+    {
+      "file": "wall-era-three-patch-marker-returned.png",
+      "bytes": 413131,
+      "sha256": "144734d3a6412761428c4af383d6f194f64f1c63fe8b6cd9eb4bb5c477cd243c"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-back.png",
+      "bytes": 581197,
+      "sha256": "56e1b6cced57218fcfddf01b77ccffb34ae33fa851120e0361fc4c45ab36cb9b"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-center.png",
+      "bytes": 575971,
+      "sha256": "5ba6d12a43a127337cefb7202511fa7ca5db839c4f7e865275c947405849a5fb"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-contact.png",
+      "bytes": 276444,
+      "sha256": "df8b41cde1c1204e1754e2e44e0b673a34e681246c3a310efd69dcac427b3e48"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-left.png",
+      "bytes": 577356,
+      "sha256": "8e081fcee9e2b361c5bd5a724f967b9461f185eb4af65686e03932059ce3c1c9"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-near.png",
+      "bytes": 505299,
+      "sha256": "c5fbffdc2a322f89a36ef13d4dbfc45b11d75277bdf325882491f62c55dfc75f"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-right.png",
+      "bytes": 542228,
+      "sha256": "7dfaed919f91601de29985b6146086f31d210bdcf0b795585cac84104699c36d"
+    },
+    {
+      "file": "wall-walking-playcanvas-original-marker-start.png",
+      "bytes": 581702,
+      "sha256": "c8db53bb3504ba87b748929ec8dd56ac0004a37080b238e380fb3f96d9f1726b"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-back.png",
+      "bytes": 540395,
+      "sha256": "8fac8bb3fb2ea82e78d3be594b3ae4abb558ba88d857cef19c6dc0f19a579724"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-center.png",
+      "bytes": 532912,
+      "sha256": "e9ace4d086d61a4953cb231fa6de25c25d744ee449e58f913ae27d1f5c3ea294"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-contact.png",
+      "bytes": 355226,
+      "sha256": "3ea9e5a47c172d6197ef9a46d89fe77f045e0be45c3a9d3457a599e6493282a9"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-left.png",
+      "bytes": 537294,
+      "sha256": "4763109a571962de24730181ea218b29b5bcb388fd29ee14de3bbd5951a6e9cc"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-near.png",
+      "bytes": 464187,
+      "sha256": "028a48181b2d0f121ec4d65644bf4aec0705d20cbafa6f04d632058fae3e335e"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-right.png",
+      "bytes": 505250,
+      "sha256": "d47409ea1ddc1b6fafdd999f839b9d096740b2a4e9aa432c3de673a2883dd3ca"
+    },
+    {
+      "file": "wall-walking-playcanvas-patch-marker-start.png",
+      "bytes": 534584,
+      "sha256": "0f5d33ef8cfb59fae004b380f84970d49d189b25a6c9eec788d72d2703d856d6"
+    },
+    {
+      "file": "wall-walking-three-original-marker-back.png",
+      "bytes": 572536,
+      "sha256": "ea0e53eaa026790c3a0db3f9ac41922797c7ff4f232f7e770c3333c78adb8491"
+    },
+    {
+      "file": "wall-walking-three-original-marker-center.png",
+      "bytes": 567270,
+      "sha256": "7adcbe17fdd8072721574612df954d2247c50e9b3276cb53490531a18b4b1a3c"
+    },
+    {
+      "file": "wall-walking-three-original-marker-contact.png",
+      "bytes": 413176,
+      "sha256": "507be56d490407fcf546c08ff38da215ee7cbfcdb07fb7f8ba2a3dc75404399f"
+    },
+    {
+      "file": "wall-walking-three-original-marker-left.png",
+      "bytes": 564717,
+      "sha256": "2e06349ab9dceb2c8546f72f43f16b5aa5a291cfa3f3bf65e606fde94a0d40ff"
+    },
+    {
+      "file": "wall-walking-three-original-marker-look-left.png",
+      "bytes": 506497,
+      "sha256": "6c2652ead28069616e1081fa73f8f7b8e776ee1ab0cd225285c80b73d12ea89f"
+    },
+    {
+      "file": "wall-walking-three-original-marker-look-right.png",
+      "bytes": 523352,
+      "sha256": "cc116b600256f04bc0c8df93c9ccbf6affcf4934fa5096a8c63ac7d9795cfc8d"
+    },
+    {
+      "file": "wall-walking-three-original-marker-near.png",
+      "bytes": 514138,
+      "sha256": "f261d50e3254e1e33184c87d08099dbf60e6e81de179bacf43577cfb9777037c"
+    },
+    {
+      "file": "wall-walking-three-original-marker-right.png",
+      "bytes": 537602,
+      "sha256": "09805f3aad9882b77871eb58012943f1116301d1400aeae56d9c68eb9f68869d"
+    },
+    {
+      "file": "wall-walking-three-original-marker-start.png",
+      "bytes": 565780,
+      "sha256": "ab145844cd94b4a65782f1c12c23475a3cd5e9f3321a23f79d3729d391991d88"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-back.png",
+      "bytes": 529292,
+      "sha256": "53f257752e833cd72aab590fcc4cef4be73eb20e2a2c6fb45d720fbd6922b3f6"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-center.png",
+      "bytes": 526191,
+      "sha256": "7a6a084f397061f9396c42108d81acd33f19f2edad3ca22b06007e5382008e5c"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-contact.png",
+      "bytes": 412185,
+      "sha256": "c61964dd77522acfc71d6c46d5a7647430e08fe9ebd62b56413d95e5bc3bdff0"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-left.png",
+      "bytes": 530051,
+      "sha256": "d020c9c90658d417b5fda89e3cf8e7b53a1ba1863095ace1508ce34a710f5f4a"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-look-left.png",
+      "bytes": 1184861,
+      "sha256": "2e650fd5d71616cbdff209f8f52cf02512b9db0ea2f4d5bc7ba1c081282581b5"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-look-right.png",
+      "bytes": 476958,
+      "sha256": "09aa4d945b3491bf116c944488cf6cbcf487e737bcf205918002aa0e444fae31"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-near.png",
+      "bytes": 466124,
+      "sha256": "1b1f2a3115bdfb4e74a58d8f1b6fb37e8ca0099b9e57ce50dd5a44c21e7a2bb7"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-right.png",
+      "bytes": 508972,
+      "sha256": "fe0cb9d45bcef22363febc6e1e2206f4abc62c355e927d184f911b2b98ae4d2f"
+    },
+    {
+      "file": "wall-walking-three-patch-marker-start.png",
+      "bytes": 523265,
+      "sha256": "5949dd1f77c0526fe602edc9952576e580b2d776f1ebf2d41385fecfe6b1d8db"
+    }
+  ]
+}

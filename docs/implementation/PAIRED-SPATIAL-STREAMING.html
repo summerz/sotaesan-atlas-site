@@ -1,0 +1,164 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sunnyvale 화면·충돌 구역 로딩 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="PAIRED-SPATIAL-STREAMING.md" download>Markdown 원본 다운로드</a></p><h1 id="sunnyvale">Sunnyvale 화면·충돌 구역 로딩</h1>
+<p>2026-10-03. 실제 촬영 장면에서 화면과 충돌을 함께 분할하고, 필요한 구역만 로드·해제하는 시험을 완료했다. Three.js BVH, Three.js Rapier, PlayCanvas Ammo에 같은 자산·좌표·구역 정책을 적용했다. 엔진 선택은 아직 확정하지 않는다.</p>
+<h2 id="_1">확인된 범위</h2>
+<ul>
+<li>데스크톱 세 구성: 구역 왕복, 해제된 시작 구역을 다시 로드한 뒤 시작점 복귀, 충돌만 지연·실패시킨 경계 차단과 재시도 통과.</li>
+<li>iPhone 11 Safari 세 구성: 준비, 구역 왕복, 시작 구역 재로딩과 복귀 통과. 기록에서 자동 낙하 복구와 런타임 오류는 없었다.</li>
+<li>모든 저장 상태에서 정밀 구역은 최대 2개, 논리적 상주 점 수는 설정 예산 459,871개 이내였다. 시험 경로의 최대치는 448,028개였다.</li>
+<li>생성된 충돌의 모든 삼각형 좌표·정점 순서와 원본 포함 여부를 별도 검사했다. 최종 <code>pnpm check</code>도 통과했다.</li>
+</ul>
+<p>실기기 조작은 승인된 Safari 시험 탭에 합성 DOM TouchEvent를 보낸 결과다. 실제 손가락 사용성, 장시간 유지, RAM·VRAM, 프레임 p95를 검증한 결과는 아니다. 충돌 지연·실패 주입은 데스크톱에서 확인했다.</p>
+<h2 id="_2">자산 제작과 분할</h2>
+<p>원본은 Sunnyvale의 3,999,361점 SH3 SOG와 공식 예제 충돌 GLB다. 생성기는 CPU로 SH를 제거하고 공간 축소를 적용해 900,000점 SH0 시각 마스터를 만든 뒤 X축의 여섯 구역으로 분할한다. 원본 점을 그대로 선택한 분할본은 아니다. 회전은 자산 좌표에 반영하고 월드 변환은 동일하게 유지한다.</p>
+<p>시각 점 중심은 한 구역에만 할당한다. 원거리 표현은 각 구역에서 30개 중 1개를 선택한 총 30,003점이며 여섯 구역 모두 상주한다. 가까운 정밀 표현이 준비되면 해당 원거리 표현을 숨긴다.</p>
+<p>충돌 삼각형은 잘라서 새 면을 만들지 않는다. 원본 삼각형의 X 범위와 겹치는 모든 구역에 좌표와 정점 순서를 그대로 복사한다. 원본 337,680면이 분할 후 총 344,098면이 되며 추가 복사 6,418면은 약 1.90%다. 긴 삼각형은 최대 여섯 구역에 포함된다. 원본 충돌의 구멍이나 촬영 자산의 벽 비침을 고치는 작업은 포함하지 않는다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구역</th>
+<th style="text-align: right;">정밀 점 수</th>
+<th style="text-align: right;">충돌 삼각형 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align: right;">116,614</td>
+<td style="text-align: right;">43,835</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: right;">150,946</td>
+<td style="text-align: right;">43,521</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">278,922</td>
+<td style="text-align: right;">89,148</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: right;">139,103</td>
+<td style="text-align: right;">64,647</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: right;">46,075</td>
+<td style="text-align: right;">28,841</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: right;">168,340</td>
+<td style="text-align: right;">74,106</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>자산 범위</th>
+<th style="text-align: right;">파일 크기 합계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>여섯 정밀 SOG</td>
+<td style="text-align: right;">11,570,572 B</td>
+</tr>
+<tr>
+<td>여섯 원거리 SOG</td>
+<td style="text-align: right;">483,836 B</td>
+</tr>
+<tr>
+<td>여섯 충돌 GLB</td>
+<td style="text-align: right;">6,336,884 B</td>
+</tr>
+<tr>
+<td>전체 18개</td>
+<td style="text-align: right;">18,391,292 B</td>
+</tr>
+<tr>
+<td>시작 구역 2·3의 정밀 SOG + 충돌 + 전체 원거리</td>
+<td style="text-align: right;">8,719,953 B</td>
+</tr>
+</tbody>
+</table></div>
+<p>시작 시 선택 자산 크기는 약 8.72 MB이며, 같은 축소 분할본 전체 18.39 MB보다 약 52.6% 작다. 월드 JSON·앱 코드와 실제 네트워크 전송 오버헤드는 제외했다. 400만 점 SH3 원본과의 차이에는 축소·SH 제거 효과가 섞이므로 분할만의 절감으로 해석하지 않는다.</p>
+<p>시작 시 충돌은 153,795면이다. 논리적 상주 점 448,028개는 숨긴 원거리 자산까지 포함하며 표시되는 점은 434,093개다. 논리적 점 수·파일 크기는 실제 GPU 메모리 사용량이 아니다. 배포 빌드는 공용 자산 전체를 복사하므로 선택 로딩이 배포 저장 공간까지 줄이지는 않는다.</p>
+<p>이번 변환 실행 시간은 <strong>80.325초</strong>다. CPU 변환을 포함한 생성기 경과 시간이며 사람의 편집·품질 검수 시간이나 인건비가 아니다. 생성기는 현재 Sunnyvale 여섯 X 구역에 맞춰져 있다. 임의 장소·다각형·고도별 구역을 처리하는 범용 제작 도구는 아니다.</p>
+<h2 id="_3">로딩과 충돌 수명</h2>
+<p>로드 거리는 2 m, 해제 거리는 3 m이며 정밀 구역은 최대 두 개를 유지한다. 정밀 점 예산 429,868개와 원거리 30,003개를 합쳐 459,871개를 허용한다.</p>
+<ol>
+<li>공통 구역 로더가 시각 SOG와 대응 충돌 GLB를 요청한다.</li>
+<li>엔진 어댑터가 충돌을 설치한 뒤 구역을 준비 완료로 표시한다. 화면만 준비된 상태에서는 해당 경계 통과를 허용하지 않는다.</li>
+<li>실패 시 부분 자원을 정리하고 원거리 표현을 유지한다. 재시도에서 시각·충돌을 다시 준비한다. 구역 이탈 후 도착한 결과도 정리한다.</li>
+<li>구역 해제 때 물리 참조를 제거한 뒤 자산을 해제한다. PlayCanvas GSplat 해제는 렌더 완료 순서를 지킨다.</li>
+<li>시작점 복귀 중 입력을 멈추고 시작 구역을 재로딩한 뒤 이동한다. 실패 시 기존 위치의 구역을 복구한 뒤 입력을 재개한다.</li>
+</ol>
+<p>Three.js BVH와 Rapier는 현재 활성 충돌 전체를 합쳐 다시 구성한다. Rapier는 공통 접지 BVH와 Rapier trimesh를 모두 재구성하고 broadphase를 갱신한다. PlayCanvas는 구역별 Ammo 정적 충돌 객체를 추가·제거한다. 이 구현 차이가 교체 비용에 영향을 준다.</p>
+<h2 id="_4">충돌 교체 처리 비용</h2>
+<p>각 기능 시험에서 최초 설치 이후 구역 추가 네 번·제거 네 번의 훅 경과 시간을 기록했다. 단위는 ms이며 아래는 관측 최솟값–최댓값이다. 다운로드·전체 SOG 해독·완성 프레임 시간·메모리 비용은 포함하지 않는다. 반복 성능 벤치마크나 p95가 아니며 엔진 자체의 우열로 일반화할 수 없다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구성</th>
+<th style="text-align: right;">데스크톱 추가</th>
+<th style="text-align: right;">데스크톱 제거</th>
+<th style="text-align: right;">iPhone 추가</th>
+<th style="text-align: right;">iPhone 제거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td style="text-align: right;">40.5–65.9</td>
+<td style="text-align: right;">20.7–50.2</td>
+<td style="text-align: right;">34–61</td>
+<td style="text-align: right;">23–43</td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td style="text-align: right;">100.7–176.6</td>
+<td style="text-align: right;">60.6–91.6</td>
+<td style="text-align: right;">128–208</td>
+<td style="text-align: right;">81–91</td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td style="text-align: right;">37.8–137.6</td>
+<td style="text-align: right;">0–0.7</td>
+<td style="text-align: right;">39–125</td>
+<td style="text-align: right;">0–3</td>
+</tr>
+</tbody>
+</table></div>
+<p>현재 경로에서 Rapier 전체 재구성 비용과 Ammo 구역 제거 비용의 차이가 관찰됐다. 구역 경계의 순간 멈춤을 줄이려면 Three.js의 구역별 충돌 유지와 BVH worker 생성을 우선 검토할 근거가 있다. Rapier 물리 객체 생성에도 별도 프레임 예산이 필요하다.</p>
+<p>iPhone의 제어기 생성 훅은 BVH 90 ms, Rapier 581 ms, Ammo 6 ms였다. Ammo의 최초 구역 충돌 설치 145·85 ms는 별도 훅에 기록되므로 이 생성 훅 숫자끼리 비교하면 안 된다. 데스크톱 Ammo 최초 구역 설치도 127.3·87.9 ms로 별도 기록됐다.</p>
+<h2 id="_5">재현과 기록</h2>
+<p>생성 메타데이터: <a href="../../shared/source/sunnyvale-stream.json">sunnyvale-stream.json</a>. 월드: <a href="../../shared/public/world/sunnyvale-stream.json">구역 설정</a>.</p>
+<pre><code class="language-sh">python3 scripts/make-sunnyvale-stream.py
+pnpm check
+./dev.sh --preview both
+</code></pre>
+<p>장면 선택에서 <code>Sunnyvale · 화면·충돌 구역 로딩</code>을 연다. <code>90만 점 축소본의 구역 분할</code> 표시로 원본 시험과 구분할 수 있다.</p>
+<ul>
+<li><a href="http://127.0.0.1:5173/?scene=sunnyvale-stream&amp;controller=bvh">Three.js BVH</a></li>
+<li><a href="http://127.0.0.1:5173/?scene=sunnyvale-stream&amp;controller=rapier">Three.js Rapier</a></li>
+<li><a href="http://127.0.0.1:5174/?scene=sunnyvale-stream">PlayCanvas Ammo</a></li>
+</ul>
+<p>기록은 <span class="local-file" title="원본 개발 저장소의 파일">측정 폴더 (원본 저장소 파일)</span>에 있다. <code>bvh/rapier/ammo-desktop.json</code>과 대응 PNG는 왕복·복귀, <code>bvh/rapier/ammo-fault.json</code>은 충돌 지연·실패·재시도, <code>ios-bvh/ios-rapier/ios-ammo.json</code>은 실기기 결과다. <code>desktop-driver.js</code>, <code>fault-driver.js</code>, <code>ios-probe.js</code>가 시험 절차를 남긴다. 아홉 결과 모두 <code>passed: true</code>다.</p>
+<p><code>scripts/sunnyvale-partition.test.mjs</code>는 각 생성 GLB의 삼각형을 원본과 독립적으로 대조한다. 좌표·정점 순서·중복 횟수·구역 포함 조건·원본 SHA를 검사해 전체 면 유지와 총 344,098면을 확인한다. 최종 <code>pnpm check</code>는 이 검사, 공용/보행 테스트, 자산 해시 검사, 두 앱 타입 검사·릴리스 빌드·산출물 검사를 통과했다.</p>
+<p>브라우저·iPhone 시험 릴리스는 <code>local-4d5905679d2e-ee9a19b94a78</code>이다. 이후 축소본임을 명시하는 화면 문구와 독립 자산 검사를 추가했고 최종 검사 릴리스는 <code>local-4d5905679d2e-966abdfb965f</code>다. 동작 코드 변경 없이 화면 문구만 바뀐 최종 빌드에서 실기기 시험을 반복하지 않았다.</p>
+<h2 id="_6">남은 한계와 다음 작업</h2>
+<ul>
+<li>400만 점 SH3 원본의 Three.js 모바일 해독 문제는 여전히 미해결이다. 이번 축소 분할본 성공으로 해결됐다고 판단하지 않는다.</li>
+<li>X축 띠 분할은 바깥 구역의 이상치·넓은 범위와 긴 삼각형 중복에 취약하다. 큰 장소에서는 2D 구역과 원거리 자산의 선택 로딩도 필요하다.</li>
+<li>현재 생성은 전체 18개 자산을 재생성한다. 일부 구역만 수정하는 증분 제작과 작업자의 실제 수정·검수 비용은 미측정이다.</li>
+<li>Sunnyvale 시험은 현재 시대만 포함한다. 기존 Hall의 시대·설명 결합 성공과 별개로, 이 실제 장소의 과거 건물·시대별 바닥·충돌을 분할한 결과는 아직 없다.</li>
+<li>LOD 교체의 선명도 변화, 벽 비침, 계단·벤치 주변 보행 메시 품질, 실제 손가락 조작과 모바일 메모리·장시간 유지가 남아 있다.</li>
+</ul>
+<p>후속으로 현재 촬영 배경에 가상 시대 벽·설명을 결합하고 Three.js의 구역 충돌 재사용을 적용했다. <a href="SUNNYVALE-ERA-INTEGRATION.html">결합·교체 비용 개선 결과</a>. 위 표는 변경 전 기록이며 보존한다. 새 변경의 iPhone 검증과 실제 과거 자산 제작은 남아 있다. 다음은 보행 메시 검수와 실제 콘텐츠 제작·수정 작업이다. 일반 성능 시험을 계속 반복하기보다 이 작업에서 발생하는 경계 멈춤·품질·메모리 위험을 확인한다.</p></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

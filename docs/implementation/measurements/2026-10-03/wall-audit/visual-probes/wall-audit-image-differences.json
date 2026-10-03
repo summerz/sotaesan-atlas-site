@@ -1,0 +1,415 @@
+{
+  "scope": "8-bit screenshot RGB differences versus own-engine baseline in selected unobstructed rectangles; not a fidelity score, opacity estimate or proof of physical furniture",
+  "rectanglesXYXY": {
+    "underWindow": [
+      400,
+      540,
+      500,
+      670
+    ],
+    "referenceWall": [
+      900,
+      480,
+      1100,
+      650
+    ]
+  },
+  "crossEngineOriginalMeanAbsoluteRgbDifference": {
+    "underWindow": 1.0878205128205127,
+    "referenceWall": 0.8326078431372549
+  },
+  "results": [
+    {
+      "track": "playcanvas",
+      "control": "original",
+      "screenshotSha256": "0f113eb6eae03610ad0cb4ae583c91234ede5d0c1dc4669c32c97e3532304fb6",
+      "controlSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            37.49476923076923,
+            37.04446153846154,
+            40.85192307692308
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            34.63511764705882,
+            35.34173529411765,
+            44.07491176470588
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "rgba-roundtrip",
+      "screenshotSha256": "da1c68e4f9d06d02464e0f4ba3dca9fbaa6342dfb33fb36d68e623e9dda7f1d7",
+      "controlSha256": "9c64ef959357ed673b39d1eb7201e238bf17074fa0581644bf105209b2bc1d67",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            37.49476923076923,
+            37.04446153846154,
+            40.85192307692308
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0016372549019607844,
+          "maxAbsoluteRgbDifference": 1.0,
+          "changedRgbComponents": 167,
+          "meanRgb": [
+            34.639911764705886,
+            35.34185294117647,
+            44.07491176470588
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "no-sh",
+      "screenshotSha256": "38afffd85775895b0f03fa81752cd6dc32f3541896eddeb7e5f0d77129a13752",
+      "controlSha256": "e298503b59f01191b3867d2a9894c70fc48e31801a3b4e69e838e86392e5e9e2",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 5.650769230769231,
+          "maxAbsoluteRgbDifference": 15.0,
+          "changedRgbComponents": 38755,
+          "meanRgb": [
+            44.00569230769231,
+            43.04223076923077,
+            45.27307692307692
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.1234313725490197,
+          "maxAbsoluteRgbDifference": 6.0,
+          "changedRgbComponents": 73970,
+          "meanRgb": [
+            35.14329411764706,
+            36.073235294117644,
+            44.01170588235294
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "exterior-16_3",
+      "screenshotSha256": "12afec248c8f628d5c381b6c1bc8c2bacc81abd5771b646232b9381ee5c1a723",
+      "controlSha256": "28bf48b2bcc40fdee422c4da0a19880851388304fc1adb9c0e1c311f05da38a0",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 13.077358974358974,
+          "maxAbsoluteRgbDifference": 27.0,
+          "changedRgbComponents": 38970,
+          "meanRgb": [
+            24.40323076923077,
+            24.663076923076922,
+            27.092769230769232
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 2.804480392156863,
+          "maxAbsoluteRgbDifference": 10.0,
+          "changedRgbComponents": 95214,
+          "meanRgb": [
+            32.01591176470588,
+            32.941823529411764,
+            40.68058823529412
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "exterior-16_5",
+      "screenshotSha256": "5b594263b844525ef1321c99db50669e78998b053b115d2fc4bb10c1ab8529da",
+      "controlSha256": "97e2d035a30555640f8555b95e2bf6e90adf2d083542af81a6cd724033e636bf",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 12.026717948717948,
+          "maxAbsoluteRgbDifference": 27.0,
+          "changedRgbComponents": 38970,
+          "meanRgb": [
+            25.53,
+            25.64023076923077,
+            28.14076923076923
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.9782058823529411,
+          "maxAbsoluteRgbDifference": 9.0,
+          "changedRgbComponents": 87905,
+          "meanRgb": [
+            32.609382352941175,
+            33.62461764705883,
+            41.88314705882353
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "exterior-17_5",
+      "screenshotSha256": "5ea161f5678e7c32165d6d775df192e7570533c4923b5722f9c9171934a42734",
+      "controlSha256": "3b2b49e835a75699c50a4063769bd78ee0495fb08d927a47c93781e20061fc1a",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 4.04125641025641,
+          "maxAbsoluteRgbDifference": 12.0,
+          "changedRgbComponents": 38402,
+          "meanRgb": [
+            33.33369230769231,
+            33.345615384615385,
+            36.589
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.387470588235294,
+          "maxAbsoluteRgbDifference": 8.0,
+          "changedRgbComponents": 76934,
+          "meanRgb": [
+            33.15520588235294,
+            34.12129411764706,
+            42.61285294117647
+          ]
+        }
+      }
+    },
+    {
+      "track": "playcanvas",
+      "control": "opaque-marker",
+      "screenshotSha256": "eecdf886855b433403971e28b7f6d432f8180403dc8ce090768c3f6706749e0f",
+      "controlSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 38.54735897435897,
+          "maxAbsoluteRgbDifference": 127.0,
+          "changedRgbComponents": 30000,
+          "meanRgb": [
+            99.97423076923077,
+            79.90884615384616,
+            51.15015384615385
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            34.63511764705882,
+            35.34173529411765,
+            44.07491176470588
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "original",
+      "screenshotSha256": "dd00dcf6ab810ba8824598ef1328a76c9c2dd854cb30ceffa165a6a148858834",
+      "controlSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            38.393,
+            37.96130769230769,
+            41.375076923076925
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            34.64664705882353,
+            35.065294117647056,
+            43.80647058823529
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "rgba-roundtrip",
+      "screenshotSha256": "dd00dcf6ab810ba8824598ef1328a76c9c2dd854cb30ceffa165a6a148858834",
+      "controlSha256": "9c64ef959357ed673b39d1eb7201e238bf17074fa0581644bf105209b2bc1d67",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            38.393,
+            37.96130769230769,
+            41.375076923076925
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            34.64664705882353,
+            35.065294117647056,
+            43.80647058823529
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "no-sh",
+      "screenshotSha256": "652403988896198e2936f0a635e57d0f35c1448365ed5dae62e39531835567e4",
+      "controlSha256": "e298503b59f01191b3867d2a9894c70fc48e31801a3b4e69e838e86392e5e9e2",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 5.3464871794871796,
+          "maxAbsoluteRgbDifference": 14.0,
+          "changedRgbComponents": 38571,
+          "meanRgb": [
+            44.40276923076923,
+            43.45507692307692,
+            45.87330769230769
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.0875098039215687,
+          "maxAbsoluteRgbDifference": 7.0,
+          "changedRgbComponents": 73804,
+          "meanRgb": [
+            35.271911764705884,
+            35.981382352941175,
+            44.17682352941176
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "exterior-16_3",
+      "screenshotSha256": "7f25f507d4ea84cf202198fb4fec8cd5d61625c13df0f69eec1a628fe12af391",
+      "controlSha256": "28bf48b2bcc40fdee422c4da0a19880851388304fc1adb9c0e1c311f05da38a0",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 12.91128205128205,
+          "maxAbsoluteRgbDifference": 28.0,
+          "changedRgbComponents": 38988,
+          "meanRgb": [
+            25.719538461538463,
+            25.59623076923077,
+            27.67976923076923
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 2.7898039215686277,
+          "maxAbsoluteRgbDifference": 10.0,
+          "changedRgbComponents": 94006,
+          "meanRgb": [
+            32.22341176470588,
+            32.49097058823529,
+            40.43461764705882
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "exterior-16_5",
+      "screenshotSha256": "2a8502617db376bf3d2c6037c25df70e922a1d8bce87a7576771b690ac26499f",
+      "controlSha256": "97e2d035a30555640f8555b95e2bf6e90adf2d083542af81a6cd724033e636bf",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 11.773846153846154,
+          "maxAbsoluteRgbDifference": 27.0,
+          "changedRgbComponents": 38986,
+          "meanRgb": [
+            26.984076923076923,
+            26.655153846153848,
+            28.768615384615384
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.9932254901960784,
+          "maxAbsoluteRgbDifference": 9.0,
+          "changedRgbComponents": 85371,
+          "meanRgb": [
+            32.75979411764706,
+            33.074558823529415,
+            41.704382352941174
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "exterior-17_5",
+      "screenshotSha256": "2050db3ac3d3d752dc3aa16b9f7124ab4cdbc19b29452f8a4a5425319f67e14a",
+      "controlSha256": "3b2b49e835a75699c50a4063769bd78ee0495fb08d927a47c93781e20061fc1a",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 3.822179487179487,
+          "maxAbsoluteRgbDifference": 11.0,
+          "changedRgbComponents": 38364,
+          "meanRgb": [
+            34.69530769230769,
+            34.361769230769234,
+            37.20607692307692
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 1.4027941176470589,
+          "maxAbsoluteRgbDifference": 8.0,
+          "changedRgbComponents": 73758,
+          "meanRgb": [
+            33.31279411764706,
+            33.635970588235296,
+            42.361264705882355
+          ]
+        }
+      }
+    },
+    {
+      "track": "three",
+      "control": "opaque-marker",
+      "screenshotSha256": "7d3dff44ccc88a7ad574b29a212ad2e7639a9cb2514439f1bca26616c51847e8",
+      "controlSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+      "regions": {
+        "underWindow": {
+          "meanAbsoluteRgbDifference": 33.70284615384615,
+          "maxAbsoluteRgbDifference": 112.0,
+          "changedRgbComponents": 30000,
+          "meanRgb": [
+            94.22853846153846,
+            75.84969230769231,
+            48.759692307692305
+          ]
+        },
+        "referenceWall": {
+          "meanAbsoluteRgbDifference": 0.0,
+          "maxAbsoluteRgbDifference": 0.0,
+          "changedRgbComponents": 0,
+          "meanRgb": [
+            34.64664705882353,
+            35.065294117647056,
+            43.80647058823529
+          ]
+        }
+      }
+    }
+  ]
+}

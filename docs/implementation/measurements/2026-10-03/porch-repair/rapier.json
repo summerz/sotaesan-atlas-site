@@ -1,0 +1,1195 @@
+{
+  "config": "rapier",
+  "startedAt": "2026-10-03T05:32:42.168Z",
+  "scope": "headed actual app; intercepted spawn only, shared authored porch repair plus original collision/render assets",
+  "checks": [
+    {
+      "fixture": "stairs",
+      "start": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -10.213336944580078,
+          0.03614243268966677,
+          -14.299132347106934
+        ],
+        "eye": [
+          -10.213336944580078,
+          1.6361424326896667,
+          -14.299132347106934
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 464.2999999523163,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "turn": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -11.32855224609375,
+          0.5832690238952637,
+          -14.240345001220703
+        ],
+        "eye": [
+          -11.32855224609375,
+          2.1832690238952637,
+          -14.240345001220703
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 464.2999999523163,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "returned": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.828951835632324,
+          -0.017678058147430398,
+          -14.240345001220703
+        ],
+        "eye": [
+          -9.828951835632324,
+          1.5823219418525696,
+          -14.240345001220703
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 464.2999999523163,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "idle": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -9.828951835632324,
+          -0.017678058147430398,
+          -14.240345001220703
+        ],
+        "eye": [
+          -9.828951835632324,
+          1.5823219418525696,
+          -14.240345001220703
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 464.2999999523163,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "railing": null,
+      "crossedRepair": null,
+      "railingBlocked": null,
+      "returnDistance": 0.3925614719391984,
+      "idleDrift": 0,
+      "returnedToLevel": true,
+      "climbedStairs": false
+    },
+    {
+      "fixture": "bench",
+      "start": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.663564682006836,
+          0.5374057531356812,
+          -21.882347106933594
+        ],
+        "eye": [
+          -13.663564682006836,
+          2.137405753135681,
+          -21.882347106933594
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 438.2000000476837,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "turn": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.663605690002441,
+          0.5305592060089112,
+          -23.547317504882812
+        ],
+        "eye": [
+          -13.663605690002441,
+          2.130559206008911,
+          -23.547317504882812
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 438.2000000476837,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "returned": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.663938522338867,
+          0.5672526597976685,
+          -21.824504852294922
+        ],
+        "eye": [
+          -13.663938522338867,
+          2.1672526597976685,
+          -21.824504852294922
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 438.2000000476837,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "idle": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.663938522338867,
+          0.5672526597976685,
+          -21.824504852294922
+        ],
+        "eye": [
+          -13.663938522338867,
+          2.1672526597976685,
+          -21.824504852294922
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 438.2000000476837,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "railing": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          -13.716804504394531,
+          0.5301093101501465,
+          -24.081886291503906
+        ],
+        "eye": [
+          -13.716804504394531,
+          2.1301093101501465,
+          -24.081886291503906
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 438.2000000476837,
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2,
+          "staticColliders": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "crossedRepair": true,
+      "railingBlocked": true,
+      "returnDistance": 0.0650899686247289,
+      "idleDrift": 0,
+      "returnedToLevel": true,
+      "climbedStairs": null
+    }
+  ],
+  "errors": [],
+  "environment": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "visibility": "visible",
+    "focus": true,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "finishedAt": "2026-10-03T05:33:11.107Z"
+}

@@ -1,0 +1,20 @@
+{
+  "nativeMouseProbe": {
+    "result": "excluded from controlled camera-angle comparisons",
+    "initialWalkingRuns": "captures.json",
+    "reason": "Native pointer-lock input produced large yaw/pitch deltas in Three.js and WrongDocumentError on both PlayCanvas runs.",
+    "freshPageFollowup": "PlayCanvas acquired pointer lock without page errors once; CDP mouseMoved produced an initial large delta, then no requested relative rotation. A second acquisition was unreliable. No claim that native mouse look passed."
+  },
+  "galleryBrowserReview": {
+    "result": "browser interaction review excluded; static artifact validation only",
+    "error": "Access to file: protocol is blocked",
+    "action": "Did not retry through another host, route, protocol, or tool. Scene captures used the original permitted localhost URLs."
+  },
+  "firstEraAttempt": {
+    "result": "excluded; wait predicate failed",
+    "error": "page.waitForFunction Timeout 45000ms exceeded",
+    "reason": "The harness required the current status text 지상 보행 after switching to historical, whose status text differs.",
+    "observedApplication": {"layer":"historical","transition":"idle","ready":["sunny-strip-1"],"loading":[],"recoveries":0},
+    "correction": "Wait for inspection transition and streaming readiness instead of the era-dependent status text."
+  }
+}

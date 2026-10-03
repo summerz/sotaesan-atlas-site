@@ -1,0 +1,6696 @@
+{
+  "recordedAt": "2026-10-02T16:35:18.826Z",
+  "url": "http://192.168.1.246:6173/?scene=stream-era&controller=rapier",
+  "running": false,
+  "stage": "complete",
+  "input": "synthetic DOM TouchEvents",
+  "checks": [
+    {
+      "label": "initial",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 391703,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 391703,
+          "renderedGaussians": 361532,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 99,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 170,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 228,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 271,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 295,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 295,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 372,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 372,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 564,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 12
+        }
+      }
+    },
+    {
+      "label": "current-panel",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 391703,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 391703,
+          "renderedGaussians": 361532,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 99,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 170,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 228,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 271,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 295,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 295,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 372,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 372,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 564,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [],
+        "content": {
+          "panelOpen": true,
+          "hotspotId": "current-stream-start-info",
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 12
+        }
+      }
+    },
+    {
+      "label": "historical-start",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000007152557373,
+          0.35020008087158205,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 371840,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 371840,
+          "renderedGaussians": 341669,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 1013,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1099,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1141,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1178,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1201,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1201,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 1248,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 1248,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 1357,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      },
+      "elapsedMs": 1753
+    },
+    {
+      "label": "historical-panel",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000007152557373,
+          0.35020008087158205,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 371840,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 371840,
+          "renderedGaussians": 341669,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 1013,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1099,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1141,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1178,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1201,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 1201,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 1248,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 1248,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 1357,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": true,
+          "hotspotId": "historical-stream-start-info",
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 1,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      }
+    },
+    {
+      "label": "current-wall-prepare",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000009536743164,
+          0.35030009746551516,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 391703,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 391703,
+          "renderedGaussians": 361532,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 43,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 80,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 120,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 148,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 173,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 173,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 218,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 218,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 324,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 2,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      },
+      "elapsedMs": 627
+    },
+    {
+      "label": "current-wall",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          2.99943208694458,
+          0.35980024337768557,
+          -6.58989953994751
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 391703,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 391703,
+          "renderedGaussians": 361532,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 43,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 80,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 120,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 148,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 173,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 173,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 218,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 218,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 324,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 2,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      }
+    },
+    {
+      "label": "historical-wall-prepare",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          2.99943208694458,
+          0.3599002599716187,
+          -6.58989953994751
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 371840,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 371840,
+          "renderedGaussians": 341669,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 35,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 66,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 90,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 110,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 269,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 10
+        }
+      },
+      "elapsedMs": 627
+    },
+    {
+      "label": "historical-wall",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          2.9986186027526855,
+          0.359321141242981,
+          -9.59001350402832
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 3991817,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 301702,
+          "peakReservedTotalGaussians": 371840,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 371840,
+          "renderedGaussians": 341669,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 35,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 66,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 90,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 110,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 269,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 15
+        }
+      }
+    },
+    {
+      "label": "far-historical",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          17.184093475341797,
+          0.3600908756256104,
+          -4.000107765197754
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 5,
+          "unloads": 3,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 9264256,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 405104,
+          "peakReservedTotalGaussians": 475242,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 226299,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 296437,
+          "renderedGaussians": 273807,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 2980703,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 35,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 66,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 90,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 110,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            },
+            {
+              "t": 172,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 269,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            },
+            {
+              "t": 6523,
+              "id": "hall-chunk-0",
+              "action": "unloaded"
+            },
+            {
+              "t": 6523,
+              "id": "hall-chunk-2",
+              "action": "requested"
+            },
+            {
+              "t": 6610,
+              "id": "hall-chunk-2",
+              "action": "ready"
+            },
+            {
+              "t": 8558,
+              "id": "hall-chunk-1",
+              "action": "unloaded"
+            },
+            {
+              "t": 8558,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 8628,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            },
+            {
+              "t": 10587,
+              "id": "hall-chunk-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 10587,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 10668,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": true
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 3,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      }
+    },
+    {
+      "label": "far-current",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          17.184093475341797,
+          0.35999622344970705,
+          -4.0001068115234375
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 4347014,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 330319,
+          "peakReservedTotalGaussians": 420320,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 330319,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 420320,
+          "renderedGaussians": 387288,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 4347014,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 32,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 68,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 101,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 130,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 154,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 154,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 222,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 222,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 322,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 35,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 66,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 90,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 110,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 269,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 6610,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 8628,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 10668,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 4,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 16
+        }
+      },
+      "elapsedMs": 749
+    },
+    {
+      "label": "far-historical-cycle",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          17.184093475341797,
+          0.36009624004364016,
+          -4.0001068115234375
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "historical",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 2980703,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 226299,
+          "peakReservedTotalGaussians": 296437,
+          "fallbackRequestedBytes": 1026773,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 226299,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 70138,
+          "residentTotalGaussians": 296437,
+          "renderedGaussians": 273807,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2"
+          ],
+          "fallbackSourceBytes": 1026773,
+          "residentSourceBytes": 2980703,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 29,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 62,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 88,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 111,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 131,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 131,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 189,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 189,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 247,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "historical",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 35,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 66,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 90,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 110,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 269,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 6610,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 8628,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 10668,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 32,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 68,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 101,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 322,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": true
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 5,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "historical-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 16
+        }
+      },
+      "elapsedMs": 629
+    },
+    {
+      "label": "far-current-cycle",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          17.184093475341797,
+          0.35999622344970705,
+          -4.000105857849121
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 2,
+          "unloads": 0,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 4347014,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 330319,
+          "peakReservedTotalGaussians": 420320,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 330319,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 420320,
+          "renderedGaussians": 387288,
+          "fallbackVisible": [
+            "hall-chunk-0",
+            "hall-chunk-1",
+            "hall-chunk-2"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 4347014,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 33,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 68,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 106,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 132,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 155,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 155,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 219,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 219,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 444,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 35,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 66,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 90,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 110,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 269,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 6610,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 8628,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 10668,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 32,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 68,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 101,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 322,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 2980703,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 226299,
+            "peakReservedTotalGaussians": 296437,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 29,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 62,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 88,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 111,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 247,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 16
+        }
+      },
+      "elapsedMs": 750
+    },
+    {
+      "label": "returned",
+      "state": {
+        "track": "three",
+        "release": "local-4d5905679d2e-a07c1f72c5f1",
+        "engine": "Three.js r186",
+        "controller": "rapier-kinematic-capsule",
+        "viewport": {
+          "width": 375,
+          "height": 616,
+          "dpr": 1.5
+        },
+        "feet": [
+          2.9312288761138916,
+          0.3599682092666626,
+          -3.9999430179595947
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "layer": "current",
+        "recoveries": 0,
+        "streaming": {
+          "loads": 5,
+          "unloads": 3,
+          "discarded": 0,
+          "failures": 0,
+          "requestedBytes": 11880003,
+          "peakReservedChunks": 2,
+          "peakReservedGaussians": 499714,
+          "peakReservedTotalGaussians": 589715,
+          "fallbackRequestedBytes": 1298672,
+          "blockedFrames": 0,
+          "blockedMs": 0,
+          "residentChunks": 2,
+          "residentGaussians": 301702,
+          "fallbackReady": true,
+          "fallbackChunks": 5,
+          "fallbackGaussians": 90001,
+          "residentTotalGaussians": 391703,
+          "renderedGaussians": 361532,
+          "fallbackVisible": [
+            "hall-chunk-2",
+            "hall-chunk-3",
+            "hall-chunk-4"
+          ],
+          "fallbackSourceBytes": 1298672,
+          "residentSourceBytes": 3991817,
+          "loading": [],
+          "failed": [],
+          "ready": [
+            "hall-chunk-0",
+            "hall-chunk-1"
+          ],
+          "closed": false,
+          "events": [
+            {
+              "t": 33,
+              "id": "hall-chunk-0",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 68,
+              "id": "hall-chunk-1",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 106,
+              "id": "hall-chunk-2",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 132,
+              "id": "hall-chunk-3",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 155,
+              "id": "hall-chunk-4",
+              "action": "fallback-ready"
+            },
+            {
+              "t": 155,
+              "id": "hall-chunk-4",
+              "action": "requested"
+            },
+            {
+              "t": 219,
+              "id": "hall-chunk-4",
+              "action": "ready"
+            },
+            {
+              "t": 219,
+              "id": "hall-chunk-3",
+              "action": "requested"
+            },
+            {
+              "t": 444,
+              "id": "hall-chunk-3",
+              "action": "ready"
+            },
+            {
+              "t": 2600,
+              "id": "hall-chunk-4",
+              "action": "unloaded"
+            },
+            {
+              "t": 2600,
+              "id": "hall-chunk-2",
+              "action": "requested"
+            },
+            {
+              "t": 2741,
+              "id": "hall-chunk-2",
+              "action": "ready"
+            },
+            {
+              "t": 4612,
+              "id": "hall-chunk-3",
+              "action": "unloaded"
+            },
+            {
+              "t": 4612,
+              "id": "hall-chunk-1",
+              "action": "requested"
+            },
+            {
+              "t": 4725,
+              "id": "hall-chunk-1",
+              "action": "ready"
+            },
+            {
+              "t": 6632,
+              "id": "hall-chunk-2",
+              "action": "unloaded"
+            },
+            {
+              "t": 6632,
+              "id": "hall-chunk-0",
+              "action": "requested"
+            },
+            {
+              "t": 6696,
+              "id": "hall-chunk-0",
+              "action": "ready"
+            }
+          ]
+        },
+        "streamingLayer": "current",
+        "retiredStreams": [
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 99,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 170,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 228,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 271,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 295,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 372,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 564,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 371840,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 1013,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1099,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1141,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1178,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 1201,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 1248,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 1357,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 3991817,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 301702,
+            "peakReservedTotalGaussians": 391703,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 43,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 80,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 120,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 148,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 173,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 218,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 324,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 5,
+            "unloads": 3,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 9264256,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 405104,
+            "peakReservedTotalGaussians": 475242,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 35,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 66,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 90,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 110,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-0",
+                "action": "requested"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-0",
+                "action": "ready"
+              },
+              {
+                "t": 172,
+                "id": "hall-chunk-1",
+                "action": "requested"
+              },
+              {
+                "t": 269,
+                "id": "hall-chunk-1",
+                "action": "ready"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-0",
+                "action": "unloaded"
+              },
+              {
+                "t": 6523,
+                "id": "hall-chunk-2",
+                "action": "requested"
+              },
+              {
+                "t": 6610,
+                "id": "hall-chunk-2",
+                "action": "ready"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-1",
+                "action": "unloaded"
+              },
+              {
+                "t": 8558,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 8628,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-2",
+                "action": "unloaded"
+              },
+              {
+                "t": 10587,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 10668,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "current",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 4347014,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 330319,
+            "peakReservedTotalGaussians": 420320,
+            "fallbackRequestedBytes": 1298672,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 32,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 68,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 101,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 130,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 154,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 222,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 322,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          },
+          {
+            "layer": "historical",
+            "loads": 2,
+            "unloads": 0,
+            "discarded": 0,
+            "failures": 0,
+            "requestedBytes": 2980703,
+            "peakReservedChunks": 2,
+            "peakReservedGaussians": 226299,
+            "peakReservedTotalGaussians": 296437,
+            "fallbackRequestedBytes": 1026773,
+            "blockedFrames": 0,
+            "blockedMs": 0,
+            "residentChunks": 0,
+            "residentGaussians": 0,
+            "fallbackReady": true,
+            "fallbackChunks": 0,
+            "fallbackGaussians": 0,
+            "residentTotalGaussians": 0,
+            "renderedGaussians": 0,
+            "fallbackVisible": [],
+            "fallbackSourceBytes": 0,
+            "residentSourceBytes": 0,
+            "loading": [],
+            "failed": [],
+            "ready": [],
+            "closed": true,
+            "events": [
+              {
+                "t": 29,
+                "id": "hall-chunk-0",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 62,
+                "id": "hall-chunk-1",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 88,
+                "id": "hall-chunk-2",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 111,
+                "id": "hall-chunk-3",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-4",
+                "action": "fallback-ready"
+              },
+              {
+                "t": 131,
+                "id": "hall-chunk-4",
+                "action": "requested"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-4",
+                "action": "ready"
+              },
+              {
+                "t": 189,
+                "id": "hall-chunk-3",
+                "action": "requested"
+              },
+              {
+                "t": 247,
+                "id": "hall-chunk-3",
+                "action": "ready"
+              }
+            ]
+          }
+        ],
+        "content": {
+          "panelOpen": false,
+          "hotspots": [
+            {
+              "id": "current-stream-start-info",
+              "available": true
+            },
+            {
+              "id": "historical-stream-start-info",
+              "available": false
+            },
+            {
+              "id": "current-stream-far-info",
+              "available": false
+            },
+            {
+              "id": "historical-stream-far-info",
+              "available": false
+            }
+          ]
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 6,
+          "relocated": false
+        },
+        "colliders": [
+          "walkable",
+          "current-wall-collision"
+        ],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 16
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "t": 12132,
+      "stage": "current-wall",
+      "feet": [
+        3.0000009536743164,
+        0.35030009746551516,
+        -4.000001430511475
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 12308,
+      "stage": "current-wall",
+      "feet": [
+        3.000002145767212,
+        0.3518980979919434,
+        -4.350002288818359
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 12488,
+      "stage": "current-wall",
+      "feet": [
+        3.000002145767212,
+        0.3535033702850342,
+        -4.712001800537109
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 12667,
+      "stage": "current-wall",
+      "feet": [
+        3.000002145767212,
+        0.3553074836730957,
+        -5.044002056121826
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 12849,
+      "stage": "current-wall",
+      "feet": [
+        3.000002145767212,
+        0.35721673965454104,
+        -5.395002841949463
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13029,
+      "stage": "current-wall",
+      "feet": [
+        3.000002145767212,
+        0.35871520042419436,
+        -5.695004940032959
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13212,
+      "stage": "current-wall",
+      "feet": [
+        2.9998459815979004,
+        0.3599999189376831,
+        -6.062961578369141
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13387,
+      "stage": "current-wall",
+      "feet": [
+        2.9998435974121094,
+        0.35998024940490725,
+        -6.428965091705322
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13568,
+      "stage": "current-wall",
+      "feet": [
+        2.999723434448242,
+        0.36009624004364016,
+        -6.590085029602051
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13751,
+      "stage": "current-wall",
+      "feet": [
+        2.99984073638916,
+        0.3592368602752686,
+        -6.58989953994751
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 13928,
+      "stage": "current-wall",
+      "feet": [
+        2.999799966812134,
+        0.36009671688079836,
+        -6.59009313583374
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 14108,
+      "stage": "current-wall",
+      "feet": [
+        2.999819278717041,
+        0.3599006175994873,
+        -6.59001350402832
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 14288,
+      "stage": "current-wall",
+      "feet": [
+        2.999844789505005,
+        0.35945227146148684,
+        -6.590192794799805
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 14469,
+      "stage": "current-wall",
+      "feet": [
+        2.9997966289520264,
+        0.35983803272247317,
+        -6.589900493621826
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 14649,
+      "stage": "current-wall",
+      "feet": [
+        2.9998586177825928,
+        0.3593310356140137,
+        -6.589940071105957
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 14829,
+      "stage": "current-wall",
+      "feet": [
+        2.9997894763946533,
+        0.3594768285751343,
+        -6.589938640594482
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 15009,
+      "stage": "current-wall",
+      "feet": [
+        2.9998538494110107,
+        0.36005940437316897,
+        -6.589900016784668
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 15188,
+      "stage": "current-wall",
+      "feet": [
+        2.9997215270996094,
+        0.3600682258605957,
+        -6.589900493621826
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 15368,
+      "stage": "current-wall",
+      "feet": [
+        2.999677896499634,
+        0.35984601974487307,
+        -6.589913368225098
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 15549,
+      "stage": "current-wall",
+      "feet": [
+        2.9995996952056885,
+        0.35983004570007326,
+        -6.590193271636963
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 16630,
+      "stage": "historical-wall",
+      "feet": [
+        2.99943208694458,
+        0.3599002599716187,
+        -6.58989953994751
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 16809,
+      "stage": "historical-wall",
+      "feet": [
+        2.999445676803589,
+        0.36008145809173586,
+        -6.955892086029053
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 16988,
+      "stage": "historical-wall",
+      "feet": [
+        2.9995110034942627,
+        0.3596432447433472,
+        -7.321811199188232
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 17168,
+      "stage": "historical-wall",
+      "feet": [
+        2.999474287033081,
+        0.3600757360458374,
+        -7.668786525726318
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 17349,
+      "stage": "historical-wall",
+      "feet": [
+        2.999488115310669,
+        0.35924127101898196,
+        -8.034784317016602
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 17528,
+      "stage": "historical-wall",
+      "feet": [
+        2.999558448791504,
+        0.36030163764953616,
+        -8.368675231933594
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 17711,
+      "stage": "historical-wall",
+      "feet": [
+        2.9996535778045654,
+        0.3599993228912354,
+        -8.736552238464355
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 17894,
+      "stage": "historical-wall",
+      "feet": [
+        2.999657154083252,
+        0.36009266376495364,
+        -9.102569580078125
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18068,
+      "stage": "historical-wall",
+      "feet": [
+        2.9997031688690186,
+        0.360074782371521,
+        -9.468610763549805
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18249,
+      "stage": "historical-wall",
+      "feet": [
+        2.9996678829193115,
+        0.35944178104400637,
+        -9.589900016784668
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18429,
+      "stage": "historical-wall",
+      "feet": [
+        2.9996771812438965,
+        0.3591530561447144,
+        -9.589900970458984
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18609,
+      "stage": "historical-wall",
+      "feet": [
+        2.9995574951171875,
+        0.35987462997436526,
+        -9.589978218078613
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18788,
+      "stage": "historical-wall",
+      "feet": [
+        2.999481201171875,
+        0.3591977596282959,
+        -9.589910507202148
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 18968,
+      "stage": "historical-wall",
+      "feet": [
+        2.999384880065918,
+        0.35924806594848635,
+        -9.590191841125488
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 19149,
+      "stage": "historical-wall",
+      "feet": [
+        2.9993653297424316,
+        0.3598371982574463,
+        -9.59001350402832
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 19329,
+      "stage": "historical-wall",
+      "feet": [
+        2.9991135597229004,
+        0.3593133926391602,
+        -9.589966773986816
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 19509,
+      "stage": "historical-wall",
+      "feet": [
+        2.9990110397338867,
+        0.35972394943237307,
+        -9.589966773986816
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 19688,
+      "stage": "historical-wall",
+      "feet": [
+        2.9988300800323486,
+        0.35937454700469973,
+        -9.59009075164795
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 19868,
+      "stage": "historical-wall",
+      "feet": [
+        2.99871826171875,
+        0.3596371650695801,
+        -9.589900970458984
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 20055,
+      "stage": "historical-wall",
+      "feet": [
+        2.998649835586548,
+        0.35924496650695803,
+        -9.59001350402832
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 20771,
+      "stage": "move-to-far",
+      "feet": [
+        3.0000007152557373,
+        0.35010006427764895,
+        -4.000001430511475
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 20948,
+      "stage": "move-to-far",
+      "feet": [
+        3.3710038661956787,
+        0.35163631439208987,
+        -3.9999969005584717
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 21128,
+      "stage": "move-to-far",
+      "feet": [
+        3.7170042991638184,
+        0.3532279968261719,
+        -3.9999961853027344
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 21310,
+      "stage": "move-to-far",
+      "feet": [
+        4.043003082275391,
+        0.35503032207489016,
+        -3.9999964237213135
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 21488,
+      "stage": "move-to-far",
+      "feet": [
+        4.427004337310791,
+        0.3564328193664551,
+        -3.9999969005584717
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 21674,
+      "stage": "move-to-far",
+      "feet": [
+        4.7750067710876465,
+        0.3582328796386719,
+        -3.9999969005584717
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 21855,
+      "stage": "move-to-far",
+      "feet": [
+        5.130999565124512,
+        0.35997321605682375,
+        -3.9999890327453613
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22028,
+      "stage": "move-to-far",
+      "feet": [
+        5.500929832458496,
+        0.3599740505218506,
+        -4.000040531158447
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22208,
+      "stage": "move-to-far",
+      "feet": [
+        5.860938549041748,
+        0.3599144458770752,
+        -4.000045299530029
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22388,
+      "stage": "move-to-far",
+      "feet": [
+        6.224876880645752,
+        0.3598304033279419,
+        -4.000069618225098
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22568,
+      "stage": "move-to-far",
+      "feet": [
+        6.5420708656311035,
+        0.3597791433334351,
+        -4.000027179718018
+      ],
+      "ready": [
+        "hall-chunk-1"
+      ],
+      "loading": [
+        "hall-chunk-2"
+      ],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22748,
+      "stage": "move-to-far",
+      "feet": [
+        6.8840718269348145,
+        0.3595872163772583,
+        -4.000027179718018
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 22928,
+      "stage": "move-to-far",
+      "feet": [
+        7.283989906311035,
+        0.35997834205627444,
+        -4.000057220458984
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 23108,
+      "stage": "move-to-far",
+      "feet": [
+        7.646007537841797,
+        0.35997905731201174,
+        -4.00006103515625
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 23288,
+      "stage": "move-to-far",
+      "feet": [
+        7.9900031089782715,
+        0.35899856090545657,
+        -4.000061988830566
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 23468,
+      "stage": "move-to-far",
+      "feet": [
+        8.348569869995117,
+        0.36009993553161623,
+        -3.999997615814209
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 23652,
+      "stage": "move-to-far",
+      "feet": [
+        8.688591003417969,
+        0.3599815607070923,
+        -3.9999797344207764
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 23833,
+      "stage": "move-to-far",
+      "feet": [
+        9.037603378295898,
+        0.3600878953933716,
+        -3.99998140335083
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24013,
+      "stage": "move-to-far",
+      "feet": [
+        9.395594596862793,
+        0.359983229637146,
+        -3.9999654293060303
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24188,
+      "stage": "move-to-far",
+      "feet": [
+        9.756486892700195,
+        0.3599840641021729,
+        -4.000028610229492
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24372,
+      "stage": "move-to-far",
+      "feet": [
+        10.094494819641113,
+        0.3595942497253418,
+        -4.000029563903809
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24552,
+      "stage": "move-to-far",
+      "feet": [
+        10.454411506652832,
+        0.36026384830474856,
+        -4.00006628036499
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24728,
+      "stage": "move-to-far",
+      "feet": [
+        10.814437866210938,
+        0.36014618873596194,
+        -4.000056743621826
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 24916,
+      "stage": "move-to-far",
+      "feet": [
+        11.180419921875,
+        0.36008753776550295,
+        -4.000070095062256
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25089,
+      "stage": "move-to-far",
+      "feet": [
+        11.544065475463867,
+        0.36022319793701174,
+        -4.000067710876465
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25268,
+      "stage": "move-to-far",
+      "feet": [
+        11.902105331420898,
+        0.3602930545806885,
+        -4.000075340270996
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25448,
+      "stage": "move-to-far",
+      "feet": [
+        12.248085975646973,
+        0.359994912147522,
+        -4.000101566314697
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25630,
+      "stage": "move-to-far",
+      "feet": [
+        12.54918098449707,
+        0.3603019952774048,
+        -4.000097274780273
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25808,
+      "stage": "move-to-far",
+      "feet": [
+        12.937204360961914,
+        0.3601315259933472,
+        -4.000092506408691
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 25988,
+      "stage": "move-to-far",
+      "feet": [
+        13.281217575073242,
+        0.3602562189102173,
+        -4.000060558319092
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 26168,
+      "stage": "move-to-far",
+      "feet": [
+        13.653199195861816,
+        0.35889997482299807,
+        -4.000030517578125
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 26360,
+      "stage": "move-to-far",
+      "feet": [
+        13.993210792541504,
+        0.36009624004364016,
+        -4.00001335144043
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 26531,
+      "stage": "move-to-far",
+      "feet": [
+        14.334142684936523,
+        0.3606425762176514,
+        -4.0000224113464355
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 26710,
+      "stage": "move-to-far",
+      "feet": [
+        14.698083877563477,
+        0.3599655866622925,
+        -4.000035285949707
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 26893,
+      "stage": "move-to-far",
+      "feet": [
+        15.07594108581543,
+        0.3601000547409058,
+        -4.000077724456787
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 27073,
+      "stage": "move-to-far",
+      "feet": [
+        15.4319429397583,
+        0.3594913721084595,
+        -4.000069618225098
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 27249,
+      "stage": "move-to-far",
+      "feet": [
+        15.77210807800293,
+        0.35996284484863283,
+        -4.000099182128906
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 27430,
+      "stage": "move-to-far",
+      "feet": [
+        16.100074768066406,
+        0.3600634574890137,
+        -4.000122547149658
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 27614,
+      "stage": "move-to-far",
+      "feet": [
+        16.46807098388672,
+        0.36015822887420657,
+        -4.000099182128906
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 27790,
+      "stage": "move-to-far",
+      "feet": [
+        16.820072174072266,
+        0.359964394569397,
+        -4.000130653381348
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 30369,
+      "stage": "return-to-start",
+      "feet": [
+        17.184093475341797,
+        0.35999622344970705,
+        -4.000105857849121
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 30548,
+      "stage": "return-to-start",
+      "feet": [
+        16.82937240600586,
+        0.358946704864502,
+        -4.000095367431641
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 30730,
+      "stage": "return-to-start",
+      "feet": [
+        16.499372482299805,
+        0.35959341526031496,
+        -4.000078201293945
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 30912,
+      "stage": "return-to-start",
+      "feet": [
+        16.123374938964844,
+        0.35996332168579104,
+        -4.000078201293945
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31095,
+      "stage": "return-to-start",
+      "feet": [
+        15.753389358520508,
+        0.35999383926391604,
+        -4.000060558319092
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31272,
+      "stage": "return-to-start",
+      "feet": [
+        15.395401000976562,
+        0.36015751361846926,
+        -4.000040054321289
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31448,
+      "stage": "return-to-start",
+      "feet": [
+        15.039515495300293,
+        0.35959341526031496,
+        -4.000065803527832
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31628,
+      "stage": "return-to-start",
+      "feet": [
+        14.703513145446777,
+        0.35989131927490237,
+        -4.0000786781311035
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31808,
+      "stage": "return-to-start",
+      "feet": [
+        14.31755256652832,
+        0.35935177803039553,
+        -4.000020503997803
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 31988,
+      "stage": "return-to-start",
+      "feet": [
+        13.951550483703613,
+        0.3596027135848999,
+        -4.000019550323486
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 32168,
+      "stage": "return-to-start",
+      "feet": [
+        13.627558708190918,
+        0.35999407768249514,
+        -4.0000128746032715
+      ],
+      "ready": [
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 32349,
+      "stage": "return-to-start",
+      "feet": [
+        13.227563858032227,
+        0.35909214019775393,
+        -4.000072956085205
+      ],
+      "ready": [
+        "hall-chunk-3"
+      ],
+      "loading": [
+        "hall-chunk-2"
+      ],
+      "blockedFrames": 0
+    },
+    {
+      "t": 32528,
+      "stage": "return-to-start",
+      "feet": [
+        12.897871971130371,
+        0.3586945772171021,
+        -4.000062942504883
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 32713,
+      "stage": "return-to-start",
+      "feet": [
+        12.557856559753418,
+        0.3600745439529419,
+        -4.0000739097595215
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 32892,
+      "stage": "return-to-start",
+      "feet": [
+        12.19782829284668,
+        0.3601000547409058,
+        -4.000082015991211
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33070,
+      "stage": "return-to-start",
+      "feet": [
+        11.843831062316895,
+        0.35999383926391604,
+        -4.000030994415283
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33251,
+      "stage": "return-to-start",
+      "feet": [
+        11.466182708740234,
+        0.35998704433441164,
+        -3.9999797344207764
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33428,
+      "stage": "return-to-start",
+      "feet": [
+        11.110176086425781,
+        0.35893728733062746,
+        -3.999981641769409
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33608,
+      "stage": "return-to-start",
+      "feet": [
+        10.754180908203125,
+        0.3599864482879639,
+        -3.9999799728393555
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33788,
+      "stage": "return-to-start",
+      "feet": [
+        10.420586585998535,
+        0.3600820541381836,
+        -4.000007152557373
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 33968,
+      "stage": "return-to-start",
+      "feet": [
+        10.056636810302734,
+        0.35923566818237307,
+        -3.999974489212036
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 34157,
+      "stage": "return-to-start",
+      "feet": [
+        9.706819534301758,
+        0.3588841199874878,
+        -3.999924898147583
+      ],
+      "ready": [
+        "hall-chunk-2",
+        "hall-chunk-3"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 34328,
+      "stage": "return-to-start",
+      "feet": [
+        9.336831092834473,
+        0.3599829912185669,
+        -3.9999265670776367
+      ],
+      "ready": [
+        "hall-chunk-2"
+      ],
+      "loading": [
+        "hall-chunk-1"
+      ],
+      "blockedFrames": 0
+    },
+    {
+      "t": 34509,
+      "stage": "return-to-start",
+      "feet": [
+        8.982047080993652,
+        0.3599992036819458,
+        -3.9999165534973145
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 34688,
+      "stage": "return-to-start",
+      "feet": [
+        8.642086029052734,
+        0.36017551422119143,
+        -3.999941825866699
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 34868,
+      "stage": "return-to-start",
+      "feet": [
+        8.282085418701172,
+        0.3601000547409058,
+        -3.9999425411224365
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35048,
+      "stage": "return-to-start",
+      "feet": [
+        7.914085388183594,
+        0.3599193334579468,
+        -3.999912977218628
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35232,
+      "stage": "return-to-start",
+      "feet": [
+        7.570059299468994,
+        0.359983229637146,
+        -3.999889612197876
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35408,
+      "stage": "return-to-start",
+      "feet": [
+        7.204058647155762,
+        0.359378719329834,
+        -3.999889850616455
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35589,
+      "stage": "return-to-start",
+      "feet": [
+        6.822108745574951,
+        0.35999407768249514,
+        -3.9998772144317627
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35768,
+      "stage": "return-to-start",
+      "feet": [
+        6.486096382141113,
+        0.3600683450698853,
+        -3.9998481273651123
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 35948,
+      "stage": "return-to-start",
+      "feet": [
+        6.127696514129639,
+        0.36009993553161623,
+        -3.9998672008514404
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 36129,
+      "stage": "return-to-start",
+      "feet": [
+        5.757676601409912,
+        0.3599801301956177,
+        -3.999859094619751
+      ],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 36308,
+      "stage": "return-to-start",
+      "feet": [
+        5.4176859855651855,
+        0.3601000547409058,
+        -3.9998583793640137
+      ],
+      "ready": [
+        "hall-chunk-1"
+      ],
+      "loading": [
+        "hall-chunk-0"
+      ],
+      "blockedFrames": 0
+    },
+    {
+      "t": 36488,
+      "stage": "return-to-start",
+      "feet": [
+        5.053726673126221,
+        0.36007227897644045,
+        -3.999922037124634
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 36668,
+      "stage": "return-to-start",
+      "feet": [
+        4.705772876739502,
+        0.35997226238250735,
+        -3.9999046325683594
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 36848,
+      "stage": "return-to-start",
+      "feet": [
+        4.369784832000732,
+        0.3599995613098145,
+        -3.9999332427978516
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 37029,
+      "stage": "return-to-start",
+      "feet": [
+        4.027054786682129,
+        0.35999407768249514,
+        -3.9999189376831055
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 37208,
+      "stage": "return-to-start",
+      "feet": [
+        3.655123710632324,
+        0.3603712558746338,
+        -3.9999239444732666
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    },
+    {
+      "t": 37388,
+      "stage": "return-to-start",
+      "feet": [
+        3.2891898155212402,
+        0.3600692987442017,
+        -3.999974250793457
+      ],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "loading": [],
+      "blockedFrames": 0
+    }
+  ],
+  "errors": [],
+  "contextEvents": [],
+  "visibilityEvents": [],
+  "passed": true,
+  "environment": {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Mobile/15E148 Safari/604.1",
+    "visibility": "visible",
+    "hardwareConcurrency": 4,
+    "gpu": "Apple GPU"
+  },
+  "panel": {
+    "text": "닫기\n과거 구역 · 설명용 시험\n\n시험용 예시 · 확신도: 해당 없음\n\n구역 자산·충돌·설명의 동시 교체를 확인합니다. 과거 장면은 건물 일부를 제거한 설명용 시험 자산이며 역사적 복원 자료가 아닙니다.\n\n",
+    "images": [
+      {
+        "src": "http://192.168.1.246:6173/assets/past-diagram.svg",
+        "width": 640
+      }
+    ]
+  },
+  "finishedAt": "2026-10-02T16:35:47.046Z"
+}

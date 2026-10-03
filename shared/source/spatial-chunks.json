@@ -1,0 +1,104 @@
+{
+  "source": "current-master.ply",
+  "sourceSha256": "b6478c0a5e3af8744a4dbb72340e550740e60bf86f8fc2f9069893e6f1e7e9f1",
+  "sourceGaussians": 900000,
+  "partition": "unique Gaussian centers, world X strips",
+  "shBands": 0,
+  "chunks": [
+    {
+      "id": "hall-chunk-0",
+      "src": "assets/hall-chunk-0.sog",
+      "gaussians": 69967,
+      "bytes": 931680,
+      "sha256": "12936a6b5027c6c83375f575b121031fee4ffad44025bb2755bda46da26f852e",
+      "bounds": {
+        "min": [
+          0,
+          -6,
+          -17
+        ],
+        "max": [
+          4,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-chunk-1",
+      "src": "assets/hall-chunk-1.sog",
+      "gaussians": 231735,
+      "bytes": 3060137,
+      "sha256": "56633119fb0300b792133da26b627323135a92c506b758d9e198e24fa7291dc5",
+      "bounds": {
+        "min": [
+          4,
+          -6,
+          -17
+        ],
+        "max": [
+          8,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-chunk-2",
+      "src": "assets/hall-chunk-2.sog",
+      "gaussians": 267979,
+      "bytes": 3541172,
+      "sha256": "c6378b89e456650f746c9037c1787f334a6c678aa69a0c9f20d3297d290e679b",
+      "bounds": {
+        "min": [
+          8,
+          -6,
+          -17
+        ],
+        "max": [
+          12,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-chunk-3",
+      "src": "assets/hall-chunk-3.sog",
+      "gaussians": 215380,
+      "bytes": 2836047,
+      "sha256": "ed3315cbfb38dc0a35797061142c2cc07b029484dcc7d33c32b825326269c555",
+      "bounds": {
+        "min": [
+          12,
+          -6,
+          -17
+        ],
+        "max": [
+          16,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-chunk-4",
+      "src": "assets/hall-chunk-4.sog",
+      "gaussians": 114939,
+      "bytes": 1510967,
+      "sha256": "e9a63121e2396876a7ab7549fde264f2c291f200cf5201aba609f46a3370b005",
+      "bounds": {
+        "min": [
+          16,
+          -6,
+          -17
+        ],
+        "max": [
+          20,
+          6,
+          1
+        ]
+      }
+    }
+  ]
+}

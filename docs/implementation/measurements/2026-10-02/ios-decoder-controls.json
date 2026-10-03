@@ -1,0 +1,2155 @@
+{
+  "date": "2026-10-02",
+  "purpose": "Functional decoder isolation, not engine performance ranking",
+  "release": "local-4d5905679d2e-882e63d01db8",
+  "device": {
+    "model": "iPhone 11",
+    "identifier": "iPhone12,1",
+    "os": "iOS 27.0.1",
+    "build": "24A446"
+  },
+  "app": {
+    "engine": "Three.js",
+    "renderer": "Spark 2.2.0",
+    "controller": "BVH",
+    "scene": "sunnyvale"
+  },
+  "conditions": {
+    "sequential": true,
+    "visibleSafari": true,
+    "localHttpRelay": true,
+    "workerSummaryProbe": true,
+    "physicalTouch": false,
+    "memoryMeasured": false
+  },
+  "assets": {
+    "original": {
+      "file": "sunnyvale.sog",
+      "bytes": 58072500,
+      "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+      "gaussians": 3999361,
+      "shBands": 3
+    },
+    "no-sh": {
+      "file": "sunnyvale-no-sh.sog",
+      "bytes": 48583083,
+      "sha256": "9dd236523633af0e531d671d1554d74f26cca915c84d4765a25678c09496ad97",
+      "gaussians": 3999361,
+      "shBands": 0
+    },
+    "900k-no-sh": {
+      "file": "sunnyvale-900k-no-sh.sog",
+      "bytes": 11244336,
+      "sha256": "09944eea92a0d0d5b01831e6ce8a11c0e644be60384b508832b33a9c73ebfffc",
+      "gaussians": 900000,
+      "shBands": 0
+    }
+  },
+  "outcomes": {
+    "original": {
+      "status": "incomplete at 73.030 seconds; later timeOrigin changed without commanded navigation",
+      "downloadCompleteMs": 2250,
+      "decodedAtMs": null,
+      "firstSceneReadyMs": null,
+      "restartCause": "unknown; no proof of memory termination",
+      "timeoutUiObserved": false
+    },
+    "fullNoSh": {
+      "status": "ready",
+      "downloadCompleteMs": 1985,
+      "decodedAtMs": 43412,
+      "firstSceneReadyMs": 47320,
+      "sameBaseWebPBytes": true
+    },
+    "reducedNoSh": {
+      "status": "ready",
+      "downloadCompleteMs": 643,
+      "decodedAtMs": 11798,
+      "firstSceneReadyMs": null,
+      "readyObservedAtMs": 48501,
+      "layoutReencoded": true
+    },
+    "hallHealthyControl": {
+      "status": "ready",
+      "downloadCompleteMs": 727,
+      "decodedAtMs": 10871,
+      "firstSceneReadyMs": 10943
+    }
+  },
+  "interpretation": "Removing SH higher-order data while preserving the point count and all base WebP bytes allowed the full scene to load. SH decoding, its allocations, or related overhead is implicated; exact cause and memory usage remain unmeasured. Generic Script error. also occurred in successful controls and is not a failure criterion.",
+  "excludedTrials": [
+    "Relay gzip rewrite failure before valid original run: infrastructure failure.",
+    "First full-no-SH run was navigated away after 9.954 seconds: inconclusive.",
+    "Early 900k observation at 9.981 seconds was loading; later same page became ready."
+  ],
+  "observations": {
+    "iosOriginalValidFirst": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=original",
+      "timeOrigin": 1790946954754,
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 186
+          },
+          {
+            "id": 0,
+            "at": 469,
+            "status": {
+              "loaded": 575192,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 531,
+            "status": {
+              "loaded": 2159304,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 586,
+            "status": {
+              "loaded": 4190848,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 640,
+            "status": {
+              "loaded": 5960304,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 695,
+            "status": {
+              "loaded": 8240904,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 753,
+            "status": {
+              "loaded": 10370912,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 805,
+            "status": {
+              "loaded": 12179464,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 870,
+            "status": {
+              "loaded": 14612104,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 921,
+            "status": {
+              "loaded": 15967432,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 993,
+            "status": {
+              "loaded": 18927944,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1043,
+            "status": {
+              "loaded": 19215080,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1196,
+            "status": {
+              "loaded": 23458616,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1247,
+            "status": {
+              "loaded": 23697536,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1316,
+            "status": {
+              "loaded": 24240536,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1379,
+            "status": {
+              "loaded": 25254136,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1433,
+            "status": {
+              "loaded": 27324776,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1492,
+            "status": {
+              "loaded": 29144912,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1546,
+            "status": {
+              "loaded": 30911472,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1606,
+            "status": {
+              "loaded": 32666448,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1660,
+            "status": {
+              "loaded": 34569120,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1723,
+            "status": {
+              "loaded": 36564464,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1773,
+            "status": {
+              "loaded": 39487976,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1830,
+            "status": {
+              "loaded": 41154624,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1888,
+            "status": {
+              "loaded": 42120440,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1962,
+            "status": {
+              "loaded": 47059016,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2016,
+            "status": {
+              "loaded": 48557696,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2071,
+            "status": {
+              "loaded": 51266904,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2125,
+            "status": {
+              "loaded": 53104416,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2177,
+            "status": {
+              "loaded": 55096864,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2227,
+            "status": {
+              "loaded": 56498528,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2250,
+            "status": {
+              "loaded": 58072500,
+              "total": 58072500
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "iosOriginalFinal": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=original",
+      "timeOrigin": 1790946954754,
+      "elapsedMs": 73030,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 186
+          },
+          {
+            "id": 0,
+            "at": 469,
+            "status": {
+              "loaded": 575192,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 531,
+            "status": {
+              "loaded": 2159304,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 586,
+            "status": {
+              "loaded": 4190848,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 640,
+            "status": {
+              "loaded": 5960304,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 695,
+            "status": {
+              "loaded": 8240904,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 753,
+            "status": {
+              "loaded": 10370912,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 805,
+            "status": {
+              "loaded": 12179464,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 870,
+            "status": {
+              "loaded": 14612104,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 921,
+            "status": {
+              "loaded": 15967432,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 993,
+            "status": {
+              "loaded": 18927944,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1043,
+            "status": {
+              "loaded": 19215080,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1196,
+            "status": {
+              "loaded": 23458616,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1247,
+            "status": {
+              "loaded": 23697536,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1316,
+            "status": {
+              "loaded": 24240536,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1379,
+            "status": {
+              "loaded": 25254136,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1433,
+            "status": {
+              "loaded": 27324776,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1492,
+            "status": {
+              "loaded": 29144912,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1546,
+            "status": {
+              "loaded": 30911472,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1606,
+            "status": {
+              "loaded": 32666448,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1660,
+            "status": {
+              "loaded": 34569120,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1723,
+            "status": {
+              "loaded": 36564464,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1773,
+            "status": {
+              "loaded": 39487976,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1830,
+            "status": {
+              "loaded": 41154624,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1888,
+            "status": {
+              "loaded": 42120440,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1962,
+            "status": {
+              "loaded": 47059016,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2016,
+            "status": {
+              "loaded": 48557696,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2071,
+            "status": {
+              "loaded": 51266904,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2125,
+            "status": {
+              "loaded": 53104416,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2177,
+            "status": {
+              "loaded": 55096864,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2227,
+            "status": {
+              "loaded": 56498528,
+              "total": 58072500
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 2250,
+            "status": {
+              "loaded": 58072500,
+              "total": 58072500
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "iosOriginalTimeout": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=original",
+      "timeOrigin": 1790947046713,
+      "elapsedMs": 6514,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 259
+          },
+          {
+            "id": 0,
+            "at": 477,
+            "status": {
+              "loaded": 58072500,
+              "total": 58072500
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "iosNoShFirst": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=no-sh",
+      "timeOrigin": 1790947207113,
+      "elapsedMs": 9954,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 177
+          },
+          {
+            "id": 0,
+            "at": 277,
+            "status": {
+              "loaded": 329608,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 335,
+            "status": {
+              "loaded": 1684376,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 391,
+            "status": {
+              "loaded": 3175816,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 448,
+            "status": {
+              "loaded": 5262384,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 502,
+            "status": {
+              "loaded": 7121616,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 562,
+            "status": {
+              "loaded": 9428280,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 613,
+            "status": {
+              "loaded": 10480976,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 666,
+            "status": {
+              "loaded": 12741304,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 790,
+            "status": {
+              "loaded": 17614720,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 848,
+            "status": {
+              "loaded": 19547800,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 905,
+            "status": {
+              "loaded": 21551832,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 961,
+            "status": {
+              "loaded": 23219928,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1012,
+            "status": {
+              "loaded": 25444056,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1064,
+            "status": {
+              "loaded": 27112152,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1119,
+            "status": {
+              "loaded": 29336280,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1174,
+            "status": {
+              "loaded": 31243296,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1232,
+            "status": {
+              "loaded": 33284976,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1287,
+            "status": {
+              "loaded": 35335344,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1341,
+            "status": {
+              "loaded": 37049776,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1401,
+            "status": {
+              "loaded": 39544680,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1452,
+            "status": {
+              "loaded": 41193952,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1506,
+            "status": {
+              "loaded": 43762704,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1569,
+            "status": {
+              "loaded": 46230096,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1621,
+            "status": {
+              "loaded": 48336936,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1624,
+            "status": {
+              "loaded": 48583083,
+              "total": 48583083
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "ios900kFirst": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=900k-no-sh",
+      "timeOrigin": 1790947230328,
+      "elapsedMs": 9981,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 200
+          },
+          {
+            "id": 0,
+            "at": 282,
+            "status": {
+              "loaded": 551032,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 343,
+            "status": {
+              "loaded": 1835408,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 394,
+            "status": {
+              "loaded": 3449928,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 448,
+            "status": {
+              "loaded": 4325968,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 529,
+            "status": {
+              "loaded": 7171248,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 584,
+            "status": {
+              "loaded": 9066680,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 639,
+            "status": {
+              "loaded": 10972248,
+              "total": 11244336
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 643,
+            "status": {
+              "loaded": 11244336,
+              "total": 11244336
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "ios900kConsole": {
+      "state": {
+        "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=900k-no-sh",
+        "timeOrigin": 1790947230328,
+        "elapsedMs": 48501,
+        "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\n지상 보행 · 기존 BVH · SOG 900,000개 · 충돌 메시 337,680삼각형\n시작점으로\n\nWASD 이동 · 화면 클릭 후 마우스로 둘러보기 · R 또는 시작점으로 복귀 · Esc로 마우스 해제. Sunnyvale 공식 예제 충돌 메시를 사용합니다. 벽을 멀리서, 가까이서, 옆으로 이동하며 비교해 주세요.\n\n충돌 면 보기위치 JSON 저장\n\n발 위치 (m): -0.00, 0.11, 0.00 · 충돌 면 보기에서는 촬영 장면을 숨깁니다.",
+        "probe": {
+          "events": [
+            {
+              "id": 0,
+              "kind": "created",
+              "at": 200
+            },
+            {
+              "id": 0,
+              "at": 282,
+              "status": {
+                "loaded": 551032,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 343,
+              "status": {
+                "loaded": 1835408,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 394,
+              "status": {
+                "loaded": 3449928,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 448,
+              "status": {
+                "loaded": 4325968,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 529,
+              "status": {
+                "loaded": 7171248,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 584,
+              "status": {
+                "loaded": 9066680,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 639,
+              "status": {
+                "loaded": 10972248,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 643,
+              "status": {
+                "loaded": 11244336,
+                "total": 11244336
+              },
+              "error": ""
+            },
+            {
+              "id": 0,
+              "at": 11798,
+              "error": "",
+              "result": {
+                "numSplats": 900000,
+                "keys": [
+                  "numSplats",
+                  "packedArray",
+                  "extra",
+                  "splatEncoding"
+                ]
+              }
+            },
+            {
+              "id": 10,
+              "kind": "created",
+              "at": 16232
+            },
+            {
+              "id": 11,
+              "kind": "created",
+              "at": 16310
+            },
+            {
+              "id": 11,
+              "at": 16634,
+              "error": "",
+              "result": {
+                "keys": [
+                  "activeSplats",
+                  "readback",
+                  "ordering"
+                ]
+              }
+            },
+            {
+              "id": 11,
+              "at": 16993,
+              "error": "",
+              "result": {
+                "keys": [
+                  "activeSplats",
+                  "readback",
+                  "ordering"
+                ]
+              }
+            }
+          ],
+          "errors": [
+            "Script error."
+          ]
+        }
+      },
+      "logs": []
+    },
+    "iosHallControl": {
+      "url": "http://192.168.1.246:6173/?scene=hall&controller=bvh&probe=worker&variant=original",
+      "timeOrigin": 1790947284023,
+      "elapsedMs": 16386,
+      "visibility": "visible",
+      "text": "장소 정보 시험\nAtlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\n지상 보행 · 기존 BVH · SOG 900,000개 · 충돌 메시 24삼각형\n과거 보기시작점으로\n\nWASD 이동 · 화면 클릭 후 마우스로 둘러보기 · 장소 정보 선택 · R 또는 시작점으로 복귀 · Esc로 마우스 해제. 충돌 지형은 단순화된 시험용입니다.\n\n비교 경로 재생\n\n충돌 면 보기위치 JSON 저장\n\n발 위치 (m): 3.00, 0.35, -4.00 · 충돌 면 보기에서는 촬영 장면을 숨깁니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 259
+          },
+          {
+            "id": 0,
+            "at": 371,
+            "status": {
+              "loaded": 469584,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 434,
+            "status": {
+              "loaded": 1911112,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 487,
+            "status": {
+              "loaded": 3396760,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 547,
+            "status": {
+              "loaded": 5626680,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 600,
+            "status": {
+              "loaded": 7104048,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 652,
+            "status": {
+              "loaded": 9074776,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 727,
+            "status": {
+              "loaded": 11543748,
+              "total": 11543748
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 10871,
+            "error": "",
+            "result": {
+              "numSplats": 900000,
+              "keys": [
+                "numSplats",
+                "packedArray",
+                "extra",
+                "splatEncoding"
+              ]
+            }
+          },
+          {
+            "id": 9,
+            "kind": "created",
+            "at": 10996
+          },
+          {
+            "id": 10,
+            "kind": "created",
+            "at": 11049
+          },
+          {
+            "id": 10,
+            "at": 11329,
+            "error": "",
+            "result": {
+              "keys": [
+                "activeSplats",
+                "readback",
+                "ordering"
+              ]
+            }
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      },
+      "diagnostics": {
+        "marks": {
+          "worldLoaded": 220,
+          "assetsLoaded": 10925,
+          "firstSceneReady": 10943
+        },
+        "frameMs": 160,
+        "errors": []
+      }
+    },
+    "iosNoShBoundedFirst": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=no-sh",
+      "timeOrigin": 1790947338364,
+      "elapsedMs": 13639,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 399
+          },
+          {
+            "id": 0,
+            "at": 506,
+            "status": {
+              "loaded": 444456,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 572,
+            "status": {
+              "loaded": 1721392,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 625,
+            "status": {
+              "loaded": 3480712,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 680,
+            "status": {
+              "loaded": 5119848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 729,
+            "status": {
+              "loaded": 6740160,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 786,
+            "status": {
+              "loaded": 8836864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 840,
+            "status": {
+              "loaded": 10729400,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 899,
+            "status": {
+              "loaded": 12587184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 975,
+            "status": {
+              "loaded": 15316664,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1030,
+            "status": {
+              "loaded": 17188928,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1084,
+            "status": {
+              "loaded": 19235848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1137,
+            "status": {
+              "loaded": 21459976,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1195,
+            "status": {
+              "loaded": 23070152,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1249,
+            "status": {
+              "loaded": 25515272,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1303,
+            "status": {
+              "loaded": 26074200,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1409,
+            "status": {
+              "loaded": 31337184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1461,
+            "status": {
+              "loaded": 33620680,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1514,
+            "status": {
+              "loaded": 35180176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1566,
+            "status": {
+              "loaded": 36515232,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1623,
+            "status": {
+              "loaded": 38032736,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1675,
+            "status": {
+              "loaded": 39644360,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1728,
+            "status": {
+              "loaded": 41384856,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1786,
+            "status": {
+              "loaded": 42963176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1842,
+            "status": {
+              "loaded": 44247552,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1897,
+            "status": {
+              "loaded": 46025696,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1957,
+            "status": {
+              "loaded": 48039864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1985,
+            "status": {
+              "loaded": 48583083,
+              "total": 48583083
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "iosNoShBoundedSecond": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=no-sh",
+      "timeOrigin": 1790947338364,
+      "elapsedMs": 39102,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\nSOG와 GLB를 불러오는 중…\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 399
+          },
+          {
+            "id": 0,
+            "at": 506,
+            "status": {
+              "loaded": 444456,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 572,
+            "status": {
+              "loaded": 1721392,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 625,
+            "status": {
+              "loaded": 3480712,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 680,
+            "status": {
+              "loaded": 5119848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 729,
+            "status": {
+              "loaded": 6740160,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 786,
+            "status": {
+              "loaded": 8836864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 840,
+            "status": {
+              "loaded": 10729400,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 899,
+            "status": {
+              "loaded": 12587184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 975,
+            "status": {
+              "loaded": 15316664,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1030,
+            "status": {
+              "loaded": 17188928,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1084,
+            "status": {
+              "loaded": 19235848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1137,
+            "status": {
+              "loaded": 21459976,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1195,
+            "status": {
+              "loaded": 23070152,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1249,
+            "status": {
+              "loaded": 25515272,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1303,
+            "status": {
+              "loaded": 26074200,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1409,
+            "status": {
+              "loaded": 31337184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1461,
+            "status": {
+              "loaded": 33620680,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1514,
+            "status": {
+              "loaded": 35180176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1566,
+            "status": {
+              "loaded": 36515232,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1623,
+            "status": {
+              "loaded": 38032736,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1675,
+            "status": {
+              "loaded": 39644360,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1728,
+            "status": {
+              "loaded": 41384856,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1786,
+            "status": {
+              "loaded": 42963176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1842,
+            "status": {
+              "loaded": 44247552,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1897,
+            "status": {
+              "loaded": 46025696,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1957,
+            "status": {
+              "loaded": 48039864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1985,
+            "status": {
+              "loaded": 48583083,
+              "total": 48583083
+            },
+            "error": ""
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      }
+    },
+    "iosNoShBoundedThird": {
+      "url": "http://192.168.1.246:6173/?scene=sunnyvale&controller=bvh&probe=worker&variant=no-sh",
+      "timeOrigin": 1790947338364,
+      "elapsedMs": 65847,
+      "visibility": "visible",
+      "text": "Atlas · Three.js\n장면 Knock Hall · 기존 시험\nSunnyvale Museum · 벽 비교 보행 기존 BVH\nRapier\n지상 보행 · 기존 BVH · SOG 3,999,361개 · 충돌 메시 337,680삼각형\n시작점으로\n\nWASD 이동 · 화면 클릭 후 마우스로 둘러보기 · R 또는 시작점으로 복귀 · Esc로 마우스 해제. Sunnyvale 공식 예제 충돌 메시를 사용합니다. 벽을 멀리서, 가까이서, 옆으로 이동하며 비교해 주세요.\n\n충돌 면 보기위치 JSON 저장\n\n발 위치 (m): -0.00, 0.11, 0.00 · 충돌 면 보기에서는 촬영 장면을 숨깁니다.",
+      "probe": {
+        "events": [
+          {
+            "id": 0,
+            "kind": "created",
+            "at": 399
+          },
+          {
+            "id": 0,
+            "at": 506,
+            "status": {
+              "loaded": 444456,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 572,
+            "status": {
+              "loaded": 1721392,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 625,
+            "status": {
+              "loaded": 3480712,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 680,
+            "status": {
+              "loaded": 5119848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 729,
+            "status": {
+              "loaded": 6740160,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 786,
+            "status": {
+              "loaded": 8836864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 840,
+            "status": {
+              "loaded": 10729400,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 899,
+            "status": {
+              "loaded": 12587184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 975,
+            "status": {
+              "loaded": 15316664,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1030,
+            "status": {
+              "loaded": 17188928,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1084,
+            "status": {
+              "loaded": 19235848,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1137,
+            "status": {
+              "loaded": 21459976,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1195,
+            "status": {
+              "loaded": 23070152,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1249,
+            "status": {
+              "loaded": 25515272,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1303,
+            "status": {
+              "loaded": 26074200,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1409,
+            "status": {
+              "loaded": 31337184,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1461,
+            "status": {
+              "loaded": 33620680,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1514,
+            "status": {
+              "loaded": 35180176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1566,
+            "status": {
+              "loaded": 36515232,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1623,
+            "status": {
+              "loaded": 38032736,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1675,
+            "status": {
+              "loaded": 39644360,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1728,
+            "status": {
+              "loaded": 41384856,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1786,
+            "status": {
+              "loaded": 42963176,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1842,
+            "status": {
+              "loaded": 44247552,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1897,
+            "status": {
+              "loaded": 46025696,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1957,
+            "status": {
+              "loaded": 48039864,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 1985,
+            "status": {
+              "loaded": 48583083,
+              "total": 48583083
+            },
+            "error": ""
+          },
+          {
+            "id": 0,
+            "at": 43412,
+            "error": "",
+            "result": {
+              "numSplats": 3999361,
+              "keys": [
+                "numSplats",
+                "packedArray",
+                "extra",
+                "splatEncoding"
+              ]
+            }
+          },
+          {
+            "id": 29,
+            "kind": "created",
+            "at": 47387
+          },
+          {
+            "id": 30,
+            "kind": "created",
+            "at": 47523
+          },
+          {
+            "id": 30,
+            "at": 48730,
+            "error": "",
+            "result": {
+              "keys": [
+                "activeSplats",
+                "readback",
+                "ordering"
+              ]
+            }
+          },
+          {
+            "id": 30,
+            "at": 49985,
+            "error": "",
+            "result": {
+              "keys": [
+                "activeSplats",
+                "readback",
+                "ordering"
+              ]
+            }
+          }
+        ],
+        "errors": [
+          "Script error."
+        ]
+      },
+      "diagnostics": {
+        "marks": {
+          "worldLoaded": 387,
+          "assetsLoaded": 47312,
+          "firstSceneReady": 47320
+        },
+        "frameMs": 330,
+        "errors": []
+      }
+    }
+  }
+}

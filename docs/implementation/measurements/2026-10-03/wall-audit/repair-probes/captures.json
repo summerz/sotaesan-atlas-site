@@ -1,0 +1,6928 @@
+{
+  "scope": "Local opaque patch visual probe; pose changes are prescribed viewpoints, not walking/performance measurements",
+  "setup": {
+    "views": {
+      "center": [
+        -14.24,
+        2.15,
+        -11.09
+      ],
+      "left": [
+        -14.24,
+        2.15,
+        -10.59
+      ],
+      "right": [
+        -14.24,
+        2.15,
+        -11.59
+      ],
+      "near": [
+        -14.64,
+        2.15,
+        -11.09
+      ]
+    },
+    "rotation": [
+      -20,
+      90,
+      0
+    ],
+    "viewport": [
+      1280,
+      800
+    ],
+    "fov": 70,
+    "near": 0.05,
+    "settlingSeconds": 1.8,
+    "patch": {
+      "src": "assets/wall-repair-probe.glb",
+      "kind": "gltf",
+      "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf",
+      "bytes": 51944,
+      "triangles": 2
+    },
+    "patchBounds": {
+      "min": [
+        -15.69,
+        0.67,
+        -11.28
+      ],
+      "max": [
+        -15.69,
+        1.48,
+        -9.42
+      ]
+    },
+    "marker": {
+      "assetId": "reference-cube",
+      "position": [
+        -16.3,
+        0.25,
+        -10.3
+      ],
+      "scale": [
+        0.02,
+        0.75,
+        0.8
+      ]
+    },
+    "temporaryWorldFields": [
+      "spawn.position",
+      "spawn.rotation",
+      "benchmarkRoute",
+      "objects"
+    ],
+    "hideHudForScreenshots": true
+  },
+  "results": [
+    {
+      "engine": "three",
+      "view": "center",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:46:29.016Z",
+      "file": "output/playwright/wall-repair-three-center-original.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 105.19999992847443,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 1.6000001430511475,
+          "meanMs": 0.32000002861022947,
+          "maxMs": 1.2000000476837158,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 1.6000001430511475,
+            "meanMs": 0.32000002861022947,
+            "p95Ms": 1.2000000476837158,
+            "maxMs": 1.2000000476837158,
+            "simulatedSeconds": 0.1493000000000002,
+            "cpuMsPerSimulatedSecond": 10.716678788018386
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 1.6000001430511475,
+            "meanMs": 0.32000002861022947,
+            "p95Ms": 1.2000000476837158,
+            "maxMs": 1.2000000476837158,
+            "simulatedSeconds": 0.1493000000000002,
+            "cpuMsPerSimulatedSecond": 10.716678788018386
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "center",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:46:33.818Z",
+      "file": "output/playwright/wall-repair-three-center-original-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.10000002384186,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 1.0000001192092896,
+          "meanMs": 0.20000002384185792,
+          "maxMs": 0.6000000238418579,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 1.0000001192092896,
+            "meanMs": 0.20000002384185792,
+            "p95Ms": 0.6000000238418579,
+            "maxMs": 0.6000000238418579,
+            "simulatedSeconds": 0.1509000000000001,
+            "cpuMsPerSimulatedSecond": 6.626906025243797
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 1.0000001192092896,
+            "meanMs": 0.20000002384185792,
+            "p95Ms": 0.6000000238418579,
+            "maxMs": 0.6000000238418579,
+            "simulatedSeconds": 0.1509000000000001,
+            "cpuMsPerSimulatedSecond": 6.626906025243797
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 13
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "center",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:46:38.904Z",
+      "file": "output/playwright/wall-repair-three-center-patch.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 98.10000002384186,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 2.6999998092651367,
+          "meanMs": 0.6749999523162842,
+          "maxMs": 2.1999999284744263,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 2.6999998092651367,
+            "meanMs": 0.6749999523162842,
+            "p95Ms": 2.1999999284744263,
+            "maxMs": 2.1999999284744263,
+            "simulatedSeconds": 0.13269999999999982,
+            "cpuMsPerSimulatedSecond": 20.346645133874457
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 2.6999998092651367,
+            "meanMs": 0.6749999523162842,
+            "p95Ms": 2.1999999284744263,
+            "maxMs": 2.1999999284744263,
+            "simulatedSeconds": 0.13269999999999982,
+            "cpuMsPerSimulatedSecond": 20.346645133874457
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "center",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:46:43.755Z",
+      "file": "output/playwright/wall-repair-three-center-patch-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240409736530744,
+          0.5503562425019835,
+          -11.09
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 99.29999995231628,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 2.5000001192092896,
+          "meanMs": 0.5000000238418579,
+          "maxMs": 1.7000000476837158,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 2.5000001192092896,
+            "meanMs": 0.5000000238418579,
+            "p95Ms": 1.7000000476837158,
+            "maxMs": 1.7000000476837158,
+            "simulatedSeconds": 0.14919999999999983,
+            "cpuMsPerSimulatedSecond": 16.756032970571663
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 2.5000001192092896,
+            "meanMs": 0.5000000238418579,
+            "p95Ms": 1.7000000476837158,
+            "maxMs": 1.7000000476837158,
+            "simulatedSeconds": 0.14919999999999983,
+            "cpuMsPerSimulatedSecond": 16.756032970571663
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 4,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "left",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:46:48.695Z",
+      "file": "output/playwright/wall-repair-three-left-original.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240027859411773,
+          0.5264395927624428,
+          -10.589892541095923
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -10.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 96.19999992847443,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 2.799999952316284,
+          "meanMs": 0.699999988079071,
+          "maxMs": 1.899999976158142,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 2.799999952316284,
+            "meanMs": 0.699999988079071,
+            "p95Ms": 1.899999976158142,
+            "maxMs": 1.899999976158142,
+            "simulatedSeconds": 0.1334000000000001,
+            "cpuMsPerSimulatedSecond": 20.98950488992715
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 2.799999952316284,
+            "meanMs": 0.699999988079071,
+            "p95Ms": 1.899999976158142,
+            "maxMs": 1.899999976158142,
+            "simulatedSeconds": 0.1334000000000001,
+            "cpuMsPerSimulatedSecond": 20.98950488992715
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "left",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:46:53.409Z",
+      "file": "output/playwright/wall-repair-three-left-original-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.24004492799438,
+          0.5264347801892757,
+          -10.589826704415813
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -10.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 94.79999995231628,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 2.3999998569488525,
+          "meanMs": 0.4799999713897705,
+          "maxMs": 1.6999999284744263,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 2.3999998569488525,
+            "meanMs": 0.4799999713897705,
+            "p95Ms": 1.6999999284744263,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 0.14960000000000037,
+            "cpuMsPerSimulatedSecond": 16.042779792438814
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 2.3999998569488525,
+            "meanMs": 0.4799999713897705,
+            "p95Ms": 1.6999999284744263,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 0.14960000000000037,
+            "cpuMsPerSimulatedSecond": 16.042779792438814
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 13
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "left",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:46:58.582Z",
+      "file": "output/playwright/wall-repair-three-left-patch.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240024001660258,
+          0.5264406778922527,
+          -10.589907421157045
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -10.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 99.80000007152557,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 2,
+          "meanMs": 0.4,
+          "maxMs": 1,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 2,
+            "meanMs": 0.4,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.14929999999999977,
+            "cpuMsPerSimulatedSecond": 13.395847287340946
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 2,
+            "meanMs": 0.4,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.14929999999999977,
+            "cpuMsPerSimulatedSecond": 13.395847287340946
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "left",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:47:03.419Z",
+      "file": "output/playwright/wall-repair-three-left-patch-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240021446575307,
+          0.5264413960765645,
+          -10.589917276592294
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -10.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 96.29999995231628,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 2.399999976158142,
+          "meanMs": 0.5999999940395355,
+          "maxMs": 1.4000000953674316,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 2.399999976158142,
+            "meanMs": 0.5999999940395355,
+            "p95Ms": 1.4000000953674316,
+            "maxMs": 1.4000000953674316,
+            "simulatedSeconds": 0.13329999999999972,
+            "cpuMsPerSimulatedSecond": 18.00450094642271
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 2.399999976158142,
+            "meanMs": 0.5999999940395355,
+            "p95Ms": 1.4000000953674316,
+            "maxMs": 1.4000000953674316,
+            "simulatedSeconds": 0.13329999999999972,
+            "cpuMsPerSimulatedSecond": 18.00450094642271
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 4,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "right",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:47:08.481Z",
+      "file": "output/playwright/wall-repair-three-right-original.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240216804166568,
+          0.5460103361509057,
+          -11.59005370389261
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.10000002384186,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 2.700000047683716,
+          "meanMs": 0.5400000095367432,
+          "maxMs": 1.6999999284744263,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 2.700000047683716,
+            "meanMs": 0.5400000095367432,
+            "p95Ms": 1.6999999284744263,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 0.14979999999999974,
+            "cpuMsPerSimulatedSecond": 18.024032361039524
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 2.700000047683716,
+            "meanMs": 0.5400000095367432,
+            "p95Ms": 1.6999999284744263,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 0.14979999999999974,
+            "cpuMsPerSimulatedSecond": 18.024032361039524
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "right",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:47:13.213Z",
+      "file": "output/playwright/wall-repair-three-right-original-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240216804166568,
+          0.5460103361509057,
+          -11.59005370389261
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 96.69999992847443,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 1.8000000715255737,
+          "meanMs": 0.45000001788139343,
+          "maxMs": 1.5,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 1.8000000715255737,
+            "meanMs": 0.45000001788139343,
+            "p95Ms": 1.5,
+            "maxMs": 1.5,
+            "simulatedSeconds": 0.13329999999999972,
+            "cpuMsPerSimulatedSecond": 13.503376380536965
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 1.8000000715255737,
+            "meanMs": 0.45000001788139343,
+            "p95Ms": 1.5,
+            "maxMs": 1.5,
+            "simulatedSeconds": 0.13329999999999972,
+            "cpuMsPerSimulatedSecond": 13.503376380536965
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 13
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "right",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:47:18.091Z",
+      "file": "output/playwright/wall-repair-three-right-patch.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240216804166568,
+          0.5460103361509057,
+          -11.59005370389261
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 154.39999997615814,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 5,
+          "totalMs": 1.2999999523162842,
+          "meanMs": 0.25999999046325684,
+          "maxMs": 1,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 1.2999999523162842,
+            "meanMs": 0.25999999046325684,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.11670000000000026,
+            "cpuMsPerSimulatedSecond": 11.139673970148083
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 1.2999999523162842,
+            "meanMs": 0.25999999046325684,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.11670000000000026,
+            "cpuMsPerSimulatedSecond": 11.139673970148083
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "right",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:47:22.753Z",
+      "file": "output/playwright/wall-repair-three-right-patch-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240216804166568,
+          0.5460103361509057,
+          -11.59005370389261
+        ],
+        "eye": [
+          -14.24,
+          2.15,
+          -11.59
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 97.20000004768372,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 1.7999999523162842,
+          "meanMs": 0.44999998807907104,
+          "maxMs": 1.100000023841858,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 1.7999999523162842,
+            "meanMs": 0.44999998807907104,
+            "p95Ms": 1.100000023841858,
+            "maxMs": 1.100000023841858,
+            "simulatedSeconds": 0.0989000000000001,
+            "cpuMsPerSimulatedSecond": 18.200201742328435
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 1.7999999523162842,
+            "meanMs": 0.44999998807907104,
+            "p95Ms": 1.100000023841858,
+            "maxMs": 1.100000023841858,
+            "simulatedSeconds": 0.0989000000000001,
+            "cpuMsPerSimulatedSecond": 18.200201742328435
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 4,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "near",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:47:27.639Z",
+      "file": "output/playwright/wall-repair-three-near-original.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.64,
+          0.5270607335662841,
+          -11.09
+        ],
+        "eye": [
+          -14.64,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 96.70000004768372,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 1,
+          "meanMs": 0.25,
+          "maxMs": 0.6000000238418579,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 1,
+            "meanMs": 0.25,
+            "p95Ms": 0.6000000238418579,
+            "maxMs": 0.6000000238418579,
+            "simulatedSeconds": 0.1,
+            "cpuMsPerSimulatedSecond": 10
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 1,
+            "meanMs": 0.25,
+            "p95Ms": 0.6000000238418579,
+            "maxMs": 0.6000000238418579,
+            "simulatedSeconds": 0.1,
+            "cpuMsPerSimulatedSecond": 10
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 2,
+          "textures": 12
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "near",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:47:32.266Z",
+      "file": "output/playwright/wall-repair-three-near-original-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.64,
+          0.5270607335662841,
+          -11.09
+        ],
+        "eye": [
+          -14.64,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 89.39999997615814,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 0.9000000953674316,
+          "meanMs": 0.2250000238418579,
+          "maxMs": 0.7000000476837158,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.9000000953674316,
+            "meanMs": 0.2250000238418579,
+            "p95Ms": 0.7000000476837158,
+            "maxMs": 0.7000000476837158,
+            "simulatedSeconds": 0.1,
+            "cpuMsPerSimulatedSecond": 9.000000953674316
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.9000000953674316,
+            "meanMs": 0.2250000238418579,
+            "p95Ms": 0.7000000476837158,
+            "maxMs": 0.7000000476837158,
+            "simulatedSeconds": 0.1,
+            "cpuMsPerSimulatedSecond": 9.000000953674316
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 13
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "near",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:47:37.070Z",
+      "file": "output/playwright/wall-repair-three-near-patch.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.64,
+          0.5270607335662841,
+          -11.09
+        ],
+        "eye": [
+          -14.64,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 95.10000002384186,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 1.7000000476837158,
+          "meanMs": 0.42500001192092896,
+          "maxMs": 1,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 1.7000000476837158,
+            "meanMs": 0.42500001192092896,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.13340000000000007,
+            "cpuMsPerSimulatedSecond": 12.743628543356184
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 1.7000000476837158,
+            "meanMs": 0.42500001192092896,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.13340000000000007,
+            "cpuMsPerSimulatedSecond": 12.743628543356184
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 3,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "three",
+      "view": "near",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:47:41.933Z",
+      "file": "output/playwright/wall-repair-three-near-patch-marker.png",
+      "url": "http://127.0.0.1:5173/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "three",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.64,
+          0.5270607335662841,
+          -11.09
+        ],
+        "eye": [
+          -14.64,
+          2.15,
+          -11.09
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 102.10000002384186,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 4,
+          "totalMs": 1.3000000715255737,
+          "meanMs": 0.32500001788139343,
+          "maxMs": 1,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 1.3000000715255737,
+            "meanMs": 0.32500001788139343,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.1165999999999999,
+            "cpuMsPerSimulatedSecond": 11.149228743787091
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 1.3000000715255737,
+            "meanMs": 0.32500001788139343,
+            "p95Ms": 1,
+            "maxMs": 1,
+            "simulatedSeconds": 0.1165999999999999,
+            "cpuMsPerSimulatedSecond": 11.149228743787091
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "collisionUpdates": [],
+        "collisionStats": {
+          "built": 2,
+          "removed": 0,
+          "retained": 0,
+          "resident": 2
+        },
+        "retiredStreams": [],
+        "renderMemory": {
+          "geometries": 4,
+          "textures": 14
+        },
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "center",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:47:45.602Z",
+      "file": "output/playwright/wall-repair-playcanvas-center-original.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240019798278809,
+          0.5503077745437622,
+          -11.09000015258789
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0.0009318888187408447,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 22.200000047683716,
+        "controllerBuildMs": 327.2000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 2.5999999046325684,
+          "meanMs": 0.6499999761581421,
+          "maxMs": 2.299999952316284,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 2.5999999046325684,
+            "meanMs": 0.6499999761581421,
+            "p95Ms": 2.299999952316284,
+            "maxMs": 2.299999952316284,
+            "simulatedSeconds": 0.14990000000000012,
+            "cpuMsPerSimulatedSecond": 17.34489596152479
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 2.5999999046325684,
+            "meanMs": 0.6499999761581421,
+            "p95Ms": 2.299999952316284,
+            "maxMs": 2.299999952316284,
+            "simulatedSeconds": 0.14990000000000012,
+            "cpuMsPerSimulatedSecond": 17.34489596152479
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "center",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:47:49.409Z",
+      "file": "output/playwright/wall-repair-playcanvas-center-original-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240020751953125,
+          0.5503204107284546,
+          -11.09000015258789
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0.0005977600812911987,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 15.400000095367432,
+        "controllerBuildMs": 345.7000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 5,
+          "totalMs": 0.6999999284744263,
+          "meanMs": 0.13999998569488525,
+          "maxMs": 0.30000007152557373,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 0.6999999284744263,
+            "meanMs": 0.13999998569488525,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.16670000000000004,
+            "cpuMsPerSimulatedSecond": 4.199159738898777
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 0.6999999284744263,
+            "meanMs": 0.13999998569488525,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.16670000000000004,
+            "cpuMsPerSimulatedSecond": 4.199159738898777
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "center",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:47:53.056Z",
+      "file": "output/playwright/wall-repair-playcanvas-center-patch.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240018844604492,
+          0.5502923965454102,
+          -11.09000015258789
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0.0011641085147857666,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 15.400000095367432,
+        "controllerBuildMs": 346.7999999523163,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.5,
+          "meanMs": 0.16666666666666666,
+          "maxMs": 0.2999999523162842,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.5,
+            "meanMs": 0.16666666666666666,
+            "p95Ms": 0.2999999523162842,
+            "maxMs": 0.2999999523162842,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 3.750937734433603
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.5,
+            "meanMs": 0.16666666666666666,
+            "p95Ms": 0.2999999523162842,
+            "maxMs": 0.2999999523162842,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 3.750937734433603
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "center",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:47:56.714Z",
+      "file": "output/playwright/wall-repair-playcanvas-center-patch-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=center&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.240018844604492,
+          0.5502923965454102,
+          -11.09000015258789
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0.0011641085147857666,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.299999952316284,
+        "controllerBuildMs": 331.7000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.40000009536743164,
+          "meanMs": 0.1333333651224772,
+          "maxMs": 0.20000004768371582,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.1333333651224772,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 3.000750902981478
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.1333333651224772,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 3.000750902981478
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "left",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:48:00.308Z",
+      "file": "output/playwright/wall-repair-playcanvas-left-original.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.2398681640625,
+          0.5259586811065674,
+          -10.59050464630127
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -10.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 15.299999952316284,
+        "controllerBuildMs": 311.39999997615814,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.6000000238418579,
+          "meanMs": 0.15000000596046448,
+          "maxMs": 0.3999999761581421,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.6000000238418579,
+            "meanMs": 0.15000000596046448,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 0.3999999761581421,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 4.000000158945719
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.6000000238418579,
+            "meanMs": 0.15000000596046448,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 0.3999999761581421,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 4.000000158945719
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "left",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:48:03.956Z",
+      "file": "output/playwright/wall-repair-playcanvas-left-original-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.2398681640625,
+          0.5259586811065674,
+          -10.59050464630127
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -10.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.5,
+        "controllerBuildMs": 329.39999997615814,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.7000000476837158,
+          "meanMs": 0.17500001192092896,
+          "maxMs": 0.30000007152557373,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.7000000476837158,
+            "meanMs": 0.17500001192092896,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.15010000000000015,
+            "cpuMsPerSimulatedSecond": 4.663557945927482
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.7000000476837158,
+            "meanMs": 0.17500001192092896,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.15010000000000015,
+            "cpuMsPerSimulatedSecond": 4.663557945927482
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "left",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:48:07.589Z",
+      "file": "output/playwright/wall-repair-playcanvas-left-patch.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.2398681640625,
+          0.5259586811065674,
+          -10.59050464630127
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -10.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 15,
+        "controllerBuildMs": 324.60000002384186,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.6000000238418579,
+          "meanMs": 0.20000000794728598,
+          "maxMs": 0.30000007152557373,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.6000000238418579,
+            "meanMs": 0.20000000794728598,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.13439999999999988,
+            "cpuMsPerSimulatedSecond": 4.464285891680494
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.6000000238418579,
+            "meanMs": 0.20000000794728598,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.13439999999999988,
+            "cpuMsPerSimulatedSecond": 4.464285891680494
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "left",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:48:11.185Z",
+      "file": "output/playwright/wall-repair-playcanvas-left-patch-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=left&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.2398681640625,
+          0.5259586811065674,
+          -10.59050464630127
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -10.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.199999928474426,
+        "controllerBuildMs": 330.2000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.5,
+          "meanMs": 0.16666666666666666,
+          "maxMs": 0.2999999523162842,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.5,
+            "meanMs": 0.16666666666666666,
+            "p95Ms": 0.2999999523162842,
+            "maxMs": 0.2999999523162842,
+            "simulatedSeconds": 0.13270000000000004,
+            "cpuMsPerSimulatedSecond": 3.76789751318764
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.5,
+            "meanMs": 0.16666666666666666,
+            "p95Ms": 0.2999999523162842,
+            "maxMs": 0.2999999523162842,
+            "simulatedSeconds": 0.13270000000000004,
+            "cpuMsPerSimulatedSecond": 3.76789751318764
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "right",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:48:14.772Z",
+      "file": "output/playwright/wall-repair-playcanvas-right-original.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.239925384521484,
+          0.546018385887146,
+          -11.589982032775879
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 16.799999952316284,
+        "controllerBuildMs": 327.6999999284744,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.49999988079071045,
+          "meanMs": 0.12499997019767761,
+          "maxMs": 0.3999999761581421,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.49999988079071045,
+            "meanMs": 0.12499997019767761,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 0.3999999761581421,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 3.333332538604736
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.49999988079071045,
+            "meanMs": 0.12499997019767761,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 0.3999999761581421,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 3.333332538604736
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "right",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:48:18.383Z",
+      "file": "output/playwright/wall-repair-playcanvas-right-original-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.239925384521484,
+          0.546018385887146,
+          -11.589982032775879
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.399999976158142,
+        "controllerBuildMs": 318.7999999523163,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.40000009536743164,
+          "meanMs": 0.1333333651224772,
+          "maxMs": 0.20000004768371582,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.1333333651224772,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.13320000000000004,
+            "cpuMsPerSimulatedSecond": 3.003003718974711
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.1333333651224772,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.13320000000000004,
+            "cpuMsPerSimulatedSecond": 3.003003718974711
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "right",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:48:21.970Z",
+      "file": "output/playwright/wall-repair-playcanvas-right-patch.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.239925384521484,
+          0.546018385887146,
+          -11.589982032775879
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.199999928474426,
+        "controllerBuildMs": 317.2999999523163,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.6000001430511475,
+          "meanMs": 0.15000003576278687,
+          "maxMs": 0.20000004768371582,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.6000001430511475,
+            "meanMs": 0.15000003576278687,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 4.0000009536743155
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.6000001430511475,
+            "meanMs": 0.15000003576278687,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 4.0000009536743155
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "right",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:48:25.543Z",
+      "file": "output/playwright/wall-repair-playcanvas-right-patch-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=right&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.239925384521484,
+          0.546018385887146,
+          -11.589982032775879
+        ],
+        "eye": [
+          -14.239999771118164,
+          2.1500000953674316,
+          -11.59000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          7.152557373046875e-7,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.399999976158142,
+        "controllerBuildMs": 313.89999997615814,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 5,
+          "totalMs": 0.7000001668930054,
+          "meanMs": 0.14000003337860106,
+          "maxMs": 0.30000007152557373,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 5,
+            "totalMs": 0.7000001668930054,
+            "meanMs": 0.14000003337860106,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.16579999999999995,
+            "cpuMsPerSimulatedSecond": 4.221955168232844
+          },
+          "recentIdle": {
+            "calls": 5,
+            "totalMs": 0.7000001668930054,
+            "meanMs": 0.14000003337860106,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.16579999999999995,
+            "cpuMsPerSimulatedSecond": 4.221955168232844
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "near",
+      "mode": "original",
+      "capturedAt": "2026-10-03T14:48:29.123Z",
+      "file": "output/playwright/wall-repair-playcanvas-near-original.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=no",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.640000343322754,
+          0.5270490884780884,
+          -11.090001106262207
+        ],
+        "eye": [
+          -14.640000343322754,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 15.100000023841858,
+        "controllerBuildMs": 322.2000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.40000009536743164,
+          "meanMs": 0.10000002384185791,
+          "maxMs": 0.30000007152557373,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.10000002384185791,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.15010000000000015,
+            "cpuMsPerSimulatedSecond": 2.664890708643779
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.40000009536743164,
+            "meanMs": 0.10000002384185791,
+            "p95Ms": 0.30000007152557373,
+            "maxMs": 0.30000007152557373,
+            "simulatedSeconds": 0.15010000000000015,
+            "cpuMsPerSimulatedSecond": 2.664890708643779
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "near",
+      "mode": "original-marker",
+      "capturedAt": "2026-10-03T14:48:32.741Z",
+      "file": "output/playwright/wall-repair-playcanvas-near-original-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=no&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.640000343322754,
+          0.5270490884780884,
+          -11.090001106262207
+        ],
+        "eye": [
+          -14.640000343322754,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.300000071525574,
+        "controllerBuildMs": 325.7000000476837,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 4,
+          "totalMs": 0.3999999761581421,
+          "meanMs": 0.09999999403953552,
+          "maxMs": 0.20000004768371582,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 4,
+            "totalMs": 0.3999999761581421,
+            "meanMs": 0.09999999403953552,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 2.666666507720947
+          },
+          "recentIdle": {
+            "calls": 4,
+            "totalMs": 0.3999999761581421,
+            "meanMs": 0.09999999403953552,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 0.20000004768371582,
+            "simulatedSeconds": 0.15000000000000002,
+            "cpuMsPerSimulatedSecond": 2.666666507720947
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 15,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "near",
+      "mode": "patch",
+      "capturedAt": "2026-10-03T14:48:36.428Z",
+      "file": "output/playwright/wall-repair-playcanvas-near-patch.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=yes",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.640000343322754,
+          0.5270490884780884,
+          -11.090001106262207
+        ],
+        "eye": [
+          -14.640000343322754,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 14.699999928474426,
+        "controllerBuildMs": 379.7999999523163,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.39999985694885254,
+          "meanMs": 0.13333328564961752,
+          "maxMs": 0.19999992847442627,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.39999985694885254,
+            "meanMs": 0.13333328564961752,
+            "p95Ms": 0.19999992847442627,
+            "maxMs": 0.19999992847442627,
+            "simulatedSeconds": 0.15080000000000018,
+            "cpuMsPerSimulatedSecond": 2.652518945284165
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.39999985694885254,
+            "meanMs": 0.13333328564961752,
+            "p95Ms": 0.19999992847442627,
+            "maxMs": 0.19999992847442627,
+            "simulatedSeconds": 0.15080000000000018,
+            "cpuMsPerSimulatedSecond": 2.652518945284165
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "engine": "playcanvas",
+      "view": "near",
+      "mode": "patch-marker",
+      "capturedAt": "2026-10-03T14:48:39.980Z",
+      "file": "output/playwright/wall-repair-playcanvas-near-patch-marker.png",
+      "url": "http://127.0.0.1:5174/?scene=sunnyvale&controller=bvh&wallView=near&wallPatch=yes&wallMarker",
+      "pages": 1,
+      "state": {
+        "track": "playcanvas",
+        "worldId": "sunnyvale-wall-comparison",
+        "layer": "current",
+        "release": "local-4d5905679d2e-8887379fa947",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1280,
+          "height": 800,
+          "dpr": 1
+        },
+        "feet": [
+          -14.640000343322754,
+          0.5270490884780884,
+          -11.090001106262207
+        ],
+        "eye": [
+          -14.640000343322754,
+          2.1500000953674316,
+          -11.09000015258789
+        ],
+        "rotation": [
+          -20,
+          90,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "recoveries": 0,
+        "fallRecovery": {
+          "belowSpawnMeters": 10,
+          "target": "spawn"
+        },
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 13.899999976158142,
+        "controllerBuildMs": 312.90000009536743,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 3,
+          "totalMs": 0.20000004768371582,
+          "meanMs": 0.0666666825612386,
+          "maxMs": 0.10000002384185791,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 3,
+            "totalMs": 0.20000004768371582,
+            "meanMs": 0.0666666825612386,
+            "p95Ms": 0.10000002384185791,
+            "maxMs": 0.10000002384185791,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 1.500375451490739
+          },
+          "recentIdle": {
+            "calls": 3,
+            "totalMs": 0.20000004768371582,
+            "meanMs": 0.0666666825612386,
+            "p95Ms": 0.10000002384185791,
+            "maxMs": 0.10000002384185791,
+            "simulatedSeconds": 0.1333000000000002,
+            "cpuMsPerSimulatedSecond": 1.500375451490739
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "retiredStreams": [],
+        "registeredAssetCount": 20,
+        "content": {
+          "panelOpen": false,
+          "hotspots": []
+        },
+        "transition": {
+          "switching": false,
+          "phase": "idle",
+          "count": 0,
+          "relocated": false
+        },
+        "collisionUpdates": [],
+        "colliders": [
+          {
+            "id": "sunnyvale-surface",
+            "assetId": "sunnyvale-collision",
+            "layer": "both",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22"
+          },
+          {
+            "id": "sunny-walk-porch-floor",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              -13.35,
+              0.32,
+              -22.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              0.2,
+              2.7
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "objects": [
+          {
+            "id": "sunnyvale-museum",
+            "type": "splat",
+            "assetId": "sunnyvale",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              180
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e"
+          },
+          {
+            "id": "diagnostic-wall-repair",
+            "type": "gltf",
+            "assetId": "wall-repair-probe",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "466dd67f7292b8cefd3970cbd03589083bdc2055fda9b212778a6e077b8f49bf"
+          },
+          {
+            "id": "diagnostic-wall-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "current",
+            "position": [
+              -16.3,
+              0.25,
+              -10.3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.02,
+              0.75,
+              0.8
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ],
+        "routeActive": true,
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "visibility": "visible",
+          "focus": true,
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+        }
+      },
+      "errors": [],
+      "console": [],
+      "failedRequests": []
+    }
+  ]
+}

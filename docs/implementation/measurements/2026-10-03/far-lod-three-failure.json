@@ -1,0 +1,536 @@
+{
+  "recordedAt": "2026-10-02T15:16:26.367Z",
+  "initial": {
+    "track": "three",
+    "release": "local-4d5905679d2e-dbfe2d878e01",
+    "feet": [
+      3,
+      0.3500099940395355,
+      -4
+    ],
+    "recoveries": 0,
+    "streaming": {
+      "loads": 2,
+      "unloads": 0,
+      "discarded": 0,
+      "failures": 0,
+      "requestedBytes": 3991817,
+      "peakReservedChunks": 2,
+      "peakReservedGaussians": 301702,
+      "peakReservedTotalGaussians": 391703,
+      "fallbackRequestedBytes": 1298672,
+      "blockedFrames": 0,
+      "blockedMs": 0,
+      "residentChunks": 2,
+      "residentGaussians": 301702,
+      "fallbackReady": true,
+      "fallbackChunks": 5,
+      "fallbackGaussians": 90001,
+      "residentTotalGaussians": 391703,
+      "renderedGaussians": 361532,
+      "fallbackVisible": [
+        "hall-chunk-2",
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "fallbackSourceBytes": 1298672,
+      "residentSourceBytes": 3991817,
+      "loading": [],
+      "failed": [],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 13.100000023841858,
+          "id": "hall-chunk-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 26.199999928474426,
+          "id": "hall-chunk-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 40.5,
+          "id": "hall-chunk-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 52.5,
+          "id": "hall-chunk-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-0",
+          "action": "requested"
+        },
+        {
+          "t": 91.19999992847443,
+          "id": "hall-chunk-0",
+          "action": "ready"
+        },
+        {
+          "t": 91.29999995231628,
+          "id": "hall-chunk-1",
+          "action": "requested"
+        },
+        {
+          "t": 190,
+          "id": "hall-chunk-1",
+          "action": "ready"
+        }
+      ]
+    }
+  },
+  "held1": {
+    "track": "three",
+    "release": "local-4d5905679d2e-dbfe2d878e01",
+    "feet": [
+      7.733600000000007,
+      0.3500099940395356,
+      -4
+    ],
+    "recoveries": 0,
+    "streaming": {
+      "loads": 3,
+      "unloads": 1,
+      "discarded": 0,
+      "failures": 1,
+      "requestedBytes": 7532989,
+      "peakReservedChunks": 2,
+      "peakReservedGaussians": 499714,
+      "peakReservedTotalGaussians": 589715,
+      "fallbackRequestedBytes": 1298672,
+      "blockedFrames": 12,
+      "blockedMs": 200,
+      "residentChunks": 1,
+      "residentGaussians": 231735,
+      "fallbackReady": true,
+      "fallbackChunks": 5,
+      "fallbackGaussians": 90001,
+      "residentTotalGaussians": 321736,
+      "renderedGaussians": 298562,
+      "fallbackVisible": [
+        "hall-chunk-0",
+        "hall-chunk-2",
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "fallbackSourceBytes": 1298672,
+      "residentSourceBytes": 3060137,
+      "loading": [],
+      "failed": [
+        {
+          "id": "hall-chunk-2",
+          "error": "Error: hall-chunk-2: 로딩 실패 — Failed to fetch"
+        }
+      ],
+      "ready": [
+        "hall-chunk-1"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 13.100000023841858,
+          "id": "hall-chunk-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 26.199999928474426,
+          "id": "hall-chunk-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 40.5,
+          "id": "hall-chunk-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 52.5,
+          "id": "hall-chunk-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-0",
+          "action": "requested"
+        },
+        {
+          "t": 91.19999992847443,
+          "id": "hall-chunk-0",
+          "action": "ready"
+        },
+        {
+          "t": 91.29999995231628,
+          "id": "hall-chunk-1",
+          "action": "requested"
+        },
+        {
+          "t": 190,
+          "id": "hall-chunk-1",
+          "action": "ready"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-0",
+          "action": "unloaded"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-2",
+          "action": "requested"
+        },
+        {
+          "t": 1984.7999999523163,
+          "id": "hall-chunk-2",
+          "action": "failed",
+          "detail": "Error: hall-chunk-2: 로딩 실패 — Failed to fetch"
+        }
+      ]
+    }
+  },
+  "held2": {
+    "track": "three",
+    "release": "local-4d5905679d2e-dbfe2d878e01",
+    "feet": [
+      7.733600000000007,
+      0.3500099940395356,
+      -4
+    ],
+    "recoveries": 0,
+    "streaming": {
+      "loads": 3,
+      "unloads": 1,
+      "discarded": 0,
+      "failures": 1,
+      "requestedBytes": 7532989,
+      "peakReservedChunks": 2,
+      "peakReservedGaussians": 499714,
+      "peakReservedTotalGaussians": 589715,
+      "fallbackRequestedBytes": 1298672,
+      "blockedFrames": 57,
+      "blockedMs": 949.0999999999999,
+      "residentChunks": 1,
+      "residentGaussians": 231735,
+      "fallbackReady": true,
+      "fallbackChunks": 5,
+      "fallbackGaussians": 90001,
+      "residentTotalGaussians": 321736,
+      "renderedGaussians": 298562,
+      "fallbackVisible": [
+        "hall-chunk-0",
+        "hall-chunk-2",
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "fallbackSourceBytes": 1298672,
+      "residentSourceBytes": 3060137,
+      "loading": [],
+      "failed": [
+        {
+          "id": "hall-chunk-2",
+          "error": "Error: hall-chunk-2: 로딩 실패 — Failed to fetch"
+        }
+      ],
+      "ready": [
+        "hall-chunk-1"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 13.100000023841858,
+          "id": "hall-chunk-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 26.199999928474426,
+          "id": "hall-chunk-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 40.5,
+          "id": "hall-chunk-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 52.5,
+          "id": "hall-chunk-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-0",
+          "action": "requested"
+        },
+        {
+          "t": 91.19999992847443,
+          "id": "hall-chunk-0",
+          "action": "ready"
+        },
+        {
+          "t": 91.29999995231628,
+          "id": "hall-chunk-1",
+          "action": "requested"
+        },
+        {
+          "t": 190,
+          "id": "hall-chunk-1",
+          "action": "ready"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-0",
+          "action": "unloaded"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-2",
+          "action": "requested"
+        },
+        {
+          "t": 1984.7999999523163,
+          "id": "hall-chunk-2",
+          "action": "failed",
+          "detail": "Error: hall-chunk-2: 로딩 실패 — Failed to fetch"
+        }
+      ]
+    }
+  },
+  "failedRequests": 1,
+  "retried": {
+    "track": "three",
+    "release": "local-4d5905679d2e-dbfe2d878e01",
+    "feet": [
+      9.0006,
+      0.3500099940395355,
+      -4
+    ],
+    "recoveries": 0,
+    "streaming": {
+      "loads": 4,
+      "unloads": 1,
+      "discarded": 0,
+      "failures": 1,
+      "requestedBytes": 11074161,
+      "peakReservedChunks": 2,
+      "peakReservedGaussians": 499714,
+      "peakReservedTotalGaussians": 589715,
+      "fallbackRequestedBytes": 1298672,
+      "blockedFrames": 57,
+      "blockedMs": 949.0999999999999,
+      "residentChunks": 2,
+      "residentGaussians": 499714,
+      "fallbackReady": true,
+      "fallbackChunks": 5,
+      "fallbackGaussians": 90001,
+      "residentTotalGaussians": 589715,
+      "renderedGaussians": 539743,
+      "fallbackVisible": [
+        "hall-chunk-0",
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "fallbackSourceBytes": 1298672,
+      "residentSourceBytes": 6601309,
+      "loading": [],
+      "failed": [],
+      "ready": [
+        "hall-chunk-1",
+        "hall-chunk-2"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 13.100000023841858,
+          "id": "hall-chunk-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 26.199999928474426,
+          "id": "hall-chunk-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 40.5,
+          "id": "hall-chunk-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 52.5,
+          "id": "hall-chunk-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 60.10000002384186,
+          "id": "hall-chunk-0",
+          "action": "requested"
+        },
+        {
+          "t": 91.19999992847443,
+          "id": "hall-chunk-0",
+          "action": "ready"
+        },
+        {
+          "t": 91.29999995231628,
+          "id": "hall-chunk-1",
+          "action": "requested"
+        },
+        {
+          "t": 190,
+          "id": "hall-chunk-1",
+          "action": "ready"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-0",
+          "action": "unloaded"
+        },
+        {
+          "t": 1982,
+          "id": "hall-chunk-2",
+          "action": "requested"
+        },
+        {
+          "t": 1984.7999999523163,
+          "id": "hall-chunk-2",
+          "action": "failed",
+          "detail": "Error: hall-chunk-2: 로딩 실패 — Failed to fetch"
+        },
+        {
+          "t": 4185.5,
+          "id": "hall-chunk-2",
+          "action": "requested"
+        },
+        {
+          "t": 4251.5,
+          "id": "hall-chunk-2",
+          "action": "ready"
+        }
+      ]
+    }
+  },
+  "startupFailure": {
+    "message": "Atlas · Three.js\n장면 \nKnock Hall · 기존 시험\nSunnyvale Museum · 벽 비교\n구역별 로딩 · 분할 시험\n시대별 벽 · 전환 시험\n 보행 \n기존 BVH\nRapier\nhall-far-2: 로딩 실패 — Failed to fetch\n다시 시도\n\n현재 장면과 1 m 기준 도형을 표시합니다.",
+    "requests": [
+      "http://127.0.0.1:5173/assets/hall-far-0.sog",
+      "http://127.0.0.1:5173/assets/hall-far-1.sog",
+      "http://127.0.0.1:5173/assets/hall-far-2.sog"
+    ]
+  },
+  "recovered": {
+    "track": "three",
+    "release": "local-4d5905679d2e-dbfe2d878e01",
+    "feet": [
+      3,
+      0.35000999403953553,
+      -4
+    ],
+    "recoveries": 0,
+    "streaming": {
+      "loads": 2,
+      "unloads": 0,
+      "discarded": 0,
+      "failures": 0,
+      "requestedBytes": 3991817,
+      "peakReservedChunks": 2,
+      "peakReservedGaussians": 301702,
+      "peakReservedTotalGaussians": 391703,
+      "fallbackRequestedBytes": 1298672,
+      "blockedFrames": 0,
+      "blockedMs": 0,
+      "residentChunks": 2,
+      "residentGaussians": 301702,
+      "fallbackReady": true,
+      "fallbackChunks": 5,
+      "fallbackGaussians": 90001,
+      "residentTotalGaussians": 391703,
+      "renderedGaussians": 361532,
+      "fallbackVisible": [
+        "hall-chunk-2",
+        "hall-chunk-3",
+        "hall-chunk-4"
+      ],
+      "fallbackSourceBytes": 1298672,
+      "residentSourceBytes": 3991817,
+      "loading": [],
+      "failed": [],
+      "ready": [
+        "hall-chunk-0",
+        "hall-chunk-1"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 6.300000071525574,
+          "id": "hall-chunk-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 12.400000095367432,
+          "id": "hall-chunk-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 19.300000071525574,
+          "id": "hall-chunk-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 24.40000009536743,
+          "id": "hall-chunk-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 28,
+          "id": "hall-chunk-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 28,
+          "id": "hall-chunk-0",
+          "action": "requested"
+        },
+        {
+          "t": 42.800000071525574,
+          "id": "hall-chunk-0",
+          "action": "ready"
+        },
+        {
+          "t": 42.90000009536743,
+          "id": "hall-chunk-1",
+          "action": "requested"
+        },
+        {
+          "t": 89.90000009536743,
+          "id": "hall-chunk-1",
+          "action": "ready"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

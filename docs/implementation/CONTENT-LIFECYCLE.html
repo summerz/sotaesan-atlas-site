@@ -1,0 +1,81 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>장소 정보·콘텐츠 수명 시험 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="CONTENT-LIFECYCLE.md" download>Markdown 원본 다운로드</a></p><h1 id="_1">장소 정보·콘텐츠 수명 시험</h1>
+<p>2026-10-02. 구역 로딩과 시대 전환에 핫스팟·설명 패널을 연결했다. Three.js BVH·Rapier와 PlayCanvas Ammo에서 아래 기능을 확인했다. <a href="measurements/2026-10-02/content-lifecycle.json">브라우저 JSON</a>, <span class="local-file" title="원본 개발 저장소의 파일">재현 경로 (원본 저장소 파일)</span>. 측정 릴리스는 <code>local-4d5905679d2e-6a26beb04091</code>이며 엔진 속도 비교는 아니다.</p>
+<h2 id="_2">데이터와 동작</h2>
+<p>핫스팟은 월드 JSON의 위치·시대·최대 거리·<code>contentId</code>로 정의한다. 분할 장면에서는 <code>chunkId</code>로 소유 구역을 지정한다. 엔진 객체를 콘텐츠 데이터에 저장하지 않는다. 구역이 준비됐고 시대가 맞을 때 사용할 수 있으며, 실제 버튼 표시는 거리·화면 투영·충돌 메시의 가림 판정도 통과해야 한다. 검사 JSON의 <code>available</code>만으로 화면에 보인다고 판단하지 않는다.</p>
+<p>설명은 콘텐츠 JSON에서 읽고 표현 종류·확신 수준·출처와 이미지를 패널에 표시한다. 시험 자료는 <code>illustrative</code>·<code>not-applicable</code>로 표시한다. 문자열은 <code>textContent</code>로 출력한다. 역사 자료의 정확성과 출처 검수 자체를 시험한 것은 아니다.</p>
+<p>패널이 열리면 일반 이동을 막는다. 닫기·Esc·시대 전환·장면 변경 시 패널 상태와 이미지 URL을 정리한다. 닫은 뒤 키 이동은 다시 가능하며 마우스 잠금은 사용자가 화면을 클릭해 다시 얻는다. 이미지 요청 실패 시 설명·출처와 실패 안내를 유지한다.</p>
+<h2 id="_3">확인 결과</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>확인 항목</th>
+<th>BVH</th>
+<th>Rapier</th>
+<th>Ammo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시작 구역 정보 표시·먼 구역 정보 숨김</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>설명·출처·이미지 표시</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>패널 중 이동 차단·Esc 후 이미지 URL 정리</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>닫은 뒤 끝 구역까지 이동·이전 구역 정보 제거</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>새 구역 설명 열기·장면 변경 시 이전 패널 정리</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>시대별 정보 교체·전환 시 패널 정리</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>벽 뒤 버튼 가림·거리 밖 버튼 숨김</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>이미지 실패 안내·다시 열어 이미지 복구</td>
+<td>통과</td>
+<td>통과</td>
+<td>통과</td>
+</tr>
+</tbody>
+</table></div>
+<p>브라우저 경로의 JS 예외는 없었다. 이미지 실패 시험에서는 의도적으로 네트워크 오류를 발생시켰다. 콘솔에 아무 오류도 없었다는 뜻은 아니다.</p>
+<p><a href="measurements/2026-10-02/content-three-custom-bvh-capsule.png">Three.js 패널</a>, <a href="measurements/2026-10-02/content-playcanvas-ammo-dynamic-capsule.png">PlayCanvas 패널</a>. PlayCanvas 캡처는 이미지 표시를 기다린 뒤 최종 릴리스 <code>local-4d5905679d2e-f6ec268ff18a</code>에서 다시 저장했다. 캡처의 상주 구역은 촬영 시점에 따라 달라 같은 렌더링 조건 비교용이 아니다.</p>
+<p>최종 릴리스에서 PlayCanvas의 구역 왕복·설명 이미지, Three.js BVH의 패널 중 이동 차단·닫은 뒤 이동 복귀, Rapier의 최초 선택 로딩을 추가 확인했다. <a href="measurements/2026-10-02/final-capabilities-sanity.json">최종 확인 JSON</a>. 전체 기능 경로의 근거는 위의 별도 측정 JSON이며 최종 확인은 이 세 경로에 한정한다.</p>
+<h2 id="_4">범위와 제한</h2>
+<ul>
+<li>패널 중 일반 이동이 막혀서 사용자가 패널을 연 채 소유 구역 밖으로 이동하는 경로는 발생하지 않는다. 구역 준비 상태 변경에 따른 사용 가능 판정은 공통 단위 검사로, 장면·시대 변경의 패널 정리는 실제 브라우저로 확인했다. 향후 자동 이동·멀티플레이 이동을 붙이면 별도 경로 검사가 필요하다.</li>
+<li>가림은 충돌 메시를 기준으로 한다. Gaussian 영상의 작은 틈과 투명도, 원본의 비침을 픽셀 단위로 판별하지 않는다. 콘텐츠 판정과 촬영 자산의 품질 문제는 별도 검수 대상이다.</li>
+<li>모바일 터치·스크린리더 사용성·대량 핫스팟·실제 역사 콘텐츠 검수는 아직 확인하지 않았다.</li>
+<li>분할 생성기는 기존 <code>stream.json</code>의 핫스팟을 보존한다. 경계를 바꾸면 소유 구역과 위치를 다시 검토해야 하며 잘못된 참조는 월드 검증에서 거부한다.</li>
+</ul></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

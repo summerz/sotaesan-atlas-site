@@ -1,0 +1,67 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iPhone 대형 SOG 해독 대조 시험 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="MOBILE-DECODER-CONTROLS.md" download>Markdown 원본 다운로드</a></p><h1 id="iphone-sog">iPhone 대형 SOG 해독 대조 시험</h1>
+<p>2026-10-02. iPhone 11(iPhone12,1), iOS 27.0.1(24A446), Safari에서 Three.js/Spark 2.2.0 + BVH를 순차 실행했다. 릴리스는 <code>local-4d5905679d2e-882e63d01db8</code>이다. 승인된 프로젝트 탭에 Playwright MCP와 USB CDP bridge로 연결했다.</p>
+<h2 id="_1">결과</h2>
+<p>시간은 페이지 시작 기준이다. LAN HTTP 릴레이와 worker 메시지 계측을 사용한 기능 진단이며, 엔진 성능 순위에 사용하지 않는다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>자산</th>
+<th>점 수 / SH</th>
+<th>다운로드 완료</th>
+<th>해독 결과</th>
+<th>앱 준비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sunnyvale 원본, 58.07 MB</td>
+<td>3,999,361 / SH3</td>
+<td>2.250초</td>
+<td>73.030초까지 없음</td>
+<td>관찰되지 않음</td>
+</tr>
+<tr>
+<td>Sunnyvale SH 제거, 48.58 MB</td>
+<td>3,999,361 / SH0</td>
+<td>1.985초</td>
+<td>43.412초</td>
+<td>47.320초</td>
+</tr>
+<tr>
+<td>Sunnyvale 축소·재인코딩, 11.24 MB</td>
+<td>900,000 / SH0</td>
+<td>0.643초</td>
+<td>11.798초</td>
+<td>48.501초 관찰에서 준비 확인; 정확한 준비 시각은 미수집</td>
+</tr>
+<tr>
+<td>기존 Knock Hall, 11.54 MB</td>
+<td>900,000 / SH0</td>
+<td>0.727초</td>
+<td>10.871초</td>
+<td>10.943초</td>
+</tr>
+</tbody>
+</table></div>
+<p>SH 제거본은 원본과 점 수 및 기본 WebP 바이트가 같다. 고차 SH 메타데이터와 그 파일만 제거했다. 축소본은 점을 줄이고 재인코딩했으므로 점 수만 달라진 대조군으로 해석하지 않는다.</p>
+<p>원본은 후속 관찰에서 <code>performance.timeOrigin</code>이 변경됐다. 두 관찰 사이에 자동화가 탐색을 요청하지는 않았지만, WebKit 재시작·수동 재시도·메모리 종료 중 무엇인지 확인되지 않았다. 90초 제한의 오류 화면도 이 시험에서는 관찰되지 않았다.</p>
+<p>준비에 성공한 두 대조군과 Knock Hall에도 일반적인 <code>Script error.</code>가 기록됐다. 이 문구만으로 해독 실패를 판정할 수 없다. 400만 점 SH0 성공 시 앱 진단 오류는 없었고 렌더 프레임 기록도 증가했다. 실제 손가락 조작과 이 장면의 장시간 안정성은 이번 시험 범위가 아니다.</p>
+<h2 id="_2">판단과 다음 작업</h2>
+<ul>
+<li><strong>관찰:</strong> SH를 제거하면 동일한 400만 점을 준비할 수 있었다. 단순히 점 수가 400만 개라서 불가능하다는 설명은 맞지 않는다.</li>
+<li><strong>추론:</strong> 원본의 고차 SH 해독·할당 또는 관련 부담이 실패와 연관됐을 가능성이 있다. 특정 SDK 결함이나 메모리 부족을 확정할 근거는 없다. CPU·GPU 메모리는 측정하지 않았다.</li>
+<li><strong>개발 제약:</strong> 성공한 전체 장면도 첫 준비에 약 47초가 필요했다. 전체 파일 하나를 시작 시 해독하는 방식은 개선이 필요하다. 공간 분할 시험에서는 전송량 외에 동시 해독 수와 상주 자산 예산을 확인한다.</li>
+<li><strong>품질 제약:</strong> SH0는 방향에 따른 색 표현을 줄인다. 진단 자산을 원본의 동등한 대체품으로 채택하지 않는다. 장면 분할의 기본 비교에는 동일 품질을 유지한 자산을 사용하고, 품질 축소는 별도 선택으로 비교한다.</li>
+</ul>
+<p>모바일 원본 호환성은 아직 미해결이다. 일반 프레임 비교를 반복하는 대신 현재·과거 충돌 교체, 실제 좌표 분할·선택 로딩 검증으로 진행한다. 분할 성공이 원본 SH3 해독 문제의 해결을 자동으로 뜻하지는 않는다.</p>
+<h2 id="_3">재현과 근거</h2>
+<ul>
+<li><a href="measurements/2026-10-02/ios-decoder-controls.json">원본 관찰 JSON</a>: 자산 해시·크기, 다운로드/worker 결과/준비 시각, 초기 관찰과 후속 성공을 함께 보존했다.</li>
+<li><span class="local-file" title="원본 개발 저장소의 파일">진단 자산 생성 (원본 저장소 파일)</span>: <code>python3 scripts/make-sog-diagnostics.py /private/tmp/atlas-sog-diagnostics</code>.</li>
+<li><span class="local-file" title="원본 개발 저장소의 파일">IP 제한 릴레이 (원본 저장소 파일)</span>: <code>--diagnostics /private/tmp/atlas-sog-diagnostics</code>, 승인 탭 URL의 <code>probe=worker&amp;variant=original|no-sh|900k-no-sh</code>로 선택한다. production manifest는 변경하지 않는다.</li>
+</ul>
+<p>처음 발생한 릴레이 압축 응답 재작성 실패는 앱 결과에서 제외했다. 첫 SH0 시험은 약 10초 뒤 다음 자산으로 이동했으므로 실패가 아닌 불충분한 관찰이다. 900k도 약 10초의 초기 관찰에서는 로딩 중이었지만 같은 페이지의 후속 관찰에서 성공했다. 임시 SOG·설치 환경·캐시와 릴레이·bridge는 기록 저장 후 정리한다.</p></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

@@ -1,0 +1,340 @@
+{
+  "sourceSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+  "collisionSourceSha256": "16b841224ce95e214917d98e551d815abc3eb6440979c26f8def958f6f046e22",
+  "sourceGaussians": 3999361,
+  "retainedGaussians": 900000,
+  "shBands": 0,
+  "collisionSourceTriangles": 337680,
+  "partition": "Unique visual centers; collision triangles duplicated by inclusive X AABB overlap",
+  "chunks": [
+    {
+      "id": "sunny-strip-0-detail",
+      "src": "assets/sunny-strip-0-detail.sog",
+      "kind": "splat",
+      "gaussians": 116614,
+      "bounds": {
+        "min": [
+          -547,
+          -117,
+          -351
+        ],
+        "max": [
+          -24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-0-far",
+      "src": "assets/sunny-strip-0-far.sog",
+      "kind": "splat",
+      "gaussians": 3888,
+      "bounds": {
+        "min": [
+          -547,
+          -117,
+          -351
+        ],
+        "max": [
+          -24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-0-collision",
+      "src": "assets/sunny-strip-0-collision.glb",
+      "kind": "gltf",
+      "triangles": 43835,
+      "bounds": {
+        "min": [
+          -547,
+          -117,
+          -351
+        ],
+        "max": [
+          -24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-1-detail",
+      "src": "assets/sunny-strip-1-detail.sog",
+      "kind": "splat",
+      "gaussians": 150946,
+      "bounds": {
+        "min": [
+          -24,
+          -117,
+          -351
+        ],
+        "max": [
+          -12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-1-far",
+      "src": "assets/sunny-strip-1-far.sog",
+      "kind": "splat",
+      "gaussians": 5032,
+      "bounds": {
+        "min": [
+          -24,
+          -117,
+          -351
+        ],
+        "max": [
+          -12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-1-collision",
+      "src": "assets/sunny-strip-1-collision.glb",
+      "kind": "gltf",
+      "triangles": 43521,
+      "bounds": {
+        "min": [
+          -24,
+          -117,
+          -351
+        ],
+        "max": [
+          -12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-2-detail",
+      "src": "assets/sunny-strip-2-detail.sog",
+      "kind": "splat",
+      "gaussians": 278922,
+      "bounds": {
+        "min": [
+          -12,
+          -117,
+          -351
+        ],
+        "max": [
+          0,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-2-far",
+      "src": "assets/sunny-strip-2-far.sog",
+      "kind": "splat",
+      "gaussians": 9298,
+      "bounds": {
+        "min": [
+          -12,
+          -117,
+          -351
+        ],
+        "max": [
+          0,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-2-collision",
+      "src": "assets/sunny-strip-2-collision.glb",
+      "kind": "gltf",
+      "triangles": 89148,
+      "bounds": {
+        "min": [
+          -12,
+          -117,
+          -351
+        ],
+        "max": [
+          0,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-3-detail",
+      "src": "assets/sunny-strip-3-detail.sog",
+      "kind": "splat",
+      "gaussians": 139103,
+      "bounds": {
+        "min": [
+          0,
+          -117,
+          -351
+        ],
+        "max": [
+          12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-3-far",
+      "src": "assets/sunny-strip-3-far.sog",
+      "kind": "splat",
+      "gaussians": 4637,
+      "bounds": {
+        "min": [
+          0,
+          -117,
+          -351
+        ],
+        "max": [
+          12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-3-collision",
+      "src": "assets/sunny-strip-3-collision.glb",
+      "kind": "gltf",
+      "triangles": 64647,
+      "bounds": {
+        "min": [
+          0,
+          -117,
+          -351
+        ],
+        "max": [
+          12,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-4-detail",
+      "src": "assets/sunny-strip-4-detail.sog",
+      "kind": "splat",
+      "gaussians": 46075,
+      "bounds": {
+        "min": [
+          12,
+          -117,
+          -351
+        ],
+        "max": [
+          24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-4-far",
+      "src": "assets/sunny-strip-4-far.sog",
+      "kind": "splat",
+      "gaussians": 1536,
+      "bounds": {
+        "min": [
+          12,
+          -117,
+          -351
+        ],
+        "max": [
+          24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-4-collision",
+      "src": "assets/sunny-strip-4-collision.glb",
+      "kind": "gltf",
+      "triangles": 28841,
+      "bounds": {
+        "min": [
+          12,
+          -117,
+          -351
+        ],
+        "max": [
+          24,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-5-detail",
+      "src": "assets/sunny-strip-5-detail.sog",
+      "kind": "splat",
+      "gaussians": 168340,
+      "bounds": {
+        "min": [
+          24,
+          -117,
+          -351
+        ],
+        "max": [
+          400,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-5-far",
+      "src": "assets/sunny-strip-5-far.sog",
+      "kind": "splat",
+      "gaussians": 5612,
+      "bounds": {
+        "min": [
+          24,
+          -117,
+          -351
+        ],
+        "max": [
+          400,
+          543,
+          653
+        ]
+      }
+    },
+    {
+      "id": "sunny-strip-5-collision",
+      "src": "assets/sunny-strip-5-collision.glb",
+      "kind": "gltf",
+      "triangles": 74106,
+      "bounds": {
+        "min": [
+          24,
+          -117,
+          -351
+        ],
+        "max": [
+          400,
+          543,
+          653
+        ]
+      }
+    }
+  ],
+  "collisionRetainedTriangles": 344098,
+  "collisionDuplicateTriangles": 6418,
+  "collisionMaxCopies": 6,
+  "buildSeconds": 80.325,
+  "visualReduction": "splat-transform spatial merging/decimation to 900000; not original record retention"
+}

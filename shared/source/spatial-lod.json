@@ -1,0 +1,102 @@
+{
+  "sourceSha256": "b6478c0a5e3af8744a4dbb72340e550740e60bf86f8fc2f9069893e6f1e7e9f1",
+  "sourceGaussians": 900000,
+  "method": "splat-transform 3.7.0 decimate-adaptive 10%, SH0",
+  "chunks": [
+    {
+      "id": "hall-far-0",
+      "src": "assets/hall-far-0.sog",
+      "gaussians": 6997,
+      "bytes": 108184,
+      "sha256": "f614cb61163e655f2c33159f7061136dafa8d64b8ca7d95451efe660cf94ae4e",
+      "bounds": {
+        "min": [
+          0,
+          -6,
+          -17
+        ],
+        "max": [
+          4,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-far-1",
+      "src": "assets/hall-far-1.sog",
+      "gaussians": 23174,
+      "bytes": 332038,
+      "sha256": "279dfcccc6e72242d487db25b8b524c0cc3f29d4345e9d211309c5a76a1ce95e",
+      "bounds": {
+        "min": [
+          4,
+          -6,
+          -17
+        ],
+        "max": [
+          8,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-far-2",
+      "src": "assets/hall-far-2.sog",
+      "gaussians": 26798,
+      "bytes": 382854,
+      "sha256": "5e84f872fa60ca85e3dd8037d8182f7b9ec1690d746a1fd36a8afd3a8aa6a8a1",
+      "bounds": {
+        "min": [
+          8,
+          -6,
+          -17
+        ],
+        "max": [
+          12,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-far-3",
+      "src": "assets/hall-far-3.sog",
+      "gaussians": 21538,
+      "bytes": 307934,
+      "sha256": "e0d73a6058104a5d41297daf6128f27aedd210ea6cdb28b4823eccae91e7d36c",
+      "bounds": {
+        "min": [
+          12,
+          -6,
+          -17
+        ],
+        "max": [
+          16,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-far-4",
+      "src": "assets/hall-far-4.sog",
+      "gaussians": 11494,
+      "bytes": 167662,
+      "sha256": "d9227f7fd82e5bafa9408c96a43564ca49951c950fd5dc591ac7023b01864482",
+      "bounds": {
+        "min": [
+          16,
+          -6,
+          -17
+        ],
+        "max": [
+          20,
+          6,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2839 @@
+{
+  "measuredAt": "2026-10-02",
+  "protocol": {
+    "scene": "Knock Hall demo current/historical, not historic reconstruction",
+    "roundTrips": 20,
+    "switchesPerController": 40,
+    "samples": [
+      0,
+      1,
+      5,
+      10,
+      20
+    ],
+    "settleMs": 3000,
+    "headed": true,
+    "heap": "CDP Runtime.getHeapUsage after forced GC, main and workers separate; no GPU memory",
+    "limits": "One sequence per controller, not a 10-minute exploration or mobile check. Unbounded diagnostic frame arrays and engine warm-up affect JS heap. Location export disabled after switch due to discovered UI bug; metadata is initial sample only.",
+    "excluded": "An initial idle sample and a preliminary one-round-trip callback with failed JSON export were excluded and page reloaded."
+  },
+  "summary": [
+    {
+      "name": "bvh",
+      "samples": [
+        {
+          "n": 0,
+          "mainJS": 7378756,
+          "backing": 25379854,
+          "workerJS": 1453112,
+          "workerBacking": [
+            53367,
+            53281,
+            53281
+          ],
+          "frameCount": 227,
+          "time": 4162
+        },
+        {
+          "n": 1,
+          "mainJS": 8334240,
+          "backing": 25380347,
+          "workerJS": 1464308,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 480,
+          "time": 8371.799999952316
+        },
+        {
+          "n": 5,
+          "mainJS": 9129760,
+          "backing": 25380397,
+          "workerJS": 1488284,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 1445,
+          "time": 24460.100000023842
+        },
+        {
+          "n": 10,
+          "mainJS": 9387760,
+          "backing": 25380397,
+          "workerJS": 1492640,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 1793,
+          "time": 30256.699999928474
+        },
+        {
+          "n": 20,
+          "mainJS": 9476160,
+          "backing": 25380397,
+          "workerJS": 1495540,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 2259,
+          "time": 38023.39999997616
+        }
+      ],
+      "switches": 40,
+      "first": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4692,
+          "done": 4881,
+          "observed": 4894.699999928474,
+          "elapsedMs": 189
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 4895.399999976158,
+          "done": 5090,
+          "observed": 5106.199999928474,
+          "elapsedMs": 194.60000002384186
+        }
+      ],
+      "median": 191.60009765625
+    },
+    {
+      "name": "rapier",
+      "samples": [
+        {
+          "n": 0,
+          "mainJS": 13142252,
+          "backing": 29716804,
+          "workerJS": 1450104,
+          "workerBacking": [
+            53367,
+            53281,
+            53281
+          ],
+          "frameCount": 227,
+          "time": 4210
+        },
+        {
+          "n": 1,
+          "mainJS": 13446608,
+          "backing": 29717189,
+          "workerJS": 1455228,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 479,
+          "time": 8405.700000047684
+        },
+        {
+          "n": 5,
+          "mainJS": 14173084,
+          "backing": 29717239,
+          "workerJS": 1485228,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 802,
+          "time": 13793.299999952316
+        },
+        {
+          "n": 10,
+          "mainJS": 14439768,
+          "backing": 29717239,
+          "workerJS": 1489584,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 1148,
+          "time": 19560.899999976158
+        },
+        {
+          "n": 20,
+          "mainJS": 14550120,
+          "backing": 29717239,
+          "workerJS": 1492520,
+          "workerBacking": [
+            53281,
+            53367,
+            53281
+          ],
+          "frameCount": 1616,
+          "time": 27365.100000023842
+        }
+      ],
+      "switches": 40,
+      "first": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4742.799999952316,
+          "done": 4914.39990234375,
+          "observed": 4930,
+          "elapsedMs": 171.59990239143372
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 4930.899999976158,
+          "done": 5124.5,
+          "observed": 5141.100000023842,
+          "elapsedMs": 193.60000002384186
+        }
+      ],
+      "median": 190.79995119571686
+    },
+    {
+      "name": "playcanvas",
+      "samples": [
+        {
+          "n": 0,
+          "mainJS": 9394108,
+          "backing": 17974516,
+          "workerJS": 304672,
+          "workerBacking": [
+            19053708
+          ],
+          "frameCount": 227,
+          "time": 4469.699999928474
+        },
+        {
+          "n": 1,
+          "mainJS": 9939424,
+          "backing": 18005061,
+          "workerJS": 304672,
+          "workerBacking": [
+            19053708
+          ],
+          "frameCount": 482,
+          "time": 8734.699999928474
+        },
+        {
+          "n": 5,
+          "mainJS": 10910044,
+          "backing": 18005061,
+          "workerJS": 304672,
+          "workerBacking": [
+            19053708
+          ],
+          "frameCount": 769,
+          "time": 13520.5
+        },
+        {
+          "n": 10,
+          "mainJS": 11151628,
+          "backing": 18005061,
+          "workerJS": 304672,
+          "workerBacking": [
+            19053708
+          ],
+          "frameCount": 1070,
+          "time": 18531.399999976158
+        },
+        {
+          "n": 20,
+          "mainJS": 11271092,
+          "backing": 18005061,
+          "workerJS": 304672,
+          "workerBacking": [
+            19053708
+          ],
+          "frameCount": 1446,
+          "time": 24798.199999928474
+        }
+      ],
+      "switches": 40,
+      "first": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4985.199999928474,
+          "done": 5276,
+          "observed": 5331,
+          "elapsedMs": 290.8000000715256
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 5331.699999928474,
+          "done": 5461.199951171875,
+          "observed": 5469.199999928474,
+          "elapsedMs": 129.49995124340057
+        }
+      ],
+      "median": 112.39990234375
+    }
+  ],
+  "runs": [
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "completedRoundTrips": 0,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 8997264,
+        "totalSize": 12730368,
+        "embedderHeapUsedSize": 1182192,
+        "backingStorageSize": 25379934
+      },
+      "afterGC": {
+        "usedSize": 7378756,
+        "totalSize": 8192000,
+        "embedderHeapUsedSize": 1220752,
+        "backingStorageSize": 25379854
+      },
+      "workerMemory": [
+        {
+          "sessionId": "1B6D3B0F5C125EE7C5C4B1A74010DF52",
+          "url": "blob:http://127.0.0.1:5173/2e080841-3405-4646-b879-ae6608d7335a",
+          "heap": {
+            "usedSize": 523420,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 23280,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "142692ED8DA9C82B86B9F011B8452BBB",
+          "url": "blob:http://127.0.0.1:5173/05adc378-e947-4642-a2ee-7d1cdac58c2e",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "6299B0DFA547344FEBB540998B0D1F5B",
+          "url": "blob:http://127.0.0.1:5173/8712bcd6-6f6a-490b-aa9e-ae39fa0a70b9",
+          "heap": {
+            "usedSize": 466536,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 60.800048828125,
+          "assetsLoaded": 366.800048828125,
+          "firstSceneReady": 368.89990234375
+        },
+        "errors": [],
+        "frameCount": 227,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 4162,
+        "switchButton": "과거 보기"
+      },
+      "location": {
+        "recordedAt": "2026-10-02T11:10:04.855Z",
+        "collisionView": false,
+        "track": "three",
+        "worldId": "knock-hall-stage-0",
+        "layer": "current",
+        "release": "local-4d5905679d2e-5135b39646a7",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          3,
+          0.3500099940395355,
+          -4
+        ],
+        "eye": [
+          3,
+          1.9500099940395357,
+          -4
+        ],
+        "rotation": [
+          0,
+          -52,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "custom-bvh-capsule",
+        "controllerBuildMs": 1.0999999046325684,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 227,
+          "totalMs": 11.600000262260437,
+          "meanMs": 0.051101322741235404,
+          "maxMs": 1.6999999284744263,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 227,
+            "totalMs": 11.600000262260437,
+            "meanMs": 0.051101322741235404,
+            "p95Ms": 0.10000002384185791,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 3.7838999999999965,
+            "cpuMsPerSimulatedSecond": 3.0656201966913628
+          },
+          "recentIdle": {
+            "calls": 227,
+            "totalMs": 11.600000262260437,
+            "meanMs": 0.051101322741235404,
+            "p95Ms": 0.10000002384185791,
+            "maxMs": 1.6999999284744263,
+            "simulatedSeconds": 3.7838999999999965,
+            "cpuMsPerSimulatedSecond": 3.0656201966913628
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "custom-bvh-capsule"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": 0,
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          }
+        ],
+        "objects": [
+          {
+            "id": "current-hall",
+            "type": "splat",
+            "assetId": "current",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1"
+          },
+          {
+            "id": "historical-base",
+            "type": "splat",
+            "assetId": "historical-base",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5bac2cfb55d79790c045bb20d603626358ecd5cc2ade682dd5fee325ef65fe01"
+          },
+          {
+            "id": "illustrative-frame",
+            "type": "gltf",
+            "assetId": "historical-object",
+            "layer": "historical",
+            "position": [
+              11.2,
+              0.35,
+              -8.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
+          },
+          {
+            "id": "metre-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              5,
+              0,
+              -1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "switches": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "completedRoundTrips": 1,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 9323780,
+        "totalSize": 14303232,
+        "embedderHeapUsedSize": 1220600,
+        "backingStorageSize": 28985082
+      },
+      "afterGC": {
+        "usedSize": 8334240,
+        "totalSize": 9060352,
+        "embedderHeapUsedSize": 1045016,
+        "backingStorageSize": 25380347
+      },
+      "workerMemory": [
+        {
+          "sessionId": "632857AF4F0AC6165E2093D4E3B7BBB2",
+          "url": "blob:http://127.0.0.1:5173/05adc378-e947-4642-a2ee-7d1cdac58c2e",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "95A2DC5D46DAA9DC094C3EE25619800D",
+          "url": "blob:http://127.0.0.1:5173/2e080841-3405-4646-b879-ae6608d7335a",
+          "heap": {
+            "usedSize": 533684,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 24256,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "E730687478C86F57F492756AD5F4C706",
+          "url": "blob:http://127.0.0.1:5173/8712bcd6-6f6a-490b-aa9e-ae39fa0a70b9",
+          "heap": {
+            "usedSize": 467468,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 60.800048828125,
+          "assetsLoaded": 366.800048828125,
+          "firstSceneReady": 368.89990234375,
+          "switchDone": 5090
+        },
+        "errors": [],
+        "frameCount": 480,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 8371.799999952316,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4692,
+          "done": 4881,
+          "observed": 4894.699999928474,
+          "elapsedMs": 189
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 4895.399999976158,
+          "done": 5090,
+          "observed": 5106.199999928474,
+          "elapsedMs": 194.60000002384186
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "completedRoundTrips": 5,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 9832316,
+        "totalSize": 13778944,
+        "embedderHeapUsedSize": 1387520,
+        "backingStorageSize": 47434407
+      },
+      "afterGC": {
+        "usedSize": 9129760,
+        "totalSize": 10108928,
+        "embedderHeapUsedSize": 1078424,
+        "backingStorageSize": 25380397
+      },
+      "workerMemory": [
+        {
+          "sessionId": "A961EBFF05E5720D3429298B787382EA",
+          "url": "blob:http://127.0.0.1:5173/05adc378-e947-4642-a2ee-7d1cdac58c2e",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "E632642FB35BFBBCEFB0C9F3B9184F6B",
+          "url": "blob:http://127.0.0.1:5173/2e080841-3405-4646-b879-ae6608d7335a",
+          "heap": {
+            "usedSize": 551160,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 27928,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "EB465E96A5A265B3A842CA7336A917C0",
+          "url": "blob:http://127.0.0.1:5173/8712bcd6-6f6a-490b-aa9e-ae39fa0a70b9",
+          "heap": {
+            "usedSize": 473968,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 60.800048828125,
+          "assetsLoaded": 366.800048828125,
+          "firstSceneReady": 368.89990234375,
+          "switchDone": 21182.699951171875
+        },
+        "errors": [],
+        "frameCount": 1445,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 24460.100000023842,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 2,
+          "layer": "historical",
+          "started": 19564.100000023842,
+          "done": 19762.89990234375,
+          "observed": 19780.399999976158,
+          "elapsedMs": 198.79990231990814
+        },
+        {
+          "roundTrip": 2,
+          "layer": "current",
+          "started": 19782.799999952316,
+          "done": 19984.199951171875,
+          "observed": 19990.799999952316,
+          "elapsedMs": 201.39995121955872
+        },
+        {
+          "roundTrip": 3,
+          "layer": "historical",
+          "started": 19991.600000023842,
+          "done": 20157.699951171875,
+          "observed": 20178,
+          "elapsedMs": 166.09995114803314
+        },
+        {
+          "roundTrip": 3,
+          "layer": "current",
+          "started": 20178.699999928474,
+          "done": 20373.39990234375,
+          "observed": 20390.100000023842,
+          "elapsedMs": 194.69990241527557
+        },
+        {
+          "roundTrip": 4,
+          "layer": "historical",
+          "started": 20390.699999928474,
+          "done": 20568.5,
+          "observed": 20576.699999928474,
+          "elapsedMs": 177.80000007152557
+        },
+        {
+          "roundTrip": 4,
+          "layer": "current",
+          "started": 20577.799999952316,
+          "done": 20773.699951171875,
+          "observed": 20789,
+          "elapsedMs": 195.89995121955872
+        },
+        {
+          "roundTrip": 5,
+          "layer": "historical",
+          "started": 20790,
+          "done": 20958,
+          "observed": 20978,
+          "elapsedMs": 168
+        },
+        {
+          "roundTrip": 5,
+          "layer": "current",
+          "started": 20979.600000023842,
+          "done": 21182.699951171875,
+          "observed": 21190.399999976158,
+          "elapsedMs": 203.09995114803314
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "completedRoundTrips": 10,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 9515148,
+        "totalSize": 14303232,
+        "embedderHeapUsedSize": 1311032,
+        "backingStorageSize": 28985069
+      },
+      "afterGC": {
+        "usedSize": 9387760,
+        "totalSize": 10371072,
+        "embedderHeapUsedSize": 987152,
+        "backingStorageSize": 25380397
+      },
+      "workerMemory": [
+        {
+          "sessionId": "68C371A812359789778D149B3919F608",
+          "url": "blob:http://127.0.0.1:5173/05adc378-e947-4642-a2ee-7d1cdac58c2e",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "EF408D7AC346EBA624DB9AD1325B40A2",
+          "url": "blob:http://127.0.0.1:5173/2e080841-3405-4646-b879-ae6608d7335a",
+          "heap": {
+            "usedSize": 555516,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 33312,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "27700381BBA5D838D52D36274178F0A6",
+          "url": "blob:http://127.0.0.1:5173/8712bcd6-6f6a-490b-aa9e-ae39fa0a70b9",
+          "heap": {
+            "usedSize": 473968,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 60.800048828125,
+          "assetsLoaded": 366.800048828125,
+          "firstSceneReady": 368.89990234375,
+          "switchDone": 26972.5
+        },
+        "errors": [],
+        "frameCount": 1793,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 30256.699999928474,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 6,
+          "layer": "historical",
+          "started": 24970.600000023842,
+          "done": 25156.699951171875,
+          "observed": 25177.5,
+          "elapsedMs": 186.09995114803314
+        },
+        {
+          "roundTrip": 6,
+          "layer": "current",
+          "started": 25179.600000023842,
+          "done": 25372.5,
+          "observed": 25390,
+          "elapsedMs": 192.89999997615814
+        },
+        {
+          "roundTrip": 7,
+          "layer": "historical",
+          "started": 25390.799999952316,
+          "done": 25557.300048828125,
+          "observed": 25578.799999952316,
+          "elapsedMs": 166.50004887580872
+        },
+        {
+          "roundTrip": 7,
+          "layer": "current",
+          "started": 25579.5,
+          "done": 25772.199951171875,
+          "observed": 25789.899999976158,
+          "elapsedMs": 192.699951171875
+        },
+        {
+          "roundTrip": 8,
+          "layer": "historical",
+          "started": 25790.799999952316,
+          "done": 25958,
+          "observed": 25978.600000023842,
+          "elapsedMs": 167.20000004768372
+        },
+        {
+          "roundTrip": 8,
+          "layer": "current",
+          "started": 25979.399999976158,
+          "done": 26172.39990234375,
+          "observed": 26190.399999976158,
+          "elapsedMs": 192.99990236759186
+        },
+        {
+          "roundTrip": 9,
+          "layer": "historical",
+          "started": 26191.299999952316,
+          "done": 26357.10009765625,
+          "observed": 26379,
+          "elapsedMs": 165.80009770393372
+        },
+        {
+          "roundTrip": 9,
+          "layer": "current",
+          "started": 26380.100000023842,
+          "done": 26575.199951171875,
+          "observed": 26590.399999976158,
+          "elapsedMs": 195.09995114803314
+        },
+        {
+          "roundTrip": 10,
+          "layer": "historical",
+          "started": 26591.5,
+          "done": 26757.800048828125,
+          "observed": 26777.399999976158,
+          "elapsedMs": 166.300048828125
+        },
+        {
+          "roundTrip": 10,
+          "layer": "current",
+          "started": 26778.5,
+          "done": 26972.5,
+          "observed": 26990.699999928474,
+          "elapsedMs": 194
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=bvh",
+      "completedRoundTrips": 20,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 9464912,
+        "totalSize": 14827520,
+        "embedderHeapUsedSize": 790440,
+        "backingStorageSize": 47434126
+      },
+      "afterGC": {
+        "usedSize": 9476160,
+        "totalSize": 10371072,
+        "embedderHeapUsedSize": 947104,
+        "backingStorageSize": 25380397
+      },
+      "workerMemory": [
+        {
+          "sessionId": "6D0CC76CAF56D2B662E3D12BC479E6A8",
+          "url": "blob:http://127.0.0.1:5173/05adc378-e947-4642-a2ee-7d1cdac58c2e",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "FBFAE6321AE9C763E8AD272158406DD1",
+          "url": "blob:http://127.0.0.1:5173/2e080841-3405-4646-b879-ae6608d7335a",
+          "heap": {
+            "usedSize": 558416,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 42360,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "828CA48CAAE48D3BE3DF36C0B12A570D",
+          "url": "blob:http://127.0.0.1:5173/8712bcd6-6f6a-490b-aa9e-ae39fa0a70b9",
+          "heap": {
+            "usedSize": 473968,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 60.800048828125,
+          "assetsLoaded": 366.800048828125,
+          "firstSceneReady": 368.89990234375,
+          "switchDone": 34738
+        },
+        "errors": [],
+        "frameCount": 2259,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 38023.39999997616,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 11,
+          "layer": "historical",
+          "started": 30766.699999928474,
+          "done": 30929.10009765625,
+          "observed": 30945.699999928474,
+          "elapsedMs": 162.40009772777557
+        },
+        {
+          "roundTrip": 11,
+          "layer": "current",
+          "started": 30946.699999928474,
+          "done": 31139.800048828125,
+          "observed": 31157,
+          "elapsedMs": 193.10004889965057
+        },
+        {
+          "roundTrip": 12,
+          "layer": "historical",
+          "started": 31157.699999928474,
+          "done": 31323.800048828125,
+          "observed": 31345.5,
+          "elapsedMs": 166.10004889965057
+        },
+        {
+          "roundTrip": 12,
+          "layer": "current",
+          "started": 31346.199999928474,
+          "done": 31539.800048828125,
+          "observed": 31557.100000023842,
+          "elapsedMs": 193.60004889965057
+        },
+        {
+          "roundTrip": 13,
+          "layer": "historical",
+          "started": 31557.799999952316,
+          "done": 31723.800048828125,
+          "observed": 31744.5,
+          "elapsedMs": 166.00004887580872
+        },
+        {
+          "roundTrip": 13,
+          "layer": "current",
+          "started": 31745.399999976158,
+          "done": 31938.89990234375,
+          "observed": 31957.199999928474,
+          "elapsedMs": 193.49990236759186
+        },
+        {
+          "roundTrip": 14,
+          "layer": "historical",
+          "started": 31958.100000023842,
+          "done": 32125,
+          "observed": 32146.199999928474,
+          "elapsedMs": 166.89999997615814
+        },
+        {
+          "roundTrip": 14,
+          "layer": "current",
+          "started": 32146.799999952316,
+          "done": 32341.5,
+          "observed": 32356.699999928474,
+          "elapsedMs": 194.70000004768372
+        },
+        {
+          "roundTrip": 15,
+          "layer": "historical",
+          "started": 32357.5,
+          "done": 32523.39990234375,
+          "observed": 32544,
+          "elapsedMs": 165.89990234375
+        },
+        {
+          "roundTrip": 15,
+          "layer": "current",
+          "started": 32544.699999928474,
+          "done": 32739.5,
+          "observed": 32756.299999952316,
+          "elapsedMs": 194.80000007152557
+        },
+        {
+          "roundTrip": 16,
+          "layer": "historical",
+          "started": 32757.199999928474,
+          "done": 32924.5,
+          "observed": 32945.299999952316,
+          "elapsedMs": 167.30000007152557
+        },
+        {
+          "roundTrip": 16,
+          "layer": "current",
+          "started": 32946,
+          "done": 33137.60009765625,
+          "observed": 33156.5,
+          "elapsedMs": 191.60009765625
+        },
+        {
+          "roundTrip": 17,
+          "layer": "historical",
+          "started": 33157.10000002384,
+          "done": 33324.800048828125,
+          "observed": 33344.299999952316,
+          "elapsedMs": 167.70004880428314
+        },
+        {
+          "roundTrip": 17,
+          "layer": "current",
+          "started": 33345,
+          "done": 33539.39990234375,
+          "observed": 33557.199999928474,
+          "elapsedMs": 194.39990234375
+        },
+        {
+          "roundTrip": 18,
+          "layer": "historical",
+          "started": 33558.10000002384,
+          "done": 33723.10009765625,
+          "observed": 33745.299999952316,
+          "elapsedMs": 165.00009763240814
+        },
+        {
+          "roundTrip": 18,
+          "layer": "current",
+          "started": 33746.10000002384,
+          "done": 33940.89990234375,
+          "observed": 33958.699999928474,
+          "elapsedMs": 194.79990231990814
+        },
+        {
+          "roundTrip": 19,
+          "layer": "historical",
+          "started": 33959.699999928474,
+          "done": 34123.5,
+          "observed": 34145,
+          "elapsedMs": 163.80000007152557
+        },
+        {
+          "roundTrip": 19,
+          "layer": "current",
+          "started": 34145.89999997616,
+          "done": 34338.39990234375,
+          "observed": 34357.5,
+          "elapsedMs": 192.49990236759186
+        },
+        {
+          "roundTrip": 20,
+          "layer": "historical",
+          "started": 34358.39999997616,
+          "done": 34523.5,
+          "observed": 34545.89999997616,
+          "elapsedMs": 165.10000002384186
+        },
+        {
+          "roundTrip": 20,
+          "layer": "current",
+          "started": 34547,
+          "done": 34738,
+          "observed": 34757.199999928474,
+          "elapsedMs": 191
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "completedRoundTrips": 0,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 14195312,
+        "totalSize": 18153472,
+        "embedderHeapUsedSize": 1129240,
+        "backingStorageSize": 29716837
+      },
+      "afterGC": {
+        "usedSize": 13142252,
+        "totalSize": 14221312,
+        "embedderHeapUsedSize": 1116744,
+        "backingStorageSize": 29716804
+      },
+      "workerMemory": [
+        {
+          "sessionId": "A6DCE58FD9743319B2F7748CEB5D095D",
+          "url": "blob:http://127.0.0.1:5173/9c0c94e4-1a6f-45ae-abb2-75fcf8e92a90",
+          "heap": {
+            "usedSize": 520440,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 23280,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "E656E55B4BB25137FAE94CB388698D95",
+          "url": "blob:http://127.0.0.1:5173/f3aad4f5-e53c-446b-ab8c-68989a9b7c7f",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "2545AB14CD9FAA3599145CF10982A0D4",
+          "url": "blob:http://127.0.0.1:5173/37fe6e9b-65ca-49fc-955e-aa464764dfb4",
+          "heap": {
+            "usedSize": 466508,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 67,
+          "assetsLoaded": 413.699951171875,
+          "firstSceneReady": 416.10009765625
+        },
+        "errors": [],
+        "frameCount": 227,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 4210,
+        "switchButton": "과거 보기"
+      },
+      "location": {
+        "recordedAt": "2026-10-02T11:10:51.869Z",
+        "collisionView": false,
+        "track": "three",
+        "worldId": "knock-hall-stage-0",
+        "layer": "current",
+        "release": "local-4d5905679d2e-5135b39646a7",
+        "engine": "Three.js r186",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          3.0000007152557373,
+          0.35010006427764895,
+          -4.000001430511475
+        ],
+        "eye": [
+          3.0000007152557373,
+          1.950100064277649,
+          -4.000001430511475
+        ],
+        "rotation": [
+          0,
+          -52,
+          0
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "grounded": true,
+        "recoveries": 0,
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "rapier-kinematic-capsule",
+        "controllerBuildMs": 148.70000004768372,
+        "walkingTimings": {
+          "scope": "walking-step-only",
+          "calls": 227,
+          "totalMs": 40.99999988079071,
+          "meanMs": 0.18061673956295468,
+          "maxMs": 3.0999999046325684,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 227,
+            "totalMs": 40.99999988079071,
+            "meanMs": 0.18061673956295468,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 3.0999999046325684,
+            "simulatedSeconds": 3.8163999999999967,
+            "cpuMsPerSimulatedSecond": 10.743108657580638
+          },
+          "recentIdle": {
+            "calls": 227,
+            "totalMs": 40.99999988079071,
+            "meanMs": 0.18061673956295468,
+            "p95Ms": 0.3999999761581421,
+            "maxMs": 3.0999999046325684,
+            "simulatedSeconds": 3.8163999999999967,
+            "cpuMsPerSimulatedSecond": 10.743108657580638
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "engine": "Rapier 0.21.0",
+          "type": "kinematic-character",
+          "offset": 0.01,
+          "maxSlopeDeg": 35,
+          "slideSlopeDeg": 35,
+          "stepHeight": 0.2,
+          "stepMinWidth": 0.2,
+          "snapToGround": 0.2,
+          "gravity": 9.81,
+          "terminalSpeed": 12,
+          "maxSubstepSeconds": 0.016666666666666666,
+          "triangleFlags": "FIX_INTERNAL_EDGES",
+          "dynamicBodyImpulses": false,
+          "idlePolicy": "hold-when-downward-motion-is-blocked-and-grounded"
+        },
+        "appliedMaxSlopeDeg": 35,
+        "stepClimbing": true,
+        "appliedStepHeight": 0.2,
+        "stepsClimbed": null,
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          }
+        ],
+        "objects": [
+          {
+            "id": "current-hall",
+            "type": "splat",
+            "assetId": "current",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1"
+          },
+          {
+            "id": "historical-base",
+            "type": "splat",
+            "assetId": "historical-base",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5bac2cfb55d79790c045bb20d603626358ecd5cc2ade682dd5fee325ef65fe01"
+          },
+          {
+            "id": "illustrative-frame",
+            "type": "gltf",
+            "assetId": "historical-object",
+            "layer": "historical",
+            "position": [
+              11.2,
+              0.35,
+              -8.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
+          },
+          {
+            "id": "metre-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              5,
+              0,
+              -1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "switches": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "completedRoundTrips": 1,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 14174152,
+        "totalSize": 18415616,
+        "embedderHeapUsedSize": 1060944,
+        "backingStorageSize": 33321694
+      },
+      "afterGC": {
+        "usedSize": 13446608,
+        "totalSize": 14483456,
+        "embedderHeapUsedSize": 1010792,
+        "backingStorageSize": 29717189
+      },
+      "workerMemory": [
+        {
+          "sessionId": "BE45E72164EF20DB97B28C4D020DD029",
+          "url": "blob:http://127.0.0.1:5173/f3aad4f5-e53c-446b-ab8c-68989a9b7c7f",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "42248AE2829F9925160090A3F04DABCE",
+          "url": "blob:http://127.0.0.1:5173/9c0c94e4-1a6f-45ae-abb2-75fcf8e92a90",
+          "heap": {
+            "usedSize": 524632,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 24256,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "89E855230CF13794A0143D8765F10261",
+          "url": "blob:http://127.0.0.1:5173/37fe6e9b-65ca-49fc-955e-aa464764dfb4",
+          "heap": {
+            "usedSize": 467440,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 67,
+          "assetsLoaded": 413.699951171875,
+          "firstSceneReady": 416.10009765625,
+          "switchDone": 5124.5
+        },
+        "errors": [],
+        "frameCount": 479,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 8405.700000047684,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4742.799999952316,
+          "done": 4914.39990234375,
+          "observed": 4930,
+          "elapsedMs": 171.59990239143372
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 4930.899999976158,
+          "done": 5124.5,
+          "observed": 5141.100000023842,
+          "elapsedMs": 193.60000002384186
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "completedRoundTrips": 5,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 14612316,
+        "totalSize": 19202048,
+        "embedderHeapUsedSize": 1060016,
+        "backingStorageSize": 33321744
+      },
+      "afterGC": {
+        "usedSize": 14173084,
+        "totalSize": 15007744,
+        "embedderHeapUsedSize": 1073360,
+        "backingStorageSize": 29717239
+      },
+      "workerMemory": [
+        {
+          "sessionId": "3805762EF5EDCC144DF5D5D7E5A73AE2",
+          "url": "blob:http://127.0.0.1:5173/f3aad4f5-e53c-446b-ab8c-68989a9b7c7f",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "7B7C08007D1AE4555CC08D8DA32C4DCE",
+          "url": "blob:http://127.0.0.1:5173/9c0c94e4-1a6f-45ae-abb2-75fcf8e92a90",
+          "heap": {
+            "usedSize": 548132,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 27928,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "E01F21C83EC1F9EA8D3A97469441F98E",
+          "url": "blob:http://127.0.0.1:5173/37fe6e9b-65ca-49fc-955e-aa464764dfb4",
+          "heap": {
+            "usedSize": 473940,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 67,
+          "assetsLoaded": 413.699951171875,
+          "firstSceneReady": 416.10009765625,
+          "switchDone": 10506.800048828125
+        },
+        "errors": [],
+        "frameCount": 802,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 13793.299999952316,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 2,
+          "layer": "historical",
+          "started": 8914.700000047684,
+          "done": 9088.699951171875,
+          "observed": 9112.200000047684,
+          "elapsedMs": 173.99995112419128
+        },
+        {
+          "roundTrip": 2,
+          "layer": "current",
+          "started": 9113.200000047684,
+          "done": 9306.60009765625,
+          "observed": 9324.600000023842,
+          "elapsedMs": 193.40009760856628
+        },
+        {
+          "roundTrip": 3,
+          "layer": "historical",
+          "started": 9325.399999976158,
+          "done": 9493.5,
+          "observed": 9512.399999976158,
+          "elapsedMs": 168.10000002384186
+        },
+        {
+          "roundTrip": 3,
+          "layer": "current",
+          "started": 9513.299999952316,
+          "done": 9705.699951171875,
+          "observed": 9724.399999976158,
+          "elapsedMs": 192.39995121955872
+        },
+        {
+          "roundTrip": 4,
+          "layer": "historical",
+          "started": 9725.100000023842,
+          "done": 9891,
+          "observed": 9912.5,
+          "elapsedMs": 165.89999997615814
+        },
+        {
+          "roundTrip": 4,
+          "layer": "current",
+          "started": 9913.100000023842,
+          "done": 10105.800048828125,
+          "observed": 10124.399999976158,
+          "elapsedMs": 192.70004880428314
+        },
+        {
+          "roundTrip": 5,
+          "layer": "historical",
+          "started": 10125.100000023842,
+          "done": 10291.60009765625,
+          "observed": 10311.799999952316,
+          "elapsedMs": 166.50009763240814
+        },
+        {
+          "roundTrip": 5,
+          "layer": "current",
+          "started": 10312.600000023842,
+          "done": 10506.800048828125,
+          "observed": 10524.799999952316,
+          "elapsedMs": 194.20004880428314
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "completedRoundTrips": 10,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 14995604,
+        "totalSize": 19726336,
+        "embedderHeapUsedSize": 1216840,
+        "backingStorageSize": 33321905
+      },
+      "afterGC": {
+        "usedSize": 14439768,
+        "totalSize": 15269888,
+        "embedderHeapUsedSize": 949312,
+        "backingStorageSize": 29717239
+      },
+      "workerMemory": [
+        {
+          "sessionId": "D212A771D438F6A3DDBEE51E599ECFFB",
+          "url": "blob:http://127.0.0.1:5173/f3aad4f5-e53c-446b-ab8c-68989a9b7c7f",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "9D33AC704A0EBD8CA97F2A28A282FFE0",
+          "url": "blob:http://127.0.0.1:5173/9c0c94e4-1a6f-45ae-abb2-75fcf8e92a90",
+          "heap": {
+            "usedSize": 552488,
+            "totalSize": 1572864,
+            "embedderHeapUsedSize": 33304,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "83BF303F7C205855CFCC890A12E702ED",
+          "url": "blob:http://127.0.0.1:5173/37fe6e9b-65ca-49fc-955e-aa464764dfb4",
+          "heap": {
+            "usedSize": 473940,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 67,
+          "assetsLoaded": 413.699951171875,
+          "firstSceneReady": 416.10009765625,
+          "switchDone": 16272.300048828125
+        },
+        "errors": [],
+        "frameCount": 1148,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 19560.899999976158,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 6,
+          "layer": "historical",
+          "started": 14300.799999952316,
+          "done": 14462.300048828125,
+          "observed": 14480.5,
+          "elapsedMs": 161.50004887580872
+        },
+        {
+          "roundTrip": 6,
+          "layer": "current",
+          "started": 14481.5,
+          "done": 14686.199951171875,
+          "observed": 14692.799999952316,
+          "elapsedMs": 204.699951171875
+        },
+        {
+          "roundTrip": 7,
+          "layer": "historical",
+          "started": 14693.700000047684,
+          "done": 14858.5,
+          "observed": 14881.5,
+          "elapsedMs": 164.79999995231628
+        },
+        {
+          "roundTrip": 7,
+          "layer": "current",
+          "started": 14882.200000047684,
+          "done": 15073.699951171875,
+          "observed": 15091.399999976158,
+          "elapsedMs": 191.49995112419128
+        },
+        {
+          "roundTrip": 8,
+          "layer": "historical",
+          "started": 15092.100000023842,
+          "done": 15260.89990234375,
+          "observed": 15279.100000023842,
+          "elapsedMs": 168.79990231990814
+        },
+        {
+          "roundTrip": 8,
+          "layer": "current",
+          "started": 15280.200000047684,
+          "done": 15472.199951171875,
+          "observed": 15492.399999976158,
+          "elapsedMs": 191.99995112419128
+        },
+        {
+          "roundTrip": 9,
+          "layer": "historical",
+          "started": 15493,
+          "done": 15659.60009765625,
+          "observed": 15680.5,
+          "elapsedMs": 166.60009765625
+        },
+        {
+          "roundTrip": 9,
+          "layer": "current",
+          "started": 15681.299999952316,
+          "done": 15871.89990234375,
+          "observed": 15890.600000023842,
+          "elapsedMs": 190.59990239143372
+        },
+        {
+          "roundTrip": 10,
+          "layer": "historical",
+          "started": 15891.399999976158,
+          "done": 16058.199951171875,
+          "observed": 16078.799999952316,
+          "elapsedMs": 166.79995119571686
+        },
+        {
+          "roundTrip": 10,
+          "layer": "current",
+          "started": 16079.700000047684,
+          "done": 16272.300048828125,
+          "observed": 16292.200000047684,
+          "elapsedMs": 192.60004878044128
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/?controller=rapier",
+      "completedRoundTrips": 20,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 14615880,
+        "totalSize": 20250624,
+        "embedderHeapUsedSize": 1006136,
+        "backingStorageSize": 51770968
+      },
+      "afterGC": {
+        "usedSize": 14550120,
+        "totalSize": 15532032,
+        "embedderHeapUsedSize": 967984,
+        "backingStorageSize": 29717239
+      },
+      "workerMemory": [
+        {
+          "sessionId": "B5717337B5A85AA37B4262DB24B30DD7",
+          "url": "blob:http://127.0.0.1:5173/f3aad4f5-e53c-446b-ab8c-68989a9b7c7f",
+          "heap": {
+            "usedSize": 463156,
+            "totalSize": 786432,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        },
+        {
+          "sessionId": "CF5E6F7B7658BBB6FB9227B8BC0CD23E",
+          "url": "blob:http://127.0.0.1:5173/9c0c94e4-1a6f-45ae-abb2-75fcf8e92a90",
+          "heap": {
+            "usedSize": 555424,
+            "totalSize": 1572864,
+            "embedderHeapUsedSize": 42360,
+            "backingStorageSize": 53367
+          }
+        },
+        {
+          "sessionId": "EEBC13DF3C0C34058897B66AC68F4FCF",
+          "url": "blob:http://127.0.0.1:5173/37fe6e9b-65ca-49fc-955e-aa464764dfb4",
+          "heap": {
+            "usedSize": 473940,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 18712,
+            "backingStorageSize": 53281
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 67,
+          "assetsLoaded": 413.699951171875,
+          "firstSceneReady": 416.10009765625,
+          "switchDone": 24073.5
+        },
+        "errors": [],
+        "frameCount": 1616,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 27365.100000023842,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 11,
+          "layer": "historical",
+          "started": 20073,
+          "done": 20264.300048828125,
+          "observed": 20279.5,
+          "elapsedMs": 191.300048828125
+        },
+        {
+          "roundTrip": 11,
+          "layer": "current",
+          "started": 20280.299999952316,
+          "done": 20473,
+          "observed": 20492.5,
+          "elapsedMs": 192.70000004768372
+        },
+        {
+          "roundTrip": 12,
+          "layer": "historical",
+          "started": 20493.200000047684,
+          "done": 20658.10009765625,
+          "observed": 20681.200000047684,
+          "elapsedMs": 164.90009760856628
+        },
+        {
+          "roundTrip": 12,
+          "layer": "current",
+          "started": 20681.899999976158,
+          "done": 20878,
+          "observed": 20893,
+          "elapsedMs": 196.10000002384186
+        },
+        {
+          "roundTrip": 13,
+          "layer": "historical",
+          "started": 20894.100000023842,
+          "done": 21060.10009765625,
+          "observed": 21079.799999952316,
+          "elapsedMs": 166.00009763240814
+        },
+        {
+          "roundTrip": 13,
+          "layer": "current",
+          "started": 21080.799999952316,
+          "done": 21275.10009765625,
+          "observed": 21292.799999952316,
+          "elapsedMs": 194.30009770393372
+        },
+        {
+          "roundTrip": 14,
+          "layer": "historical",
+          "started": 21294.100000023842,
+          "done": 21460.60009765625,
+          "observed": 21480.799999952316,
+          "elapsedMs": 166.50009763240814
+        },
+        {
+          "roundTrip": 14,
+          "layer": "current",
+          "started": 21481.799999952316,
+          "done": 21675.10009765625,
+          "observed": 21691.600000023842,
+          "elapsedMs": 193.30009770393372
+        },
+        {
+          "roundTrip": 15,
+          "layer": "historical",
+          "started": 21692.5,
+          "done": 21860.800048828125,
+          "observed": 21879.600000023842,
+          "elapsedMs": 168.300048828125
+        },
+        {
+          "roundTrip": 15,
+          "layer": "current",
+          "started": 21880.700000047684,
+          "done": 22072.800048828125,
+          "observed": 22092.600000023842,
+          "elapsedMs": 192.10004878044128
+        },
+        {
+          "roundTrip": 16,
+          "layer": "historical",
+          "started": 22093.299999952316,
+          "done": 22260.5,
+          "observed": 22281.100000023842,
+          "elapsedMs": 167.20000004768372
+        },
+        {
+          "roundTrip": 16,
+          "layer": "current",
+          "started": 22282.200000047684,
+          "done": 22476.39990234375,
+          "observed": 22492.299999952316,
+          "elapsedMs": 194.19990229606628
+        },
+        {
+          "roundTrip": 17,
+          "layer": "historical",
+          "started": 22493.200000047684,
+          "done": 22658.199951171875,
+          "observed": 22679,
+          "elapsedMs": 164.99995112419128
+        },
+        {
+          "roundTrip": 17,
+          "layer": "current",
+          "started": 22679.600000023842,
+          "done": 22876.800048828125,
+          "observed": 22890.799999952316,
+          "elapsedMs": 197.20004880428314
+        },
+        {
+          "roundTrip": 18,
+          "layer": "historical",
+          "started": 22891.600000023842,
+          "done": 23058.300048828125,
+          "observed": 23080.200000047684,
+          "elapsedMs": 166.70004880428314
+        },
+        {
+          "roundTrip": 18,
+          "layer": "current",
+          "started": 23080.899999976158,
+          "done": 23271.699951171875,
+          "observed": 23292.299999952316,
+          "elapsedMs": 190.79995119571686
+        },
+        {
+          "roundTrip": 19,
+          "layer": "historical",
+          "started": 23292.899999976158,
+          "done": 23460.39990234375,
+          "observed": 23480,
+          "elapsedMs": 167.49990236759186
+        },
+        {
+          "roundTrip": 19,
+          "layer": "current",
+          "started": 23480.700000047684,
+          "done": 23673,
+          "observed": 23692.799999952316,
+          "elapsedMs": 192.29999995231628
+        },
+        {
+          "roundTrip": 20,
+          "layer": "historical",
+          "started": 23693.5,
+          "done": 23856.699951171875,
+          "observed": 23880.899999976158,
+          "elapsedMs": 163.199951171875
+        },
+        {
+          "roundTrip": 20,
+          "layer": "current",
+          "started": 23881.5,
+          "done": 24073.5,
+          "observed": 24092.899999976158,
+          "elapsedMs": 192
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "completedRoundTrips": 0,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 9849332,
+        "totalSize": 18513920,
+        "embedderHeapUsedSize": 1228288,
+        "backingStorageSize": 43958235
+      },
+      "afterGC": {
+        "usedSize": 9394108,
+        "totalSize": 10649600,
+        "embedderHeapUsedSize": 1210456,
+        "backingStorageSize": 17974516
+      },
+      "workerMemory": [
+        {
+          "sessionId": "8334E908DF188D0D5BEDEDE9CBC6BCF0",
+          "url": "blob:http://127.0.0.1:5174/f941ff83-ef85-4fe8-9288-4d903c16fd44",
+          "heap": {
+            "usedSize": 304672,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 19704,
+            "backingStorageSize": 19053708
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 224.5,
+          "assetsLoaded": 671.800048828125,
+          "firstSceneReady": 677.300048828125
+        },
+        "errors": [],
+        "frameCount": 227,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 4469.699999928474,
+        "switchButton": "과거 보기"
+      },
+      "location": {
+        "recordedAt": "2026-10-02T11:11:32.139Z",
+        "collisionView": false,
+        "track": "playcanvas",
+        "worldId": "knock-hall-stage-0",
+        "layer": "current",
+        "release": "local-4d5905679d2e-5135b39646a7",
+        "engine": "PlayCanvas 2.22.6",
+        "viewport": {
+          "width": 1200,
+          "height": 863,
+          "dpr": 1.5
+        },
+        "feet": [
+          3,
+          0.34998407363891604,
+          -4
+        ],
+        "eye": [
+          3,
+          1.949984073638916,
+          -4
+        ],
+        "rotation": [
+          0,
+          -52,
+          0
+        ],
+        "velocity": [
+          0,
+          3.5762786865234375e-7,
+          0
+        ],
+        "player": {
+          "capsuleRadius": 0.25,
+          "capsuleHeight": 1.7,
+          "walkSpeed": 2,
+          "maxSlopeDeg": 35
+        },
+        "controller": "ammo-dynamic-capsule",
+        "ammoInitializationMs": 28.09999990463257,
+        "controllerBuildMs": 4.100000023841858,
+        "walkingTimings": {
+          "scope": "playcanvas-rigidbody-system-step",
+          "calls": 227,
+          "totalMs": 25.800000071525574,
+          "meanMs": 0.11365638798028888,
+          "maxMs": 2.3000000715255737,
+          "recentCapacity": 600,
+          "recent": {
+            "calls": 227,
+            "totalMs": 25.800000071525574,
+            "meanMs": 0.11365638798028888,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 2.3000000715255737,
+            "simulatedSeconds": 3.7826000000000004,
+            "cpuMsPerSimulatedSecond": 6.820705353863896
+          },
+          "recentIdle": {
+            "calls": 227,
+            "totalMs": 25.800000071525574,
+            "meanMs": 0.11365638798028888,
+            "p95Ms": 0.20000004768371582,
+            "maxMs": 2.3000000715255737,
+            "simulatedSeconds": 3.7826000000000004,
+            "cpuMsPerSimulatedSecond": 6.820705353863896
+          },
+          "recentMoving": {
+            "calls": 0,
+            "totalMs": 0,
+            "meanMs": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "simulatedSeconds": 0,
+            "cpuMsPerSimulatedSecond": null
+          }
+        },
+        "controllerSettings": {
+          "type": "dynamic",
+          "mass": 75,
+          "friction": 0.8,
+          "restitution": 0,
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 10
+        },
+        "appliedMaxSlopeDeg": null,
+        "stepClimbing": false,
+        "colliders": [
+          {
+            "id": "walkable",
+            "assetId": "collision",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
+          }
+        ],
+        "objects": [
+          {
+            "id": "current-hall",
+            "type": "splat",
+            "assetId": "current",
+            "layer": "current",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1"
+          },
+          {
+            "id": "historical-base",
+            "type": "splat",
+            "assetId": "historical-base",
+            "layer": "historical",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              180,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "5bac2cfb55d79790c045bb20d603626358ecd5cc2ade682dd5fee325ef65fe01"
+          },
+          {
+            "id": "illustrative-frame",
+            "type": "gltf",
+            "assetId": "historical-object",
+            "layer": "historical",
+            "position": [
+              11.2,
+              0.35,
+              -8.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
+          },
+          {
+            "id": "metre-marker",
+            "type": "gltf",
+            "assetId": "reference-cube",
+            "layer": "both",
+            "position": [
+              5,
+              0,
+              -1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "sha256": "2da7c87275c12c838843682035de664c909c3844e162ef4a4b99d9748b710ec1"
+          }
+        ]
+      },
+      "switches": []
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "completedRoundTrips": 1,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 12518980,
+        "totalSize": 18251776,
+        "embedderHeapUsedSize": 1361112,
+        "backingStorageSize": 18005296
+      },
+      "afterGC": {
+        "usedSize": 9939424,
+        "totalSize": 10911744,
+        "embedderHeapUsedSize": 1128840,
+        "backingStorageSize": 18005061
+      },
+      "workerMemory": [
+        {
+          "sessionId": "5DFD74A5E93F8C651A1A8E6913EFB8D5",
+          "url": "blob:http://127.0.0.1:5174/af4c8dfb-1a54-4d43-a944-b50ee49b2ecd",
+          "heap": {
+            "usedSize": 304672,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 19704,
+            "backingStorageSize": 19053708
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 224.5,
+          "assetsLoaded": 671.800048828125,
+          "firstSceneReady": 677.300048828125,
+          "switchDone": 5461.199951171875
+        },
+        "errors": [],
+        "frameCount": 482,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 8734.699999928474,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 1,
+          "layer": "historical",
+          "started": 4985.199999928474,
+          "done": 5276,
+          "observed": 5331,
+          "elapsedMs": 290.8000000715256
+        },
+        {
+          "roundTrip": 1,
+          "layer": "current",
+          "started": 5331.699999928474,
+          "done": 5461.199951171875,
+          "observed": 5469.199999928474,
+          "elapsedMs": 129.49995124340057
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "completedRoundTrips": 5,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 11659652,
+        "totalSize": 14843904,
+        "embedderHeapUsedSize": 1063608,
+        "backingStorageSize": 68572869
+      },
+      "afterGC": {
+        "usedSize": 10910044,
+        "totalSize": 11698176,
+        "embedderHeapUsedSize": 1032760,
+        "backingStorageSize": 18005061
+      },
+      "workerMemory": [
+        {
+          "sessionId": "92C2EFAC2CDCB37AE65F8FF86E60F744",
+          "url": "blob:http://127.0.0.1:5174/a51ab3bd-400a-4fc0-bf55-2cdfaebca856",
+          "heap": {
+            "usedSize": 304672,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 19704,
+            "backingStorageSize": 19053708
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 224.5,
+          "assetsLoaded": 671.800048828125,
+          "firstSceneReady": 677.300048828125,
+          "switchDone": 10231.199951171875
+        },
+        "errors": [],
+        "frameCount": 769,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 13520.5,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 2,
+          "layer": "historical",
+          "started": 9245.399999976158,
+          "done": 9361.10009765625,
+          "observed": 9367.699999928474,
+          "elapsedMs": 115.70009768009186
+        },
+        {
+          "roundTrip": 2,
+          "layer": "current",
+          "started": 9368.399999976158,
+          "done": 9489.10009765625,
+          "observed": 9500.899999976158,
+          "elapsedMs": 120.70009768009186
+        },
+        {
+          "roundTrip": 3,
+          "layer": "historical",
+          "started": 9504.199999928474,
+          "done": 9603.300048828125,
+          "observed": 9616.299999952316,
+          "elapsedMs": 99.10004889965057
+        },
+        {
+          "roundTrip": 3,
+          "layer": "current",
+          "started": 9616.799999952316,
+          "done": 9733.39990234375,
+          "observed": 9750.199999928474,
+          "elapsedMs": 116.59990239143372
+        },
+        {
+          "roundTrip": 4,
+          "layer": "historical",
+          "started": 9751.099999904633,
+          "done": 9852.10009765625,
+          "observed": 9866.699999928474,
+          "elapsedMs": 101.00009775161743
+        },
+        {
+          "roundTrip": 4,
+          "layer": "current",
+          "started": 9867.5,
+          "done": 9980.300048828125,
+          "observed": 10000.199999928474,
+          "elapsedMs": 112.800048828125
+        },
+        {
+          "roundTrip": 5,
+          "layer": "historical",
+          "started": 10000.699999928474,
+          "done": 10102.300048828125,
+          "observed": 10117,
+          "elapsedMs": 101.60004889965057
+        },
+        {
+          "roundTrip": 5,
+          "layer": "current",
+          "started": 10117.599999904633,
+          "done": 10231.199951171875,
+          "observed": 10249.799999952316,
+          "elapsedMs": 113.59995126724243
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "completedRoundTrips": 10,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 11840380,
+        "totalSize": 15630336,
+        "embedderHeapUsedSize": 1289040,
+        "backingStorageSize": 18005109
+      },
+      "afterGC": {
+        "usedSize": 11151628,
+        "totalSize": 12484608,
+        "embedderHeapUsedSize": 1004192,
+        "backingStorageSize": 18005061
+      },
+      "workerMemory": [
+        {
+          "sessionId": "50C6003A6C0B1BA8A28B37C4886D9F3C",
+          "url": "blob:http://127.0.0.1:5174/803d36e3-6680-4d9b-a97c-eb8b343845ab",
+          "heap": {
+            "usedSize": 304672,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 19704,
+            "backingStorageSize": 19053708
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 224.5,
+          "assetsLoaded": 671.800048828125,
+          "firstSceneReady": 677.300048828125,
+          "switchDone": 15262.39990234375
+        },
+        "errors": [],
+        "frameCount": 1070,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 18531.399999976158,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 6,
+          "layer": "historical",
+          "started": 14030.699999928474,
+          "done": 14140.5,
+          "observed": 14150.5,
+          "elapsedMs": 109.80000007152557
+        },
+        {
+          "roundTrip": 6,
+          "layer": "current",
+          "started": 14151.099999904633,
+          "done": 14272.60009765625,
+          "observed": 14291.599999904633,
+          "elapsedMs": 121.50009775161743
+        },
+        {
+          "roundTrip": 7,
+          "layer": "historical",
+          "started": 14292.599999904633,
+          "done": 14398.800048828125,
+          "observed": 14417.799999952316,
+          "elapsedMs": 106.20004892349243
+        },
+        {
+          "roundTrip": 7,
+          "layer": "current",
+          "started": 14418.399999976158,
+          "done": 14552.39990234375,
+          "observed": 14567.5,
+          "elapsedMs": 133.99990236759186
+        },
+        {
+          "roundTrip": 8,
+          "layer": "historical",
+          "started": 14568.199999928474,
+          "done": 14670.60009765625,
+          "observed": 14683.399999976158,
+          "elapsedMs": 102.40009772777557
+        },
+        {
+          "roundTrip": 8,
+          "layer": "current",
+          "started": 14684.199999928474,
+          "done": 14794.10009765625,
+          "observed": 14799.899999976158,
+          "elapsedMs": 109.90009772777557
+        },
+        {
+          "roundTrip": 9,
+          "layer": "historical",
+          "started": 14800.799999952316,
+          "done": 14901.699951171875,
+          "observed": 14917,
+          "elapsedMs": 100.89995121955872
+        },
+        {
+          "roundTrip": 9,
+          "layer": "current",
+          "started": 14917.5,
+          "done": 15029.10009765625,
+          "observed": 15033.399999976158,
+          "elapsedMs": 111.60009765625
+        },
+        {
+          "roundTrip": 10,
+          "layer": "historical",
+          "started": 15034,
+          "done": 15134.699951171875,
+          "observed": 15149.5,
+          "elapsedMs": 100.699951171875
+        },
+        {
+          "roundTrip": 10,
+          "layer": "current",
+          "started": 15150,
+          "done": 15262.39990234375,
+          "observed": 15266.799999952316,
+          "elapsedMs": 112.39990234375
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5174/",
+      "completedRoundTrips": 20,
+      "pageCount": 1,
+      "beforeGC": {
+        "usedSize": 13553588,
+        "totalSize": 16154624,
+        "embedderHeapUsedSize": 1358080,
+        "backingStorageSize": 18005159
+      },
+      "afterGC": {
+        "usedSize": 11271092,
+        "totalSize": 12222464,
+        "embedderHeapUsedSize": 1117040,
+        "backingStorageSize": 18005061
+      },
+      "workerMemory": [
+        {
+          "sessionId": "F9BB034A7A67740DDAF6D9B3CF074451",
+          "url": "blob:http://127.0.0.1:5174/ce773ab3-5652-47f0-ad33-33c84fcd0156",
+          "heap": {
+            "usedSize": 304672,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 19704,
+            "backingStorageSize": 19053708
+          }
+        }
+      ],
+      "workerErrors": [],
+      "state": {
+        "marks": {
+          "worldLoaded": 224.5,
+          "assetsLoaded": 671.800048828125,
+          "firstSceneReady": 677.300048828125,
+          "switchDone": 21518.199951171875
+        },
+        "errors": [],
+        "frameCount": 1446,
+        "hidden": false,
+        "focused": true,
+        "viewport": [
+          1200,
+          863
+        ],
+        "dpr": 2,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+        "observedAtMs": 24798.199999928474,
+        "switchButton": "과거 보기"
+      },
+      "location": null,
+      "switches": [
+        {
+          "roundTrip": 11,
+          "layer": "historical",
+          "started": 19041.199999928474,
+          "done": 19136.10009765625,
+          "observed": 19150.5,
+          "elapsedMs": 94.90009772777557
+        },
+        {
+          "roundTrip": 11,
+          "layer": "current",
+          "started": 19151.199999928474,
+          "done": 19264.89990234375,
+          "observed": 19286.099999904633,
+          "elapsedMs": 113.69990241527557
+        },
+        {
+          "roundTrip": 12,
+          "layer": "historical",
+          "started": 19289.099999904633,
+          "done": 19385.89990234375,
+          "observed": 19400,
+          "elapsedMs": 96.79990243911743
+        },
+        {
+          "roundTrip": 12,
+          "layer": "current",
+          "started": 19400.799999952316,
+          "done": 19518.39990234375,
+          "observed": 19533,
+          "elapsedMs": 117.59990239143372
+        },
+        {
+          "roundTrip": 13,
+          "layer": "historical",
+          "started": 19533.599999904633,
+          "done": 19636.300048828125,
+          "observed": 19650.599999904633,
+          "elapsedMs": 102.70004892349243
+        },
+        {
+          "roundTrip": 13,
+          "layer": "current",
+          "started": 19651.199999928474,
+          "done": 19769,
+          "observed": 19785.299999952316,
+          "elapsedMs": 117.80000007152557
+        },
+        {
+          "roundTrip": 14,
+          "layer": "historical",
+          "started": 19790.099999904633,
+          "done": 19885.89990234375,
+          "observed": 19900.199999928474,
+          "elapsedMs": 95.79990243911743
+        },
+        {
+          "roundTrip": 14,
+          "layer": "current",
+          "started": 19900.599999904633,
+          "done": 20013.39990234375,
+          "observed": 20035.099999904633,
+          "elapsedMs": 112.79990243911743
+        },
+        {
+          "roundTrip": 15,
+          "layer": "historical",
+          "started": 20038.699999928474,
+          "done": 20136.10009765625,
+          "observed": 20150.199999928474,
+          "elapsedMs": 97.40009772777557
+        },
+        {
+          "roundTrip": 15,
+          "layer": "current",
+          "started": 20150.799999952316,
+          "done": 20264.10009765625,
+          "observed": 20285.599999904633,
+          "elapsedMs": 113.30009770393372
+        },
+        {
+          "roundTrip": 16,
+          "layer": "historical",
+          "started": 20288.899999976158,
+          "done": 20385.39990234375,
+          "observed": 20400.5,
+          "elapsedMs": 96.49990236759186
+        },
+        {
+          "roundTrip": 16,
+          "layer": "current",
+          "started": 20401.199999928474,
+          "done": 20515.5,
+          "observed": 20535.099999904633,
+          "elapsedMs": 114.30000007152557
+        },
+        {
+          "roundTrip": 17,
+          "layer": "historical",
+          "started": 20539.199999928474,
+          "done": 20636.199951171875,
+          "observed": 20649.5,
+          "elapsedMs": 96.99995124340057
+        },
+        {
+          "roundTrip": 17,
+          "layer": "current",
+          "started": 20650.199999928474,
+          "done": 20767.39990234375,
+          "observed": 20789.799999952316,
+          "elapsedMs": 117.19990241527557
+        },
+        {
+          "roundTrip": 18,
+          "layer": "historical",
+          "started": 20790.599999904633,
+          "done": 20887.300048828125,
+          "observed": 20900.899999976158,
+          "elapsedMs": 96.70004892349243
+        },
+        {
+          "roundTrip": 18,
+          "layer": "current",
+          "started": 20901.5,
+          "done": 21014.699951171875,
+          "observed": 21035.899999976158,
+          "elapsedMs": 113.199951171875
+        },
+        {
+          "roundTrip": 19,
+          "layer": "historical",
+          "started": 21040.899999976158,
+          "done": 21135.89990234375,
+          "observed": 21150,
+          "elapsedMs": 94.99990236759186
+        },
+        {
+          "roundTrip": 19,
+          "layer": "current",
+          "started": 21150.599999904633,
+          "done": 21267.5,
+          "observed": 21285.799999952316,
+          "elapsedMs": 116.90000009536743
+        },
+        {
+          "roundTrip": 20,
+          "layer": "historical",
+          "started": 21289.199999928474,
+          "done": 21388.199951171875,
+          "observed": 21400.399999976158,
+          "elapsedMs": 98.99995124340057
+        },
+        {
+          "roundTrip": 20,
+          "layer": "current",
+          "started": 21401,
+          "done": 21518.199951171875,
+          "observed": 21535.699999928474,
+          "elapsedMs": 117.199951171875
+        }
+      ]
+    }
+  ]
+}

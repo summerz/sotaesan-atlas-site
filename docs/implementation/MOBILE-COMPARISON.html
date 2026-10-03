@@ -1,0 +1,217 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iPhone 11 모바일 비교 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="MOBILE-COMPARISON.md" download>Markdown 원본 다운로드</a></p><h1 id="iphone-11">iPhone 11 모바일 비교</h1>
+<h2 id="_1">확인된 결과</h2>
+<p>2026-10-02 USB로 연결한 실제 iPhone 11 Safari에서 Playwright MCP와 Web Inspector CDP bridge로 시험했다. 작은 공통 장면에서는 세 구현 모두 열렸고, 정지 상태 p95 프레임 간격은 PlayCanvas 52ms, Three.js BVH 65ms, Rapier 78ms였다. 이 조건에서 PlayCanvas의 프레임 간격이 더 짧았다. 모바일의 최종 엔진 선택을 확정하는 결과는 아니다.</p>
+<p>이동 시험에서는 세 구현 모두 시험용 충돌 바닥 밖으로 나갔다. Three.js는 자동 낙하 복구가 작동했지만 PlayCanvas는 계속 떨어졌다. <strong>PlayCanvas 이동 수치는 정상 보행 비교에서 제외한다.</strong> Three.js의 이동 수치도 복구 횟수와 실제 경로가 달라 동등한 작업량의 비교로 사용하지 않는다.</p>
+<p>큰 Sunnyvale 장면은 PlayCanvas에서 두 차례 준비 완료를 확인했다. Three.js BVH에서는 준비가 끝나지 않았다. 모바일에서 해결할 우선 과제는 대형 SOG 로딩 실패 처리와 바닥 밖 낙하 복구, 작은 화면의 조작 UI다.</p>
+<h2 id="_2">시험 조건</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>조건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기기</td>
+<td>물리 iPhone 11, 기기 조회 iOS 27.0.1 / 24A446</td>
+</tr>
+<tr>
+<td>브라우저</td>
+<td>Safari / WebKit, UA의 Safari 버전 27.0.1</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>Apple GPU, WebGL 2.0</td>
+</tr>
+<tr>
+<td>화면</td>
+<td>세로 375×616 CSS px, 기기 DPR 2</td>
+</tr>
+<tr>
+<td>앱 렌더링</td>
+<td>DPR 상한 1.5, drawing buffer 562×924</td>
+</tr>
+<tr>
+<td>릴리스</td>
+<td><code>local-4d5905679d2e-6df18be3ac38</code></td>
+</tr>
+<tr>
+<td>공통 장면</td>
+<td>Knock Hall, 900,000 Gaussian SOG, 수동 프록시 충돌 24삼각형</td>
+</tr>
+<tr>
+<td>실행</td>
+<td>한 Safari 시험 탭에서 BVH → Rapier → PlayCanvas 순서</td>
+</tr>
+<tr>
+<td>반복</td>
+<td>구현마다 정지 30초×3회, 이동 30초×3회</td>
+</tr>
+<tr>
+<td>입력</td>
+<td>canvas에 합성 DOM TouchEvent, 실제 손가락 입력 아님</td>
+</tr>
+</tbody>
+</table></div>
+<p>Mac의 로컬 preview 서버를 iPhone IP <code>192.168.1.119</code>만 허용하는 임시 relay로 전달했다. 6173은 5173, 6174는 5174로 연결했다. Chrome 확장이나 사용자 Chrome은 사용하지 않았다.</p>
+<p>모든 측정에서 <code>document.hidden=false</code>였고 숨김 프레임과 visibility 변경은 없었다. 그러나 <code>document.hasFocus()=false</code>가 계속 보고됐다. 포커스가 확보된 시험이라고 표현하지 않는다. 원격 디버거가 연결된 상태이며, 온도·배터리 상태·실행 순서·캐시는 통제하지 않았다. OS 버전은 기기 조회를 사용했다. UA의 <code>OS 18_7</code>과 bridge가 제공하는 가상 Chromium/V8 식별자는 실제 OS나 렌더러 버전으로 사용하지 않는다.</p>
+<h2 id="_3">정지 상태 측정</h2>
+<p>각 구현의 30초 구간 3개에서 수집한 requestAnimationFrame 간격을 합쳐 계산했다. 구간별 p95의 평균이나 중앙값이 아니다. p95가 작을수록 긴 프레임 지연이 짧다. 앱 준비 표시는 GPU 첫 표시 완료 시간과 다르다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구현</th>
+<th style="text-align: right;">프레임 수</th>
+<th style="text-align: right;">평균 간격 ms</th>
+<th style="text-align: right;">p95 ms</th>
+<th style="text-align: right;">p99 ms</th>
+<th>구간별 p95 ms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td style="text-align: right;">1,509</td>
+<td style="text-align: right;">59.53</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">68</td>
+<td>67 / 65 / 64</td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td style="text-align: right;">1,540</td>
+<td style="text-align: right;">58.39</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">81</td>
+<td>58 / 81 / 61</td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td style="text-align: right;">2,242</td>
+<td style="text-align: right;">40.09</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">55</td>
+<td>54 / 49 / 49</td>
+</tr>
+</tbody>
+</table></div>
+<p>Rapier의 두 번째 정지 구간은 다른 두 구간보다 느렸다. 순서 교대·온도 통제가 없는 세 반복으로 이 차이를 물리 엔진만의 영향이라고 단정할 수 없다.</p>
+<h3 id="_4">정지 상태 처리 시간</h3>
+<p>각 구간의 <code>walkingTimings.totalMs</code> 증가분을 실제 측정 경과 초로 나눴다. 호출당 시간은 같은 증가분을 호출 수로 나눴다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구현</th>
+<th style="text-align: right;">계측 경과 ms / 실제 1초</th>
+<th style="text-align: right;">호출당 평균 ms</th>
+<th>포함 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td style="text-align: right;">52.14</td>
+<td style="text-align: right;">3.10</td>
+<td>앱 보행 step</td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td style="text-align: right;">124.58</td>
+<td style="text-align: right;">7.27</td>
+<td>앱 보행 step 및 연결된 Rapier 처리</td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td style="text-align: right;">61.13</td>
+<td style="text-align: right;">2.45</td>
+<td>PlayCanvas rigidbody system step</td>
+</tr>
+</tbody>
+</table></div>
+<p>이는 계측 함수 안에서 흐른 시간이며 <strong>프로세스 CPU 사용률·배터리 소모·물리 엔진만의 비용이 아니다</strong>. PlayCanvas는 전체 rigidbody system, Three.js는 앱 보행 step을 계측하므로 포함 범위가 다르다. Safari 시간 표본은 원본에서 1ms 단위로 나타나 작은 호출의 오차도 고려해야 한다.</p>
+<h2 id="_5">이동 시험에서 발견한 문제</h2>
+<p>매번 시작점으로 복귀하고 1.5초 대기한 뒤, 전진·오른쪽·후진·왼쪽을 각 7.5초씩 입력했다. 동일한 입력 순서가 동일한 이동 경로를 보장하지 않는다. 이 장면의 프록시 바닥은 촬영 장면 전체를 덮지 않는다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구현</th>
+<th style="text-align: right;">원본 이동 p95 ms</th>
+<th>관찰</th>
+<th>성능 비교 판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td style="text-align: right;">60</td>
+<td>전체 시험 종료 시 자동 복구 누적 4회</td>
+<td>경로·복구가 달라 동등 비교에 사용하지 않음</td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td style="text-align: right;">62</td>
+<td>전체 시험 종료 시 자동 복구 누적 15회</td>
+<td>경로·복구가 달라 동등 비교에 사용하지 않음</td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td style="text-align: right;">43</td>
+<td>각 30초 종료 발 높이 약 −1,075 / −1,024 / −1,007m</td>
+<td>정상 이동 비교에서 제외</td>
+</tr>
+</tbody>
+</table></div>
+<p>PlayCanvas는 후진 구간부터 바닥 밖으로 떨어졌고 마지막 구간까지 낙하했다. 카메라도 장면에서 멀어지므로 렌더링과 접촉 작업량이 줄어들 수 있다. 따라서 43ms를 PlayCanvas 정상 이동 성능으로 인용하면 안 된다. 시작점 버튼으로는 복귀했다. 이 측정 릴리스에는 수동 복귀만 있었고 자동 낙하 복구는 없었다. 이후 수정은 아래 기능 검증에 기록했다.</p>
+<p>측정 구간에서 세 구현 모두 수집된 페이지 예외·unhandled rejection·WebGL context loss는 없었다. 이는 이동이 정상이라는 뜻이 아니다. 좌표를 확인해야 위의 실패를 찾을 수 있었다.</p>
+<p>후속 이동 비교는 바닥 안의 짧은 왕복이나 고정 외벽 밀기로 제한하고, 접촉·좌표·복구 횟수를 검증한 뒤 수행한다. 자동 낙하 복구를 추가한 릴리스의 모바일 성능은 다시 측정해야 하며 기존 표본에 합치지 않는다.</p>
+<h2 id="sunnyvale">큰 장면: Sunnyvale</h2>
+<p>3,999,361 Gaussian SOG, 충돌 메시 337,680삼각형 장면을 별도로 열었다. 아래 관찰은 캐시를 초기화한 cold/warm 로딩 비교가 아니다.</p>
+<ul>
+<li><strong>PlayCanvas:</strong> 두 번 준비 완료. 앱 <code>firstSceneReady</code> 표시는 각각 약 14.97초와 19.11초였다. 두 번째 로딩에서는 <code>worldLoaded=250ms</code>, <code>assetsLoaded=4,224ms</code>였다. 첫 실행의 탐색용 프레임 기록에는 약 1.57초 지연도 있으므로 준비 성공만으로 부드러운 탐색을 보장하지 않는다.</li>
+<li><strong>Three.js BVH + Spark:</strong> 반복 관찰 중 준비 완료에 도달하지 않았다. worker 진단에서 입력 58,072,500바이트 로드와 일반적인 <code>Script error.</code>를 확인했지만 decode 결과는 없었다. 관찰 사이 <code>timeOrigin</code>이 바뀐 경우도 있었다. WebContent 재시작·메모리 부족 등 구체적 원인은 확인하지 못했다.</li>
+<li><strong>Three.js Rapier + Sunnyvale:</strong> 별도 대형 장면 실행은 측정하지 않았다. BVH 실패는 보행 컨트롤러 준비 전 자산 로딩 단계에서 관찰됐다. 공유 로더 문제일 가능성이 있지만 Rapier의 실측 실패로 표현하지 않는다.</li>
+</ul>
+<p>진단 로딩에만 <code>probe=worker</code>를 주입했다. 작은 장면 성능 측정에는 이를 사용하지 않았다. Spark worker의 실패가 로딩 대기를 끝내지 못하는 경로에 앱의 시간 제한과 새 페이지 재시도를 추가했다. 아래 기능 검증은 실패 대응을 확인한 것이며 iPhone 대형 장면의 디코딩 원인과 자산 처리 전략은 추가 조사가 필요하다. 메모리 부족을 확정 원인으로 기록하지 않는다.</p>
+<h2 id="_6">수정 후 기능 검증</h2>
+<p>릴리스 <code>local-4d5905679d2e-882e63d01db8</code>에서 두 가지 실패 대응을 추가했다. 별도 headed Chromium과 Playwright MCP로 검증했으며 GPU는 Apple M4 Pro의 ANGLE Metal이었다. <strong>데스크톱 기능 검증이며 iPhone 성능 재측정이 아니다.</strong></p>
+<h3 id="threejs">Three.js 로딩 오류와 재시도</h3>
+<ul>
+<li>SOG 초기화에 자산별 90초 제한을 적용했다. SDK가 오류를 반환하면 자산 이름과 원인을 표시하고, 응답이 끝나지 않으면 시간 초과 화면을 표시한다.</li>
+<li>실패한 자산을 정리하고 시간 초과 뒤 늦게 완료되는 자산도 정리한다. 재시도는 페이지를 새로 불러와 응답이 멈춘 Spark worker pool을 새로 만든다.</li>
+<li>브라우저에서 SOG 요청을 404로 응답시켜 오류 표시와 재시도 성공을 확인했다.</li>
+<li>첫 <code>loadPackedSplats</code> worker 메시지를 의도적으로 전달하지 않아 미완료 초기화를 재현했다. 이 기능 시험에서만 90초 타이머를 1초로 줄였다. 시간 초과 안내 후 재시도에서 <code>timeOrigin</code>이 바뀌고 작은 장면이 준비됐으며 앱 진단 오류는 없었다.</li>
+</ul>
+<p>시간 제한은 대기를 끝내는 장치다. SDK 디코더를 고치거나 즉시 worker 작업을 취소하는 기능은 아니다. iPhone에서 Sunnyvale 로딩이 성공하는지는 아직 확인하지 않았다.</p>
+<h3 id="playcanvas">PlayCanvas 낙하 복구</h3>
+<ul>
+<li>발 위치가 시작점보다 10m 아래로 내려가거나 좌표가 유효하지 않으면 시작점으로 복귀한다. 속도·시선·입력 상태를 초기화하고 자동 복구 횟수를 센다. 비교 경로 재생 중에는 적용하지 않는다.</li>
+<li>위치 JSON과 개발용 물리 진단에 복구 횟수를 기록하고 위치 JSON에 복구 기준도 포함한다.</li>
+<li>작은 장면에서 실제 <code>KeyS</code> 입력을 16초 유지해 바닥 밖으로 이동했다. 자동 복구 1회 후 발 위치가 시작점 <code>[3, 0.35, -4]</code>로 돌아왔고 수직 속도는 거의 0이었다. 이어 새 <code>KeyW</code> 입력 1초로 다시 이동할 수 있었다.</li>
+</ul>
+<p>이는 시험 장면 밖으로 떨어질 때의 안전장치다. 충돌 바닥의 빈 부분이나 계단을 보완하지 않으며, 시작점보다 10m 낮은 정상 지형에서도 복귀할 수 있다. PlayCanvas는 시작점으로, 기존 BVH·Rapier는 마지막 안전 위치로 복귀하므로 복구 경로를 동일하게 취급하지 않는다.</p>
+<p><code>pnpm check</code>에서 테스트 43개, 자산 검증, 타입 검사와 두 앱 빌드가 통과했다. 브라우저 기능 검증 근거: <a href="measurements/2026-10-02/fix-browser.json">원본 JSON</a>, <a href="measurements/2026-10-02/fix-three-timeout.png">Three.js 시간 초과 화면</a>, <a href="measurements/2026-10-02/fix-playcanvas-recovery.png">PlayCanvas 복구 후 이동 화면</a>.</p>
+<h2 id="_7">모바일 화면과 남은 확인</h2>
+<p>대형 장면의 후속 대조 시험에서는 Sunnyvale의 점 수를 유지하고 고차 SH만 제거한 버전이 47.320초에 준비됐다. 90만 점 축소본도 성공했다. 원본 호환성 문제는 아직 해결되지 않았으며, 위 원본 실패 기록을 대조군 성공으로 대체하지 않는다. <a href="MOBILE-DECODER-CONTROLS.html">해독 대조 시험</a>.</p>
+<p>종료 스크린샷에서 데스크톱용 안내 패널이 세로 화면의 큰 부분을 덮는다. PlayCanvas 작은 장면 패널 높이는 약 441px로 616px 화면의 약 72%다. Three.js는 추가 컨트롤러 선택 때문에 더 길다. 안내 문구도 WASD 중심이다. 모바일에서는 도움말·진단을 접고 터치 조작 안내를 제공할 필요가 있다.</p>
+<p>overlay 자체는 <code>pointer-events:none</code>이며 버튼·select만 입력을 받는다. 시험 터치 시작 좌표의 hit-test는 canvas였다. 따라서 패널이 시야를 덮는 문제와 터치 입력을 막는 문제를 혼동하지 않는다.</p>
+<p>아직 확인하지 않은 항목:</p>
+<ul>
+<li>실제 손가락으로 이동·시선·버튼 조작, 가로/세로 회전과 스크롤 간섭.</li>
+<li>모바일 장시간 탐색·백그라운드 복귀, 기기 메모리·GPU 메모리·발열·배터리.</li>
+<li>Android 실기기, 비공개 HTTPS 환경.</li>
+<li>대형 장면에서 동일 접촉·동일 경로의 세 구성 보행 비용.</li>
+</ul>
+<h2 id="_8">재현과 근거</h2>
+<ul>
+<li><a href="measurements/2026-10-02/ios-browser.json">세 구성 원본 JSON</a>: 좌표, 자산 해시, 설정, 반복별 프레임 간격과 보행 계측.</li>
+<li><a href="measurements/2026-10-02/ios-loading-observations.json">로딩 관찰</a>: 실패 및 PlayCanvas 대형 장면 초기 기록.</li>
+<li><span class="local-file" title="원본 개발 저장소의 파일">집계 스크립트 (원본 저장소 파일)</span>: <code>node docs/implementation/measurements/2026-10-02/ios-summarize.mjs</code>.</li>
+<li><span class="local-file" title="원본 개발 저장소의 파일">페이지 측정 함수 (원본 저장소 파일)</span>, <span class="local-file" title="원본 개발 저장소의 파일">MCP CDP 연결 helper (원본 저장소 파일)</span>, <span class="local-file" title="원본 개발 저장소의 파일">IP 제한 relay (원본 저장소 파일)</span>.</li>
+<li>종료 화면: <a href="measurements/2026-10-02/ios-three-bvh.png">BVH</a>, <a href="measurements/2026-10-02/ios-three-rapier.png">Rapier</a>, <a href="measurements/2026-10-02/ios-playcanvas.png">Ammo</a>, <a href="measurements/2026-10-02/ios-playcanvas-sunnyvale.png">PlayCanvas Sunnyvale</a>.</li>
+</ul>
+<p>bridge는 임시 환경의 pymobiledevice3 11.20.2로 실행했다. 승인된 프로젝트 시험 탭만 대상으로 <code>Runtime.evaluate</code>와 <code>Page.captureScreenshot</code>을 사용했다. isolated world의 <code>page.evaluate</code>는 이 bridge에서 실패했다. 작은 장면을 열고 측정 함수 실행 후 진행 상태를 폴링하며, 탐색 전 원본을 저장한다. 입력 생성자는 실제 손가락을 대신하지 않는다. 시험 종료 후 자신이 만든 relay·bridge를 종료하고 임시 설치 환경·캐시와 보관 완료한 중복 출력 파일을 제거했다. 5173·5174 preview 서버는 유지했다.</p></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

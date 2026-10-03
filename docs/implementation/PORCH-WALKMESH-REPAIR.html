@@ -1,0 +1,135 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sunnyvale 현관 보행 바닥 보정 · Sotaesan Atlas</title><style>
+:root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:17px;line-height:1.75}
+a{color:var(--green);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}header>a{font-weight:700;text-decoration:none}nav{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}main{max-width:1120px;margin:auto;padding:44px 24px 70px}h1,h2,h3{line-height:1.45;word-break:keep-all;letter-spacing:-.025em}h1{font-size:36px;margin:0 0 28px}h2{font-size:26px;margin:44px 0 20px;border-top:1px solid var(--line);padding-top:28px}h3{font-size:21px;margin-top:28px}p{word-break:keep-all}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{border-bottom:2px solid var(--ink);background:#e9eee5}pre{overflow:auto;background:#e9eee5;padding:20px;font-size:14px;line-height:1.6}code{font-size:.9em;overflow-wrap:anywhere}img{max-width:100%;height:auto}.table-scroll{overflow-x:auto}footer{max-width:1120px;margin:auto;border-top:1px solid var(--line);padding:24px;font-size:14px;color:var(--muted)}.intro{max-width:750px;font-size:21px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);text-decoration:none;border-radius:4px;padding:11px 22px;font-weight:600}.button.secondary{background:transparent;color:var(--green)}.summary{border-left:4px solid var(--green);padding:4px 24px;margin:38px 0;font-size:19px}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.resource{border:1px solid var(--line);padding:22px}.resource h3{margin:0 0 10px}.resource p{font-size:16px;margin:0;color:var(--muted)}.local-file{color:var(--muted)}.meta{color:var(--muted);font-size:14px}.toc{border:1px solid var(--line);padding:16px 24px;margin:28px 0;font-size:15px}.toc>ul{margin:0}.toc li{margin:4px 0}li{margin:8px 0}.downloads{margin:0 0 30px}.measurements ul{padding-left:24px}@media(max-width:650px){body{font-size:16px}main{padding:30px 18px 50px}h1{font-size:29px}h2{font-size:23px}.intro{font-size:19px}.resources{grid-template-columns:1fr}header{padding:16px 18px}table{min-width:680px}.actions{gap:10px}.button{padding:9px 16px}}@media print{header,footer,.downloads{display:none}main{max-width:none;padding:0}body{font-size:11pt}h1{font-size:24pt}h2{font-size:18pt}table{font-size:9pt}.table-scroll{overflow:visible}a{color:inherit}}
+</style></head><body><header><a href="../../index.html">SOTAESAN ATLAS</a><nav aria-label="자료 메뉴"><a href="../../docs/implementation/SPIKE-DECISION-REPORT.html">상세 보고서</a><a href="../../docs/implementation/SPIKE-DECISION-PRESENTATION.html">발표 자료</a><a href="../../output/pdf/SPIKE-DECISION-PRESENTATION.pdf">PDF</a></nav></header><main ><p class="downloads"><a href="PORCH-WALKMESH-REPAIR.md" download>Markdown 원본 다운로드</a></p><h1 id="sunnyvale">Sunnyvale 현관 보행 바닥 보정</h1>
+<p>2026-10-03. 벤치를 지나면 낮은 곳으로 떨어져 돌아오지 못하던 구간을 공통 충돌 데이터에서 보정했다. Three.js BVH·Rapier와 PlayCanvas Ammo의 실제 앱에서 왕복과 끝 난간 충돌을 확인했다. 벽 비침과 전체 보행 경로의 안전성은 별도 검수 항목이다.</p>
+<h2 id="_1">원인과 수정 범위</h2>
+<p>신고 좌표 근처에서 촬영된 마루는 끝 난간까지 이어지지만, 원본 충돌 GLB의 바닥은 현관 안쪽에서 내려간다. X=-13.66356m에서 Z=-21.98231m의 충돌 높이는 0.46143m, Z=-22.03231m에서는 -0.22668m다. 인접 5cm 구간에서 약 68.8cm 내려가므로 현재 20cm 턱 오르기로 복귀할 수 없었다. 보정 전 세 제어기 모두 같은 실패를 재현했다. <a href="WALKMESH-AUTHORING.html">보정 전 조사</a></p>
+<p>촬영 화면과 충돌면을 대조한 뒤 현관 통로 안쪽에만 보행용 바닥을 추가했다. 기존 벤치·벽·난간 충돌과 제어기의 턱 오르기 알고리즘은 유지했다. 이 바닥은 이동 충돌에만 사용하며 화면에 큐브를 표시하지 않는다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작성 원본</td>
+<td><code>shared/source/sunnyvale-walkmesh.author.json</code></td>
+</tr>
+<tr>
+<td>충돌 ID</td>
+<td><code>sunny-walk-porch-floor</code></td>
+</tr>
+<tr>
+<td>X 범위</td>
+<td>-14.05 ~ -12.65m</td>
+</tr>
+<tr>
+<td>Y 범위</td>
+<td>0.32 ~ 0.52m</td>
+</tr>
+<tr>
+<td>Z 범위</td>
+<td>-24.30 ~ -21.60m</td>
+</tr>
+<tr>
+<td>시대</td>
+<td>현재·과거 공통 (<code>both</code>)</td>
+</tr>
+<tr>
+<td>검수 상태</td>
+<td><code>preview-only</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>좌표는 공급된 장면에서 추정했으며 실측 건축 치수가 아니다. 바닥 윗면은 원래 정지 높이보다 조금 낮은 0.52m로 두어, 시작 캡슐이 보정 바닥 내부에서 출발하지 않도록 했다. 원본 마루와의 경계, 통로 폭과 난간 밖으로 면이 나가지 않는 범위를 확인했다.</p>
+<h2 id="_2">생성과 비용</h2>
+<p><code>compile-sunnyvale-walkmesh.mjs</code>는 작성 원본을 검사한 뒤 전체 장면과 분할 장면의 전용 이름공간만 갱신한다. 시대 생성기는 이 바닥을 이어받는다. 분할 자산 재생성에서도 보정이 유지되도록 연결했다.</p>
+<pre><code class="language-sh">pnpm authoring:compile
+pnpm check
+./dev.sh --preview both
+</code></pre>
+<p>작성 원본과 출력이 다르면 검사·빌드가 실패한다. 두 월드의 입력 검증을 모두 완료한 뒤 쓰기를 시작하며, 파일 시스템 쓰기 중 장애까지 원자적으로 처리하는 도구는 아니다.</p>
+<p>기존 <code>reference-cube</code> 자산(968바이트, 12삼각형)을 재사용한다. 전체 장면의 충돌은 337,680 → 337,692삼각형이 된다. 새 SOG나 텍스처 다운로드는 추가하지 않는다. 바닥은 작은 공통 상주 충돌이며 청크 해제와 시대 전환으로 제거되지 않는다. 이 숫자는 데이터 증가량이며 GPU 처리 시간·메모리 증가나 사람의 제작 비용을 측정한 결과는 아니다.</p>
+<p><code>pnpm audit:walkmesh</code>는 원본 GLB만 읽는 보정 전 기준 조사다. 보정된 월드의 합격 여부는 아래 회귀 테스트와 실제 앱 결과로 판단한다.</p>
+<h2 id="_3">실제 앱 검증</h2>
+<p>headed Playwright의 별도 브라우저에서 앱을 하나씩 열었다. Apple M4 Pro의 ANGLE Metal GPU 사용, 화면 표시·포커스를 확인했다. 시험은 시작 위치·시선만 고정하고 실제 자산과 제어기를 사용했다. W 1초 → S 1초, 5초 정지, 끝 난간으로 추가 전진을 수행했다. 위치는 앱 상태에서 직접 읽었다. 키 입력의 벽시계 시간이 같아도 프레임과 제어기의 처리에 따라 이동 거리는 달라질 수 있어 성능 비교 수치로 쓰지 않는다.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구성</th>
+<th>낮은 곳으로 떨어지지 않고 왕복</th>
+<th style="text-align: right;">시작점과 복귀점 거리</th>
+<th style="text-align: right;">복귀 후 5초 정지 이동</th>
+<th>끝 난간에서 멈춤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three.js BVH</td>
+<td>통과</td>
+<td style="text-align: right;">0.87cm</td>
+<td style="text-align: right;">0</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>Three.js Rapier</td>
+<td>통과</td>
+<td style="text-align: right;">6.51cm</td>
+<td style="text-align: right;">0</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>PlayCanvas Ammo</td>
+<td>통과</td>
+<td style="text-align: right;">2.09cm</td>
+<td style="text-align: right;">0</td>
+<td>통과</td>
+</tr>
+</tbody>
+</table></div>
+<p>복귀 거리에는 전후·좌우·높이 차이를 모두 포함한다. 시험 중 자동 추락 복귀 횟수는 증가하지 않았다. Ammo의 검사 상태에는 <code>grounded</code>가 노출되지 않아 접지 플래그를 측정했다고 주장하지 않는다. 발 높이·왕복·난간 정지 결과로 확인했다.</p>
+<p>계단도 A 1초 → D 1초로 확인했다. BVH와 Ammo는 정한 상부 위치에 도달했다. Rapier는 높이가 올라갔지만 1초 이동 거리가 짧아 X&lt;-11.5m 판정에 도달하지 않았다. 이번 수정은 계단 제어기 차이를 해결한 것이 아니다.</p>
+<h3 id="_4">분할·시대 전환에서 유지</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>구성</th>
+<th style="text-align: right;">분할 장면 왕복</th>
+<th style="text-align: right;">시대 장면 현재 왕복</th>
+<th style="text-align: right;">과거 전환 후 왕복</th>
+<th style="text-align: right;">현재 복귀 후 왕복</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BVH</td>
+<td style="text-align: right;">0.50cm</td>
+<td style="text-align: right;">0.47cm</td>
+<td style="text-align: right;">0.44cm</td>
+<td style="text-align: right;">0.70cm</td>
+</tr>
+<tr>
+<td>Ammo</td>
+<td style="text-align: right;">1.70cm</td>
+<td style="text-align: right;">19.81cm</td>
+<td style="text-align: right;">9.15cm</td>
+<td style="text-align: right;">5.24cm</td>
+</tr>
+</tbody>
+</table></div>
+<p>숫자는 시작점과 복귀점 거리다. 각 시험에서 바닥 충돌이 유지되고, 전진 위치의 발 높이는 0.5m 이상이었다. 로딩 실패·전환 오류와 자동 복귀 증가는 없었다. 복귀 거리 20cm 미만이라는 시험 기준은 모두 통과했지만 Ammo의 시대 장면 현재 시험은 경계에 가까워 정확히 같은 지점으로 복귀한다고 볼 수 없다. Rapier의 분할·시대 브라우저 시험과 iPhone 실기기 시험은 이번에 반복하지 않았다.</p>
+<h2 id="_5">자동 검사와 증거</h2>
+<p><code>pnpm check</code>가 성공했다. 77개 테스트(도구 19, 공통 31, Three.js 27), 공통·양쪽 앱 타입 검사, 자산 해시와 양쪽 릴리스 빌드·산출물 검사를 통과했다. BVH·Rapier의 60/20 FPS 회귀 테스트는 원본에서 복귀 실패를 재현하고, 보정 후 왕복·10초 정지·끝 난간 충돌을 확인한다. 작성 원본 테스트는 재생성·멱등성·다른 충돌 보존·오류 입력과 검사 모드의 출력 보존을 확인한다.</p>
+<p>미리보기 릴리스는 <code>local-4d5905679d2e-8887379fa947</code>이며 배포하지 않았다. <a href="measurements/2026-10-03/porch-repair/verification.json">검증 요약</a>, <span class="local-file" title="원본 개발 저장소의 파일">원시 결과·스크린샷·재현 드라이버 (원본 저장소 파일)</span>를 저장했다.</p>
+<p>주 시험의 앱 오류 기록은 favicon 404를 제외하고 비어 있다. 마지막 콘솔 확인에서도 오류·경고가 없었다. 이전 시험의 PlayCanvas <code>sortKey overflow</code> 경고를 해결했다는 뜻은 아니다. <code>ammo-retention-attempt1.json</code>은 노출되지 않는 접지 플래그를 기다려 시간 초과된 측정 시도다. 조건을 수정한 <code>ammo-retention.json</code>을 판정에 사용했으며 실패 시도도 보존했다. 시험 브라우저를 종료하고 로컬 미리보기 서버는 유지했다.</p>
+<h2 id="_6">남은 작업</h2>
+<ul>
+<li>신고된 창문 아래 벽 비침: 두 앱에서 같은 위치에 보인다는 관찰을 바탕으로 원본 Splat 표현과 불투명 표면의 필요성을 조사한다. 바닥 충돌 보정은 렌더링 불투명도를 바꾸지 않는다.</li>
+<li>전체 보행 경로: 현관 국소 통과를 전체 장면의 안전성으로 확대하지 않는다. 계단·좁은 통로와 시각 자산·충돌 정합 검수가 남았다.</li>
+<li>모바일: 이번 바닥 보정의 iPhone 재검증은 하지 않았다. 기존 모바일 해독·메모리 한계도 해결됐다고 보지 않는다.</li>
+<li>실제 콘텐츠 제작: 가상 시대 자산 시험과 실제 역사 복원 제작은 구분한다. 실제 한 구역의 제작·수정 시간은 아직 측정하지 않았다.</li>
+</ul></main><footer>테스트 기간 2026-10-02~04 · 기존 측정 기록을 정리한 자료입니다. 조건이 다른 결과는 직접 비교하지 않습니다.</footer></body></html>

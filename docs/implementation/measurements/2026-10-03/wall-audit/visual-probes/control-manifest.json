@@ -1,0 +1,71 @@
+{
+  "sourceSha256": "604ede4a3ff5e3ece784a7c3b11dcbc3f6c05b1e9f73f460997e6a145bc3b05e",
+  "scope": "Only masked sh0 opacity bytes or omission of shN; centers, scales, rotations and retained SH files unchanged",
+  "cutCoordinate": "World X after Z=180 degree object transform; exterior/interior names label plane sides, not physical building surfaces",
+  "variants": {
+    "rgba-roundtrip": {
+      "file": "rgba-roundtrip.sog",
+      "bytes": 58069424,
+      "sha256": "9c64ef959357ed673b39d1eb7201e238bf17074fa0581644bf105209b2bc1d67",
+      "zeroedCenters": 0,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "no-sh": {
+      "file": "no-sh.sog",
+      "bytes": 48583083,
+      "sha256": "e298503b59f01191b3867d2a9894c70fc48e31801a3b4e69e838e86392e5e9e2",
+      "zeroedCenters": 0,
+      "count": 3999361,
+      "shBands": 0
+    },
+    "exterior-15_75": {
+      "file": "exterior-15_75.sog",
+      "bytes": 57352086,
+      "sha256": "09920af6ca228f19e472dfba501e29384557d04024ad97a802a8badfab2fbf14",
+      "zeroedCenters": 866492,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "exterior-15_9": {
+      "file": "exterior-15_9.sog",
+      "bytes": 57363116,
+      "sha256": "34041683e585a7350ff3f22398ef3fde10b232620ae90a69de311eb5cfd9a2bd",
+      "zeroedCenters": 855309,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "exterior-16_3": {
+      "file": "exterior-16_3.sog",
+      "bytes": 57391726,
+      "sha256": "28bf48b2bcc40fdee422c4da0a19880851388304fc1adb9c0e1c311f05da38a0",
+      "zeroedCenters": 821401,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "exterior-16_5": {
+      "file": "exterior-16_5.sog",
+      "bytes": 57408788,
+      "sha256": "97e2d035a30555640f8555b95e2bf6e90adf2d083542af81a6cd724033e636bf",
+      "zeroedCenters": 803432,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "exterior-17_5": {
+      "file": "exterior-17_5.sog",
+      "bytes": 57453202,
+      "sha256": "3b2b49e835a75699c50a4063769bd78ee0495fb08d927a47c93781e20061fc1a",
+      "zeroedCenters": 753985,
+      "count": 3999361,
+      "shBands": 3
+    },
+    "interior-15_9": {
+      "file": "interior-15_9.sog",
+      "bytes": 55146670,
+      "sha256": "de318c934466c7922fc3b6ac95abaa9be1e72cd82c5714049308366547f61024",
+      "zeroedCenters": 3144052,
+      "count": 3999361,
+      "shBands": 3
+    }
+  }
+}
