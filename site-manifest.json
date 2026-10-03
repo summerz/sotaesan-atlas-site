@@ -30,5 +30,9 @@
     "scripts/make-sog-diagnostics.py",
     "scripts/make-spatial-era.py",
     "shared/src/step-timings.ts"
-  ]
+  ],
+  "appReleases": {
+    "three": "local-4d5905679d2e-0c66ba92a733",
+    "playcanvas": "local-4d5905679d2e-0c66ba92a733"
+  }
 }

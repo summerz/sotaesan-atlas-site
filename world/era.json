@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "id": "era-transition-fixture",
+  "coordinates": {
+    "unit": "meter",
+    "up": "Y",
+    "forward": "-Z",
+    "rotationUnit": "degree",
+    "rotationOrder": "XYZ"
+  },
+  "spawn": {
+    "position": [
+      3,
+      0.35,
+      -4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "eyeHeight": 1.6
+  },
+  "player": {
+    "capsuleRadius": 0.25,
+    "capsuleHeight": 1.7,
+    "walkSpeed": 2.0,
+    "maxSlopeDeg": 35
+  },
+  "initialLayer": "current",
+  "objects": [
+    {
+      "id": "current-hall",
+      "type": "splat",
+      "assetId": "current",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "historical-base",
+      "type": "splat",
+      "assetId": "historical-base",
+      "layer": "historical",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "current-test-wall",
+      "type": "gltf",
+      "assetId": "reference-cube",
+      "layer": "current",
+      "position": [
+        3,
+        0.35,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        4,
+        3,
+        0.3
+      ]
+    },
+    {
+      "id": "historical-test-wall",
+      "type": "gltf",
+      "assetId": "reference-cube",
+      "layer": "historical",
+      "position": [
+        3,
+        0.35,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        4,
+        3,
+        0.3
+      ]
+    }
+  ],
+  "colliders": [
+    {
+      "id": "walkable",
+      "assetId": "collision",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "current-wall-collision",
+      "assetId": "reference-cube",
+      "layer": "current",
+      "transitionBounds": {
+        "min": [
+          1,
+          0.35,
+          -7.15
+        ],
+        "max": [
+          5,
+          3.35,
+          -6.85
+        ]
+      },
+      "position": [
+        3,
+        0.35,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        4,
+        3,
+        0.3
+      ]
+    },
+    {
+      "id": "historical-wall-collision",
+      "assetId": "reference-cube",
+      "layer": "historical",
+      "transitionBounds": {
+        "min": [
+          1,
+          0.35,
+          -10.15
+        ],
+        "max": [
+          5,
+          3.35,
+          -9.85
+        ]
+      },
+      "position": [
+        3,
+        0.35,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        4,
+        3,
+        0.3
+      ]
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "current-test-info",
+      "contentId": "illustrative-layer-info",
+      "position": [
+        3,
+        1.4,
+        -5
+      ],
+      "activationDistance": 3,
+      "layer": "current"
+    },
+    {
+      "id": "historical-test-info",
+      "contentId": "illustrative-layer-info",
+      "position": [
+        3,
+        1.4,
+        -5
+      ],
+      "activationDistance": 3,
+      "layer": "historical"
+    },
+    {
+      "id": "occluded-test-info",
+      "contentId": "occluded-info",
+      "position": [
+        3,
+        1.4,
+        -8
+      ],
+      "activationDistance": 10,
+      "layer": "both"
+    }
+  ],
+  "benchmarkRoute": []
+}

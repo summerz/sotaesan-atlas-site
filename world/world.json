@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "knock-hall-stage-0",
+  "coordinates": { "unit": "meter", "up": "Y", "forward": "-Z", "rotationUnit": "degree", "rotationOrder": "XYZ" },
+  "spawn": { "position": [3, 0.35, -4], "rotation": [0, -52, 0], "eyeHeight": 1.6 },
+  "player": { "capsuleRadius": 0.25, "capsuleHeight": 1.7, "walkSpeed": 2.0, "maxSlopeDeg": 35 },
+  "initialLayer": "current",
+  "objects": [
+    { "id": "current-hall", "type": "splat", "assetId": "current", "layer": "current", "position": [0, 0, 0], "rotation": [180, 0, 0], "scale": [1, 1, 1] },
+    { "id": "historical-base", "type": "splat", "assetId": "historical-base", "layer": "historical", "position": [0, 0, 0], "rotation": [180, 0, 0], "scale": [1, 1, 1] },
+    { "id": "illustrative-frame", "type": "gltf", "assetId": "historical-object", "layer": "historical", "position": [11.2, 0.35, -8.9], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+    { "id": "metre-marker", "type": "gltf", "assetId": "reference-cube", "layer": "both", "position": [5, 0, -1], "rotation": [0, 0, 0], "scale": [1, 1, 1] }
+  ],
+  "colliders": [
+    { "id": "walkable", "assetId": "collision", "position": [0, 0, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1] }
+  ],
+  "hotspots": [
+    { "id": "sample-info-anchor", "position": [4.2, 1.4, -5.3], "contentId": "sample-info", "activationDistance": 2.5, "layer": "both" },
+    { "id": "illustrative-layer-anchor", "position": [6.5, 1.4, -7.5], "contentId": "illustrative-layer-info", "activationDistance": 2.5, "layer": "historical" },
+    {"id": "walk-reference-anchor", "position": [6.5, 1.4, -5.1], "contentId": "walk-reference-info", "activationDistance": 2.5, "layer": "both"}
+  ],
+  "benchmarkRoute": [
+    {"t": 0, "position": [3, 1.95, -4], "rotation": [0, -52, 0]},
+    {"t": 15, "position": [6, 1.95, -5], "rotation": [0, -70, 0]},
+    {"t": 30, "position": [6, 1.95, -10], "rotation": [0, -95, 0]},
+    {"t": 45, "position": [3, 1.95, -10], "rotation": [0, -105, 0]},
+    {"t": 60, "position": [3, 1.95, -4], "rotation": [0, -52, 0]}
+  ]
+}

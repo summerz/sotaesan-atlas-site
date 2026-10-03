@@ -1,0 +1,110 @@
+{
+  "sample-info": {
+    "title": "장소 정보 시험",
+    "description": "이 핫스팟은 거리, 가림, 화면 투영과 설명 패널을 시험하기 위한 것입니다. 이 장면의 역사적 사실이나 과거 모습에 관한 설명은 아닙니다.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "sample-source",
+        "label": "상호작용 시험용 콘텐츠, 역사적 근거 없음"
+      }
+    ],
+    "imageAssetId": "current-diagram"
+  },
+  "illustrative-layer-info": {
+    "title": "과거 레이어 시험",
+    "description": "현재 촬영 장면에서 건물로 추정한 영역을 대략 제거하고 파란 시험용 구조물을 놓았습니다. 실제 과거 모습이나 역사적 복원이 아닙니다.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "sample-source",
+        "label": "기술 스파이크용 합성 자산, 역사적 근거 없음"
+      }
+    ],
+    "imageAssetId": "past-diagram"
+  },
+  "walk-reference-info": {
+    "title": "보행 기준 시험",
+    "description": "눈높이 1.6 m와 단순 충돌 프록시를 설명하는 도식입니다. 정밀하게 측량한 바닥이 아니므로 촬영 장면에서 떠 보일 수 있습니다. 이 도식은 실제 장소의 치수를 증명하지 않습니다.",
+    "imageAssetId": "walk-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "world-config",
+        "label": "공통 world.json의 플레이어 설정과 수동 충돌 프록시"
+      }
+    ]
+  },
+  "stream-start-info": {
+    "title": "시작 구역 정보",
+    "description": "구역이 준비됐을 때만 표시하는 콘텐츠 시험입니다. 구역 해제 및 장면 변경 시 오래된 설명을 남기지 않는지 확인합니다. 실제 장소의 역사 설명이 아닙니다.",
+    "imageAssetId": "current-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "stream-fixture",
+        "label": "구역 로딩·콘텐츠 수명 시험용 데이터"
+      }
+    ]
+  },
+  "stream-far-info": {
+    "title": "마지막 구역 정보",
+    "description": "구역이 준비됐을 때만 표시하는 콘텐츠 시험입니다. 구역 해제 및 장면 변경 시 오래된 설명을 남기지 않는지 확인합니다. 실제 장소의 역사 설명이 아닙니다.",
+    "imageAssetId": "current-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "stream-fixture",
+        "label": "구역 로딩·콘텐츠 수명 시험용 데이터"
+      }
+    ]
+  },
+  "occluded-info": {
+    "title": "벽 뒤 정보",
+    "description": "현재의 벽 뒤에서는 가려지고, 벽이 뒤로 이동한 과거 시험 장면에서는 보이는 핫스팟입니다.",
+    "imageAssetId": "current-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "occlusion-fixture",
+        "label": "가림 판정 시험용 데이터"
+      }
+    ]
+  },
+  "stream-era-current": {
+    "title": "현재 구역",
+    "description": "구역 자산·충돌·설명의 동시 교체를 확인합니다. 과거 장면은 건물 일부를 제거한 설명용 시험 자산이며 역사적 복원 자료가 아닙니다.",
+    "imageAssetId": "current-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": []
+  },
+  "stream-era-historical": {
+    "title": "과거 구역 · 설명용 시험",
+    "description": "구역 자산·충돌·설명의 동시 교체를 확인합니다. 과거 장면은 건물 일부를 제거한 설명용 시험 자산이며 역사적 복원 자료가 아닙니다.",
+    "imageAssetId": "past-diagram",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": []
+  },
+  "sunny-era-current": {
+    "title": "Sunnyvale 현재 구역 · 전환 시험",
+    "description": "현재 촬영 배경 위에 황색 시험 벽을 시작점 오른쪽 4m에 놓았습니다. 구역을 이동하면 필요한 화면과 충돌을 함께 로딩합니다. 시대를 전환하면 설명도 교체하고 이전 패널을 닫습니다.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": []
+  },
+  "sunny-era-historical": {
+    "title": "Sunnyvale 과거 구역 · 가상 변경",
+    "description": "현재 촬영 배경을 재사용하고 황색 시험 벽을 오른쪽 6m로 옮겼습니다. 실제 과거 건물이나 가구를 복원한 것이 아닙니다. 구역을 이동하면 필요한 화면과 충돌을 함께 로딩합니다. 시대를 전환하면 설명도 교체하고 이전 패널을 닫습니다.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": []
+  }
+}

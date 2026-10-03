@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "id": "hall-spatial-streaming",
+  "coordinates": {
+    "unit": "meter",
+    "up": "Y",
+    "forward": "-Z",
+    "rotationUnit": "degree",
+    "rotationOrder": "XYZ"
+  },
+  "spawn": {
+    "position": [
+      3,
+      0.35,
+      -4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "eyeHeight": 1.6
+  },
+  "player": {
+    "capsuleRadius": 0.25,
+    "capsuleHeight": 1.7,
+    "walkSpeed": 2.0,
+    "maxSlopeDeg": 35
+  },
+  "initialLayer": "current",
+  "objects": [
+    {
+      "id": "hall-chunk-0",
+      "assetId": "hall-chunk-0",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-chunk-1",
+      "assetId": "hall-chunk-1",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-chunk-2",
+      "assetId": "hall-chunk-2",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-chunk-3",
+      "assetId": "hall-chunk-3",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-chunk-4",
+      "assetId": "hall-chunk-4",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-far-0",
+      "assetId": "hall-far-0",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-far-1",
+      "assetId": "hall-far-1",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-far-2",
+      "assetId": "hall-far-2",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-far-3",
+      "assetId": "hall-far-3",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hall-far-4",
+      "assetId": "hall-far-4",
+      "type": "splat",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "colliders": [
+    {
+      "id": "walkable",
+      "assetId": "collision",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "stream-start-info",
+      "contentId": "stream-start-info",
+      "position": [
+        3,
+        1.4,
+        -5
+      ],
+      "activationDistance": 3,
+      "layer": "current",
+      "chunkId": "hall-chunk-0"
+    },
+    {
+      "id": "stream-far-info",
+      "contentId": "stream-far-info",
+      "position": [
+        18,
+        1.4,
+        -5
+      ],
+      "activationDistance": 3,
+      "layer": "current",
+      "chunkId": "hall-chunk-4"
+    }
+  ],
+  "benchmarkRoute": [],
+  "streaming": {
+    "loadDistance": 1.5,
+    "unloadDistance": 2.5,
+    "maxResidentChunks": 3,
+    "maxResidentGaussians": 750000,
+    "chunks": [
+      {
+        "id": "hall-chunk-0",
+        "objectId": "hall-chunk-0",
+        "bounds": {
+          "min": [
+            0,
+            -6,
+            -17
+          ],
+          "max": [
+            4,
+            6,
+            1
+          ]
+        },
+        "fallbackObjectId": "hall-far-0"
+      },
+      {
+        "id": "hall-chunk-1",
+        "objectId": "hall-chunk-1",
+        "bounds": {
+          "min": [
+            4,
+            -6,
+            -17
+          ],
+          "max": [
+            8,
+            6,
+            1
+          ]
+        },
+        "fallbackObjectId": "hall-far-1"
+      },
+      {
+        "id": "hall-chunk-2",
+        "objectId": "hall-chunk-2",
+        "bounds": {
+          "min": [
+            8,
+            -6,
+            -17
+          ],
+          "max": [
+            12,
+            6,
+            1
+          ]
+        },
+        "fallbackObjectId": "hall-far-2"
+      },
+      {
+        "id": "hall-chunk-3",
+        "objectId": "hall-chunk-3",
+        "bounds": {
+          "min": [
+            12,
+            -6,
+            -17
+          ],
+          "max": [
+            16,
+            6,
+            1
+          ]
+        },
+        "fallbackObjectId": "hall-far-3"
+      },
+      {
+        "id": "hall-chunk-4",
+        "objectId": "hall-chunk-4",
+        "bounds": {
+          "min": [
+            16,
+            -6,
+            -17
+          ],
+          "max": [
+            20,
+            6,
+            1
+          ]
+        },
+        "fallbackObjectId": "hall-far-4"
+      }
+    ],
+    "maxResidentTotalGaussians": 850000
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "sunnyvale-wall-comparison",
+  "coordinates": {
+    "unit": "meter",
+    "up": "Y",
+    "forward": "-Z",
+    "rotationUnit": "degree",
+    "rotationOrder": "XYZ"
+  },
+  "spawn": {
+    "position": [
+      0,
+      0.17,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "eyeHeight": 1.6
+  },
+  "player": {
+    "capsuleRadius": 0.25,
+    "capsuleHeight": 1.7,
+    "walkSpeed": 2,
+    "maxSlopeDeg": 35
+  },
+  "initialLayer": "current",
+  "objects": [
+    {
+      "id": "sunnyvale-museum",
+      "type": "splat",
+      "assetId": "sunnyvale",
+      "layer": "current",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "colliders": [
+    {
+      "id": "sunnyvale-surface",
+      "assetId": "sunnyvale-collision",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "sunny-walk-porch-floor",
+      "assetId": "reference-cube",
+      "layer": "both",
+      "position": [
+        -13.35,
+        0.32,
+        -22.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.4,
+        0.2,
+        2.7
+      ]
+    }
+  ],
+  "hotspots": [],
+  "benchmarkRoute": []
+}
