@@ -34,5 +34,11 @@
   "appReleases": {
     "three": "local-4d5905679d2e-0c66ba92a733",
     "playcanvas": "local-4d5905679d2e-0c66ba92a733"
+  },
+  "accessGate": {
+    "type": "client-side-review-gate",
+    "htmlPages": 39,
+    "rememberHours": 24,
+    "protectsRawFiles": false
   }
 }

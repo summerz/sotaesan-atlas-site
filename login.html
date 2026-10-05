@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>검토 자료 입장 · Sotaesan Atlas</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f4ec;--ink:#173c33;--green:#137466;--muted:#546960;--line:#cdd6cd}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 "Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;min-height:100svh;display:grid;place-items:center;padding:28px 24px}
+    main{width:100%;max-width:440px}.brand{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--green);margin:0 0 28px}h1{font-size:30px;line-height:1.4;letter-spacing:-.025em;word-break:keep-all;margin:0 0 18px}p{word-break:keep-all;margin:0 0 28px;color:var(--muted)}form{border-top:1px solid var(--line);padding-top:26px}label{display:block;font-size:15px;font-weight:700;margin-bottom:8px}input{width:100%;font:inherit;color:var(--ink);background:#fffef9;border:1px solid #80968a;border-radius:4px;padding:12px 14px;min-height:50px}input:focus-visible,button:focus-visible{outline:3px solid #76b6a6;outline-offset:3px}input[aria-invalid=true]{border-color:#a8372b}button{width:100%;font:inherit;font-weight:700;color:white;background:var(--green);border:0;border-radius:4px;min-height:50px;padding:12px;margin-top:18px;cursor:pointer}button:disabled{opacity:.65;cursor:wait}.error{color:#a8372b;font-size:14px;min-height:25px;margin:8px 0 0}.note{font-size:14px;margin:18px 0 0}noscript{display:block;color:#a8372b;margin-bottom:20px}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">SOTAESAN ATLAS</div>
+    <h1>기술 테스트 검토 자료</h1>
+    <p>대종사 십상을 웹의 가상 공간으로 구현하기 위한 시험 사이트입니다.<br>공유받은 비밀번호를 입력해 주세요.</p>
+    <noscript>입장하려면 브라우저에서 JavaScript를 허용해 주세요.</noscript>
+    <form data-access-form>
+      <label for="access-password">비밀번호</label>
+      <input id="access-password" name="password" type="password" required maxlength="256" autocomplete="current-password" aria-describedby="access-error" autofocus>
+      <div id="access-error" class="error" role="alert" aria-live="polite"></div>
+      <button type="submit">입장하기</button>
+    </form>
+    <p class="note">같은 브라우저에서 24시간 동안 입장 상태가 유지됩니다.</p>
+  </main>
+  <script src="site-access.js"></script>
+</body>
+</html>
