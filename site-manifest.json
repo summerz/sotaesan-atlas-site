@@ -1,9 +1,9 @@
 {
   "source": "sotaesan-atlas",
   "reportDate": "2026-10-04",
-  "files": 301,
-  "bytes": 196143335,
-  "documents": 23,
+  "files": 302,
+  "bytes": 197353717,
+  "documents": 24,
   "omittedDevelopmentReferences": [
     "AGENTS.md",
     "apps/spike-three/scripts/benchmark-physics.ts",
