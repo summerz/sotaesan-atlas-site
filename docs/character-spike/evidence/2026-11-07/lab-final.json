@@ -1,0 +1,830 @@
+{
+  "url": "http://127.0.0.1:5174/?scene=content&character=1&cameraLab=1",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1,
+  "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+  "samples": [
+    {
+      "label": "spawn",
+      "mode": "follow",
+      "position": [
+        0,
+        2.1735124588012695,
+        3.670518159866333
+      ],
+      "avatar": [
+        0,
+        0.16999998688697815,
+        0
+      ],
+      "facing": 180,
+      "animation": "Idle",
+      "actualSpeed": 0,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "hold-entry",
+      "mode": "hold",
+      "position": [
+        9.797077655093744e-05,
+        2.1735031604766846,
+        1.296415090560913
+      ],
+      "avatar": [
+        9.758694068295881e-05,
+        0.16996613144874573,
+        -3.379911422729492
+      ],
+      "facing": 180.00002453983114,
+      "animation": "Idle",
+      "actualSpeed": 0,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "hold-forward",
+      "mode": "hold",
+      "position": [
+        9.797077655093744e-05,
+        2.1735031604766846,
+        1.296415090560913
+      ],
+      "avatar": [
+        9.710469021229073e-05,
+        0.16996076703071594,
+        -4.169642925262451
+      ],
+      "facing": 180.00005088975584,
+      "animation": "Idle",
+      "actualSpeed": 4.821417696145802e-09,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "side-wall",
+      "mode": "hold",
+      "position": [
+        9.797077655093744e-05,
+        2.1735031604766846,
+        1.296415090560913
+      ],
+      "avatar": [
+        0.7000287771224976,
+        0.1699846088886261,
+        -4.169672012329102
+      ],
+      "facing": 90.42109883525234,
+      "animation": "Idle",
+      "actualSpeed": 0,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "follow-resumed",
+      "mode": "follow",
+      "position": [
+        0.7005538940429688,
+        2.1299967765808105,
+        3.885667324066162
+      ],
+      "avatar": [
+        0.7005600929260254,
+        0.12617364525794983,
+        0.21746784448623657
+      ],
+      "facing": 0.31957277900277026,
+      "animation": "Idle",
+      "actualSpeed": 0,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "end-wall",
+      "mode": "hold",
+      "position": [
+        9.817494719754905e-05,
+        2.1735048294067383,
+        1.2992762327194214
+      ],
+      "avatar": [
+        -0.0007699792040511966,
+        0.1719999611377716,
+        -6.6500139236450195
+      ],
+      "facing": 180.06570905480538,
+      "animation": "Idle",
+      "actualSpeed": 0.0001419158219511486,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-0",
+      "mode": "hold",
+      "position": [
+        9.817494719754905e-05,
+        2.1735048294067383,
+        1.2992762327194214
+      ],
+      "avatar": [
+        0.12918491661548615,
+        0.17201367020606995,
+        -6.650002479553223
+      ],
+      "facing": 117.97946479462752,
+      "animation": "Walking",
+      "actualSpeed": 1.89535231128997,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-1",
+      "mode": "hold",
+      "position": [
+        9.817494719754905e-05,
+        2.1735048294067383,
+        1.2992762327194214
+      ],
+      "avatar": [
+        0.31853100657463074,
+        0.17201867699623108,
+        -6.650001049041748
+      ],
+      "facing": 96.90907752058344,
+      "animation": "Walking",
+      "actualSpeed": 1.8953558910323496,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-2",
+      "mode": "hold",
+      "position": [
+        9.817494719754905e-05,
+        2.1735048294067383,
+        1.2992762327194214
+      ],
+      "avatar": [
+        0.539719820022583,
+        0.1720215380191803,
+        -6.650001049041748
+      ],
+      "facing": 91.34855834556855,
+      "animation": "Walking",
+      "actualSpeed": 1.8953666629561043,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-3",
+      "mode": "hold",
+      "position": [
+        9.817494719754905e-05,
+        2.1735048294067383,
+        1.2992762327194214
+      ],
+      "avatar": [
+        0.7292557954788208,
+        0.17202261090278625,
+        -6.650001049041748
+      ],
+      "facing": 90.33255039371531,
+      "animation": "Walking",
+      "actualSpeed": 1.8953598901896307,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-4",
+      "mode": "close",
+      "position": [
+        0.7912161946296692,
+        1.3405239582061768,
+        -5.717824459075928
+      ],
+      "avatar": [
+        0.9179487824440002,
+        0.17198887467384338,
+        -6.650009632110596
+      ],
+      "facing": 90.08511631074164,
+      "animation": "Walking",
+      "actualSpeed": 1.8522000114739632,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-5",
+      "mode": "close",
+      "position": [
+        0.9279372692108154,
+        1.3962322473526,
+        -5.717805862426758
+      ],
+      "avatar": [
+        1.106339931488037,
+        0.1720227301120758,
+        -6.649969100952148
+      ],
+      "facing": 90.01091040407766,
+      "animation": "Walking",
+      "actualSpeed": 1.876578188500254,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-6",
+      "mode": "close",
+      "position": [
+        1.0935941934585571,
+        1.421824336051941,
+        -5.71680212020874
+      ],
+      "avatar": [
+        1.293653130531311,
+        0.17333975434303284,
+        -6.65059757232666
+      ],
+      "facing": 90.24929577383868,
+      "animation": "Walking",
+      "actualSpeed": 1.7779598279511344,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-7",
+      "mode": "follow",
+      "position": [
+        1.370485544204712,
+        1.538002848625183,
+        -5.3762006759643555
+      ],
+      "avatar": [
+        1.4806784391403198,
+        0.185135155916214,
+        -6.652092933654785
+      ],
+      "facing": 90.40228319934276,
+      "animation": "Walking",
+      "actualSpeed": 1.876861154687794,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-8",
+      "mode": "follow",
+      "position": [
+        1.522360920906067,
+        1.9376198053359985,
+        -3.928161859512329
+      ],
+      "avatar": [
+        1.6986972093582153,
+        0.20047929883003235,
+        -6.653739929199219
+      ],
+      "facing": 90.4266673869863,
+      "animation": "Walking",
+      "actualSpeed": 1.877799816946778,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-9",
+      "mode": "follow",
+      "position": [
+        1.687432885169983,
+        2.088315963745117,
+        -3.4062047004699707
+      ],
+      "avatar": [
+        1.887755036354065,
+        0.20826402306556702,
+        -6.654996395111084
+      ],
+      "facing": 90.41662471157115,
+      "animation": "Walking",
+      "actualSpeed": 1.8875452307746938,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-10",
+      "mode": "follow",
+      "position": [
+        1.8650891780853271,
+        2.158472776412964,
+        -3.1744813919067383
+      ],
+      "avatar": [
+        2.07661509513855,
+        0.2142789661884308,
+        -6.656424522399902
+      ],
+      "facing": 90.42920104994512,
+      "animation": "Walking",
+      "actualSpeed": 1.8884269271959353,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-11",
+      "mode": "follow",
+      "position": [
+        2.049034357070923,
+        2.193181276321411,
+        -3.0710816383361816
+      ],
+      "avatar": [
+        2.2652428150177,
+        0.21992233395576477,
+        -6.65785026550293
+      ],
+      "facing": 90.43113785713636,
+      "animation": "Walking",
+      "actualSpeed": 1.8681032812867824,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-12",
+      "mode": "follow",
+      "position": [
+        2.2334415912628174,
+        2.212824583053589,
+        -3.0252912044525146
+      ],
+      "avatar": [
+        2.448153018951416,
+        0.23018613457679749,
+        -6.65840482711792
+      ],
+      "facing": 90.17289031618681,
+      "animation": "Walking",
+      "actualSpeed": 1.788169078157364,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-13",
+      "mode": "follow",
+      "position": [
+        2.4174654483795166,
+        2.2314090728759766,
+        -3.0047004222869873
+      ],
+      "avatar": [
+        2.634159803390503,
+        0.2502218782901764,
+        -6.658272743225098
+      ],
+      "facing": 90.01236564357448,
+      "animation": "Walking",
+      "actualSpeed": 1.8687164621004766,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Walking",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    },
+    {
+      "label": "corner-stopped",
+      "mode": "follow",
+      "position": [
+        2.671593189239502,
+        2.2578577995300293,
+        -2.989061117172241
+      ],
+      "avatar": [
+        2.6937777996063232,
+        0.25664570927619934,
+        -6.658235549926758
+      ],
+      "facing": 89.99254547428474,
+      "animation": "Idle",
+      "actualSpeed": 0,
+      "model": "RobotExpressive (CC0)",
+      "lab": true,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": {
+        "x": [
+          -0.9,
+          0.9
+        ],
+        "z": [
+          -6.7,
+          -2.6
+        ],
+        "relativeTo": [
+          0,
+          0.17,
+          0
+        ]
+      }
+    }
+  ]
+}

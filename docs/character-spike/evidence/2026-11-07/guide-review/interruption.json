@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "soundToggle": true,
+    "cancelDuringApproach": true,
+    "retry": true,
+    "readerBlocksMove": true,
+    "readerBlocksReset": true
+  },
+  "camera": {
+    "frames": 250,
+    "maxSpeed": 6.8094983862913,
+    "modes": {
+      "follow": 250
+    }
+  },
+  "cancelled": {
+    "active": false,
+    "approaching": false,
+    "approachSeconds": 0.15000000000000002,
+    "elapsed": 0,
+    "owned": false,
+    "reading": false,
+    "ready": false,
+    "receiveDistance": 2.6,
+    "receivingSpot": [
+      0.920172439427031,
+      0.15437006950378418,
+      -2.420172439427031
+    ],
+    "table": [
+      1.6414213562373094,
+      1.3993700695037843,
+      -2.2928932188134525
+    ],
+    "paper": [
+      1.521213173866272,
+      1.4433701038360596,
+      -2.4131014347076416
+    ]
+  }
+}

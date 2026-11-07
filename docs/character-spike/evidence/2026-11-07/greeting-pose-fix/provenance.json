@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-07",
+  "source": "apps/spike-playcanvas/src/character-greeting.ts",
+  "sha256": "e5c06dfdfc9bb0b79c948b95b57a8dce28a5810ba499ba4a609432f1e2544102",
+  "checks": {
+    "playcanvasTests": 23,
+    "typecheck": true,
+    "build": true,
+    "browserFlowChecks": 9
+  },
+  "visualReview": "Headed existing steps tab; front/side close-ups temporarily freeze app time and override camera; restored in finally. Screenshots are visual QA, not performance measurements."
+}

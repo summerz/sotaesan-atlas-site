@@ -1,0 +1,6 @@
+### Result
+{"viewport":[390,844],"scrollWidth":390,"text":"내 아바타로 걷기\n닫기\n1회차 · 방문자 아바타\n\nSunnyvale 대역 장면 · 실제 성지가 아닙니다.\n\n전신 따라가기\n\nWASD 이동 · 마우스 드래그로 둘러보기 · R 시작점\n\n터치: 화면 왼쪽을 밀어 이동 · 오른쪽을 밀어 둘러보기\n\n좁은 구간 시험으로\n탐색 준비 완료 · 자동 카메라 연출 없음\n시작점으로\n소리 끄기","avatar":{"mode":"follow","position":[0.00021449578343890607,2.91377592086792,3.354837417602539],"avatar":[0.00021449578343890607,0.10978402942419052,-0.0003634410095401108],"facing":180,"animation":"Idle","actualSpeed":0,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Idle","bounds":{"height":1.7,"scale":0.9149738579219178},"holdZone":null}}
+### Ran Playwright code
+```js
+await (async (page) => { return await page.evaluate(() => ({viewport:[innerWidth,innerHeight],scrollWidth:document.documentElement.scrollWidth, text:document.body.innerText, avatar:window.atlasCharacter.snapshot()})); })(page);
+```

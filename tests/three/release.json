@@ -1,22 +1,23 @@
 {
-  "releaseId": "local-4d5905679d2e-0c66ba92a733",
+  "releaseId": "local-c5b967dd2a7e-b40cc94f8b03",
   "mode": "production",
-  "commit": "4d5905679d2edf08ec693486a7784919a261653c",
+  "commit": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
   "dirty": true,
-  "sourceSha256": "0c66ba92a733541aa1e0c2c0fbda0dccc44819a05a914f72e52e493cc6e96985",
-  "dataSha256": "a7e9bf4c8938e67e60325b714911ffbb0c039fe8eab31d8ecdc823bdc22607ab",
+  "sourceSha256": "b40cc94f8b039120b27309322ed894f855d9698cebb207faeaa34b59b8b76a4a",
+  "dataSha256": "a2b837b3001d262d69dc598611071c13984e2cdb0b7403b959bf46d0f3a46d21",
   "dataHashes": {
-    "assets.json": "73427e3aedb33fd460cecd63d6e686f2cab44baa385c8c07a5c1163929673af0",
-    "content.json": "2424fc7702789b7a5ba30e714967bdc997cee65847fde89618e6da416de1a3fc",
+    "assets.json": "65224b9e4a71f3ce2f1b13be0070c915eb474dc32b196a5c3c4848a320e1c465",
+    "content.json": "17097156526abd75005b9beda630c140279a13ba70fb6dcfc48355d7a06fd612",
     "world.json": "6d700c5d89b01338a98a7ba94f817e51925dfa7da75fa8dd3e374fb2eb39fda2",
     "sunnyvale.json": "ae036827934ad4bd06eeda798c8b8ae331ce044cf4aeb0bcf93b238324477ae6",
     "era.json": "57a4558c5c9452ae578a8dbf52d0ef9306c66c94fa017f738463a6f2417678c6",
     "stream.json": "9dc748be74ab7b7920a3af04d2d5b20d37176afd1504e25db2a6ebce563e454a",
     "stream-era.json": "c00c5aaf8e91acde891972cb458d658acb8ed2f5ba1c785e75a6f5753039f461",
     "sunnyvale-stream.json": "f08ef78729b15862207e3e194d9f0c3918ea43ca33dc821faccb147ca2b9c4cf",
-    "sunnyvale-era.json": "dc7c0b762dc6460277ea67207e62bb2cb90f81536ce1b207a2e08cf80ce02868"
+    "sunnyvale-era.json": "dc7c0b762dc6460277ea67207e62bb2cb90f81536ce1b207a2e08cf80ce02868",
+    "sunnyvale-content.json": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28"
   },
-  "builtAt": "2026-10-03T16:07:34.514Z",
+  "builtAt": "2026-11-07T10:36:14.620Z",
   "assetBase": "/",
   "assetHashes": {
     "current": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1",
@@ -66,10 +67,46 @@
     "sunny-strip-4-collision": "ba48ec6394b491ca2e6744dec31c0445f416db60e85c109d076f575e6544c3d0",
     "sunny-strip-5-detail": "c37fcbabf1e7c39594cd65f42be39d753d6193c4728de3dfa195b785fcbeffac",
     "sunny-strip-5-far": "879c6529a8e793083383966f04b74e44c14a77e5ef8cc800bf68643f28e9f387",
-    "sunny-strip-5-collision": "8c8496eaf998e3797df76d3e58bd98d1b50f85fe2e0a9adbfbcac96f1965e22c"
+    "sunny-strip-5-collision": "8c8496eaf998e3797df76d3e58bd98d1b50f85fe2e0a9adbfbcac96f1965e22c",
+    "ambient-wind": "7574ebf323f28ad68ea00374d4426bc3bd5cca805baa6b26e66738ca5b6852c6",
+    "ambient-birds": "c63b3a15584cb6f8c05847328978711ae6548bc1ec5ea5515d2f54264fd91a45",
+    "ambient-water": "1647a4e098ac018ba36b6ecdd5fcb522bd323744907331710581bc13b9afddc6",
+    "narration-stop-1": "c67794afe0e123a2f3fb0cdab5b4c3a2d4289746114266a7e042b81a9d129e84",
+    "sunny-strip-0-detail-nosky": "ce688a732d8857cd9c7f07aef494c421b0d6947a8aa66b32c5b200ba6095be34",
+    "sunny-strip-0-far-nosky": "a1c736bcc8272343116c7f61352a62fc332702530498d86e516b6a9d0b8160a0",
+    "sunny-strip-1-detail-nosky": "4a29cb8e0322cb7302cc7a8976bdb80274ff09e59999672950fe3bc4bd23d1e7",
+    "sunny-strip-1-far-nosky": "33a585131488d2816e89c6505cfb2b693da811778b5ba0aef3b03260699674b8",
+    "sunny-strip-2-detail-nosky": "ec120854c2fb2c265a655e9b84c3d30e3fde23b409f085bf71fb6b68bb18c96a",
+    "sunny-strip-2-far-nosky": "a7dd08ef9e797e6f5214513e5a49ed2f1f576f98d8488a4cef593bb18de15c07",
+    "sunny-strip-3-detail-nosky": "851bf0ebaac3d55226f2deee4c90d02347b6294b19eeae185f3a4030df2d5c85",
+    "sunny-strip-3-far-nosky": "6012b84916fd228b25d1e443b2a05e0f93702509739d49ec1991e56c3091257d",
+    "sunny-strip-4-detail-nosky": "cafacf0001c52428bc8ae458a574ed30221db10ada9f7e70550b7f19b00342cc",
+    "sunny-strip-4-far-nosky": "2aa93d4917d0b779ab3d972c364603250baac040792230a013e5aed3ac3b16bc",
+    "sunny-strip-5-detail-nosky": "3d0839966235fec3743b727ba9a6c557864f56ec20eee4b4d51e99fa5079d110",
+    "sunny-strip-5-far-nosky": "61110ae6e9dd538a6e77ab60c44ee78dc3f2bdc09d4ade1dec274bd14e1cc1c8"
   },
   "track": "three",
   "artifacts": {
+    "assets/ambient-birds.mp3": {
+      "bytes": 240788,
+      "sha256": "c63b3a15584cb6f8c05847328978711ae6548bc1ec5ea5515d2f54264fd91a45"
+    },
+    "assets/ambient-water.mp3": {
+      "bytes": 240788,
+      "sha256": "1647a4e098ac018ba36b6ecdd5fcb522bd323744907331710581bc13b9afddc6"
+    },
+    "assets/ambient-wind.mp3": {
+      "bytes": 240788,
+      "sha256": "7574ebf323f28ad68ea00374d4426bc3bd5cca805baa6b26e66738ca5b6852c6"
+    },
+    "assets/character/CasualCharacter.glb": {
+      "bytes": 1430660,
+      "sha256": "fea7e71271203e7073f1a073fa1208de7402df276f87f80e149bf7589b5d46b4"
+    },
+    "assets/character/RobotExpressive.glb": {
+      "bytes": 463988,
+      "sha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319"
+    },
     "assets/collision.glb": {
       "bytes": 1052,
       "sha256": "5d97b5873089f620ff9b2cb2e599d7d83cf7b38767f045c6320542deb5164cff"
@@ -130,13 +167,17 @@
       "bytes": 1660,
       "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
     },
-    "assets/index-BitzozE8.css": {
-      "bytes": 1423,
-      "sha256": "f9b75e72013c42d543354f6d35f79d653bacedc2c8eb2bb6a4be930cc32f13d4"
+    "assets/index-DCetQgBs.css": {
+      "bytes": 2417,
+      "sha256": "3de52656b7c10f4e74aeadccf167c2a2325a5f96d453e044d87d6ff7d1243b1d"
     },
-    "assets/index-DjYW0WbI.js": {
-      "bytes": 3222192,
-      "sha256": "cc2c760cb9205784ce86cd24b5fe1fdb8f65424e8a6f0832d22c5464a91b86fa"
+    "assets/index-U02l5f73.js": {
+      "bytes": 3230397,
+      "sha256": "08cc20f20fbedcd2487c399c6dae48a7d4ce9434574ff5a465e645ed412288bf"
+    },
+    "assets/narration-stop-1.mp3": {
+      "bytes": 124177,
+      "sha256": "c67794afe0e123a2f3fb0cdab5b4c3a2d4289746114266a7e042b81a9d129e84"
     },
     "assets/past-chunk-0.sog": {
       "bytes": 931680,
@@ -182,9 +223,9 @@
       "bytes": 158175,
       "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527"
     },
-    "assets/rapier-walker-fVdqXGo2.js": {
+    "assets/rapier-walker-BrIdOMQq.js": {
       "bytes": 4336769,
-      "sha256": "5fdf8252225427809f7045c12f015a53617857bfc7f909e0ef40b8d145cb5948"
+      "sha256": "a059702b851c525a4b6a9ae4a996e1d3d8d23996fb1a7ef769afd35ff85689b8"
     },
     "assets/reference-cube.glb": {
       "bytes": 968,
@@ -194,9 +235,17 @@
       "bytes": 801036,
       "sha256": "6fc802d9c733165f49308978ed624f2a5e814e9f73cfca01044d70518f9743eb"
     },
+    "assets/sunny-strip-0-detail-nosky.sog": {
+      "bytes": 1454745,
+      "sha256": "ce688a732d8857cd9c7f07aef494c421b0d6947a8aa66b32c5b200ba6095be34"
+    },
     "assets/sunny-strip-0-detail.sog": {
       "bytes": 1472989,
       "sha256": "40918e193f866d6e6480b72ba55a1ccefa5f47d290ec48227b8e22c4a4a6c21e"
+    },
+    "assets/sunny-strip-0-far-nosky.sog": {
+      "bytes": 63986,
+      "sha256": "a1c736bcc8272343116c7f61352a62fc332702530498d86e516b6a9d0b8160a0"
     },
     "assets/sunny-strip-0-far.sog": {
       "bytes": 64193,
@@ -206,9 +255,17 @@
       "bytes": 804192,
       "sha256": "fd337add654896b3c9fc9d423c2664180c0edc5df67339b2a8038aac8160eeee"
     },
+    "assets/sunny-strip-1-detail-nosky.sog": {
+      "bytes": 1919730,
+      "sha256": "4a29cb8e0322cb7302cc7a8976bdb80274ff09e59999672950fe3bc4bd23d1e7"
+    },
     "assets/sunny-strip-1-detail.sog": {
       "bytes": 1940548,
       "sha256": "7ce3aaa9784481e26763ee7277e33c738cd379da62b1d1912c515a25b6273eb0"
+    },
+    "assets/sunny-strip-1-far-nosky.sog": {
+      "bytes": 80769,
+      "sha256": "33a585131488d2816e89c6505cfb2b693da811778b5ba0aef3b03260699674b8"
     },
     "assets/sunny-strip-1-far.sog": {
       "bytes": 81177,
@@ -218,9 +275,17 @@
       "bytes": 1660584,
       "sha256": "a1c92600f31549b6e2869e4cddb7df21611ff925e81dbfe7d248c97b7c95a491"
     },
+    "assets/sunny-strip-2-detail-nosky.sog": {
+      "bytes": 3536826,
+      "sha256": "ec120854c2fb2c265a655e9b84c3d30e3fde23b409f085bf71fb6b68bb18c96a"
+    },
     "assets/sunny-strip-2-detail.sog": {
       "bytes": 3572956,
       "sha256": "bbe4b09450e213a3cacc4e87b3f3cae0848ff9f7e14b74036c5c214374ad4f07"
+    },
+    "assets/sunny-strip-2-far-nosky.sog": {
+      "bytes": 138613,
+      "sha256": "a7dd08ef9e797e6f5214513e5a49ed2f1f576f98d8488a4cef593bb18de15c07"
     },
     "assets/sunny-strip-2-far.sog": {
       "bytes": 139717,
@@ -230,9 +295,17 @@
       "bytes": 1183080,
       "sha256": "b0127c4e025df5b3d35eb30b620936e6d04f1180df25a46f9de5e066690b9815"
     },
+    "assets/sunny-strip-3-detail-nosky.sog": {
+      "bytes": 1800823,
+      "sha256": "851bf0ebaac3d55226f2deee4c90d02347b6294b19eeae185f3a4030df2d5c85"
+    },
     "assets/sunny-strip-3-detail.sog": {
       "bytes": 1819497,
       "sha256": "ecfb44ae33d65d2c43580efe0ebfc7559c15f1a3c6c0ee180e97571c010e45d9"
+    },
+    "assets/sunny-strip-3-far-nosky.sog": {
+      "bytes": 75938,
+      "sha256": "6012b84916fd228b25d1e443b2a05e0f93702509739d49ec1991e56c3091257d"
     },
     "assets/sunny-strip-3-far.sog": {
       "bytes": 76492,
@@ -242,9 +315,17 @@
       "bytes": 532388,
       "sha256": "ba48ec6394b491ca2e6744dec31c0445f416db60e85c109d076f575e6544c3d0"
     },
+    "assets/sunny-strip-4-detail-nosky.sog": {
+      "bytes": 609981,
+      "sha256": "cafacf0001c52428bc8ae458a574ed30221db10ada9f7e70550b7f19b00342cc"
+    },
     "assets/sunny-strip-4-detail.sog": {
       "bytes": 619434,
       "sha256": "6ac3c3fc3b531c55ae9807ebb8a786eb2ac618eb77d78fdd892a98d9322cc51b"
+    },
+    "assets/sunny-strip-4-far-nosky.sog": {
+      "bytes": 33664,
+      "sha256": "2aa93d4917d0b779ab3d972c364603250baac040792230a013e5aed3ac3b16bc"
     },
     "assets/sunny-strip-4-far.sog": {
       "bytes": 33650,
@@ -254,9 +335,17 @@
       "bytes": 1355604,
       "sha256": "8c8496eaf998e3797df76d3e58bd98d1b50f85fe2e0a9adbfbcac96f1965e22c"
     },
+    "assets/sunny-strip-5-detail-nosky.sog": {
+      "bytes": 2118054,
+      "sha256": "3d0839966235fec3743b727ba9a6c557864f56ec20eee4b4d51e99fa5079d110"
+    },
     "assets/sunny-strip-5-detail.sog": {
       "bytes": 2145148,
       "sha256": "c37fcbabf1e7c39594cd65f42be39d753d6193c4728de3dfa195b785fcbeffac"
+    },
+    "assets/sunny-strip-5-far-nosky.sog": {
+      "bytes": 87419,
+      "sha256": "61110ae6e9dd538a6e77ab60c44ee78dc3f2bdc09d4ade1dec274bd14e1cc1c8"
     },
     "assets/sunny-strip-5-far.sog": {
       "bytes": 88607,
@@ -276,15 +365,15 @@
     },
     "index.html": {
       "bytes": 362,
-      "sha256": "40b34ec997ca6e1f760066c81f58cd0e47f949d7369ac338ab49ea6bd91ce026"
+      "sha256": "89de282a6e5f7a446f76f39b5f372f8be36450cf7433795f5a36daf9e5c1a36b"
     },
     "world/assets.json": {
-      "bytes": 10269,
-      "sha256": "73427e3aedb33fd460cecd63d6e686f2cab44baa385c8c07a5c1163929673af0"
+      "bytes": 13961,
+      "sha256": "65224b9e4a71f3ce2f1b13be0070c915eb474dc32b196a5c3c4848a320e1c465"
     },
     "world/content.json": {
-      "bytes": 5006,
-      "sha256": "2424fc7702789b7a5ba30e714967bdc997cee65847fde89618e6da416de1a3fc"
+      "bytes": 7964,
+      "sha256": "17097156526abd75005b9beda630c140279a13ba70fb6dcfc48355d7a06fd612"
     },
     "world/era.json": {
       "bytes": 3661,
@@ -297,6 +386,10 @@
     "world/stream.json": {
       "bytes": 6062,
       "sha256": "9dc748be74ab7b7920a3af04d2d5b20d37176afd1504e25db2a6ebce563e454a"
+    },
+    "world/sunnyvale-content.json": {
+      "bytes": 19948,
+      "sha256": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28"
     },
     "world/sunnyvale-era.json": {
       "bytes": 16125,

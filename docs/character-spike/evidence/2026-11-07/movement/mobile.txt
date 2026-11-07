@@ -1,0 +1,6 @@
+### Result
+{"state":{"mode":"follow","position":[0.0001940397487487644,3.0365242958068848,3.354871988296509],"avatar":[0.00019431924738455564,0.11006655544042587,-0.00032924889819696546],"facing":180,"animation":"Idle","actualSpeed":2.0384894758678335e-7,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Idle","bounds":{"height":1.9040000000000001,"scale":1.024770720872548},"holdZone":null,"stepAssist":{"maxRise":0.2,"steps":2},"runMultiplier":1.8,"characterScale":1.12},"viewport":[390,844,1],"document":[390,844],"buttons":["안내·조작"]}
+### Ran Playwright code
+```js
+await (async (page) => { await page.setViewportSize({width:390,height:844}); await page.keyboard.press("KeyR"); await page.waitForTimeout(800); await page.screenshot({path:"output/playwright/steps/mobile-scale.png"}); return await page.evaluate(()=>({state:window.atlasCharacter.snapshot(),viewport:[innerWidth,innerHeight,devicePixelRatio],document:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],buttons:Array.from(document.querySelectorAll("button")).filter(e=>e.getBoundingClientRect().width>0).map(e=>e.textContent)})); })(page);
+```

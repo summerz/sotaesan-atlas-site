@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "gitHead": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
+  "workingTree": "uncommitted changes; hashes identify tested source",
+  "url": "http://127.0.0.1:5174/?scene=content&character=1",
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+  "dpr": 1,
+  "mode": "headed Chromium dev server, functional checks only",
+  "sha256": {
+    "shared/src/input.ts": "12691a44d44417040e75dd7f80adc9b9418eefde3ad52f65486c7e55ef54ef09",
+    "apps/spike-playcanvas/src/main.ts": "fb22cd9bf74e330c3ef9896e5df795d4f3d1d1e670c67014ce1b6eb70a2ba0ef",
+    "apps/spike-playcanvas/src/character.ts": "410798f4a80a179983c92f1e34a0fbe96c5fed91d40b80425c4e50034b319d6d",
+    "apps/spike-playcanvas/src/character-camera.ts": "6a35532442b4f94229d2a061b3a847b1d3a9396d13a4d19fd375a4038e607a4a",
+    "shared/public/world/sunnyvale-content.json": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+    "shared/public/assets/character/CasualCharacter.glb": "fea7e71271203e7073f1a073fa1208de7402df276f87f80e149bf7589b5d46b4"
+  }
+}

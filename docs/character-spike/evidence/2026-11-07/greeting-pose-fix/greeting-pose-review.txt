@@ -1,0 +1,48 @@
+### Result
+{"state":{"mode":"follow","position":[-0.004327030386775732,3.014164447784424,2.113553047180176],"avatar":[-0.004328471142798662,0.0877627357840538,-1.2419250011444092],"facing":180.278925085235,"animation":"Idle","actualSpeed":0,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Idle","bounds":{"height":1.9040000000000001,"scale":1.024770720872548},"greeting":{"position":[1.5,0.15437006950378418,-3],"distance":2.3147933790291453,"near":true,"npcRemaining":1.3836999999999993,"npcGreetings":1,"userRemaining":1.832699999999999,"userGreetings":1,"npcWeight":0.9999673282575856,"userWeight":0.9965624628198352,"placeholder":true},"holdZone":null,"stepAssist":{"maxRise":0.2,"steps":0},"runMultiplier":1.8,"characterScale":1.12,"streaming":{"loads":4,"unloads":0,"discarded":0,"failures":0,"requestedBytes":12047604,"peakReservedChunks":4,"peakReservedGaussians":614906,"peakReservedTotalGaussians":644784,"fallbackRequestedBytes":480389,"blockedFrames":0,"blockedMs":0,"retainLoaded":true,"loadDistance":12,"residentChunks":4,"residentGaussians":614906,"residentColliderIds":["sunny-strip-1-collision","sunny-strip-2-collision","sunny-strip-3-collision","sunny-strip-4-collision"],"residentCollisionTriangles":226157,"residentCollisionSourceBytes":4180244,"fallbackReady":true,"fallbackChunks":6,"fallbackGaussians":29878,"residentTotalGaussians":644784,"renderedGaussians":624288,"fallbackVisible":["sunny-strip-0","sunny-strip-5"],"fallbackSourceBytes":480389,"residentSourceBytes":7867360,"loading":[],"failed":[],"ready":["sunny-strip-1","sunny-strip-2","sunny-strip-3","sunny-strip-4"],"closed":false,"events":[{"t":69.20000004768372,"id":"sunny-strip-0","action":"fallback-ready"},{"t":114.40000003576279,"id":"sunny-strip-1","action":"fallback-ready"},{"t":136.20000004768372,"id":"sunny-strip-2","action":"fallback-ready"},{"t":161.10000002384186,"id":"sunny-strip-3","action":"fallback-ready"},{"t":182.9000000357628,"id":"sunny-strip-4","action":"fallback-ready"},{"t":205.5,"id":"sunny-strip-5","action":"fallback-ready"},{"t":205.5,"id":"sunny-strip-2","action":"requested"},{"t":341.80000001192093,"id":"sunny-strip-2","action":"ready"},{"t":341.80000001192093,"id":"sunny-strip-3","action":"requested"},{"t":434.4000000357628,"id":"sunny-strip-3","action":"ready"},{"t":434.5,"id":"sunny-strip-1","action":"requested"},{"t":507,"id":"sunny-strip-1","action":"ready"},{"t":507.10000002384186,"id":"sunny-strip-4","action":"requested"},{"t":558.1000000238419,"id":"sunny-strip-4","action":"ready"}]}},"metrics":[{"name":"Wrist.L","position":[0.022849703808901722,1.3137556314468384,0.24752049162430012],"rotation":[-28.708003105465966,46.75367112668524,-104.47458070164546]},{"name":"Wrist.R","position":[-0.022849812301529937,1.3137555122375488,0.24752026968096175],"rotation":[-28.697345619834188,-46.777664742845175,104.44955888160136]},{"name":"Middle2.L","position":[0.01843243010402773,1.4692649841308594,0.2519431611150509],"rotation":[-2.986798282212614,2.1732975678748745,-1.9955656509735256]},{"name":"Middle2.R","position":[-0.01843255218500417,1.4692649841308594,0.25194295648196885],"rotation":[-2.9870547851531852,-2.1732935671441242,1.9954706852865705]},{"name":"Middle4.L","position":[0.012657820443649825,1.5518289804458618,0.25194592832301055],"rotation":[-0.00002612933655933012,0.00001258336837955989,-0.000015257296719331132]},{"name":"Middle4.R","position":[-0.012657533537336008,1.551829218864441,0.25194580127164556],"rotation":[-0.000026129339114765803,-0.000012583376045861206,0.000015257300552484391]},{"name":"LowerArm.L","position":[0.2025242538035883,1.2974302768707275,0.0875717077548046],"rotation":[-77.603302365844,-7.349374128322625,-44.78563020462356]},{"name":"LowerArm.R","position":[-0.2025629751553879,1.2973352670669556,0.08762469579863819],"rotation":[-77.6101376554295,7.390628284210024,44.809878966512706]}]}
+### Ran Playwright code
+```js
+await (async(page)=>{
+ await page.bringToFront();
+ await page.keyboard.press('KeyR');
+ await page.waitForTimeout(350);
+ await page.keyboard.down('KeyW');
+ try { await page.waitForTimeout(650); } finally { await page.keyboard.up('KeyW'); }
+ await page.waitForTimeout(300);
+ await page.keyboard.press('KeyG');
+ await page.waitForTimeout(550);
+ const state=await page.evaluate(()=>window.atlasCharacter.snapshot());
+ await page.screenshot({path:'output/playwright/steps/greeting-corrected-full.png'});
+ try {
+  await page.evaluate(async()=>{
+   const pc=await import(performance.getEntriesByType('resource').find(e=>e.name.includes('/deps/playcanvas.js')).name);
+   const app=pc.Application.getApplication(),npc=app.root.findByName('Cleric greeting prototype');
+   const camera=app.root.findComponents('camera').find(c=>c.enabled&&c.entity.enabled).entity;
+   const original={position:camera.getPosition().clone(),rotation:camera.getRotation().clone(),fov:camera.camera.fov,timeScale:app.timeScale};
+   const review={angle:0,metrics:null};
+   const view=()=>{
+    const transform=npc.getWorldTransform();
+    const point=(x,y,z)=>transform.transformPoint(new pc.Vec3(x,y,z));
+    camera.setPosition(point(Math.sin(review.angle)*1.8,1.4,Math.cos(review.angle)*1.8));
+    camera.lookAt(point(0,1.4,0.07));camera.camera.fov=35;
+    const inv=transform.clone().invert();
+    review.metrics=['Wrist.L','Wrist.R','Middle2.L','Middle2.R','Middle4.L','Middle4.R','LowerArm.L','LowerArm.R'].map(name=>{
+     const bone=npc.findByName(name);
+     return {name,position:inv.transformPoint(bone.getPosition()).toArray(),rotation:bone.getLocalEulerAngles().toArray()};
+    });
+   };
+   app.timeScale=0; app.on('prerender',view);
+   window.__poseReview={review,cleanup:()=>{app.off('prerender',view);app.timeScale=original.timeScale;camera.camera.fov=original.fov;camera.setPosition(original.position);camera.setRotation(original.rotation);}};
+  });
+  await page.waitForTimeout(150);
+  await page.screenshot({path:'output/playwright/steps/greeting-corrected-front.png'});
+  const metrics=await page.evaluate(()=>window.__poseReview.review.metrics);
+  await page.evaluate(()=>window.__poseReview.review.angle=Math.PI/2);
+  await page.waitForTimeout(150);
+  await page.screenshot({path:'output/playwright/steps/greeting-corrected-side.png'});
+  return {state,metrics};
+ } finally { await page.evaluate(()=>{window.__poseReview?.cleanup();delete window.__poseReview}); }
+})(page);
+```
+### Events
+- New console entries: .playwright-cli/console-2026-11-07T07-17-59-891Z.log#L18-L19

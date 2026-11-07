@@ -1,0 +1,184 @@
+{
+  "states": [
+    {
+      "camera": {
+        "position": [
+          0.000214495841646567,
+          2.91377592086792,
+          3.354837417602539
+        ],
+        "yaw": 0,
+        "pitch": -28
+      },
+      "avatar": {
+        "mode": "follow",
+        "position": [
+          0.000214495841646567,
+          2.91377592086792,
+          3.354837417602539
+        ],
+        "avatar": [
+          0.000214495841646567,
+          0.10978402942419052,
+          -0.00036344118416309357
+        ],
+        "facing": 180,
+        "animation": "Idle",
+        "actualSpeed": 0,
+        "model": "RobotExpressive (CC0)",
+        "lab": false,
+        "clip": "Idle",
+        "bounds": {
+          "height": 1.7,
+          "scale": 0.3548006030714739
+        },
+        "holdZone": null
+      }
+    },
+    {
+      "camera": {
+        "position": [
+          0.000214495841646567,
+          2.4303786754608154,
+          3.5700643062591553
+        ],
+        "yaw": 0,
+        "pitch": -20
+      },
+      "avatar": {
+        "mode": "follow",
+        "position": [
+          0.000214495841646567,
+          2.4303786754608154,
+          3.5700643062591553
+        ],
+        "avatar": [
+          0.000214495841646567,
+          0.10978402942419052,
+          -0.00036344118416309357
+        ],
+        "facing": 180,
+        "animation": "Idle",
+        "actualSpeed": 0,
+        "model": "RobotExpressive (CC0)",
+        "lab": false,
+        "clip": "Idle",
+        "bounds": {
+          "height": 1.7,
+          "scale": 0.3548006030714739
+        },
+        "holdZone": null
+      }
+    },
+    {
+      "camera": {
+        "position": [
+          0.000214495841646567,
+          4.035428524017334,
+          2.446460008621216
+        ],
+        "yaw": 0,
+        "pitch": -50
+      },
+      "avatar": {
+        "mode": "follow",
+        "position": [
+          0.000214495841646567,
+          4.035428524017334,
+          2.446460008621216
+        ],
+        "avatar": [
+          0.000214495841646567,
+          0.10978402942419052,
+          -0.00036344118416309357
+        ],
+        "facing": 180,
+        "animation": "Idle",
+        "actualSpeed": 0,
+        "model": "RobotExpressive (CC0)",
+        "lab": false,
+        "clip": "Idle",
+        "bounds": {
+          "height": 1.7,
+          "scale": 0.3548006030714739
+        },
+        "holdZone": null
+      }
+    },
+    {
+      "camera": {
+        "position": [
+          0.000214495841646567,
+          4.040745258331299,
+          2.4422357082366943
+        ],
+        "yaw": 0,
+        "pitch": -50
+      },
+      "avatar": {
+        "mode": "follow",
+        "position": [
+          0.000214495841646567,
+          4.040745258331299,
+          2.4422357082366943
+        ],
+        "avatar": [
+          0.000214495841646567,
+          0.10978402942419052,
+          -0.00036344118416309357
+        ],
+        "facing": 180,
+        "animation": "Idle",
+        "actualSpeed": 0,
+        "model": "RobotExpressive (CC0)",
+        "lab": false,
+        "clip": "Idle",
+        "bounds": {
+          "height": 1.7,
+          "scale": 0.3548006030714739
+        },
+        "holdZone": null
+      }
+    },
+    {
+      "camera": {
+        "position": [
+          0.00019284620066173375,
+          2.9182183742523193,
+          3.3548741340637207
+        ],
+        "yaw": 0,
+        "pitch": -28
+      },
+      "avatar": {
+        "mode": "follow",
+        "position": [
+          0.00019284620066173375,
+          2.9182183742523193,
+          3.3548741340637207
+        ],
+        "avatar": [
+          0.00021455698879435658,
+          0.10978402942419052,
+          -0.0003635452303569764
+        ],
+        "facing": 180,
+        "animation": "Idle",
+        "actualSpeed": 8.873119041690253e-10,
+        "model": "RobotExpressive (CC0)",
+        "lab": false,
+        "clip": "Idle",
+        "bounds": {
+          "height": 1.7,
+          "scale": 0.3548006030714739
+        },
+        "holdZone": null
+      }
+    }
+  ],
+  "tabs": 1,
+  "visibleButtons": [
+    "안내·조작"
+  ],
+  "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-07",
+  "sourceSHA256": {
+    "apps/spike-playcanvas/src/character-greeting.ts": "a6db89f6e7919b198d4cd643c5fce84df8017091d2476e0f16514f282c0e2585",
+    "apps/spike-playcanvas/tests/character-greeting.test.mjs": "cdde41047bd501c1fb69662e34a3475529669604412e659e2243d03b37608a3f"
+  },
+  "environment": {
+    "url": "http://127.0.0.1:5174/?scene=content&character=1",
+    "viewport": [
+      1200,
+      919
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+    "timeScale": 1,
+    "position": [
+      0.00019397513824515045,
+      0.11006655544042587,
+      -0.0003286676947027445
+    ]
+  },
+  "poseChecks": {
+    "npc": {
+      "activeFrames": 142,
+      "peakFrames": 35,
+      "uprightHandsJoinedFrames": 10,
+      "loweringFrames": 30,
+      "maxAngleError": 6.413411851324824e-05,
+      "maxHipsShift": 0,
+      "maxFeetShift": 0,
+      "loweringOnlyUpright": true,
+      "straighteningKeepsHandsJoined": true,
+      "peakActualBowRange": [
+        14.999957845991588,
+        15.000053324787752
+      ]
+    },
+    "user": {
+      "activeFrames": 138,
+      "peakFrames": 37,
+      "uprightHandsJoinedFrames": 11,
+      "loweringFrames": 28,
+      "maxAngleError": 3.0333943843885436e-05,
+      "maxHipsShift": 0,
+      "maxFeetShift": 0,
+      "loweringOnlyUpright": true,
+      "straighteningKeepsHandsJoined": true,
+      "peakActualBowRange": [
+        14.999969666056156,
+        15.000019186820824
+      ]
+    }
+  },
+  "browserChecks": {
+    "approach": true,
+    "reply": true,
+    "heldKey": true,
+    "noRepeat": true,
+    "moveCancels": true,
+    "leave": true,
+    "reenter": true,
+    "mobileReply": true,
+    "mobileOverflow": true
+  },
+  "cliChecks": {
+    "playcanvasTests": 24,
+    "typecheck": "pass",
+    "build": "pass; existing bundle size / node:worker_threads notices"
+  },
+  "scope": "Functional pose validation; desktop mobile viewport only; no performance or iPhone claims. Capture camera and timeScale restored in finally."
+}

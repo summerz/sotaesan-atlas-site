@@ -93,6 +93,82 @@
     "confidence": "not-applicable",
     "sources": []
   },
+  "cs-intro": {
+    "title": "들어가며 (임시 문장)",
+    "description": "이 공간은 기술 시험용 대역이며 실제 성지가 아닙니다. 이곳의 모든 설명은 흐름을 확인하기 위한 임시 문장입니다. 오른쪽으로 걸으며 세 지점을 차례로 확인해 보세요.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "temp-guide",
+        "label": "임시 안내문 · 시험용"
+      }
+    ]
+  },
+  "cs-stop-1": {
+    "title": "첫 번째 지점 · 촬영된 현재",
+    "description": "임시 문장입니다. 이 지점은 지금의 모습을 촬영한 자리라고 가정합니다. 실제 서비스에서는 장소의 현재 모습에 대한 설명이 이 자리에 들어갑니다.",
+    "representation": "photographed",
+    "confidence": "high",
+    "sources": [
+      {
+        "id": "temp-source-a",
+        "label": "임시 출처 A · 시험용 자료"
+      }
+    ]
+  },
+  "cs-stop-2-current": {
+    "title": "두 번째 지점 · 현재",
+    "description": "임시 문장입니다. 지금 이 자리에는 황색 벽이 서 있다고 가정합니다. 과거 보기로 바꾸면 같은 자리의 설명이 바뀌는지 확인할 수 있습니다.",
+    "representation": "photographed",
+    "confidence": "medium",
+    "sources": [
+      {
+        "id": "temp-source-a",
+        "label": "임시 출처 A · 시험용 자료"
+      }
+    ]
+  },
+  "cs-stop-2-historical": {
+    "title": "두 번째 지점 · 과거 (시험)",
+    "description": "임시 문장입니다. 과거 레이어에서는 벽이 다른 위치에 있었다고 가정합니다. 이 설명과 벽은 시대 전환 시험용이며 역사적 복원이 아닙니다.",
+    "representation": "documented-reconstruction",
+    "confidence": "medium",
+    "sources": [
+      {
+        "id": "temp-source-b",
+        "label": "임시 출처 B · 시험용 기록"
+      },
+      {
+        "id": "temp-source-c",
+        "label": "임시 출처 C · 시험용 사진"
+      }
+    ]
+  },
+  "cs-stop-3": {
+    "title": "세 번째 지점 · 추정",
+    "description": "임시 문장입니다. 이 지점의 모습은 기록이 부족해 추정으로 구성했다고 가정합니다. 추정 표현은 신뢰도 표시와 함께 보여줍니다.",
+    "representation": "inferred-reconstruction",
+    "confidence": "low",
+    "sources": [
+      {
+        "id": "temp-source-d",
+        "label": "임시 출처 D · 시험용 추정 근거"
+      }
+    ]
+  },
+  "cs-figure": {
+    "title": "상징 인물 (임시)",
+    "description": "이 반투명 인물은 이 자리에 사람이 있었다는 것만 나타내는 상징 표현입니다. 특정 인물의 모습이 아닙니다.",
+    "representation": "illustrative",
+    "confidence": "not-applicable",
+    "sources": [
+      {
+        "id": "temp-guide",
+        "label": "임시 안내문 · 시험용"
+      }
+    ]
+  },
   "sunny-era-current": {
     "title": "Sunnyvale 현재 구역 · 전환 시험",
     "description": "현재 촬영 배경 위에 황색 시험 벽을 시작점 오른쪽 4m에 놓았습니다. 구역을 이동하면 필요한 화면과 충돌을 함께 로딩합니다. 시대를 전환하면 설명도 교체하고 이전 패널을 닫습니다.",

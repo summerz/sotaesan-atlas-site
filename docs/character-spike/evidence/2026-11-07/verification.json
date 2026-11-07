@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-07",
+  "browserValidation": "headed Chrome, Playwright CLI, Vite development server; not a production performance measurement",
+  "build": {
+    "releaseId": "local-c5b967dd2a7e-8d64ceee6967",
+    "mode": "production",
+    "commit": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
+    "dirty": true,
+    "sourceSha256": "8d64ceee69671e9503e4f822ff12627d51fa5b80b6521ba2227aa57e283f3088",
+    "dataSha256": "a2b837b3001d262d69dc598611071c13984e2cdb0b7403b959bf46d0f3a46d21",
+    "builtAt": "2026-11-07T06:08:28.430Z",
+    "assetBase": "/",
+    "track": "playcanvas"
+  },
+  "sourceSha256": {
+    "apps/spike-playcanvas/src/main.ts": "2a5d966cf55ca6a65457e0ad08bd1965dacd6bdc2b41bf4bfaa6f9a4cf57f1d3",
+    "apps/spike-playcanvas/src/character.ts": "69643873b909f1680598b26ccf38be13c66a5aca3693106e7e796e6ad8d2c6ef",
+    "apps/spike-playcanvas/src/character-camera.ts": "6a35532442b4f94229d2a061b3a847b1d3a9396d13a4d19fd375a4038e607a4a",
+    "apps/spike-playcanvas/src/character.css": "613884e14ade92204b20575a46fb155e80abb88d7208c793a7db6f106537c303",
+    "shared/src/input.ts": "15954933f67e5adc0fcb40139837a988cd92c3496abcf5f13b649ba5d49959ab",
+    "shared/public/assets/character/RobotExpressive.glb": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319"
+  },
+  "check": "pnpm check exited 0; check.log preserved",
+  "console": "Final character and first-person pages: favicon.ico 404 only. Earlier pointer-lock version: WrongDocumentError; replaced by drag only in character mode.",
+  "evidenceSha256": {
+    "check.log": "1497c2aab83420f3e61de42805958f21969685a72f3d026187d327fbb9d6d39f",
+    "drag.json": "359df9327e8376153b03f10361af32ded1fc19797f1e8282926b1c3034624501",
+    "drag.png": "1a6c23af809d46182a75494a89ec29a56689b1cd3fd92022803fbe2bb3519268",
+    "first-person.json": "afd6b23b17ca846f5100959f69626e8c96d4713536c37b03f39a13992f3c893b",
+    "hold.png": "8b00eb42af67519637ce202c4253576d9a233be5cdf3f5762360aab3fc9d7077",
+    "lab-final.json": "69de074dbab822a35d546a6081c565423b1a22e5429b9edb8222f5eb676f58c8",
+    "outdoor-idle.png": "4be1a8e2d565690e0e13e08e645be0cadeea51d8b7740363d46d6f14b2f71e2a",
+    "outdoor-walking.png": "b278923122d7f18311594e6bbdb1a5175f198934f2a7639b4842273a85e06afc",
+    "outdoor.json": "beef53524f0e96777ef346f0d9ee198389d61642b14c8c8f6cc428d036bc9ff4",
+    "wall.png": "c905f95e686db6569f0ebeb7592504c3c2d3539943485171fde1cd73b9e111f0"
+  }
+}

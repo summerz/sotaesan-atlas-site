@@ -1,0 +1,6 @@
+### Result
+{"viewport":[844,390],"page":[844,390],"panels":[],"visibleButtons":["안내·조작"]}
+### Ran Playwright code
+```js
+await (async (page) => { await page.setViewportSize({width:844,height:390}); await page.getByRole("button",{name:"안내·조작",exact:true}).click(); await page.screenshot({path:"output/playwright/running/landscape-panel.png"}); const result=await page.evaluate(()=>({viewport:[innerWidth,innerHeight],page:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],panels:[...document.querySelectorAll("[role=dialog],.character-panel")].map(el=>({rect:el.getBoundingClientRect().toJSON(),scrollHeight:el.scrollHeight,clientHeight:el.clientHeight}))})); await page.getByRole("button",{name:"닫기",exact:true}).click();result.visibleButtons=await page.getByRole("button").allTextContents();return result; })(page);
+```

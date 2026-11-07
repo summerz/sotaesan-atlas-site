@@ -1,0 +1,54 @@
+{
+  "closed": [
+    "안내·조작"
+  ],
+  "rows": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "fits": true,
+      "body": [
+        310,
+        310
+      ],
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "fits": true,
+      "body": [
+        310,
+        310
+      ],
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "fits": true,
+      "body": [
+        300,
+        310
+      ],
+      "horizontalOverflow": false
+    }
+  ],
+  "mute": 1,
+  "reset": {
+    "position": [
+      0,
+      2.973991870880127,
+      3.35520076751709
+    ],
+    "yaw": 0,
+    "pitch": -28
+  },
+  "escapeFocus": "안내·조작"
+}

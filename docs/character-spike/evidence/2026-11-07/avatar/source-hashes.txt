@@ -1,0 +1,4 @@
+5da7440f0ee37dd10e2cae1b675abbe9881858c502b4d5a32e0b9bf8b0afd595  apps/spike-playcanvas/src/character.ts
+90e9037c08ea352bcb5cfa384143af2076a0992bd7889af49bb6f3782cd5be2c  apps/spike-playcanvas/src/main.ts
+24b8a0842ce8bd00b6dbcf4d2180ab910074208e6afd527b450e7f1333013ba1  shared/src/input.ts
+fea7e71271203e7073f1a073fa1208de7402df276f87f80e149bf7589b5d46b4  shared/public/assets/character/CasualCharacter.glb

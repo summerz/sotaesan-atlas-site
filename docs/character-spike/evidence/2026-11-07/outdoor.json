@@ -1,0 +1,128 @@
+{
+  "idle": {
+    "mode": "follow",
+    "position": [
+      0.00021452475630212575,
+      2.1132965087890625,
+      3.670154571533203
+    ],
+    "avatar": [
+      0.00021452475630212575,
+      0.10978402942419052,
+      -0.0003634910099208355
+    ],
+    "facing": 180,
+    "animation": "Idle",
+    "actualSpeed": 0,
+    "model": "RobotExpressive (CC0)",
+    "lab": false,
+    "clip": "Idle",
+    "bounds": {
+      "height": 1.7,
+      "scale": 0.3548006030714739
+    },
+    "holdZone": null
+  },
+  "walking": {
+    "mode": "follow",
+    "position": [
+      -0.0033335371408611536,
+      2.101574182510376,
+      2.736332654953003
+    ],
+    "avatar": [
+      -0.004548501688987017,
+      0.09489574283361435,
+      -1.1507666110992432
+    ],
+    "facing": 180.33441259797905,
+    "animation": "Walking",
+    "actualSpeed": 1.7758376033408168,
+    "model": "RobotExpressive (CC0)",
+    "lab": false,
+    "clip": "Walking",
+    "bounds": {
+      "height": 1.7,
+      "scale": 0.3548006030714739
+    },
+    "holdZone": null
+  },
+  "turn": {
+    "mode": "follow",
+    "position": [
+      0.6511616706848145,
+      2.0989508628845215,
+      2.117877721786499
+    ],
+    "avatar": [
+      0.8610212206840515,
+      0.11137833446264267,
+      -1.5530425310134888
+    ],
+    "facing": 90.20757652462636,
+    "animation": "Walking",
+    "actualSpeed": 1.8675377468752896,
+    "model": "RobotExpressive (CC0)",
+    "lab": false,
+    "clip": "Walking",
+    "bounds": {
+      "height": 1.7,
+      "scale": 0.3548006030714739
+    },
+    "holdZone": null
+  },
+  "orbit": {
+    "camera": {
+      "position": [
+        2.127601146697998,
+        1.7386561632156372,
+        3.0675809383392334
+      ],
+      "yaw": 35.99999999999999,
+      "pitch": -9.000000000000004
+    },
+    "character": {
+      "mode": "follow",
+      "position": [
+        2.127601146697998,
+        1.7386561632156372,
+        3.0675809383392334
+      ],
+      "avatar": [
+        0.0002145564358215779,
+        0.10978402942419052,
+        -0.0003635453467722982
+      ],
+      "facing": 180,
+      "animation": "Idle",
+      "actualSpeed": 1.9253888552331277e-09,
+      "model": "RobotExpressive (CC0)",
+      "lab": false,
+      "clip": "Idle",
+      "bounds": {
+        "height": 1.7,
+        "scale": 0.3548006030714739
+      },
+      "holdZone": null
+    }
+  },
+  "afterRelease": {
+    "position": [
+      2.2000629901885986,
+      1.7253777980804443,
+      3.03855037689209
+    ],
+    "yaw": 35.99999999999999,
+    "pitch": -9.000000000000004
+  },
+  "resize": {
+    "viewport": [
+      1200,
+      800
+    ],
+    "canvas": [
+      1200,
+      800
+    ]
+  }
+}

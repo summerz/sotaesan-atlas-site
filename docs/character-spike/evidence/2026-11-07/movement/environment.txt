@@ -1,0 +1,6 @@
+### Result
+{"tabs":["http://127.0.0.1:5174/?scene=content&character=1"],"environment":{"renderer":"ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)","viewport":[1440,900],"dpr":1,"visible":"visible","focused":true,"ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"}}
+### Ran Playwright code
+```js
+await (async(page)=>({tabs:page.context().pages().map(p=>p.url()),environment:await page.evaluate(()=>{const c=document.querySelector("canvas"),g=c.getContext("webgl2"),e=g.getExtension("WEBGL_debug_renderer_info");return {renderer:g.getParameter(e.UNMASKED_RENDERER_WEBGL),viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,visible:document.visibilityState,focused:document.hasFocus(),ua:navigator.userAgent};})}))(page);
+```

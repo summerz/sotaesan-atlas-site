@@ -1,0 +1,559 @@
+{
+  "checks": {
+    "audioOff": true,
+    "greetingLocked": true,
+    "walkBeforeHandoff": true,
+    "receivedFromDistance": true,
+    "desktopFits": true,
+    "mobileFits": true,
+    "smallFits": true,
+    "landscapeFits": true,
+    "escapeCloses": true,
+    "leftReceived": true,
+    "rearReceived": true,
+    "counter-sideReceived": true
+  },
+  "flows": [
+    {
+      "label": "left",
+      "avatar": [
+        0.9309079647064209,
+        0.13784970343112946,
+        -2.429384231567383
+      ],
+      "pamphlet": {
+        "active": false,
+        "approaching": false,
+        "approachSeconds": 2.450799999999998,
+        "elapsed": 3.4,
+        "owned": true,
+        "reading": false,
+        "ready": false,
+        "receiveDistance": 2.6,
+        "receivingSpot": [
+          0.920172439427031,
+          0.15437006950378418,
+          -2.420172439427031
+        ],
+        "table": [
+          1.6414213562373094,
+          1.3993700695037843,
+          -2.2928932188134525
+        ],
+        "paper": [
+          1.521213173866272,
+          1.4433701038360596,
+          -2.4131014347076416
+        ]
+      }
+    },
+    {
+      "label": "rear",
+      "avatar": [
+        0.9314518570899963,
+        0.13821114599704742,
+        -2.4333388805389404
+      ],
+      "pamphlet": {
+        "active": false,
+        "approaching": false,
+        "approachSeconds": 4.083699999999999,
+        "elapsed": 3.4,
+        "owned": true,
+        "reading": false,
+        "ready": false,
+        "receiveDistance": 2.6,
+        "receivingSpot": [
+          0.920172439427031,
+          0.15437006950378418,
+          -2.420172439427031
+        ],
+        "table": [
+          1.6414213562373094,
+          1.3993700695037843,
+          -2.2928932188134525
+        ],
+        "paper": [
+          1.521213173866272,
+          1.4433701038360596,
+          -2.4131014347076416
+        ]
+      }
+    },
+    {
+      "label": "counter-side",
+      "avatar": [
+        0.9289258718490601,
+        0.13777877390384674,
+        -2.4311742782592773
+      ],
+      "pamphlet": {
+        "active": false,
+        "approaching": false,
+        "approachSeconds": 2.399200000000003,
+        "elapsed": 3.4,
+        "owned": true,
+        "reading": false,
+        "ready": false,
+        "receiveDistance": 2.6,
+        "receivingSpot": [
+          0.920172439427031,
+          0.15437006950378418,
+          -2.420172439427031
+        ],
+        "table": [
+          1.6414213562373094,
+          1.3993700695037843,
+          -2.2928932188134525
+        ],
+        "paper": [
+          1.521213173866272,
+          1.4433701038360596,
+          -2.4131014347076416
+        ]
+      }
+    }
+  ],
+  "audio": {
+    "volume": 0,
+    "label": "소리 켜기"
+  },
+  "heading": {
+    "before": [
+      0,
+      -0.30541745314061797,
+      0,
+      0.9522185564864291
+    ],
+    "after": [
+      0,
+      -0.30541745314061797,
+      0,
+      0.9522185564864291
+    ]
+  },
+  "request": {
+    "mode": "follow",
+    "position": [
+      0.866642415523529,
+      3.0415079593658447,
+      2.203848123550415
+    ],
+    "avatar": [
+      0.8666426539421082,
+      0.11511614173650742,
+      -1.1513527631759644
+    ],
+    "facing": 90.0726429345092,
+    "animation": "Idle",
+    "actualSpeed": 0,
+    "model": "Casual Character / Quaternius (CC0)",
+    "lab": false,
+    "clip": "Idle",
+    "bounds": {
+      "height": 1.9040000000000001,
+      "scale": 1.024770720872548
+    },
+    "greeting": {
+      "position": [
+        1.5,
+        0.15437006950378418,
+        -3
+      ],
+      "distance": 1.9545278214616943,
+      "near": true,
+      "npcRemaining": 0,
+      "npcGreetings": 1,
+      "userRemaining": 0,
+      "userGreetings": 0,
+      "npcWeight": 0,
+      "userWeight": 0,
+      "npcBowDegrees": 0,
+      "userBowDegrees": 0,
+      "placeholder": true,
+      "pamphlet": {
+        "active": false,
+        "approaching": false,
+        "approachSeconds": 0,
+        "elapsed": 0,
+        "owned": false,
+        "reading": false,
+        "ready": true,
+        "receiveDistance": 2.6,
+        "receivingSpot": [
+          0.920172439427031,
+          0.15437006950378418,
+          -2.420172439427031
+        ],
+        "table": [
+          1.6414213562373094,
+          1.3993700695037843,
+          -2.2928932188134525
+        ],
+        "paper": [
+          1.521213173866272,
+          1.4433701038360596,
+          -2.4131014347076416
+        ]
+      }
+    },
+    "holdZone": null,
+    "stepAssist": {
+      "maxRise": 0.2,
+      "steps": 1
+    },
+    "runMultiplier": 1.8,
+    "characterScale": 1.12,
+    "streaming": {
+      "loads": 4,
+      "unloads": 0,
+      "discarded": 0,
+      "failures": 0,
+      "requestedBytes": 12047604,
+      "peakReservedChunks": 4,
+      "peakReservedGaussians": 614906,
+      "peakReservedTotalGaussians": 644784,
+      "fallbackRequestedBytes": 480389,
+      "blockedFrames": 0,
+      "blockedMs": 0,
+      "retainLoaded": true,
+      "loadDistance": 12,
+      "residentChunks": 4,
+      "residentGaussians": 614906,
+      "residentColliderIds": [
+        "sunny-strip-1-collision",
+        "sunny-strip-2-collision",
+        "sunny-strip-3-collision",
+        "sunny-strip-4-collision"
+      ],
+      "residentCollisionTriangles": 226157,
+      "residentCollisionSourceBytes": 4180244,
+      "fallbackReady": true,
+      "fallbackChunks": 6,
+      "fallbackGaussians": 29878,
+      "residentTotalGaussians": 644784,
+      "renderedGaussians": 624288,
+      "fallbackVisible": [
+        "sunny-strip-0",
+        "sunny-strip-5"
+      ],
+      "fallbackSourceBytes": 480389,
+      "residentSourceBytes": 7867360,
+      "loading": [],
+      "failed": [],
+      "ready": [
+        "sunny-strip-1",
+        "sunny-strip-2",
+        "sunny-strip-3",
+        "sunny-strip-4"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 49.5,
+          "id": "sunny-strip-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 71.60000002384186,
+          "id": "sunny-strip-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 104.19999998807907,
+          "id": "sunny-strip-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 137.4000000357628,
+          "id": "sunny-strip-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 159.4000000357628,
+          "id": "sunny-strip-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 180.60000002384186,
+          "id": "sunny-strip-5",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 180.69999998807907,
+          "id": "sunny-strip-2",
+          "action": "requested"
+        },
+        {
+          "t": 318.69999998807907,
+          "id": "sunny-strip-2",
+          "action": "ready"
+        },
+        {
+          "t": 318.69999998807907,
+          "id": "sunny-strip-3",
+          "action": "requested"
+        },
+        {
+          "t": 427.69999998807907,
+          "id": "sunny-strip-3",
+          "action": "ready"
+        },
+        {
+          "t": 427.69999998807907,
+          "id": "sunny-strip-1",
+          "action": "requested"
+        },
+        {
+          "t": 510.60000002384186,
+          "id": "sunny-strip-1",
+          "action": "ready"
+        },
+        {
+          "t": 510.60000002384186,
+          "id": "sunny-strip-4",
+          "action": "requested"
+        },
+        {
+          "t": 579,
+          "id": "sunny-strip-4",
+          "action": "ready"
+        }
+      ]
+    }
+  },
+  "received": {
+    "mode": "follow",
+    "position": [
+      0.920626163482666,
+      3.0624260902404785,
+      0.9335647225379944
+    ],
+    "avatar": [
+      0.920626163482666,
+      0.1360340267419815,
+      -2.4216361045837402
+    ],
+    "facing": 134.9500177082772,
+    "animation": "Idle",
+    "actualSpeed": 0,
+    "model": "Casual Character / Quaternius (CC0)",
+    "lab": false,
+    "clip": "Idle",
+    "bounds": {
+      "height": 1.9040000000000001,
+      "scale": 1.024770720872548
+    },
+    "greeting": {
+      "position": [
+        1.5,
+        0.15437006950378418,
+        -3
+      ],
+      "distance": 0.8188498326470167,
+      "near": true,
+      "npcRemaining": 0,
+      "npcGreetings": 1,
+      "userRemaining": 0,
+      "userGreetings": 0,
+      "npcWeight": 0,
+      "userWeight": 0,
+      "npcBowDegrees": 0,
+      "userBowDegrees": 0,
+      "placeholder": true,
+      "pamphlet": {
+        "active": false,
+        "approaching": false,
+        "approachSeconds": 1.2001000000000006,
+        "elapsed": 3.4,
+        "owned": true,
+        "reading": false,
+        "ready": false,
+        "receiveDistance": 2.6,
+        "receivingSpot": [
+          0.920172439427031,
+          0.15437006950378418,
+          -2.420172439427031
+        ],
+        "table": [
+          1.6414213562373094,
+          1.3993700695037843,
+          -2.2928932188134525
+        ],
+        "paper": [
+          1.521213173866272,
+          1.4433701038360596,
+          -2.4131014347076416
+        ]
+      }
+    },
+    "holdZone": null,
+    "stepAssist": {
+      "maxRise": 0.2,
+      "steps": 1
+    },
+    "runMultiplier": 1.8,
+    "characterScale": 1.12,
+    "streaming": {
+      "loads": 4,
+      "unloads": 0,
+      "discarded": 0,
+      "failures": 0,
+      "requestedBytes": 12047604,
+      "peakReservedChunks": 4,
+      "peakReservedGaussians": 614906,
+      "peakReservedTotalGaussians": 644784,
+      "fallbackRequestedBytes": 480389,
+      "blockedFrames": 0,
+      "blockedMs": 0,
+      "retainLoaded": true,
+      "loadDistance": 12,
+      "residentChunks": 4,
+      "residentGaussians": 614906,
+      "residentColliderIds": [
+        "sunny-strip-1-collision",
+        "sunny-strip-2-collision",
+        "sunny-strip-3-collision",
+        "sunny-strip-4-collision"
+      ],
+      "residentCollisionTriangles": 226157,
+      "residentCollisionSourceBytes": 4180244,
+      "fallbackReady": true,
+      "fallbackChunks": 6,
+      "fallbackGaussians": 29878,
+      "residentTotalGaussians": 644784,
+      "renderedGaussians": 624288,
+      "fallbackVisible": [
+        "sunny-strip-0",
+        "sunny-strip-5"
+      ],
+      "fallbackSourceBytes": 480389,
+      "residentSourceBytes": 7867360,
+      "loading": [],
+      "failed": [],
+      "ready": [
+        "sunny-strip-1",
+        "sunny-strip-2",
+        "sunny-strip-3",
+        "sunny-strip-4"
+      ],
+      "closed": false,
+      "events": [
+        {
+          "t": 49.5,
+          "id": "sunny-strip-0",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 71.60000002384186,
+          "id": "sunny-strip-1",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 104.19999998807907,
+          "id": "sunny-strip-2",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 137.4000000357628,
+          "id": "sunny-strip-3",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 159.4000000357628,
+          "id": "sunny-strip-4",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 180.60000002384186,
+          "id": "sunny-strip-5",
+          "action": "fallback-ready"
+        },
+        {
+          "t": 180.69999998807907,
+          "id": "sunny-strip-2",
+          "action": "requested"
+        },
+        {
+          "t": 318.69999998807907,
+          "id": "sunny-strip-2",
+          "action": "ready"
+        },
+        {
+          "t": 318.69999998807907,
+          "id": "sunny-strip-3",
+          "action": "requested"
+        },
+        {
+          "t": 427.69999998807907,
+          "id": "sunny-strip-3",
+          "action": "ready"
+        },
+        {
+          "t": 427.69999998807907,
+          "id": "sunny-strip-1",
+          "action": "requested"
+        },
+        {
+          "t": 510.60000002384186,
+          "id": "sunny-strip-1",
+          "action": "ready"
+        },
+        {
+          "t": 510.60000002384186,
+          "id": "sunny-strip-4",
+          "action": "requested"
+        },
+        {
+          "t": 579,
+          "id": "sunny-strip-4",
+          "action": "ready"
+        }
+      ]
+    }
+  },
+  "desktop": {
+    "x": 50,
+    "y": 29.5,
+    "width": 1100,
+    "height": 860,
+    "viewport": [
+      1200,
+      919
+    ],
+    "overflow": false
+  },
+  "mobile": {
+    "x": 16,
+    "y": 16,
+    "width": 358,
+    "height": 812,
+    "viewport": [
+      390,
+      844
+    ],
+    "overflow": false
+  },
+  "small": {
+    "x": 16,
+    "y": 16,
+    "width": 288,
+    "height": 536,
+    "viewport": [
+      320,
+      568
+    ],
+    "overflow": false
+  },
+  "landscape": {
+    "x": 16,
+    "y": 16,
+    "width": 812,
+    "height": 358,
+    "viewport": [
+      844,
+      390
+    ],
+    "overflow": false
+  }
+}

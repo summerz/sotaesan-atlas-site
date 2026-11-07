@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-07",
+  "gitHead": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
+  "build": "local-c5b967dd2a7e-991adb84e300",
+  "scope": "Vite dev functional verification. Original capture and before trials precede repair; final 8 trials use explicit primitive box. No performance/iPhone verification.",
+  "environment": {
+    "browser": "headed Playwright CLI steps; one project tab",
+    "gpu": "Apple M4 Pro / ANGLE Metal",
+    "viewport": [
+      1200,
+      919
+    ],
+    "devicePixelRatio": 2,
+    "appRenderDpr": 1.5
+  },
+  "failures": "First mesh repair reused scaled cached Ammo mesh shape and produced y=0.4 top; rejected. Replaced with explicit box top y=0.6. Immediate HMR rerun was not ready; rerun after atlasCamera readiness passed. Temporary output script referenced page inside evaluate once; corrected for final state capture.",
+  "endState": "User-reported XZ, feet y=0.6, near original camera yaw; browser and dev server left open for user.",
+  "sourceSha256": {
+    "apps/spike-playcanvas/src/main.ts": "a4d86b4f2d7b6dfa125991ac44a80e0eee9893ef8ac4de1e0ccaa0f1dbe23b65",
+    "apps/spike-playcanvas/src/character.ts": "410798f4a80a179983c92f1e34a0fbe96c5fed91d40b80425c4e50034b319d6d",
+    "apps/spike-playcanvas/src/character-camera.ts": "6a35532442b4f94229d2a061b3a847b1d3a9396d13a4d19fd375a4038e607a4a",
+    "apps/spike-playcanvas/src/character-step.ts": "6b88084311e7d75e1af54404393e6995cfcd15c135cb262d259aeda9de4f808e",
+    "apps/spike-playcanvas/src/character-streaming.ts": "17d34ffa429a370b9d0122a0cbe98af72f5e3d90b6b9321b00df0ed1cdd3ae34",
+    "apps/spike-playcanvas/tests/character-step.test.mjs": "d73b1aaff69dfd9f2b2570afed12da2ca00b5d6df4a27d18eb155cf737a0be58",
+    "apps/spike-playcanvas/tests/character-streaming.test.mjs": "aba07276d00038ebf658381c2d3092f1b7d6b26847887fd68de8026b395ab046",
+    "shared/src/streaming.ts": "683ba3bae30904e36a51679782ae8c15879ce86bf24383eebd101c259e26b2fc",
+    "shared/src/input.ts": "12691a44d44417040e75dd7f80adc9b9418eefde3ad52f65486c7e55ef54ef09",
+    "shared/src/ui.ts": "10ef9e82f37f7a2ffcac8e38be6811f93f9c42525130639e78dec747b2d36462",
+    "shared/public/world/sunnyvale-content.json": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+    "shared/public/world/assets.json": "65224b9e4a71f3ce2f1b13be0070c915eb474dc32b196a5c3c4848a320e1c465"
+  },
+  "evidenceSha256": {
+    "pit-check.log": "8b84bec291178595147cb35bfce4885c1cee5d3d12c3413183a8f0b4ee1f661c",
+    "preview-ground.txt": "d5cc88bc4baeee352e2617e2b55d9655707d69399ae0c086c112de9d5900597f",
+    "survey-overhead.txt": "8771d26eff61aef95bd8523cc50769c03f804c313ea2a364095cafb18b340009",
+    "pit-fixed.png": "4a87ee60ba13014f8c9abc949de57b560d7c00f72410e6df4e27e56b6bd309c1",
+    "pit-regression-invalid-mesh-scale.txt": "7d846b63f5f87acb43c92a68ae0e17c9ab7ba812440a5697c59e842cd3077e1a",
+    "probe-stuck.txt": "e5f4e9af48ed0458e69d5b436c34263b2e6da7da90f33cdb8f012e86cc75e946",
+    "pit-regression.txt": "76c26fdfcfd758468a0eee2c1036e66296fafcde27b9c335082d198eaaf4d848",
+    "console.log": "46a8382cdd7f174426d7e3c7027ea75be1fc741c860b09b385e287782f96563a",
+    "survey-overhead.png": "4dedaa472e8306a8f58daee6c994afcdcafddd7556d297484b8a7afb7158c27d",
+    "preview-ground.js": "01ef9f173e1980297e0347baa549acece588cc529fd3a98d1c9505e3db577350",
+    "pit-final-state.txt": "fdf9882f0df134428b70d2ffa27b3dc7e5a4dde0e9cec44e190c7349dea3c9b7",
+    "user-stuck.png": "167ce5b213c4b50dcbc9d9db0e3a701dbb3a84b9d2129b9e2145ffe5697a81f2",
+    "pit-final-view.png": "2bd20eab59d0eb9e7c11c0f58fcaf0234ead85cc34349bce69712c973cee6fc0",
+    "pit-regression.js": "3c17cd3197563f7e9acdbbb7a83ab6db395510398106454c410ba61fdca62e93",
+    "user-stuck.txt": "14f09880927dce2817733ee955910d18dd260bb8788a63c6d0ad0364449de32e",
+    "survey-overhead.js": "3064a63b33465a3837b48811691e007d39a31341d68f8601bfcf217df60bce2b",
+    "probe-stuck.js": "5f5ccc6756b61c9d1fcbf6f50621ed91d8582c81c16d7854843e8cf5ccf83133"
+  }
+}

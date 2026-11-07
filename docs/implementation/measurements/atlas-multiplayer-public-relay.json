@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-07T10:35:31.003Z",
+  "good": {
+    "type": "welcome",
+    "capacity": 4
+  },
+  "wrong": {
+    "type": "error",
+    "code": "password"
+  },
+  "blocked": {
+    "http": 403
+  }
+}

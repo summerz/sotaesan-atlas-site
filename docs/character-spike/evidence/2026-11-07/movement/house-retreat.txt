@@ -1,0 +1,6 @@
+### Result
+{"before":{"mode":"follow","position":[7.40003776550293,3.1243200302124023,12.842957496643066],"avatar":[8.502787590026855,0.19792808592319489,16.011760711669922],"facing":13.80225313808075,"animation":"Idle","actualSpeed":0,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Idle","bounds":{"height":1.9040000000000001,"scale":1.024770720872548},"holdZone":null,"stepAssist":{"maxRise":0.2,"steps":7},"runMultiplier":1.8,"characterScale":1.12},"after":{"mode":"follow","position":[6.529784202575684,3.1665730476379395,10.385784149169922],"avatar":[7.561389923095703,0.22371985018253326,13.350350379943848],"facing":-160.8036960242279,"animation":"Walking","actualSpeed":1.611470509965977,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Walking","bounds":{"height":1.9040000000000001,"scale":1.024770720872548},"holdZone":null,"stepAssist":{"maxRise":0.2,"steps":9},"runMultiplier":1.8,"characterScale":1.12}}
+### Ran Playwright code
+```js
+await (async (page) => {const before=await page.evaluate(()=>window.atlasCharacter.snapshot());try{await page.keyboard.down("KeyS");await page.waitForTimeout(1500);}finally{await page.keyboard.up("KeyS");}return{before,after:await page.evaluate(()=>window.atlasCharacter.snapshot())};})(page);
+```

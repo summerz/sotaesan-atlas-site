@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-07",
+  "command": "pnpm check",
+  "exitCode": 0,
+  "environment": "Vite dev server; headed Playwright CLI; single tab; Apple M4 Pro / ANGLE Metal; DPR 1",
+  "scope": "UI layout, camera input limits, legacy UI regression; not iPhone or performance validation",
+  "sourceSha256": {
+    "apps/spike-playcanvas/src/main.ts": "07a5318c9bbbf8d4071d0dd6de434215d3d4f4c4f7209a0a12cb5efb7ac1262c",
+    "apps/spike-playcanvas/src/character.ts": "57f9a4c3f0b5ce7a6f8f754cf402460b0955782adf706f704f595852b9f3dbb8",
+    "apps/spike-playcanvas/src/character.css": "79993c3d8f602e04cf3487707637cbf20ade016fdf406497fa15c76c9b1557fc",
+    "shared/src/ui.ts": "2c0d8d22e47c613941262bfb810fac8b87e78ba89245dedf443d1b0ef18868a2"
+  }
+}

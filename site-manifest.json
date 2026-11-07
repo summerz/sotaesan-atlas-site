@@ -1,12 +1,31 @@
 {
   "source": "sotaesan-atlas",
   "reportDate": "2026-10-04",
-  "files": 302,
-  "bytes": 197353717,
-  "documents": 24,
+  "files": 466,
+  "bytes": 256878478,
+  "documents": 51,
   "omittedDevelopmentReferences": [
     "AGENTS.md",
+    "apps/atlas-realtime/README.md",
+    "apps/spike-playcanvas/src/character-camera.ts",
+    "apps/spike-playcanvas/src/character-greeting.ts",
+    "apps/spike-playcanvas/src/character-step.ts",
+    "apps/spike-playcanvas/src/character-streaming.ts",
+    "apps/spike-playcanvas/src/character.ts",
+    "apps/spike-playcanvas/src/content-cue.ts",
+    "apps/spike-playcanvas/src/main.ts",
     "apps/spike-three/scripts/benchmark-physics.ts",
+    "docs/character-spike/evidence/2026-11-07/check.log",
+    "docs/character-spike/evidence/2026-11-07/greeting-bow/greeting-bow-review.js",
+    "docs/character-spike/evidence/2026-11-07/greeting/npc-check.log",
+    "docs/character-spike/evidence/2026-11-07/greeting/npc-regression.js",
+    "docs/character-spike/evidence/2026-11-07/layout/check.log",
+    "docs/character-spike/evidence/2026-11-07/movement-wrap/step-height-probe.js",
+    "docs/character-spike/evidence/2026-11-07/movement/check.log",
+    "docs/character-spike/evidence/2026-11-07/movement/stream-route.js",
+    "docs/character-spike/evidence/2026-11-07/reported-pit/pit-check.log",
+    "docs/character-spike/evidence/2026-11-07/reported-pit/pit-regression.js",
+    "docs/character-spike/evidence/2026-11-07/running/check.log",
     "docs/implementation/measurements/2026-10-02/content-lifecycle-driver.js",
     "docs/implementation/measurements/2026-10-02/era-switch-driver.js",
     "docs/implementation/measurements/2026-10-02/era-switch-failure-driver.js",
@@ -29,15 +48,20 @@
     "docs/implementation/measurements/2026-10-03/stream-era-failure-driver.js",
     "scripts/make-sog-diagnostics.py",
     "scripts/make-spatial-era.py",
-    "shared/src/step-timings.ts"
+    "shared/src/benchmark.ts",
+    "shared/src/input.ts",
+    "shared/src/step-timings.ts",
+    "shared/src/streaming.ts",
+    "shared/src/style.css",
+    "shared/src/world.ts"
   ],
   "appReleases": {
-    "three": "local-4d5905679d2e-0c66ba92a733",
-    "playcanvas": "local-4d5905679d2e-0c66ba92a733"
+    "three": "local-c5b967dd2a7e-b40cc94f8b03",
+    "playcanvas": "local-c5b967dd2a7e-b40cc94f8b03"
   },
   "accessGate": {
     "type": "client-side-review-gate",
-    "htmlPages": 39,
+    "htmlPages": 67,
     "rememberHours": 24,
     "protectsRawFiles": false
   }

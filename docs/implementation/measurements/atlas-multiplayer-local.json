@@ -1,0 +1,532 @@
+{
+  "date": "2026-11-07T10:30:08.109Z",
+  "scope": "two independent Chromium contexts; functional only",
+  "checks": [
+    "running received by peer",
+    "interpolated remote position converges within 0.2 scene units",
+    "joined hands and waist bow received by peer",
+    "NPC and guide ownership remain independent",
+    "leave removes actor; rejoin creates one new identity without duplicates",
+    "390px panel has no page overflow and closes to one handle"
+  ],
+  "running": {
+    "a": {
+      "avatar": [
+        0.3391689956188202,
+        0.07110228389501572,
+        1.7073607444763184
+      ],
+      "animation": "Running",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 4.849093453779732,
+        "near": false,
+        "npcRemaining": 0,
+        "npcGreetings": 2,
+        "userRemaining": 0,
+        "userGreetings": 2,
+        "npcWeight": 0,
+        "userWeight": 0,
+        "npcBowDegrees": 0,
+        "userBowDegrees": 0,
+        "placeholder": true,
+        "pamphlet": {
+          "active": false,
+          "greeting": false,
+          "approaching": false,
+          "approachSeconds": 1.9829999999999985,
+          "elapsed": 0,
+          "owned": false,
+          "reading": false,
+          "ready": false,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+        "number": 1,
+        "count": 2,
+        "lastSendAt": 182852.89999997616,
+        "visitors": [
+          {
+            "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+            "number": 2,
+            "pose": {
+              "x": 0.0001939540009502798,
+              "y": 0.11006655544042587,
+              "z": -0.00032863361327253307,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            },
+            "target": {
+              "x": 0.0001939539797604084,
+              "y": 0.11006655544042587,
+              "z": -0.0003286335850134492,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            }
+          }
+        ]
+      }
+    },
+    "b": {
+      "avatar": [
+        0.0001939539797604084,
+        0.11006655544042587,
+        -0.0003286335850134492
+      ],
+      "animation": "Idle",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 3.3540139062811263,
+        "near": false,
+        "npcRemaining": 0,
+        "npcGreetings": 1,
+        "userRemaining": 0,
+        "userGreetings": 1,
+        "npcWeight": 0,
+        "userWeight": 0,
+        "npcBowDegrees": 0,
+        "userBowDegrees": 0,
+        "placeholder": true,
+        "pamphlet": {
+          "active": false,
+          "greeting": false,
+          "approaching": false,
+          "approachSeconds": 2.084299999999995,
+          "elapsed": 0,
+          "owned": false,
+          "reading": false,
+          "ready": true,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+        "number": 2,
+        "count": 2,
+        "lastSendAt": 147489.20000004768,
+        "visitors": [
+          {
+            "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+            "number": 1,
+            "pose": {
+              "x": 0.33916993944708174,
+              "y": 0.09326822397050533,
+              "z": 1.2138782294222614,
+              "yaw": 2.418252383295169,
+              "motion": "Running",
+              "hands": 0,
+              "bow": 0
+            },
+            "target": {
+              "x": 0.33930009603500366,
+              "y": 0.09177710860967636,
+              "z": 1.407723069190979,
+              "yaw": 0.36637420393801234,
+              "motion": "Running",
+              "hands": 0,
+              "bow": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "greeting": {
+    "a": {
+      "avatar": [
+        0.00019431239343248308,
+        0.11006655544042587,
+        -0.0003292373148724437
+      ],
+      "animation": "Idle",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 3.3540132060627528,
+        "near": true,
+        "npcRemaining": 1.9500999999999775,
+        "npcGreetings": 3,
+        "userRemaining": 1.9500999999999775,
+        "userGreetings": 3,
+        "npcWeight": 0.9718919040160242,
+        "userWeight": 0.9718919040160242,
+        "npcBowDegrees": 14.578378560240363,
+        "userBowDegrees": 14.578378560240363,
+        "placeholder": true,
+        "pamphlet": {
+          "active": true,
+          "greeting": true,
+          "approaching": false,
+          "approachSeconds": 0,
+          "elapsed": 0,
+          "owned": false,
+          "reading": false,
+          "ready": false,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+        "number": 1,
+        "count": 2,
+        "lastSendAt": 184849.19999992847,
+        "visitors": [
+          {
+            "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+            "number": 2,
+            "pose": {
+              "x": 0.00019395395110560876,
+              "y": 0.11006655544042587,
+              "z": -0.0003286335277038499,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            },
+            "target": {
+              "x": 0.00019395395065657794,
+              "y": 0.11006655544042587,
+              "z": -0.0003286335268057883,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            }
+          }
+        ]
+      }
+    },
+    "b": {
+      "avatar": [
+        0.00019395395065657794,
+        0.11006655544042587,
+        -0.0003286335268057883
+      ],
+      "animation": "Idle",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 3.3540139063461987,
+        "near": false,
+        "npcRemaining": 0,
+        "npcGreetings": 1,
+        "userRemaining": 0,
+        "userGreetings": 1,
+        "npcWeight": 0,
+        "userWeight": 0,
+        "npcBowDegrees": 0,
+        "userBowDegrees": 0,
+        "placeholder": true,
+        "pamphlet": {
+          "active": false,
+          "greeting": false,
+          "approaching": false,
+          "approachSeconds": 2.084299999999995,
+          "elapsed": 0,
+          "owned": false,
+          "reading": false,
+          "ready": true,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+        "number": 2,
+        "count": 2,
+        "lastSendAt": 149390.80000007153,
+        "visitors": [
+          {
+            "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+            "number": 1,
+            "pose": {
+              "x": 0.00019440806524928623,
+              "y": 0.11006659498037048,
+              "z": -0.0003287873222926701,
+              "yaw": -206.46521347281478,
+              "motion": "Idle",
+              "hands": 0.752206992103747,
+              "bow": 11.283104881556206
+            },
+            "target": {
+              "x": 0.00019431757391430438,
+              "y": 0.11006655544042587,
+              "z": -0.00032924607512541115,
+              "yaw": 153.43540242409762,
+              "motion": "Idle",
+              "hands": 0.8956157121280324,
+              "bow": 13.434235681920486
+            }
+          }
+        ]
+      }
+    }
+  },
+  "afterDelivery": {
+    "a": {
+      "avatar": [
+        0.9081647992134094,
+        0.13383425772190094,
+        -2.4093427658081055
+      ],
+      "animation": "Idle",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 0.8364009760628353,
+        "near": true,
+        "npcRemaining": 0,
+        "npcGreetings": 3,
+        "userRemaining": 0,
+        "userGreetings": 3,
+        "npcWeight": 0,
+        "userWeight": 0,
+        "npcBowDegrees": 0,
+        "userBowDegrees": 0,
+        "placeholder": true,
+        "pamphlet": {
+          "active": false,
+          "greeting": false,
+          "approaching": false,
+          "approachSeconds": 1.9999999999999993,
+          "elapsed": 3.4,
+          "owned": true,
+          "reading": false,
+          "ready": false,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+        "number": 1,
+        "count": 2,
+        "lastSendAt": 192748.39999997616,
+        "visitors": [
+          {
+            "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+            "number": 2,
+            "pose": {
+              "x": 0.0001939538196893535,
+              "y": 0.11006655544042587,
+              "z": -0.00032863335218281817,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            },
+            "target": {
+              "x": 0.0001939538196893409,
+              "y": 0.11006655544042587,
+              "z": -0.00032863335218280554,
+              "yaw": 180,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            }
+          }
+        ]
+      }
+    },
+    "b": {
+      "avatar": [
+        0.00019395380513742566,
+        0.11006655544042587,
+        -0.000328633381286636
+      ],
+      "animation": "Idle",
+      "greeting": {
+        "position": [
+          1.5,
+          0.15437006950378418,
+          -3
+        ],
+        "distance": 3.3540139065414154,
+        "near": false,
+        "npcRemaining": 0,
+        "npcGreetings": 1,
+        "userRemaining": 0,
+        "userGreetings": 1,
+        "npcWeight": 0,
+        "userWeight": 0,
+        "npcBowDegrees": 0,
+        "userBowDegrees": 0,
+        "placeholder": true,
+        "pamphlet": {
+          "active": false,
+          "greeting": false,
+          "approaching": false,
+          "approachSeconds": 2.084299999999995,
+          "elapsed": 0,
+          "owned": false,
+          "reading": false,
+          "ready": true,
+          "receiveDistance": 3.5,
+          "receivingSpot": [
+            0.920172439427031,
+            0.15437006950378418,
+            -2.420172439427031
+          ],
+          "table": [
+            1.6414213562373094,
+            1.3993700695037843,
+            -2.2928932188134525
+          ],
+          "paper": [
+            1.521213173866272,
+            1.4433701038360596,
+            -2.4131014347076416
+          ]
+        }
+      },
+      "multiplayer": {
+        "state": "함께 입장하는 중…",
+        "connected": true,
+        "id": "636da13f-ffdc-4fdc-a1c5-feca7d9deedb",
+        "number": 2,
+        "count": 2,
+        "lastSendAt": 157291,
+        "visitors": [
+          {
+            "id": "686e33d1-b651-45a1-b279-9a4389a0cd67",
+            "number": 1,
+            "pose": {
+              "x": 0.9081647992134094,
+              "y": 0.13383425772190094,
+              "z": -2.4093427658081055,
+              "yaw": -225.05707708740997,
+              "motion": "Idle",
+              "hands": 1.4541221393499058e-41,
+              "bow": 3.053888236125012e-45
+            },
+            "target": {
+              "x": 0.9081647992134094,
+              "y": 0.13383425772190094,
+              "z": -2.4093427658081055,
+              "yaw": 134.94292291259,
+              "motion": "Idle",
+              "hands": 0,
+              "bow": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "overflow": false,
+    "panel": [
+      {
+        "width": 360,
+        "height": 633.125
+      }
+    ]
+  }
+}

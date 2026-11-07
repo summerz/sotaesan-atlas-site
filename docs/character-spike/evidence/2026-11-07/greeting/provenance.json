@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-07",
+  "build": "local-c5b967dd2a7e-bdb58c9a474c",
+  "mode": "Vite development server browser functionality; production artifacts checked separately",
+  "sha256": {
+    "apps/spike-playcanvas/src/character-greeting.ts": "bc7c6dfd17bd5b88d9ae8b6fff3f6e2b8a7acd9e5599d329b13236353e48c803",
+    "apps/spike-playcanvas/src/character.ts": "3da9112f839deba8538e480032a27d84c966ecaf9349a5f5938faa92a5a2814a",
+    "apps/spike-playcanvas/src/character.css": "2eb9f8cbbd131500a05c620faae653a2fed9bd75e49195a547d844bc70614530",
+    "apps/spike-playcanvas/src/main.ts": "5de94e5f349c969c6183dcb4ec2f3ac8c73e77c697fb5590d7399aa859e3df4f",
+    "apps/spike-playcanvas/tests/character-greeting.test.mjs": "7c7d68c088ec23b8ce31a9307ff7e0264c3e86b6381f97b621ce46d4236d5c62"
+  },
+  "notes": [
+    "Initial browser noRepeat check failed with extra user greetings; cause not established.",
+    "Added explicit G key-down latch and key-up/blur reset. All nine subsequent browser checks passed.",
+    "Preserved initial failed output; do not combine as same source revision.",
+    "Desktop viewport test only; no physical mobile touch or performance result."
+  ]
+}

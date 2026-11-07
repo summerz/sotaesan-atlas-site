@@ -1,0 +1,12 @@
+### Result
+{"camera":{"position":[0.00021452429064083844,2.1133480072021484,3.670135974884033],"yaw":0,"pitch":-15},"avatar":{"mode":"follow","position":[0.00021452429064083844,2.1133480072021484,3.670135974884033],"avatar":[0.000214524261537008,0.10978402942419052,-0.00036349103902466595],"facing":180,"animation":"Idle","actualSpeed":0,"model":"Casual Character / Quaternius (CC0)","lab":false,"clip":"Idle","bounds":{"height":1.7,"scale":0.9149738579219178},"holdZone":null}}
+### Ran Playwright code
+```js
+await (async (page) => { await page.waitForFunction(()=>!!window.atlasCharacter); await page.waitForTimeout(400); await page.keyboard.down("ArrowUp"); try{await page.waitForTimeout(750);}finally{await page.keyboard.up("ArrowUp");} await page.waitForTimeout(400); await page.screenshot({path:"output/playwright/avatar-human/lower-camera.png"}); return await page.evaluate(()=>({camera:window.atlasCamera(),avatar:window.atlasCharacter.snapshot()})); })(page);
+```
+### Page
+- Page URL: http://127.0.0.1:5174/?scene=content&character=1
+- Page Title: Atlas · PlayCanvas
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-11-07T06-44-08-815Z.log#L5-L6
