@@ -1,9 +1,9 @@
 {
-  "releaseId": "local-c5b967dd2a7e-b40cc94f8b03",
+  "releaseId": "local-c5b967dd2a7e-d337d929072b",
   "mode": "production",
   "commit": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
   "dirty": true,
-  "sourceSha256": "b40cc94f8b039120b27309322ed894f855d9698cebb207faeaa34b59b8b76a4a",
+  "sourceSha256": "d337d929072b1f3e28d4a2c980e275099a829a6426de7e668028938bbcd37d73",
   "dataSha256": "a2b837b3001d262d69dc598611071c13984e2cdb0b7403b959bf46d0f3a46d21",
   "dataHashes": {
     "assets.json": "65224b9e4a71f3ce2f1b13be0070c915eb474dc32b196a5c3c4848a320e1c465",
@@ -17,7 +17,7 @@
     "sunnyvale-era.json": "dc7c0b762dc6460277ea67207e62bb2cb90f81536ce1b207a2e08cf80ce02868",
     "sunnyvale-content.json": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28"
   },
-  "builtAt": "2026-11-07T10:36:14.620Z",
+  "builtAt": "2026-11-07T11:06:29.466Z",
   "assetBase": "/",
   "assetHashes": {
     "current": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1",
@@ -179,13 +179,13 @@
       "bytes": 1660,
       "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
     },
-    "assets/index-D8VRPPlH.js": {
-      "bytes": 2058850,
-      "sha256": "07a1b372d03b0789a3785743faf1712da92ed41052c8ae1beb89a807cc1e96da"
+    "assets/index-Bn-oPOvp.js": {
+      "bytes": 2058677,
+      "sha256": "b8a851d374885dd1a88fd8455eb3fc1134c2613adc1f9ddde9a0160e5308afb9"
     },
-    "assets/index-uaPepYy6.css": {
-      "bytes": 8695,
-      "sha256": "c8fbe0b8b3e006ed670566a9591aa4231aa52027b2fe4184cd6b9ed765fdfba4"
+    "assets/index-DJRmeL0f.css": {
+      "bytes": 8833,
+      "sha256": "e656e62b9c5849373b49f4a54d3b4f4eb7a75dc849db701df45e89971937d9d3"
     },
     "assets/narration-stop-1.mp3": {
       "bytes": 124177,
@@ -373,7 +373,7 @@
     },
     "index.html": {
       "bytes": 364,
-      "sha256": "884ec9e1081ff81eef12062cfae645d8f4e35a2a55a988832707c818045f3b6a"
+      "sha256": "739a5c7e63a41c551fefe78377565ae140ddb4637c5efb24976974ff3f4c34bf"
     },
     "world/assets.json": {
       "bytes": 13961,
