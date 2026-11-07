@@ -1,9 +1,9 @@
 {
-  "releaseId": "local-c5b967dd2a7e-d337d929072b",
+  "releaseId": "local-c5b967dd2a7e-b40cc94f8b03",
   "mode": "production",
   "commit": "c5b967dd2a7e1785b7cce85d45cb46e748485dee",
   "dirty": true,
-  "sourceSha256": "d337d929072b1f3e28d4a2c980e275099a829a6426de7e668028938bbcd37d73",
+  "sourceSha256": "b40cc94f8b039120b27309322ed894f855d9698cebb207faeaa34b59b8b76a4a",
   "dataSha256": "a2b837b3001d262d69dc598611071c13984e2cdb0b7403b959bf46d0f3a46d21",
   "dataHashes": {
     "assets.json": "65224b9e4a71f3ce2f1b13be0070c915eb474dc32b196a5c3c4848a320e1c465",
@@ -17,7 +17,7 @@
     "sunnyvale-era.json": "dc7c0b762dc6460277ea67207e62bb2cb90f81536ce1b207a2e08cf80ce02868",
     "sunnyvale-content.json": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28"
   },
-  "builtAt": "2026-11-07T11:06:29.466Z",
+  "builtAt": "2026-11-07T10:36:14.620Z",
   "assetBase": "/",
   "assetHashes": {
     "current": "1444fd8878563832d10ec1d35fccfff91a7827307dca79e76bebce93d37681f1",
@@ -167,13 +167,13 @@
       "bytes": 1660,
       "sha256": "6ba4f9bde6ad3e77a9c27f5e8eaee4d843ec6a22e016fd708292629c74aa3ea3"
     },
-    "assets/index-BG-yZR6d.js": {
-      "bytes": 3230397,
-      "sha256": "d5136716bd4c9d472681e9e7314bebfb8831b7a147420b0d62bb68c4b47be2ec"
-    },
     "assets/index-DCetQgBs.css": {
       "bytes": 2417,
       "sha256": "3de52656b7c10f4e74aeadccf167c2a2325a5f96d453e044d87d6ff7d1243b1d"
+    },
+    "assets/index-U02l5f73.js": {
+      "bytes": 3230397,
+      "sha256": "08cc20f20fbedcd2487c399c6dae48a7d4ce9434574ff5a465e645ed412288bf"
     },
     "assets/narration-stop-1.mp3": {
       "bytes": 124177,
@@ -223,9 +223,9 @@
       "bytes": 158175,
       "sha256": "3d2f73f2cb6d6fdb3dfcb58a02ef1b4e6f481f79b49ff862474a86b46d7d2527"
     },
-    "assets/rapier-walker-DxEVs3N2.js": {
+    "assets/rapier-walker-BrIdOMQq.js": {
       "bytes": 4336769,
-      "sha256": "e054c47e1e9120ffcb9759a06544b0c610af76b15f90775c9ed68628729644e0"
+      "sha256": "a059702b851c525a4b6a9ae4a996e1d3d8d23996fb1a7ef769afd35ff85689b8"
     },
     "assets/reference-cube.glb": {
       "bytes": 968,
@@ -365,7 +365,7 @@
     },
     "index.html": {
       "bytes": 362,
-      "sha256": "5b4197b759c4355f7e191ee0950ff69f1898d093a80ee6df244f26211b0b513a"
+      "sha256": "89de282a6e5f7a446f76f39b5f372f8be36450cf7433795f5a36daf9e5c1a36b"
     },
     "world/assets.json": {
       "bytes": 13961,

@@ -1,8 +1,8 @@
 {
   "source": "sotaesan-atlas",
   "reportDate": "2026-10-04",
-  "files": 472,
-  "bytes": 262876521,
+  "files": 466,
+  "bytes": 256878478,
   "documents": 51,
   "omittedDevelopmentReferences": [
     "AGENTS.md",
@@ -56,8 +56,8 @@
     "shared/src/world.ts"
   ],
   "appReleases": {
-    "three": "local-c5b967dd2a7e-d337d929072b",
-    "playcanvas": "local-c5b967dd2a7e-d337d929072b"
+    "three": "local-c5b967dd2a7e-b40cc94f8b03",
+    "playcanvas": "local-c5b967dd2a7e-b40cc94f8b03"
   },
   "accessGate": {
     "type": "client-side-review-gate",
