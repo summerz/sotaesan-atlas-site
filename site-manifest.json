@@ -1,9 +1,9 @@
 {
   "source": "sotaesan-atlas",
   "reportDate": "2026-10-04",
-  "files": 469,
-  "bytes": 258624290,
-  "documents": 51,
+  "files": 485,
+  "bytes": 267413380,
+  "documents": 52,
   "omittedDevelopmentReferences": [
     "AGENTS.md",
     "apps/atlas-realtime/README.md",
@@ -61,7 +61,7 @@
   },
   "accessGate": {
     "type": "client-side-review-gate",
-    "htmlPages": 67,
+    "htmlPages": 68,
     "rememberHours": 24,
     "protectsRawFiles": false
   }

@@ -1,0 +1,85 @@
+{
+  "recordedAt": "2026-11-07T12:06:00.695Z",
+  "scope": "Actual public Pages and WSS, headed Chromium, two independent app contexts; no request overrides",
+  "siteCommit": "dd932dfeca810eea3083f1080afd5a4809a5e95c",
+  "release": "local-c5b967dd2a7e-b40cc94f8b03",
+  "states": [
+    {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "839e6294-3de2-4b9a-a876-534899798a29",
+      "number": 1,
+      "count": 2,
+      "lastSendAt": 86811.29999995232,
+      "visitors": [
+        {
+          "id": "d9b40bb2-768b-4cc7-860d-c029713935e5",
+          "number": 2,
+          "pose": {
+            "x": 0.0001943066327471226,
+            "y": 0.11006655544042587,
+            "z": -0.0003292277146904653,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": 0.00019429541134741157,
+            "y": 0.11006655544042587,
+            "z": -0.0003292085602879524,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "d9b40bb2-768b-4cc7-860d-c029713935e5",
+      "number": 2,
+      "count": 2,
+      "lastSendAt": 6166.200000047684,
+      "visitors": [
+        {
+          "id": "839e6294-3de2-4b9a-a876-534899798a29",
+          "number": 1,
+          "pose": {
+            "x": 4.2957747439185295e-05,
+            "y": 0.10522089855118066,
+            "z": 0.040080582081713896,
+            "yaw": 212.03887693528588,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": -0.0004466704558581114,
+            "y": 0.08950831741094589,
+            "z": 0.17111195623874664,
+            "yaw": 315.9284970619167,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    }
+  ],
+  "closeObservedMs": 91,
+  "errors": [],
+  "consoleErrors": [],
+  "sockets": [
+    "wss://atlas-ws.summerz.net/ws",
+    "wss://atlas-ws.summerz.net/ws"
+  ],
+  "checks": [
+    "manual four-person entry UI",
+    "two visitors mutually visible",
+    "remote walking received",
+    "normal close removes visitor"
+  ]
+}

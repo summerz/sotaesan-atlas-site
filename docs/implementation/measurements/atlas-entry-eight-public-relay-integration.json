@@ -1,0 +1,84 @@
+{
+  "environment": "headed Chromium, two independent app contexts and a landing monitor",
+  "serverOverride": false,
+  "staticFiles": "intercepted from output/report-site; GitHub Pages deployment is not verified",
+  "errors": [],
+  "consoleErrors": [],
+  "sockets": [
+    "wss://atlas-ws.summerz.net/ws",
+    "wss://atlas-ws.summerz.net/ws"
+  ],
+  "baseline": 0,
+  "twoVisitors": {
+    "a": {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "6f4257c1-f8d3-4c88-a98b-db1db7acb8d9",
+      "number": 1,
+      "count": 2,
+      "lastSendAt": 3440.600000023842,
+      "visitors": [
+        {
+          "id": "ca43cdd9-0f9a-4b63-8bbc-e52ed219fd4c",
+          "number": 2,
+          "pose": {
+            "x": 0.00019435364817589745,
+            "y": 0.11006655541695322,
+            "z": -0.0003293071450238312,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": 0.00019434368005022407,
+            "y": 0.11006655544042587,
+            "z": -0.000329290225636214,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    "b": {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "ca43cdd9-0f9a-4b63-8bbc-e52ed219fd4c",
+      "number": 2,
+      "count": 2,
+      "lastSendAt": 1656.8000000715256,
+      "visitors": [
+        {
+          "id": "6f4257c1-f8d3-4c88-a98b-db1db7acb8d9",
+          "number": 1,
+          "pose": {
+            "x": -0.0017459786545870435,
+            "y": 0.07495675658474789,
+            "z": 0.7749233375707072,
+            "yaw": 358.48684275215993,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": -0.0018473640084266663,
+            "y": 0.07305111736059189,
+            "z": 0.9146840572357178,
+            "yaw": 359.7380993861023,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    "manualInputs": 0
+  },
+  "releaseId": "local-c5b967dd2a7e-d337d929072b",
+  "normalCloseCountMs": 58,
+  "navigationReleasedSeat": true,
+  "finalCount": "입장하기 0/8",
+  "recordedAt": "2026-11-07T11:30:45.601Z"
+}

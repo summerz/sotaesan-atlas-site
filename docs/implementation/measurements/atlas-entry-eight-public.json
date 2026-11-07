@@ -1,0 +1,84 @@
+{
+  "environment": "headed Chromium, two independent app contexts and a landing monitor",
+  "serverOverride": false,
+  "errors": [],
+  "consoleErrors": [],
+  "sockets": [
+    "wss://atlas-ws.summerz.net/ws",
+    "wss://atlas-ws.summerz.net/ws"
+  ],
+  "baseline": 0,
+  "twoVisitors": {
+    "a": {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "531cfe50-c440-4338-a28c-4d4f3fd343fa",
+      "number": 1,
+      "count": 2,
+      "lastSendAt": 7897.700000047684,
+      "visitors": [
+        {
+          "id": "a6e024f7-8968-4d2c-b849-20ff35dd9ae6",
+          "number": 2,
+          "pose": {
+            "x": 0.00019435814060136296,
+            "y": 0.11006655540075425,
+            "z": -0.0003293147155479679,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": 0.00019435449212323874,
+            "y": 0.11006655544042587,
+            "z": -0.0003293085319455713,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    "b": {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "a6e024f7-8968-4d2c-b849-20ff35dd9ae6",
+      "number": 2,
+      "count": 2,
+      "lastSendAt": 2048.1999999284744,
+      "visitors": [
+        {
+          "id": "531cfe50-c440-4338-a28c-4d4f3fd343fa",
+          "number": 1,
+          "pose": {
+            "x": -0.0013858230554003818,
+            "y": 0.07618479895685125,
+            "z": 0.7325507247012333,
+            "yaw": 358.3109191561275,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": -0.001411876524798572,
+            "y": 0.07586958259344101,
+            "z": 0.7813182473182678,
+            "yaw": 359.45161922556065,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    "manualInputs": 0
+  },
+  "releaseId": "local-c5b967dd2a7e-d337d929072b",
+  "normalCloseCountMs": 73,
+  "navigationReleasedSeat": true,
+  "finalCount": "입장하기 0/8",
+  "siteCommit": "091841693e3fcb74fd0c9706fb69681fe2dae7bb",
+  "recordedAt": "2026-11-07T12:15:27.487309+00:00"
+}

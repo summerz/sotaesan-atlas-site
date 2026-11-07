@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-11-07T12:15:06.057248+00:00",
+  "siteCommit": "091841693e3fcb74fd0c9706fb69681fe2dae7bb",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 21412,
+      "localSha256": "bd0033cdb53dc5374d3daf2d5eb83ea4dc5ac7cd62afd9a6c5202d5461dd9d51",
+      "publicSha256": "bd0033cdb53dc5374d3daf2d5eb83ea4dc5ac7cd62afd9a6c5202d5461dd9d51",
+      "match": true
+    },
+    {
+      "path": "site-presence.js",
+      "status": 200,
+      "bytes": 1829,
+      "localSha256": "c996c9853fe4938d40f0741d53b87ba6337f1f2629d65eb8df171dee33f0424c",
+      "publicSha256": "c996c9853fe4938d40f0741d53b87ba6337f1f2629d65eb8df171dee33f0424c",
+      "match": true
+    },
+    {
+      "path": "site-access.js",
+      "status": 200,
+      "bytes": 3984,
+      "localSha256": "9f9ee39a1d84c6732fc913ae5ba3d43a365017d38625d8af490116754f02a675",
+      "publicSha256": "9f9ee39a1d84c6732fc913ae5ba3d43a365017d38625d8af490116754f02a675",
+      "match": true
+    },
+    {
+      "path": "tests/playcanvas/index.html",
+      "status": 200,
+      "bytes": 984,
+      "localSha256": "09e36c07508557660154d2d022f2e7b32c6d6402569916a21a2d82e1ca9053f7",
+      "publicSha256": "09e36c07508557660154d2d022f2e7b32c6d6402569916a21a2d82e1ca9053f7",
+      "match": true
+    },
+    {
+      "path": "tests/playcanvas/release.json",
+      "status": 200,
+      "bytes": 19539,
+      "localSha256": "0fd388378c653b38fa84974a6d353706f4f11388965d17ac3f1f23f19679c147",
+      "publicSha256": "0fd388378c653b38fa84974a6d353706f4f11388965d17ac3f1f23f19679c147",
+      "match": true
+    },
+    {
+      "path": "world/sunnyvale-content.json",
+      "status": 200,
+      "bytes": 19948,
+      "localSha256": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+      "publicSha256": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+      "match": true
+    },
+    {
+      "path": "assets/index-Bn-oPOvp.js",
+      "status": 200,
+      "bytes": 2058677,
+      "localSha256": "b8a851d374885dd1a88fd8455eb3fc1134c2613adc1f9ddde9a0160e5308afb9",
+      "publicSha256": "b8a851d374885dd1a88fd8455eb3fc1134c2613adc1f9ddde9a0160e5308afb9",
+      "match": true
+    },
+    {
+      "path": "assets/index-DJRmeL0f.css",
+      "status": 200,
+      "bytes": 8833,
+      "localSha256": "e656e62b9c5849373b49f4a54d3b4f4eb7a75dc849db701df45e89971937d9d3",
+      "publicSha256": "e656e62b9c5849373b49f4a54d3b4f4eb7a75dc849db701df45e89971937d9d3",
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

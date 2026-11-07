@@ -1,0 +1,63 @@
+{
+  "recordedAt": "2026-11-07T12:15:18.654Z",
+  "scope": "Actual public SSE/WSS, nine concurrent protocol clients; no eight-device rendering claim",
+  "results": [
+    {
+      "client": 0,
+      "type": "welcome",
+      "number": 1,
+      "capacity": 8
+    },
+    {
+      "client": 1,
+      "type": "welcome",
+      "number": 2,
+      "capacity": 8
+    },
+    {
+      "client": 2,
+      "type": "welcome",
+      "number": 3,
+      "capacity": 8
+    },
+    {
+      "client": 3,
+      "type": "welcome",
+      "number": 4,
+      "capacity": 8
+    },
+    {
+      "client": 4,
+      "type": "welcome",
+      "number": 5,
+      "capacity": 8
+    },
+    {
+      "client": 5,
+      "type": "welcome",
+      "number": 7,
+      "capacity": 8
+    },
+    {
+      "client": 6,
+      "type": "welcome",
+      "number": 6,
+      "capacity": 8
+    },
+    {
+      "client": 7,
+      "type": "welcome",
+      "number": 8,
+      "capacity": 8
+    },
+    {
+      "client": 8,
+      "type": "error",
+      "code": "full"
+    }
+  ],
+  "fullDisabled": true,
+  "vacancyEnabled": true,
+  "normalCloseCountMs": 57,
+  "siteCommit": "091841693e3fcb74fd0c9706fb69681fe2dae7bb"
+}

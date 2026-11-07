@@ -185,3 +185,19 @@ NPC 검증은 같은 브라우저에서 실제 키 입력과 DOM 버튼, 공개 
 - 로컬 favicon 404, 의도적인 서버 중지의 WebSocket 오류를 구분했다. 공개 HTTPS/WSS 정상 입장·오류 비밀번호·Origin 거부도 확인했다. 기능 시험이며 실제 4기기 부하·iPhone·장시간 안정성 판정은 아니다. [결과와 원본](../character-spike/RESULTS-04-MULTIPLAYER.md)을 따른다.
 
 - 공개 사이트의 최종 두 컨텍스트 검증도 완료했다. 이전 첫 화면이 캐시된 준비 실패는 CDP로 HTTP 캐시를 비우고 재실행했다. NPC 범위 밖에서 G를 눌러 합장이 시작되지 않은 첫 입력 검사는, R로 초기화하고 E의 실제 인사·수령 흐름으로 다시 검증했다. 최종 공개 실행에는 pageerror·console error가 없었으며 공개 달리기·합장 전달을 확인했다. 이 준비 실패를 서버 장애나 검증 성공으로 집계하지 않는다.
+
+### 2026-11-07 8명 인원 표시·자동 입장
+
+별도 headed CLI `atlas-entry`의 두 독립 앱 컨텍스트와 첫 화면 관찰 컨텍스트로 기능을 확인했다. 생성 사이트의 공개 WSS 주소는 로컬 시험 브라우저에서만 로컬 릴레이로 대체했다. 실제 키 입력 후 원격 인물, 자동 접속, 정상 종료, 페이지 이동·뒤로 가기 재입장을 검사했다. 합성 WebSocket 8개는 정원·버튼 비활성화·만석 경합 거부만 검사하며 8기기 성능 시험이 아니다. 정상 종료의 인원 감소 33ms는 로컬 단발 관찰값이다. 앱 pageerror 0개, 기존 favicon 404는 별도로 구분한다. [원본과 제한](../character-spike/RESULTS-04-MULTIPLAYER.md#인원-표시자동-입장-변경-검증--2026-11-07)을 보존했다. 기존 `steps` 세션은 조작하지 않았다.
+
+GitHub Pages 배포가 지연되어 최종 빌드의 공개 서버 통합 검사를 별도로 수행했다. 시험 브라우저의 공개 사이트 정적 파일 요청만 `output/report-site/`를 제공하는 로컬 HTTP 서버로 대체했다. 앱 Origin은 공개 사이트이고 SSE·WSS는 실제 공개 VPS에 연결했으며 서버 주소는 대체하지 않았다. 두 독립 앱의 자동 입장·상대 표시·인원 2명·수동 입력란 제거·퇴장 후 감소·첫 화면 이동 후 자리 해제를 확인했다. 정상 종료 인원 감소 58ms는 단발 관찰값이며 오류는 없었다. 이 요청 대체 실행으로 공개 정적 배포 완료·캐시·로딩 성능을 판정하지 않는다. [통합 원본](measurements/atlas-entry-eight-public-relay-integration.json)에 `staticFiles`와 `serverOverride`로 범위를 명시했다.
+
+### 2026-11-07 마지막 성공 버전 복원
+
+사용자가 이전 버전 재배포를 요청해 정적 사이트·중계 서버를 최대 4명·수동 입장 버전으로 복원했다. 별도 headed Playwright CLI `atlas-rollback`에서 요청 대체 없이 실제 공개 Pages·WSS에 독립된 두 앱 컨텍스트를 연결했다. 입장 UI·상호 표시·걷기 전달·정상 종료 후 상대 제거를 확인했고, 앱 검사 중 pageerror·console error는 없었다. 최초 로그인의 favicon 404는 구분한다. 기능 검사이므로 다중 앱을 사용했으며 GPU 성능·실기기·장시간 안정성은 판정하지 않았다. [원본](measurements/atlas-rollback-public.json)과 [화면](measurements/atlas-rollback-public-two-visitors.png)을 보존했다. 키 입력은 finally에서 해제했고 시험 컨텍스트와 브라우저를 닫았다. 사용자 Chrome·기존 `steps` 세션은 조작하지 않았다.
+
+### 2026-11-07 단계별 재배포 후 8명 공개 검증
+
+별도 headed Playwright CLI `atlas-staged`를 사용했다. 인원 표시 없는 자동 입장 단계와 최종 인원 표시 단계를 각각 실제 공개 Pages·SSE·WSS에서 확인했다. 요청 가로채기·서버 주소 변경·정적 파일 대체는 없었다. 첫 화면을 관찰하면서 독립된 두 앱 컨텍스트의 자동 입장, 상호 ID·원격 걷기, 수동 네트워크 입력 0개, 정상 종료와 페이지 이동의 인원 감소를 검사했다. 키는 finally에서 해제했다. 최종 앱 검사에 pageerror·console error는 없었고 최초 로그인 favicon 404는 별도다. 인원 감소 73ms는 이번 단발 관찰값이다.
+
+별도 검사에서 공개 WSS에 프로토콜 클라이언트 9개를 동시에 접속시켜 8개 허용·1개 `full` 거부, 실제 첫 화면 만석 버튼 잠금·퇴장 후 재활성화를 확인했다. finally에서 모든 소켓과 갱신 타이머를 정리했다. 390×844 Chromium viewport의 첫 화면 가로 넘침도 없었다. 실기기·8기기 렌더링·GPU 성능·장시간 부하 판정은 아니다. [공개 기능 원본](measurements/atlas-entry-eight-public.json), [정원 검사 원본](measurements/atlas-entry-eight-public-capacity.json), [파일 일치 원본](measurements/atlas-entry-eight-public-files.json)을 보존했다. 시험 컨텍스트와 자체 브라우저를 닫았고 서버 visitors 0을 확인했다. 사용자 Chrome과 기존 `steps` 세션은 조작하지 않았다.

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-07T11:12:53.516Z",
+  "health": {
+    "ok": true,
+    "version": 1,
+    "visitors": 0,
+    "capacity": 8
+  },
+  "presence": {
+    "visitors": 0,
+    "capacity": 8
+  },
+  "corsOrigin": "https://sotaesan-atlas-test.summerz.net",
+  "image": "sotaesan-atlas-realtime:2026-11-07-entry-eight",
+  "containerHealth": "healthy",
+  "restartCount": 0,
+  "existingTimepediaHealth": {
+    "status": "ok",
+    "db": "ok"
+  },
+  "caddy": "active"
+}

@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-11-07T12:04:13.828276+00:00",
+  "siteCommit": "dd932dfeca810eea3083f1080afd5a4809a5e95c",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 21103,
+      "localSha256": "b0ea0b8afdfe355bc226001fe70a03c112cffba579af92fd94eed1b7175a4eee",
+      "publicSha256": "b0ea0b8afdfe355bc226001fe70a03c112cffba579af92fd94eed1b7175a4eee",
+      "match": true
+    },
+    {
+      "path": "login.html",
+      "status": 200,
+      "bytes": 2567,
+      "localSha256": "2c17034f48b25228286161924bf5ef444ee6ebd6953446dedbeeedb09bef2929",
+      "publicSha256": "2c17034f48b25228286161924bf5ef444ee6ebd6953446dedbeeedb09bef2929",
+      "match": true
+    },
+    {
+      "path": "site-access.js",
+      "status": 200,
+      "bytes": 3984,
+      "localSha256": "9f9ee39a1d84c6732fc913ae5ba3d43a365017d38625d8af490116754f02a675",
+      "publicSha256": "9f9ee39a1d84c6732fc913ae5ba3d43a365017d38625d8af490116754f02a675",
+      "match": true
+    },
+    {
+      "path": "tests/playcanvas/index.html",
+      "status": 200,
+      "bytes": 984,
+      "localSha256": "6df2a104a71abc081598c7e155f936cb2c30e78d8c0fb103ca67b642fd7ec29f",
+      "publicSha256": "6df2a104a71abc081598c7e155f936cb2c30e78d8c0fb103ca67b642fd7ec29f",
+      "match": true
+    },
+    {
+      "path": "tests/playcanvas/release.json",
+      "status": 200,
+      "bytes": 19539,
+      "localSha256": "1f66bd3a18ef5ba3a258a262bec561c426f90a83d026efd13867b40277f58c89",
+      "publicSha256": "1f66bd3a18ef5ba3a258a262bec561c426f90a83d026efd13867b40277f58c89",
+      "match": true
+    },
+    {
+      "path": "world/sunnyvale-content.json",
+      "status": 200,
+      "bytes": 19948,
+      "localSha256": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+      "publicSha256": "758bdb7970a251d4fd68f4b7c0f500f3a0d6fd2142b369ce454676e39c1b7a28",
+      "match": true
+    },
+    {
+      "path": "assets/index-D8VRPPlH.js",
+      "status": 200,
+      "bytes": 2058850,
+      "localSha256": "07a1b372d03b0789a3785743faf1712da92ed41052c8ae1beb89a807cc1e96da",
+      "publicSha256": "07a1b372d03b0789a3785743faf1712da92ed41052c8ae1beb89a807cc1e96da",
+      "match": true
+    },
+    {
+      "path": "assets/index-uaPepYy6.css",
+      "status": 200,
+      "bytes": 8695,
+      "localSha256": "c8fbe0b8b3e006ed670566a9591aa4231aa52027b2fe4184cd6b9ed765fdfba4",
+      "publicSha256": "c8fbe0b8b3e006ed670566a9591aa4231aa52027b2fe4184cd6b9ed765fdfba4",
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

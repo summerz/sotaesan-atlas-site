@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-11-07T12:13:50.541Z",
+  "siteCommit": "8164f0742431644a8ae3736b1c3edc49123688ef",
+  "requestOverrides": false,
+  "states": [
+    {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "abc9320a-dbc7-4cea-93e3-107d8f25e6f0",
+      "number": 1,
+      "count": 2,
+      "lastSendAt": 7295.299999952316,
+      "visitors": [
+        {
+          "id": "7ee4f2f2-a20b-49ee-abf7-8434d98304d5",
+          "number": 2,
+          "pose": {
+            "x": 0.00019441112830465468,
+            "y": 0.11006653698643445,
+            "z": -0.00032940448676564525,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": 0.0001943991519510746,
+            "y": 0.11006655544042587,
+            "z": -0.00032938423100858927,
+            "yaw": 180,
+            "motion": "Idle",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": "함께 탐색 중",
+      "connected": true,
+      "id": "7ee4f2f2-a20b-49ee-abf7-8434d98304d5",
+      "number": 2,
+      "count": 2,
+      "lastSendAt": 1488,
+      "visitors": [
+        {
+          "id": "abc9320a-dbc7-4cea-93e3-107d8f25e6f0",
+          "number": 1,
+          "pose": {
+            "x": 8.803871020567881e-05,
+            "y": 0.10625400933727515,
+            "z": 0.030771495291876984,
+            "yaw": 208.85251675009007,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          },
+          "target": {
+            "x": -0.00026092148618772626,
+            "y": 0.09372153133153915,
+            "z": 0.13300417363643646,
+            "yaw": 303.69557485286543,
+            "motion": "Walking",
+            "hands": 0,
+            "bow": 0
+          }
+        }
+      ]
+    }
+  ],
+  "manualInputs": 0,
+  "release": "local-c5b967dd2a7e-d337d929072b",
+  "errors": [],
+  "sockets": [
+    "wss://atlas-ws.summerz.net/ws",
+    "wss://atlas-ws.summerz.net/ws"
+  ],
+  "remoteWalking": true
+}
