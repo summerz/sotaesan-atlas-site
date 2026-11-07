@@ -37,13 +37,23 @@ NPC와 안내문 전달·소지는 각 방문자에게 독립적이다. 누군�
 5. 서버 중지 중에도 실제 A 키 입력으로 단독 이동한다. 서버를 다시 켜면 두 컨텍스트가 자동 재입장하고 각각 원격 인물 한 명만 표시한다.
 6. 390×844 화면에서 열린 패널이 화면 안에 들어가고 가로 넘침이 없다. 닫으면 안내·조작 핸들 하나만 남는다. 모바일 크기 에뮬레이션이며 iPhone 실기기 판정이 아니다.
 
-로컬 개발 콘솔의 favicon 404와 의도적인 서버 중지 때의 WebSocket 연결 실패를 구분했다. 별도 Docker 이미지도 상한·읽기 전용 조건에서 건강 상태를 확인했다. 공개 도메인에서는 HTTPS health 200, WSS 정상 비밀번호 입장, 잘못된 비밀번호 거부, 잘못된 Origin 403을 확인했다. 공개 앱의 최종 검증 결과는 아래 배포 기록에 덧붙인다.
+로컬 개발 콘솔의 favicon 404와 의도적인 서버 중지 때의 WebSocket 연결 실패를 구분했다. 별도 Docker 이미지도 상한·읽기 전용 조건에서 건강 상태를 확인했다. 공개 도메인에서는 HTTPS health 200, WSS 정상 비밀번호 입장, 잘못된 비밀번호 거부, 잘못된 Origin 403을 확인했다. 공개 앱의 최종 검증 결과는 아래 배포 기록을 따른다.
 
 - [두 방문자·상호작용 JSON](../implementation/measurements/atlas-multiplayer-local.json)
 - [중단·이동·자동 재접속 JSON](../implementation/measurements/atlas-multiplayer-reconnect.json)
 - [공개 WSS 검사 JSON](../implementation/measurements/atlas-multiplayer-public-relay.json)
 - [두 방문자 화면](../implementation/measurements/atlas-multiplayer-two-visitors.png)
 - [390px 패널 화면](../implementation/measurements/atlas-multiplayer-mobile-panel.png)
+
+## 공개 배포 검증 — 2026-11-07
+
+공유 사이트의 첫 화면은 현재 체험·네 단계 이용 순서를 먼저 보여주며, 기존 기술 비교 자료는 접힌 영역에 보존한다. 정적 사이트 배포 커밋 `b01870f`의 Pages `built`와 앱 릴리스 `local-c5b967dd2a7e-b40cc94f8b03`을 확인했다. 첫 화면·입장 화면·앱 HTML·릴리스 JSON·JS·CSS·아바타 GLB·world JSON 총 8개 공개 파일의 HTTP 200과 로컬 SHA-256 일치를 확인했다.
+
+공개 주소에서 독립된 두 Chromium 컨텍스트가 입장 화면과 현재 테스트 링크를 거쳐 WSS에 접속했다. 서로 다른 ID·각각 원격 인물 한 명·정원 표시 2명, 실제 Shift+S 달리기와 안내문 수령 전 합장의 손 모음·허리 숙임 전달을 확인했다. 이 실행에서 pageerror·console error는 없었다. 위 중단·재접속 검사는 로컬 서버에서 수행했으며 공개 VPS를 중단하지 않았다.
+
+- [공개 앱 기능 JSON](../implementation/measurements/atlas-multiplayer-public.json)
+- [공개 파일 해시 검사 JSON](../implementation/measurements/atlas-multiplayer-public-files.json)
+- [공개 두 방문자 화면](../implementation/measurements/atlas-multiplayer-public-two-visitors.png)
 
 ## 남은 범위
 
