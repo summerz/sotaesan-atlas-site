@@ -56,8 +56,8 @@
     "shared/src/world.ts"
   ],
   "appReleases": {
-    "three": "local-c5b967dd2a7e-b40cc94f8b03",
-    "playcanvas": "local-c5b967dd2a7e-b40cc94f8b03"
+    "three": "local-c5b967dd2a7e-d337d929072b",
+    "playcanvas": "local-c5b967dd2a7e-d337d929072b"
   },
   "accessGate": {
     "type": "client-side-review-gate",
